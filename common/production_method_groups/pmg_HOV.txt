@@ -1,0 +1,174 @@
+﻿#########################
+###NEW
+#########################
+
+pmg_ownership_capital_building_synthetic_oil_plants = { #added
+	production_methods = {
+		pm_privately_owned_industry
+		pm_publicly_traded_building_synthetic_plants
+		pm_government_run_industry
+		pm_worker_cooperative_industry
+	}
+}
+
+pmg_base_building_synthetic_oil_plants = { #added
+	production_methods = {
+		pm_synth_oil_production
+		pm_improved_synth_oil_production
+	}
+}
+
+pmg_synthetic_rubber = { #added
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+	production_methods = {
+		pm_no_rubber
+		pm_rubber
+	}
+}
+
+###
+
+pmg_opioid_building_chemical_plants = { #added
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+	production_methods = {
+		pm_no_opioid
+		pm_opioid
+	}
+}
+
+###
+
+pmg_government_administration_military_administration = { #added
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
+	ai_selection = most_productive
+
+	production_methods = {
+		pm_no_military_oversight
+		pm_military_oversight
+	}
+}
+
+#########################
+###01_industry
+#########################
+
+pmg_canning = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_disabled_canning
+		pm_cannery
+		pm_cannery_meat #added
+		pm_vacuum_canning
+		pm_vacuum_canning_meat #added
+	}
+}
+
+pmg_distillery = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+	production_methods = {
+		pm_disabled_distillery
+		pm_obstler #added
+		pm_pot_stills
+		pm_patent_stills
+	}
+}
+
+pmg_fertilizer_production = {
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_base.dds"
+	production_methods = {
+		pm_artificial_fertilizers
+		pm_improved_fertilizer
+		pm_nitrogen_fixation
+		pm_haber_bosch #added
+	}
+}
+
+pmg_koks = { #added
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+	production_methods = {
+		pm_no_koks
+		pm_koks
+	}
+}
+
+#########################
+###02_agro
+#########################
+
+pmg_secondary_building_rye_farm = { #changed
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+	production_methods = {
+		pm_no_secondary
+		pm_potatoes
+		pm_apple_orchards
+		pm_apple_orchards_big #added
+		pm_flachs
+		pm_flachs_big #added
+	}
+}
+
+pmg_secondary_building_wheat_farm = { #changed
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+	production_methods = {
+		pm_no_secondary
+		pm_citrus_orchards
+		pm_citrus_orchards_big #added
+		pm_vineyards
+		pm_vineyards_big #added
+		pm_flachs
+		pm_flachs_big #added
+	}
+}
+
+pmg_secondary_building_maize_farm = { #changed
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+	production_methods = {
+		pm_no_secondary
+		pm_citrus_orchards
+		pm_citrus_orchards_big #added
+		pm_vineyards_building_maize_farm
+		pm_vineyards_building_maize_farm_big #added
+	}
+}
+
+pmg_secondary_building_millet_farm = { #changed
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+	production_methods = {
+		pm_no_secondary
+		pm_fig_orchards
+		pm_fig_orchards_big #added
+	}
+}
+
+pmg_secondary_building_rice_farm = { #changed
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_refining.dds"
+	production_methods = {
+		pm_no_secondary
+		pm_fig_orchards
+		pm_fig_orchards_rice_big #added
+	}
+}
+
+#########################
+###09_misc
+#########################
+
+pmg_ownership_capital_building_oil_rig = { #changed
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
+	production_methods = {
+		pm_privately_owned_oil_rig #added
+		pm_publicly_traded_building_oil_rig
+		pm_government_run_industry
+		pm_worker_cooperative_industry
+	}
+}
+
+pmg_ownership_land_building_rubber_plantation = { #changed
+	texture = "gfx/interface/icons/generic_icons/mixed_icon_ownership.dds"
+	production_methods = {
+		pm_privately_owned_rubber #added
+		pm_publicly_traded_rubber #added
+		pm_government_run
+		pm_worker_cooperative_plantation
+	}
+}
