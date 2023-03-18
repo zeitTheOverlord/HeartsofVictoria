@@ -1,0 +1,18 @@
+﻿# Germany
+GLOBAL = {
+	c:PRU = {
+		set_variable = zz_germany_formed_by_prussia
+	}
+	c:HAN = {
+		set_variable = zz_germany_formed_by_hanover
+	}
+	c:SAX = {
+		set_variable = zz_germany_formed_by_saxony
+	}
+	c:BAV = {
+		set_variable = zz_germany_formed_by_bavaria
+	}
+	c:WUR = {
+		set_variable = zz_germany_formed_by_wurttemberg
+	}			
+}
