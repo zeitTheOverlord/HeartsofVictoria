@@ -1,0 +1,627 @@
+﻿#########################
+###NEW
+#########################
+modifier_france_birth_rate = {
+    icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds
+    country_loan_interest_rate_mult = -0.1
+	country_minting_mult = 0.05
+}
+
+german_gruenderzeit = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	state_accepted_birth_rate_mult = 0.25
+	country_bureaucracy_mult = 1 
+}
+
+scandinavian_gruenderzeit = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	state_accepted_birth_rate_mult = 1
+	country_bureaucracy_mult = 1 
+}
+
+italian_gruenderzeit = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	state_accepted_birth_rate_mult = 0.25
+	country_bureaucracy_mult = 1 
+}
+
+SMMP_unifier_ruler = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	character_popularity_add = 50
+	country_authority_mult = 0.15
+}
+
+traditional_interests = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
+	country_max_declared_interests_add = 5
+	country_convoys_capacity_mult = 0.25
+}
+
+modifier_qing_malus = { 
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
+	state_aristocrats_investment_pool_contribution_add = -0.05
+	state_capitalists_investment_pool_contribution_add = -0.1
+	country_law_enactment_time_mult = 2 
+	country_max_declared_interests_add = -20 
+	state_construction_mult = -0.2
+	country_tech_spread_mult = -0.2
+	state_conscription_rate_mult = -0.5 
+}
+
+ruler_abdicated = { 
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
+	country_authority_mult = -0.1
+}
+
+ruler_resigned = { 
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
+	country_authority_mult = -0.1
+}
+
+neuwahlen = { #obsolet, nur noch drin für saves
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
+	country_revolution_secession_speed_mult = -1
+}
+
+restless_balkan = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_negative.dds
+	state_radicals_from_discrimination_mult = 1
+	state_assimilation_mult = -1
+	state_conversion_mult = -1
+}
+
+found_settlerscolony = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
+	country_bureaucracy_add = -500 
+}
+
+integrated_culture_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_negative.dds
+	country_bureaucracy_add = -1000 
+	interest_group_ig_trade_unions_approval_add = 10
+	interest_group_ig_intelligentsia_approval_add = 10
+	interest_group_ig_petty_bourgeoisie_approval_add = -20	
+}
+
+state_integrated_culture_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	building_throughput_mult = 0.1
+}
+
+shinto_change_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	state_expected_sol_mult = -0.5
+	state_conversion_mult = 0.5
+}
+
+#########################
+###00_static_modifiers
+#########################
+
+base_values = {
+	country_weekly_innovation_add = 50
+	country_weekly_innovation_max_add = 50
+	country_tech_spread_add = 100 #25
+	
+	country_loan_interest_rate_add = 0.2
+	
+	country_legitimacy_govt_size_add = 1
+	
+	country_bureaucracy_add = 250 #100
+	country_authority_add = 100
+	country_influence_add = 100
+
+	country_revolution_secession_speed_add = 0.1
+	
+	state_education_access_wealth_add = 0.005
+	
+	country_minting_add = 500
+
+	state_tax_capacity_add = 100
+	state_infrastructure_add = 3
+	
+	state_poor_expected_sol = 5
+	state_middle_expected_sol = 10
+	state_rich_expected_sol = 15
+	state_expected_sol_from_literacy = 5
+	
+	state_farmers_investment_pool_contribution_add = 0.05
+	state_shopkeepers_investment_pool_contribution_add = 0.05
+	state_aristocrats_investment_pool_contribution_add = 0.10
+	state_capitalists_investment_pool_contribution_add = 0.20	
+	
+	state_unincorporated_starting_wages_mult = -0.15 # To balance for unincorporated states not paying taxes
+	
+	country_construction_add = 10 #5
+	
+	building_mobilization_cost_mult = 0.6
+	
+	building_economy_of_scale_level_cap_add = 10 #20
+}
+
+coastal_state = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+	state_infrastructure_add = 5 #2
+}
+
+# Scales with country literacy rate
+country_literacy_rate = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
+	country_weekly_innovation_max_add = 100 #150
+	#country_tech_spread_add = 100 #75
+}
+
+# Scales with number of excess innovation points
+excess_innovation = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_lightbulb_positive.dds
+	#country_tech_spread_add = 0.2
+	country_tech_spread_mult = 0.002 #0.2
+}
+
+# Excess BUR increases construction speed by +10% at 2x production to usage
+efficient_bureaucracy = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_positive.dds
+	state_construction_mult = 0.25 #0.10
+}
+
+# Excess AUT reduces enactment time by -25% at 2x production to usage
+legislative_efficiency = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
+	country_law_enactment_time_mult = -0.25
+	country_law_enactment_success_add = 0.1 #added
+}
+
+unincorporated_state = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
+	state_infrastructure_mult = -0.25
+	state_conscription_rate_mult = -0.5
+	state_expected_sol_mult = -0.33
+	state_pop_pol_str_mult = -0.50
+	state_construction_mult = -0.25 #added
+	building_group_bg_manufacturing_throughput_mult = -0.1 #added 
+	building_group_bg_bureaucracy_throughput_mult = -0.1 #added
+}
+
+incorporated_state = {
+	state_building_barracks_max_level_add = 25 #added
+	state_building_conscription_center_max_level_add = 100 #added
+}
+
+capital_state = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	state_pop_pol_str_mult = 0.25
+	state_tax_capacity_mult = 0.25
+	building_group_bg_bureaucracy_throughput_mult = 0.1 #added
+	state_building_barracks_max_level_add = 50 #added
+}
+
+tax_modifier_very_low = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+	#country_legitimacy_base_add = 10
+	state_radicals_from_sol_change_mult = -0.2
+	interest_group_in_government_attraction_mult = 0.3 #added
+	interest_group_ig_industrialists_approval_add = 5 #added
+}
+
+tax_modifier_low = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_positive.dds
+	#country_legitimacy_base_add = 5
+	state_radicals_from_sol_change_mult = -0.1
+	interest_group_in_government_attraction_mult = 0.15 #added
+	interest_group_ig_industrialists_approval_add = 2 #added
+}	
+
+tax_modifier_medium = {
+}	
+
+tax_modifier_high = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_negative.dds
+	#country_legitimacy_base_add = -5
+	state_radicals_from_sol_change_mult = 0.25
+	interest_group_in_government_attraction_mult = -0.15 #-0.1
+	interest_group_ig_industrialists_approval_add = -2 #added
+}	
+
+tax_modifier_very_high = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_fist_negative.dds
+	#country_legitimacy_base_add = -10
+	state_radicals_from_sol_change_mult = 0.5
+	interest_group_in_government_attraction_mult = -0.3 #-0.2
+	interest_group_ig_industrialists_approval_add = -5 #added
+}
+
+government_wages_high = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_government_wages_mult = 0.15
+	interest_group_ig_intelligentsia_approval_add = 1	
+	interest_group_ig_petty_bourgeoisie_approval_add = 1
+	#country_authority_mult = 0.05
+	country_authority_add = 100 #added
+}
+
+government_wages_very_high = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_government_wages_mult = 0.3
+	interest_group_ig_intelligentsia_approval_add = 2
+	interest_group_ig_petty_bourgeoisie_approval_add = 2
+	#country_authority_mult = 0.1
+	country_authority_add = 200 #added
+}
+
+military_wages_very_low = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds
+	country_military_wages_mult = -0.3
+	interest_group_ig_armed_forces_approval_add = -5 #-2	
+	building_training_rate_mult = -0.75
+	country_army_power_projection_mult = -0.2
+}
+
+military_wages_low = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds
+	country_military_wages_mult = -0.15
+	interest_group_ig_armed_forces_approval_add = -2 #-1
+	building_training_rate_mult = -0.5
+	country_army_power_projection_mult = -0.1
+}
+
+military_wages_high = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_military_wages_mult = 0.15
+	interest_group_ig_armed_forces_approval_add = 2 #1
+	country_army_power_projection_mult = 0.1
+	unit_morale_recovery_mult = 0.1
+}
+
+military_wages_very_high = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_military_wages_mult = 0.3
+	interest_group_ig_armed_forces_approval_add = 5 #2	
+	country_army_power_projection_mult = 0.2
+	unit_morale_recovery_mult = 0.2
+}
+
+infamy_infamous = {
+	country_radicals_from_conquest_mult = 0.25
+	country_trade_route_competitiveness_mult = -0.25 #added
+	interest_group_ig_trade_unions_approval_add = -5 #added
+	interest_group_ig_intelligentsia_approval_add = -2 #added
+	
+	interest_group_ig_petty_bourgeoisie_approval_add = 2 #added
+}
+
+infamy_notorious = {
+	country_radicals_from_conquest_mult = 0.5
+	country_trade_route_competitiveness_mult = -0.5 #added
+	interest_group_ig_trade_unions_approval_add = -10 #added
+	interest_group_ig_intelligentsia_approval_add = -5 #added
+	
+	interest_group_ig_petty_bourgeoisie_approval_add = 5 #added
+}
+
+infamy_pariah = {
+	country_radicals_from_conquest_mult = 1.0
+	country_trade_route_competitiveness_mult = -1 #added
+	interest_group_ig_trade_unions_approval_add = -20 #added
+	interest_group_ig_intelligentsia_approval_add = -10 #added
+	
+	interest_group_ig_petty_bourgeoisie_approval_add = 10 #added
+}
+
+forced_regime_change = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+	interest_group_ig_landowners_pop_attraction_mult = 1
+	interest_group_ig_landowners_pol_str_mult = 1
+	interest_group_ig_landowners_approval_add = 10
+	country_prestige_mult = -0.25
+}
+
+#########################
+###AWARDS
+#########################
+
+free_bulgaria_modifier = { #2
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	country_authority_add = 100
+	country_prestige_add = 500
+}
+
+free_romania_modifier = { #2
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	country_authority_add = 100
+	country_prestige_add = 500
+}
+
+free_serbia_modifier = { #2
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	country_authority_add = 100 
+	country_prestige_add = 500
+}
+
+free_greece_modifier = { #2
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	country_authority_add = 100
+	country_prestige_add = 500
+}
+
+free_swiss_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	country_loan_interest_rate_add = -0.02
+	country_minting_mult = 0.01
+}
+
+free_baltics_modifier = { #2
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	country_authority_add = 100
+	country_prestige_add = 500
+}
+
+free_belorussia_modifier = { #2
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	country_authority_add = 100
+	country_prestige_add = 500
+}
+
+free_ukraine_modifier = { #3
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	country_authority_add = 250
+	country_prestige_add = 1000
+}
+
+free_poland_modifier = { #3
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	country_authority_add = 250
+	country_prestige_add = 1000
+}
+
+free_belgian_modifier = { #2
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	country_authority_add = 100
+	country_prestige_add = 500
+}
+
+free_holland_modifier = { #2
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	country_authority_add = 100
+	country_prestige_add = 500
+}
+
+free_portugal_modifier = { #2
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	country_authority_add = 100
+	country_prestige_add = 500
+}
+
+free_denmark_modifier = { #1
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	country_authority_add = 50
+	country_prestige_add = 250
+}
+
+free_norway_modifier = { #1
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	country_authority_add = 50
+	country_prestige_add = 250
+}
+
+free_sweden_modifier = { #1
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	country_authority_add = 50
+	country_prestige_add = 250
+}
+
+###
+
+free_mexico_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	country_authority_add = 50
+	country_prestige_add = 100
+}
+
+free_uca_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	country_authority_add = 25
+	country_prestige_add = 50
+}
+
+free_vnz_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	country_authority_add = 50
+	country_prestige_add = 100
+}
+
+free_clm_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	country_authority_add = 50
+	country_prestige_add = 100
+}
+
+free_ecu_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	country_authority_add = 25
+	country_prestige_add = 50
+}
+
+free_peu_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	country_authority_add = 25
+	country_prestige_add = 50
+}
+
+free_bol_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	country_authority_add = 25
+	country_prestige_add = 50
+}
+
+free_chl_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	country_authority_add = 25
+	country_prestige_add = 50
+}
+
+free_arg_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	country_authority_add = 25
+	country_prestige_add = 50
+}
+
+free_uru_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	country_authority_add = 25
+	country_prestige_add = 50
+}
+
+free_prg_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	country_authority_add = 25
+	country_prestige_add = 50
+}
+
+free_brz_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	country_authority_add = 50
+	country_prestige_add = 100
+}
+
+free_lib_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	country_authority_add = 25
+	country_prestige_add = 50
+}
+
+###
+
+free_alb_modifier = { 
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	country_authority_add = 50
+	country_prestige_add = 250
+}
+
+free_bos_modifier = { 
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	country_authority_add = 50
+	country_prestige_add = 250
+}
+
+free_cri_modifier = { 
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	country_authority_add = 50
+	country_prestige_add = 250
+}
+
+free_azb_modifier = { 
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	country_authority_add = 50
+	country_prestige_add = 250
+}
+
+#########################
+###NEGATIVE AWARDS
+#########################
+
+poland_existence_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+	country_authority_mult = -0.05
+} 
+
+byelorussian_existence_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+	country_authority_mult = -0.1
+} 
+
+ukrainian_existence_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+	country_authority_mult = -0.1
+} 
+
+ethiopian_nonexistence_modifier = { 
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
+	interest_group_ig_devout_approval_add = -2
+}
+
+3_republican_majors_modifier = { 
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
+	country_legitimacy_base_add = -4
+	interest_group_ig_intelligentsia_approval_add = -2
+	interest_group_ig_trade_unions_approval_add = -2
+}
+
+4_republican_majors_modifier = { 
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
+	country_legitimacy_base_add = -8
+	interest_group_ig_intelligentsia_approval_add = -4
+	interest_group_ig_trade_unions_approval_add = -4
+}
+
+5_republican_majors_modifier = { 
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
+	country_legitimacy_base_add = -12
+	interest_group_ig_intelligentsia_approval_add = -6
+	interest_group_ig_trade_unions_approval_add = -6
+}
+
+6_republican_majors_modifier = { 
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
+	country_legitimacy_base_add = -16
+	interest_group_ig_intelligentsia_approval_add = -8
+	interest_group_ig_trade_unions_approval_add = -8
+}
+
+7_republican_majors_modifier = { 
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_negative.dds
+	country_legitimacy_base_add = -20
+	interest_group_ig_intelligentsia_approval_add = -10
+	interest_group_ig_trade_unions_approval_add = -10
+}
+
+stampout_republicanism_modifier = { 
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_statue_positive.dds
+	country_legitimacy_base_add = 20
+	country_authority_mult = 0.2
+}
+
+2_comrank5_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_negative.dds
+	country_authority_mult = -0.1
+}
+
+3_comrank5_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_negative.dds
+	country_authority_mult = -0.2
+}
+
+4_comrank5_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_negative.dds
+	country_authority_mult = -0.4
+}
+
+5_comrank5_modifier = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_rifle_negative.dds
+	country_authority_mult = -0.8
+}
+
+#########################
+### OTTOMAN
+#########################
+
+cleaned_nation = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
+	state_accepted_birth_rate_mult = 0.2
+	country_authority_mult = 0.2
+	country_legitimacy_base_add = 20
+} 
+
+balkan_invests_tur = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds
+	country_tax_income_add = 30000
+}
+
+balkan_invests_big = { #gbr,fra
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_expenses_add = 10000
+}
+
+balkan_invests_sml = { #aus,rus
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
+	country_expenses_add = 5000
+}

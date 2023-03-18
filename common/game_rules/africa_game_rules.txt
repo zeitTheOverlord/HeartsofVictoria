@@ -1,0 +1,11 @@
+﻿africa_game_rules = {
+	default = africa_centralized
+
+	africa_centralized = {
+	
+	}
+
+	africa_decentralized = {
+	
+	}
+}

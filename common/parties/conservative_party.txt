@@ -1,0 +1,511 @@
+﻿# Bastion of the Landowners
+# Can also appeal to the Devout, PB, and Industrialists
+
+conservative_party = {
+	color = { 108 64 179 }
+	name = {
+		first_valid = {
+			triggered_desc = {
+				desc = party_christian_social_party
+				trigger = {
+					exists = c:AUS
+					THIS = c:AUS
+				}
+			}
+			triggered_desc = {
+				desc = party_constitutional_party
+				trigger = {
+					exists = c:PEU
+					THIS = c:PEU
+				}
+			}
+			triggered_desc = {
+				desc = party_national_autonomist
+				trigger = {
+					exists = c:ARG
+					THIS = c:ARG
+				}
+			}
+			triggered_desc = {
+				desc = party_tories
+				trigger = {
+					exists = c:GBR
+					THIS = c:GBR
+				}
+			}
+			triggered_desc = {
+				desc = party_us_democrats
+				trigger = {
+					exists = c:USA
+					THIS = c:USA
+				}
+			}
+			triggered_desc = {
+				desc = party_moderate_party
+				trigger = {
+					exists = c:SPA
+					THIS = c:SPA
+				}
+			}
+			triggered_desc = {
+				desc = party_regenerator_party
+				trigger = {
+					exists = c:POR
+					THIS = c:POR
+				}
+			}
+			triggered_desc = {
+				desc = party_lantmanna_party
+				trigger = {
+					exists = c:SWE
+					THIS = c:SWE
+				}
+			}
+			triggered_desc = {
+				desc = party_finnish_party
+				trigger = {
+					exists = c:FIN
+					THIS = c:FIN
+				}
+			}
+			triggered_desc = {
+				desc = party_catholic_party
+				trigger = {
+					exists = c:BEL
+					THIS = c:BEL
+				}
+			}
+			triggered_desc = {
+				desc = party_party_of_the_right
+				trigger = {
+					exists = c:LUX
+					THIS = c:LUX
+				}
+			}
+			triggered_desc = {
+				desc = party_peoples_party
+				trigger = {
+					exists = c:MON
+					THIS = c:MON
+				}
+			}
+			triggered_desc = {
+				desc = party_bonapartist_party
+				trigger = {
+					exists = c:FRA
+					THIS = c:FRA
+				}
+			}
+			triggered_desc = {
+				desc = party_octobrist_party
+				trigger = {
+					exists = c:RUS
+					THIS = c:RUS
+					has_law = law_type:law_monarchy
+				}
+			}
+			triggered_desc = {
+				desc = party_constitutional_association
+				trigger = {
+					exists = c:CHI
+					THIS = c:CHI
+					has_law = law_type:law_monarchy
+				}
+			}
+			triggered_desc = {
+				desc = party_imperial_rule_party
+				trigger = {
+					exists = c:JAP
+					THIS = c:JAP
+					has_law = law_type:law_monarchy
+				}
+			}
+			triggered_desc = {
+				desc = party_moderate_socialists_party
+				trigger = {
+					exists = c:PER
+					THIS = c:PER
+				}
+			}
+			triggered_desc = {
+				desc = party_russian_party
+				trigger = {
+					exists = c:GRE
+					THIS = c:GRE
+				}
+			}
+			triggered_desc = {
+				desc = party_blanco_party
+				trigger = {
+					exists = c:URU
+					THIS = c:URU
+				}
+			}
+			triggered_desc = {
+				desc = party_colorado_party
+				trigger = {
+					exists = c:PRG
+					THIS = c:PRG
+				}
+			}
+			triggered_desc = {
+				desc = party_the_right
+				trigger = {
+					OR = {
+						country_has_primary_culture = cu:north_italian
+						country_has_primary_culture = cu:south_italian
+					}
+				}
+			}
+			triggered_desc = {
+				desc = party_hoyre
+				trigger = {
+					country_has_primary_culture = cu:norwegian
+				}
+			}
+			triggered_desc = {
+				desc = party_democratic_party
+				trigger = {
+					country_has_primary_culture = cu:dixie
+				}
+			}
+			triggered_desc = {
+				desc = party_hojre
+				trigger = {
+					country_has_primary_culture = cu:danish
+				}
+			}
+			triggered_desc = {
+				desc = party_liberal_conservative_party
+				trigger = {
+					country_has_primary_culture = cu:anglo_canadian
+				}
+			}
+			triggered_desc = {
+				desc = party_conservative
+				trigger = {
+					always = yes
+				}
+			}
+		}
+	}
+	icon = {
+		default = "/gfx/interface/icons/political_parties/conservatism.dds"
+	}
+	# THIS IS RUN ONLY ONCE AT GAME START
+	valid_for_country = {
+		always = yes
+	}
+	available_for_interest_group = { #changed
+		owner = {
+			country_has_voting_franchise = yes
+			OR = {
+				ig:ig_landowners = {
+					is_marginal = no
+				}
+				ig:ig_devout = { #added
+					is_marginal = no
+				}
+				ig:ig_petty_bourgeoisie = { #added
+					is_marginal = no
+				}
+			}
+		}
+		# unions can never be conservative
+		NOT = { is_interest_group_type = ig_trade_unions }
+	}
+	join_weight = {
+		value = {
+			value = -5
+			desc = "base_value"
+		}
+		if = { # socialists and radicals won't join conservative parties
+			limit = {
+				leader = { 
+					OR = {
+						has_ideology = ideology_communist
+						has_ideology = ideology_vanguardist
+						has_ideology = ideology_anarchist
+						has_ideology = ideology_social_democrat
+						has_ideology = ideology_radical
+						has_ideology = ideology_atheist
+					}
+				}
+			}
+			add = {
+				value = -20
+				desc = "from_leftist"
+			}
+		}
+		if = { # conservatives love conservativism
+			limit = {
+				leader = {
+					OR = {
+						has_ideology = ideology_traditionalist
+						has_ideology = ideology_royalist
+						has_ideology = ideology_theocrat
+						has_ideology = ideology_slaver
+					}
+				}
+			}
+			add = {
+				value = 5
+				desc = "from_conservative_leader"
+			}
+		}
+		if = { # conservatives love conservativism, changed
+			limit = {
+				OR = {
+					has_ideology = ideology_paternalistic
+					has_ideology = ideology_stratocratic
+					has_ideology = ideology_patriarchal
+					has_ideology = ideology_moralist
+				}
+			}
+			add = {
+				value = 10 #5, fetter tie-brecher
+				desc = "from_conservative_ig"
+			}
+		}
+		if = { # armed forces will join if a more powerful member has jingoist leader
+			limit = {
+				is_interest_group_type = ig_armed_forces
+				exists = owner.py:conservative_party
+				owner = {
+					any_interest_group = {
+						is_member_of_party = owner.py:conservative_party
+						is_powerful = yes
+						leader = {
+							has_ideology = ideology_jingoist_leader
+						}
+					}
+				}
+			}
+			add = {
+				value = 5
+				desc = "from_jingoist_party_leader"
+			}
+		}
+		if = { # landowners will join if they are even moderately powerful
+			limit = {
+				ig_clout >= 0.15
+				is_interest_group_type = ig_landowners
+			}
+			add = {
+				value = 5
+				desc = "from_powerful_conservative_ig"
+			}
+		}
+		if = { # various progressives dislike conservativism, changed
+			limit = {
+				leader = {
+					OR = {
+						#has_ideology = ideology_feminist
+						#has_ideology = ideology_pacifist
+						#has_ideology = ideology_reformer
+					}
+				}
+			}
+			add = {
+				value = -5
+				desc = "from_progressive_con"
+			}
+		}
+		#Abolitionists won't join conservative party
+		if = {
+			limit = {
+				leader = {
+					has_ideology = ideology_abolitionist
+				}
+				owner = {
+					NOT = { has_law = law_type:law_slavery_banned }
+				}
+			}
+			add = {
+				value = -20
+				desc = "from_anti_slavery"
+			}
+		}
+		if = { # patriots are inclined towards conservativism, changed
+			limit = {
+				has_ideology = ideology_patriotic
+			}
+			add = {
+				value = 6 #5, tie-brecher
+				desc = "from_patriot"
+			}
+		}
+		#if = { # arbitrary weight for Andrew Jackson to be in the right party, keine Ausnahme
+		#	limit = {
+		#		leader = {
+		#			has_variable = is_andrew_jackson
+		#		}
+		#	}
+		#	add = {
+		#		value = 35
+		#		desc = "from_jackson"
+		#	}
+		#}
+		#########################
+		###ADDED
+		#########################
+		if = { # Zweiparteiensystem
+			limit = {
+				owner = {
+					has_law = law_type:law_presidential_republic
+				}
+				exists = owner.py:conservative_party
+				OR = {
+					is_interest_group_type = ig_landowners
+					is_interest_group_type = ig_devout
+					AND = {
+						is_interest_group_type = ig_armed_forces
+						leader = {
+							NOR = {
+								has_ideology = ideology_atheist
+								has_ideology = ideology_radical
+								has_ideology = ideology_abolitionist
+								has_ideology = ideology_social_democrat
+								has_ideology = ideology_communist
+								has_ideology = ideology_vanguardist
+								has_ideology = ideology_anarchist
+							}
+						}
+					}
+					AND = {
+						is_interest_group_type = ig_petty_bourgeoisie
+						leader = {
+							NOR = {
+								has_ideology = ideology_atheist
+								has_ideology = ideology_radical
+								has_ideology = ideology_abolitionist
+								has_ideology = ideology_social_democrat
+								has_ideology = ideology_communist
+								has_ideology = ideology_vanguardist
+								has_ideology = ideology_anarchist
+							}
+						}
+					}
+					AND = {
+						is_interest_group_type = ig_rural_folk
+						leader = {
+							NOR = {
+								has_ideology = ideology_atheist
+								has_ideology = ideology_radical
+								has_ideology = ideology_abolitionist
+								has_ideology = ideology_social_democrat
+								has_ideology = ideology_communist
+								has_ideology = ideology_vanguardist
+								has_ideology = ideology_anarchist
+							}
+						}
+					}
+					AND = {
+						is_interest_group_type = ig_industrialists
+						leader = {
+							NOR = {
+								has_ideology = ideology_atheist
+								has_ideology = ideology_radical
+								has_ideology = ideology_abolitionist
+								has_ideology = ideology_pacifist
+								has_ideology = ideology_social_democrat
+								has_ideology = ideology_communist
+								has_ideology = ideology_vanguardist
+								has_ideology = ideology_anarchist
+							}
+						}
+						OR = {
+							owner = {
+								ig:ig_trade_unions = { 
+									ig_clout >= 0.15
+									is_member_of_party = owner.py:liberal_party 
+								}
+							}
+							owner = {
+								ig:ig_trade_unions = { 
+									ig_clout >= 0.1
+									is_member_of_party = owner.py:liberal_party 
+								}
+								ig:ig_intelligentsia = { 
+									ig_clout >= 0.25
+									is_member_of_party = owner.py:liberal_party 
+								}
+							}
+							owner = {
+								ig:ig_intelligentsia = { 
+									ig_clout >= 0.35
+									is_member_of_party = owner.py:liberal_party 
+								}
+							}
+						}
+					}
+				}
+			}
+			add = {
+				value = 50
+				desc = "SMMP_TWOPARTYSYSTEM"
+			}
+		}
+		if = { #Mehrparteiensystem
+			limit = {
+				owner = {
+					OR = {
+						has_law = law_type:law_parliamentary_republic
+						has_law = law_type:law_council_republic
+					}
+				}
+				is_interest_group_type = ig_landowners
+				ig_clout >= 0.1
+				leader = {
+					NOR = {
+						has_ideology = ideology_fascist
+						has_ideology = ideology_ethno_nationalist
+					}
+				}
+			}
+			add = {
+				value = 50
+				desc = "SMMP_MEHRPARTEIENSYSTEM"
+			}
+		}
+		if = { # Buddhists Japanese never joins Conservatives 
+			limit = {
+				is_interest_group_type = ig_devout
+				has_ideology = ideology_buddhist_moralist
+				exists = owner.py:conservative_party 
+				owner = { c:JAP = THIS }
+			}
+			add = {
+				value = -100
+				desc = "SMMP_ANTISHOGUNATE"
+			}
+		}
+		if = { #Unzufriedene IGs treten aus
+			limit = {
+				owner = {
+					any_active_party = {
+						is_party_type = conservative_party
+						any_member = {
+							is_in_government = yes
+						}
+					}
+				}
+				NOT = { is_interest_group_type = ig_landowners }
+				ig_approval < -15
+			}
+			add = {
+				value = -75
+				desc = "SMMP_ANGRYIG"
+			}
+		}
+		if = { #Marginalisierte IGs treten aus
+			limit = {
+				ig_clout < 0.03
+			}
+			add = {
+				value = -1000
+				desc = "IG_IS_MARGINALIZED"
+			}
+		}
+	}
+}

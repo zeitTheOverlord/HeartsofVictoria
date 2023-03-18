@@ -1,0 +1,19 @@
+﻿ai_buff = {
+	default = ai_buff_on
+
+	ai_buff_on = {
+	}
+
+	ai_buff_off = {
+	}
+}
+
+ai_innovation_buff = {
+	default = ai_innovation_buff_on
+
+	ai_innovation_buff_on = {
+	}
+
+	ai_innovation_buff_off = {
+	}
+}

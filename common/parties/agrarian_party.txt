@@ -1,0 +1,268 @@
+﻿# Fallback party for Rural Folk
+# Occasionally used for an anti-serfdom alliance
+# More popular in Nordic countries
+
+agrarian_party = {
+	color = { 64 173 59 }
+	name = {
+		first_valid = {
+
+			triggered_desc = {
+				desc = party_irish_national_land_league
+				trigger = {
+					exists = c:IRE
+					THIS = c:IRE
+				}
+			}
+			triggered_desc = {
+				desc = party_independent_agriculture_party
+				trigger = {
+					exists = c:GBR
+					THIS = c:GBR
+				}
+			}
+			triggered_desc = {
+				desc = party_farmers_party
+				trigger = {
+					exists = c:NOR
+					THIS = c:NOR
+				}
+			}
+			triggered_desc = {
+				desc = party_free_peoples_party
+				trigger = {
+					exists = c:DEN
+					THIS = c:DEN
+				}
+			}
+			triggered_desc = {
+				desc = party_farmers_league
+				trigger = {
+					exists = c:SWE
+					THIS = c:SWE
+				}
+			}
+			triggered_desc = {
+				desc = party_peoples_party
+				trigger = {
+					exists = c:FIN
+					THIS = c:FIN
+				}
+			}
+			triggered_desc = {
+				desc = party_landbund
+				trigger = {
+					exists = c:AUS
+					THIS = c:AUS
+				}
+			}
+			triggered_desc = {
+				desc = party_national_peasant_accord
+				trigger = {
+					exists = c:SER
+					THIS = c:SER
+				}
+			}
+			triggered_desc = {
+				desc = party_agrarian_national_union
+				trigger = {
+					exists = c:BUL
+					THIS = c:BUL
+				}
+			}
+			triggered_desc = {
+				desc = party_national_farmer_party
+				trigger = {
+					exists = c:HUN
+					THIS = c:HUN
+				}
+			}
+			triggered_desc = { #changed
+				desc = federalist_party #party_peoples_party
+				trigger = {
+					exists = c:USA
+					THIS = c:USA
+				}
+			}
+			triggered_desc = {
+				desc = party_patrons_of_industry
+				trigger = {
+					country_has_primary_culture = cu:anglo_canadian
+				}
+			}
+			triggered_desc = {
+				desc = party_peasants_party
+				trigger = {
+					country_has_primary_culture = cu:romanian
+				}
+			}
+			triggered_desc = {
+				desc = party_peoples_party
+				trigger = {
+					country_has_primary_culture = cu:polish
+				}
+			}
+			triggered_desc = { #changed
+				desc = party_agrarian_league
+				trigger = {
+					OR = {
+						country_has_primary_culture = cu:north_german
+						country_has_primary_culture = cu:south_german
+					}
+					NOT = { country_has_state_religion = rel:protestant } #added
+				}
+			}
+			triggered_desc = { #added
+				desc = zentrum_party
+				trigger = {
+					OR = {
+						country_has_primary_culture = cu:north_german
+						country_has_primary_culture = cu:south_german
+					}
+					country_has_state_religion = rel:protestant  #added
+				}
+			}
+			triggered_desc = {
+				desc = party_agrarian
+				trigger = {
+					always = yes
+				}
+			}
+		}
+	}
+	icon = {
+		default = "/gfx/interface/icons/political_parties/agrarians.dds"
+	}
+
+	# THIS IS RUN ONLY ONCE AT GAME START
+	valid_for_country = {
+		always = yes
+	}
+	available_for_interest_group = { #changed
+		owner = {
+			country_has_voting_franchise = yes
+			OR = {
+				ig:ig_rural_folk = {
+					#is_powerful = yes
+					OR = {
+						ig_clout >= 0.1
+						has_variable = is_andrew_jackson #added
+						owner = { has_law = law_type:law_parliamentary_republic } #added
+					}
+				}
+				ig:ig_devout = { #added
+					leader = {
+						has_ideology = ideology_abolitionist
+					}
+				}
+			}
+		}
+	}
+	join_weight = {
+		value = {
+			value = -5
+			desc = "base_value"
+		}
+		if = { # a party for powerful farmers, changed
+			limit = {
+				has_ideology = ideology_agrarian
+				#is_powerful = yes
+			}
+			add = {
+				value = 10
+				desc = "from_peasants"
+			}
+		}
+		#########################
+		###ADDED
+		#########################
+		if = { #Mehrparteiensystem
+			limit = {
+				owner = {
+					OR = {
+						has_law = law_type:law_parliamentary_republic
+						has_law = law_type:law_council_republic
+					}
+				}
+				is_interest_group_type = ig_rural_folk
+				ig_clout >= 0.1
+				leader = {
+					NOR = {
+						has_ideology = ideology_communist
+						has_ideology = ideology_vanguardist
+						has_ideology = ideology_anarchist
+						has_ideology = ideology_fascist
+						has_ideology = ideology_ethno_nationalist
+					}
+				}
+			}
+			add = {
+				value = 50
+				desc = "SMMP_MEHRPARTEIENSYSTEM"
+			}
+		}
+		if = { # Abolitionisten-Zuflucht damit nicht bei Liberalen
+			limit = {
+				owner = { 
+					OR = {
+						NOT = { has_law = law_type:law_slavery_banned }
+						any_interest_group = {
+							has_ideology = ideology_pro_slavery
+						}
+					}
+				}
+				OR = {
+					AND = {
+						is_interest_group_type = ig_rural_folk
+						leader = {
+							NOT = { has_ideology = ideology_slaver }
+						}
+					}
+					AND = {
+						is_interest_group_type = ig_devout
+						leader = {
+							has_ideology = ideology_abolitionist
+						}
+					}
+					AND = {
+						is_interest_group_type = ig_petty_bourgeoisie
+						leader = {
+							has_ideology = ideology_abolitionist
+						}
+					}
+				}
+			}
+			add = {
+				value = 100
+				desc = "SMMP_ABOLITIONISTS"
+			}
+		}
+		if = { #Unzufriedene IGs treten aus
+			limit = {
+				owner = {
+					any_active_party = {
+						is_party_type = agrarian_party
+						any_member = {
+							is_in_government = yes
+						}
+					}
+				}
+				NOT = { is_interest_group_type = ig_rural_folk }
+				ig_approval < -15
+			}
+			add = {
+				value = -75
+				desc = "SMMP_ANGRYIG"
+			}
+		}
+		if = { #Marginalisierte IGs treten aus
+			limit = {
+				ig_clout < 0.03
+			}
+			add = {
+				value = -1000
+				desc = "IG_IS_MARGINALIZED"
+			}
+		}
+	}
+}

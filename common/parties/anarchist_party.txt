@@ -1,0 +1,190 @@
+﻿# Niche party for anarchists in specific circumstances
+
+anarchist_party = {
+	color = { 0 0 0 }
+	name = {
+		first_valid = {
+			triggered_desc = {
+				desc = party_cnt
+				trigger = {
+					exists = c:SPA
+					THIS = c:SPA
+				}
+			}
+			triggered_desc = {
+				desc = party_socialist_league
+				trigger = {
+					exists = c:GBR
+					THIS = c:GBR
+				}
+			}
+			triggered_desc = {
+				desc = party_maximalist_federation
+				trigger = {
+					country_has_primary_culture = cu:portuguese
+				}
+			}
+			triggered_desc = {
+				desc = party_young_socialists
+				trigger = {
+					OR = {
+						country_has_primary_culture = cu:norwegian
+						country_has_primary_culture = cu:danish
+					}
+				}
+			}
+			triggered_desc = {
+				desc = party_italian_syndicalist_union
+				trigger = {
+					OR = {
+						country_has_primary_culture = cu:north_italian
+						country_has_primary_culture = cu:south_italian
+					}
+				}
+			}
+			triggered_desc = {
+				desc = party_anarchist
+				trigger = {
+					always = yes
+				}
+			}
+		}
+	}
+	icon = {
+		default = "/gfx/interface/icons/political_parties/anarchist.dds"
+	}
+	unlocking_technologies = {
+		anarchism
+	}
+	# THIS IS RUN ONLY ONCE AT GAME START
+	valid_for_country = {
+		always = yes
+	}
+	available_for_interest_group = {
+		owner = {
+			country_has_voting_franchise = yes
+			any_interest_group = {
+				is_marginal = no
+				leader = {
+					has_ideology = ideology_anarchist
+				}
+			}
+		}
+		leader = {
+			has_ideology = ideology_anarchist
+		}
+	}
+	join_weight = {
+		value = {
+			value = -5
+			desc = "base_value"
+		}
+		if = { # anarchists like anarchism
+			limit = {
+				leader = { has_ideology = ideology_anarchist }
+			}
+			add = {
+				value = 6
+				desc = "from_anarchy"
+			}
+		}
+		if = { # strong anarchists like anarchism
+			limit = {
+				is_powerful = yes
+				leader = { has_ideology = ideology_anarchist }
+			}
+			add = {
+				value = 10
+				desc = "powerful_anarachists"
+			}
+		}
+		if = { # anarchists don't like the revolution being hijacked
+			limit = {
+				leader = {
+					has_ideology = ideology_anarchist
+				}
+				owner = {
+					has_law = law_type:law_council_republic
+					ruler = {
+						has_ideology = ideology_vanguardist
+					}
+				}
+			}
+			add = {
+				value = 10
+				desc = "from_vanguard_anarchy"
+			}
+		}
+		if = { # anarchists will make their own party if there is no communist party to join
+			limit = {
+				leader = {
+					has_ideology = ideology_anarchist
+				}
+				owner = {
+					NOT = {
+						any_interest_group = {
+							is_marginal = no
+							leader = {
+								OR = {
+									has_ideology = ideology_communist
+									has_ideology = ideology_vanguardist
+								}
+							}
+						}
+					}
+				}
+			}
+			add = {
+				value = 5
+				desc = "from_no_communists"
+			}
+		}
+		#########################
+		###ADDED
+		#########################
+		if = { #Mehrparteiensystem
+			limit = {
+				owner = {
+					OR = {
+						has_law = law_type:law_parliamentary_republic
+						has_law = law_type:law_council_republic
+					}
+				}
+				leader = {
+					has_ideology = ideology_anarchist
+				}
+			}
+			add = {
+				value = 50
+				desc = "SMMP_MEHRPARTEIENSYSTEM"
+			}
+		}
+		if = { #Unzufriedene IGs treten aus
+			limit = {
+				owner = {
+					any_active_party = {
+						is_party_type = anarchist_party
+						any_member = {
+							is_in_government = yes
+						}
+					}
+				}
+				NOT = { is_interest_group_type = ig_trade_unions }
+				ig_approval < -15
+			}
+			add = {
+				value = -75
+				desc = "SMMP_ANGRYIG"
+			}
+		}
+		if = { #Marginalisierte IGs treten aus
+			limit = {
+				ig_clout < 0.03
+			}
+			add = {
+				value = -1000
+				desc = "IG_IS_MARGINALIZED"
+			}
+		}
+	}
+}
