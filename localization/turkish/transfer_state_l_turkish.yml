@@ -1,6 +1,9 @@
 ﻿l_turkish:
  transfer_state:0 "Toprak Devret"
  transfer_state_action_name:0 "Toprak Devret"
+ transfer_state_mark:0 "Toprak Devret"
+ transfer_state_mark_desc:0 "Toprak devretmek için toprağı işaretle"
+
  transfer_state_desc:0 "Elinde bulunan toprağı başka ülkeye verir."
  transfer_state_action_notification_name:0 "Toprak Ver"
  transfer_state_action_notification_desc:0 "Bir toprak bize devredildi."

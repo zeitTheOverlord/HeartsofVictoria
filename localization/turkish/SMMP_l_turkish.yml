@@ -1,4 +1,4 @@
-﻿l_english:
+﻿l_Turkish:
 #missing_modifiers
  modifier_building_group_bg_rubber_throughput_mult:0 "$bg_rubber$-[concept_throughput]"
  modifier_building_group_bg_rubber_throughput_mult_desc:0 "A bonus or penalty to both input and output of $bg_rubber$"
