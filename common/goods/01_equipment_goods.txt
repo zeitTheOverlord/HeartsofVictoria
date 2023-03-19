@@ -5,7 +5,7 @@
 
 equipmentz = {
 	texture = "gfx/interface/icons/goods_icons/equipment.dds"
-	cost =  25
+	cost =  32
 	category = military
 	convoy_shipping_multiplier = 0.3
 	trade_route_revenue_multiplier = 1.5

@@ -176,15 +176,13 @@ unincorporated_state = {
 	state_infrastructure_mult = -0.25
 	state_conscription_rate_mult = -0.5
 	state_expected_sol_mult = -0.33
-	state_pop_pol_str_mult = -0.50
+	state_pop_pol_str_mult = -1
 	state_construction_mult = -0.2 #added
 	building_group_bg_manufacturing_throughput_mult = -0.1 #added 
 	building_group_bg_bureaucracy_throughput_mult = -0.1 #added
 }
 
 incorporated_state = {
-	state_building_barracks_max_level_add = 25 #added
-	state_building_conscription_center_max_level_add = 100 #added
 }
 
 capital_state = {
