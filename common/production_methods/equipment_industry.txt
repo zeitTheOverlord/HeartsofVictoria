@@ -1,6 +1,6 @@
 ﻿pm_equipment1= {
 	texture = "gfx/interface/icons/production_method_icons/equipment.dds"
-	
+	ai_value = 50000
 	unlocking_technologies = {
 	 standing_army
 	}
@@ -19,5 +19,10 @@
 			building_employment_machinists_add = 200
 			building_employment_engineers_add = 100
 		}
+	}
+}
+pm_none_ = {
+	texture = "gfx/interface/icons/production_method_icons/no_artillery_production.dds"
+	building_modifiers = {
 	}
 }

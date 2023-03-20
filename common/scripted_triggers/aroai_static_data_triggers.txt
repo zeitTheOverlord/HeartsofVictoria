@@ -2566,6 +2566,29 @@ aroai_sanction_building_war_machine_industry = {
 aroai_allocate_building_war_machine_industry = {
     $aptitude$ = 1
 }
+###equipment
+
+aroai_consider_building_equip_industry	= {
+     aroai_building_is_allowed = {
+        critical = 1
+    }
+    aroai_consider_building = {
+        id = $id$
+        shortage = 1
+        profitable = 1
+    }
+}
+
+aroai_sanction_building_equip_industry = {
+    aroai_sanction_industry = {
+        key = building_war_machine_industry
+        id = $id$
+        conditions = 0
+        shortage = 1
+        profitable = 1
+    }
+}
+
 
 aroai_is_using_compatibility_patches = {
     aroai_has_global_variable_list = {
