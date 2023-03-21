@@ -8,8 +8,7 @@ pm_irregular_infantry = {
 	is_default = yes
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_equipmentz_add = 0.5
-			building_input_small_arms_add = 0.5
+			building_input_grain_add = 2
 		}
 
 		level_scaled = {
@@ -38,8 +37,7 @@ pm_irregular_infantry_conscription = {
 	is_default = yes
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_equipmentz_add = 0.5
-			building_input_small_arms_add = 0.5
+			building_input_grain_add = 2
 		}
 
 		level_scaled = {

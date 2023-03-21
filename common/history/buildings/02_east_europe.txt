@@ -1,6 +1,12 @@
 ﻿BUILDINGS={
 	s:STATE_INGRIA={
 		region_state:RUS={
+		create_building={
+				building="building_equip_industry"
+				level=3
+				reserves=1
+				activate_production_methods={ "pmg_equipmentz" }
+			}
 			create_building={
 				building="building_government_administration"
 				level=10
@@ -53,6 +59,12 @@
 	}
 	s:STATE_MOSCOW={
 		region_state:RUS={
+		create_building={
+				building="building_equip_industry"
+				level=5
+				reserves=1
+				activate_production_methods={ "pmg_equipmentz" }
+			}
 			create_building={
 				building="building_government_administration"
 				level=10

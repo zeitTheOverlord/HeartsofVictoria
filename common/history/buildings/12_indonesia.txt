@@ -227,6 +227,12 @@
 	}
 	s:STATE_WEST_JAVA={
 		region_state:DEI={
+		create_building={
+				building="building_equip_industry"
+				level=3
+				reserves=1
+				activate_production_methods={ "pmg_equipmentz" }
+			}
 			create_building={
 				building="building_government_administration"
 				level=4

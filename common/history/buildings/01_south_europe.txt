@@ -41,6 +41,12 @@
 	}
 	s:STATE_PIEDMONT={
 		region_state:SAR={
+		create_building={
+				building="building_equip_industry"
+				level=2
+				reserves=1
+				activate_production_methods={ "pmg_equipmentz" }
+			}
 			create_building={
 				building="building_government_administration"
 				level=5
@@ -259,6 +265,12 @@
 	}
 	s:STATE_CAMPANIA={
 		region_state:SIC={
+		create_building={
+				building="building_equip_industry"
+				level=2
+				reserves=1
+				activate_production_methods={ "pmg_equipmentz" }
+			}
 			create_building={
 				building="building_government_administration"
 				level=6
@@ -1005,6 +1017,12 @@
 	}
 	s:STATE_NAVARRA={
 		region_state:SPA={
+		create_building={
+				building="building_equip_industry"
+				level=2
+				reserves=1
+				activate_production_methods={ "pmg_equipmentz" }
+			}
 			create_building={
 				building="building_government_administration"
 				level=1
@@ -1403,6 +1421,12 @@
 	}
 	s:STATE_ESTREMADURA={
 		region_state:POR={
+		create_building={
+				building="building_equip_industry"
+				level=1
+				reserves=1
+				activate_production_methods={ "pmg_equipmentz" }
+			}
 			create_building={
 				building="building_government_administration"
 				level=4

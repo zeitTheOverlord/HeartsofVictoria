@@ -545,6 +545,12 @@
 	}
 	s:STATE_ISFAHAN={
 		region_state:PER={
+		create_building={
+				building="building_equip_industry"
+				level=2
+				reserves=1
+				activate_production_methods={ "pmg_equipmentz" }
+			}
 			create_building={
 				building="building_government_administration"
 				level=2

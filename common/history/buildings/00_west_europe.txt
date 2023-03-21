@@ -1,6 +1,12 @@
 ﻿BUILDINGS={
 	s:STATE_SVEALAND={
 		region_state:SWE={
+		create_building={
+				building="building_equip_industry"
+				level=2
+				reserves=1
+				activate_production_methods={ "pmg_equipmentz" }
+			}
 			create_building={
 				building="building_government_administration"
 				level=4
@@ -1343,6 +1349,12 @@
 	}
 	s:STATE_CONNAUGHT={
 		region_state:GBR={
+		create_building={
+				building="building_equip_industry"
+				level=6
+				reserves=1
+				activate_production_methods={ "pmg_equipmentz" }
+			}
 			create_building={
 				building="building_rye_farm"
 				level=2
@@ -2165,6 +2177,12 @@
 	}
 	s:STATE_HOLLAND={
 		region_state:NET={
+		create_building={
+				building="building_equip_industry"
+				level=1
+				reserves=1
+				activate_production_methods={ "pmg_equipmentz" }
+			}
 			create_building={
 				building="building_government_administration"
 				level=3
@@ -2423,6 +2441,12 @@
 	}
 	s:STATE_FLANDERS={
 		region_state:BEL={
+		create_building={
+				building="building_equip_industry"
+				level=1
+				reserves=1
+				activate_production_methods={ "pmg_equipmentz" }
+			}
 			create_building={
 				building="building_government_administration"
 				level=3
