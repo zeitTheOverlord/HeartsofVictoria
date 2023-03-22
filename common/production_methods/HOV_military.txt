@@ -737,7 +737,7 @@ pm_cavalry_scouts = {
 		}
 
 		unscaled = {
-			unit_provinces_captured_mult = -0.2
+			unit_provinces_captured_mult = -0.35
 		}
 	}
 }
@@ -750,7 +750,7 @@ pm_cavalry_scouts_conscription = {
 		}
 
 		unscaled = {
-			unit_provinces_captured_mult = -0.2
+			unit_provinces_captured_mult = -0.35
 		}
 	}
 }
@@ -773,7 +773,7 @@ pm_bicycle_messengers = {
 		}
 
 		unscaled = {
-			unit_provinces_captured_mult = 0.1
+			unit_provinces_captured_mult = -0.1
 			# should add Battle Condition chance
 		}
 	}
@@ -808,7 +808,7 @@ pm_bicycle_messengers_conscription = {
 		}
 
 		unscaled = {
-			unit_provinces_captured_mult = 0.1
+			unit_provinces_captured_mult = -0.1
 			# should add Battle Condition chance
 		}
 	}
@@ -839,7 +839,7 @@ pm_motorized_recon = {
 		}
 
 		unscaled = {
-			unit_provinces_captured_mult = 0.15
+			unit_provinces_captured_mult = 0.1
 		}
 	}
 	country_modifiers = {
@@ -874,7 +874,7 @@ pm_motorized_recon_conscription = {
 		}
 
 		unscaled = {
-			unit_provinces_captured_mult = 0.15
+			unit_provinces_captured_mult = 0.1
 		}
 	}
 	timed_modifiers = {
