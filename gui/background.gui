@@ -1,0 +1,55 @@
+template fade_right_color
+{
+	texture = "gfx/interface/backgrounds/colored_header.dds"
+	spriteType = Corneredtiled
+	spriteborder = { 20 20 }
+	texture_density = 2
+	alpha = 0.2
+
+	modify_texture = {
+		texture = "gfx/interface/masks/fade_horizontal_left.dds"
+		spriteType = Corneredstretched
+		spriteborder = { 0 0 }
+		blend_mode = alphamultiply
+	}
+
+	modify_texture = {
+		texture = "gfx/bo/entry_bg_top_mask.dds"
+		spriteType = Corneredtiled
+		spriteborder = { 20 20 }
+		texture_density = 2
+		blend_mode = alphamultiply
+	}
+}
+
+template fade_left_color
+{
+	texture = "gfx/interface/backgrounds/colored_header.dds"
+	spriteType = Corneredtiled
+	spriteborder = { 20 20 }
+	texture_density = 2
+	alpha = 0.2
+
+	modify_texture = {
+		texture = "gfx/interface/masks/fade_horizontal_right.dds"
+		spriteType = Corneredstretched
+		spriteborder = { 0 0 }
+		blend_mode = alphamultiply
+	}
+
+	modify_texture = {
+		texture = "gfx/bo/entry_bg_top_mask.dds"
+		spriteType = Corneredtiled
+		spriteborder = { 20 20 }
+		texture_density = 2
+		blend_mode = alphamultiply
+	}
+}
+
+template group_bg
+{
+	texture = "gfx/bo/outliner_frame.dds"  
+    spriteType = Corneredstretched
+    spriteborder = { 20 20 }
+	texture_density = 2
+}

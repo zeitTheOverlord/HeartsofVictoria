@@ -588,7 +588,7 @@ types market_panel
 				layoutpolicy_horizontal = preferred
 				layoutpolicy_vertical = preferred
 				size = { 60 30 }
-				using = goods_list_item_trade
+				using = goods_list_item
 			}
 
 			textbox = {
@@ -623,7 +623,7 @@ types market_panel
 					parentanchor = center
 					visible = "[TradeRoute.IsConsideredImportForMarket( Market.Self )]"
 					texture = "gfx/interface/icons/lens_toolbar_icons/trade_route_import_lens_option.dds"
-					tooltip = "IMPORT_TRADE_ROUTE"
+					tooltip = IMPORT_TRADE_ROUTE
 				}
 
 				icon = {
@@ -631,7 +631,7 @@ types market_panel
 					parentanchor = center
 					visible = "[Not(TradeRoute.IsConsideredImportForMarket( Market.Self ))]"
 					texture = "gfx/interface/icons/lens_toolbar_icons/trade_route_export_lens_option.dds"
-					tooltip = "EXPORT_TRADE_ROUTE"
+					tooltip = EXPORT_TRADE_ROUTE
 				}
 			}
 			widget = {

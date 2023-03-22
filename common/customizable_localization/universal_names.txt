@@ -154,32 +154,32 @@ GetUniversalTitle = {
 	}
 }
 
-GetUniversalHistoricalFigures = {
-	type = character
-	random_valid = no
+#GetUniversalHistoricalFigures = {
+#	type = character
+#	random_valid = no
+#
+#	text = {
+#		trigger = {
+#			has_variable = historical_figure
+#		}
+#		localization_key = custom_loc_universal_asterisk
+#	}
+#	text = {
+#		localization_key = custom_loc_universal_blank
+#	}
+#}
 
-	text = {
-		trigger = {
-			has_variable = historical_figure
-		}
-		localization_key = custom_loc_universal_asterisk
-	}
-	text = {
-		localization_key = custom_loc_universal_blank
-	}
-}
-
-GetUniversalHistoricalFiguresFormatted = {
-	type = character
-	random_valid = no
-
-	text = {
-		trigger = {
-			has_variable = historical_figure
-		}
-		localization_key = custom_loc_universal_asterisk_formatted
-	}
-	text = {
-		localization_key = custom_loc_universal_blank
-	}
-}
+#GetUniversalHistoricalFiguresFormatted = {
+#	type = character
+#	random_valid = no
+#
+#	text = {
+#		trigger = {
+#			has_variable = historical_figure
+#		}
+#		localization_key = custom_loc_universal_asterisk_formatted
+#	}
+#	text = {
+#		localization_key = custom_loc_universal_blank
+#	}
+#}

@@ -1,0 +1,130 @@
+﻿# cant trigger effects in console hilarious
+
+namespace = calculator
+
+calculator.1 = {
+	type = country_event
+	hidden = yes
+	immediate = {
+		calculator_number_1 = yes
+	}
+}
+
+calculator.2 = {
+	type = country_event
+	hidden = yes
+	immediate = {
+		calculator_number_2 = yes
+	}
+}
+
+calculator.3 = {
+	type = country_event
+	hidden = yes
+	immediate = {
+		calculator_number_3 = yes
+	}
+}
+
+calculator.4 = {
+	type = country_event
+	hidden = yes
+	immediate = {
+		calculator_number_4 = yes
+	}
+}
+
+calculator.5 = {
+	type = country_event
+	hidden = yes
+	immediate = {
+		calculator_number_5 = yes
+	}
+}
+calculator.6 = {
+	type = country_event
+	hidden = yes
+	immediate = {
+		calculator_number_6 = yes
+	}
+}
+
+calculator.7 = {
+	type = country_event
+	hidden = yes
+	immediate = {
+		calculator_number_7 = yes
+	}
+}
+
+calculator.8 = {
+	type = country_event
+	hidden = yes
+	immediate = {
+		calculator_number_8 = yes
+	}
+}
+
+calculator.9 = {
+	type = country_event
+	hidden = yes
+	immediate = {
+		calculator_number_9 = yes
+	}
+}
+
+calculator.10 = {
+	type = country_event
+	hidden = yes
+	immediate = {
+		calculator_number_0 = yes
+	}
+}
+
+calculator.100 = {
+	type = country_event
+	hidden = yes
+	immediate = {
+		calculator_clear = yes
+	}
+}
+
+calculator.101 = {
+	type = country_event
+	hidden = yes
+	immediate = {
+		calculator_add = yes
+	}
+}
+
+calculator.102 = {
+	type = country_event
+	hidden = yes
+	immediate = {
+		calculator_subtract = yes
+	}
+}
+
+calculator.103 = {
+	type = country_event
+	hidden = yes
+	immediate = {
+		calculator_multiply = yes
+	}
+}
+
+calculator.104 = {
+	type = country_event
+	hidden = yes
+	immediate = {
+		calculator_divide = yes
+	}
+}
+
+calculator.200 = {
+	type = country_event
+	hidden = yes
+	immediate = {
+		calculator_calculate = yes
+	}
+}

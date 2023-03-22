@@ -1,0 +1,6 @@
+﻿l_simp_chinese:
+ TURNLEFT:0 "左移"
+ TURNRIGHT:0 "右移"
+ DIPLO_CONFIRM:0 "外交行动宣布中立时需确认："
+ ALWAYS_SHOW_SHORTAGE:0 "一直显示短缺货物："
+ BETTEROUTLINER_PINNABLE_HEADER:0 "概览窗口列表"

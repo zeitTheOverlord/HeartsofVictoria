@@ -1,0 +1,284 @@
+types pinnable_outliner_items {
+	type state_item = pinnable_outliner_entry {
+		datacontext = "[OutlinerEntry.AccessScope.AccessState]"
+		
+		blockoverride "text_size" {
+			minimumsize = { 100 -1 }
+			maximumsize = { 100 -1 }
+			autoresize=yes
+			parentanchor = vcenter
+		}
+
+		blockoverride "text" {
+			textbox = {
+				position = { -5 0 }	
+				parentanchor = vcenter
+				align = left|nobaseline
+				elide=right
+				fontsize_min = 6
+				minimumsize = { 100 -1 }
+				maximumsize = { 100 -1 }
+				autoresize=yes
+				text = "[State.GetNameNoFormatting]"
+				visible = "[GreaterThan_CFixedPoint(State.GetInfrastructureBalance, '(CFixedPoint)0')]"				
+			}
+			textbox = {
+				position = { -5 0 }	
+				parentanchor = vcenter
+				elide=right
+				fontsize_min = 6
+				align = left|nobaseline
+				minimumsize = { 100 -1 }
+				maximumsize = { 100 -1 }
+				autoresize=yes
+				text = "RED_STATE_GET_NOFORMATTING"
+				visible = "[Not(GreaterThan_CFixedPoint(State.GetInfrastructureBalance, '(CFixedPoint)0'))]"							
+			}
+		}
+		blockoverride "onrightclick" {
+			onrightclick = "[RightClickMenuManager.ShowForState(State.AccessSelf)]"
+		}		
+		blockoverride "tooltip" {
+			tooltipwidget = {
+				FancyTooltip_State = {}
+			}
+		}
+
+		blockoverride "onhover" {
+			onmousehierarchyenter = "[AccessHighlightManager.HighlightState(State.Self)]"
+			onmousehierarchyleave = "[AccessHighlightManager.RemoveHighlight]"
+		}	
+
+		
+
+		blockoverride "additional_info" {
+			icon = {
+					#texture = "gfx/interface/icons/state_status_icons/state_infrastructure.dds"
+					#texture = "gfx/interface/icons/production_method_icons/rail_transport.dds"
+					texture = "gfx/interface/icons/ai_strategy_icons/unused/infrastructure_expansion.dds"
+					#texture = "gfx/interface/buttons/button_icons/plus.dds"
+					size = { 20 20 }
+					#tooltip = "STATE_INFRASTRUCTURE"
+					parentanchor = vcenter
+				}
+			textbox = {	
+				align = right|nobaseline
+				autoresize = yes
+				margin_right = 3
+				minimumsize = { 35 -1 }
+				maximumsize = { 35 -1 }			
+				text = "[State.GetInfrastructureBalance|*0G]"
+				visible = "[GreaterThan_CFixedPoint(State.GetInfrastructureBalance, '(CFixedPoint)0')]"
+				#tooltip = "STATE_INFRASTRUCTURE_DESC"
+				parentanchor = vcenter
+			}
+			textbox = {
+				align = right|nobaseline
+				autoresize = yes
+				margin_right = 3
+				minimumsize = { 35 -1 }
+				maximumsize = { 35 -1 }			
+				text = "[State.GetInfrastructureBalance|*0R]"
+				visible = "[Not(GreaterThan_CFixedPoint(State.GetInfrastructureBalance, '(CFixedPoint)0'))]"
+				#tooltip = "STATE_INFRASTRUCTURE_DESC"				
+				parentanchor = vcenter
+			}
+
+
+			button_icon_square = {
+				size = { 25 25 }
+				#tooltip = "[State.GetBuilding('building_railway').GetQueueConstructionTooltip]"
+				enabled = "[IsValid( State.GetBuilding('building_railway').QueueConstruction )]"
+				onclick = "[Execute( State.GetBuilding('building_railway').QueueConstruction )]"
+				onrightclick = "[Execute( State.GetBuilding('building_railway').CancelConstruction )]"
+				parentanchor = vcenter
+				textbox = {
+					align = right|nobaseline
+					autoresize = yes	
+					raw_text = " "
+					visible = "[Not(GreaterThan_int32(State.GetBuilding('building_railway').GetExpansionLevelsInQueue, '(int32)0'))]"				
+					parentanchor = vcenter
+				}	
+				textbox = {
+					align = right|nobaseline
+					autoresize = yes
+					text = "YELLOW_STATE_GET_BUILDING_RAIL"
+					visible = "[GreaterThan_int32(State.GetBuilding('building_railway').GetExpansionLevelsInQueue, '(int32)0')]"			
+					parentanchor = vcenter
+				}				
+			}
+
+			icon = {
+					texture = "gfx/interface/icons/state_status_icons/state_tax_capacity.dds"
+					size = { 20 20 }
+					#tooltip = "STATE_TAX_CAPACITY_DESC"
+				parentanchor = vcenter
+			}
+			textbox = {
+				align = right|nobaseline
+				autoresize = yes
+				margin_right = 3
+				minimumsize = { 38 -1 }
+				maximumsize = { 38 -1 }
+				text = "[State.CalcTaxCapacityBalance|*0G]"
+				visible = "[GreaterThan_CFixedPoint(State.CalcTaxCapacityBalance, '(CFixedPoint)0')]"
+				#tooltip = "STATE_TAX_CAPACITY_CONDENSED"
+				parentanchor = vcenter
+			}
+			textbox = {
+				align = right|nobaseline
+				autoresize = yes
+				margin_right = 3
+				minimumsize = { 38 -1 }
+				maximumsize = { 38 -1 }
+				text = "[State.CalcTaxCapacityBalance|*0R]"
+				visible = "[Not(GreaterThan_CFixedPoint(State.CalcTaxCapacityBalance, '(CFixedPoint)0'))]"
+				#tooltip = "STATE_TAX_CAPACITY_CONDENSED"
+				parentanchor = vcenter
+			}
+			button_icon_square = {
+				size = { 25 25 }
+				#tooltip = "[State.GetBuilding('building_government_administration').GetQueueConstructionTooltip]"
+				enabled = "[IsValid( State.GetBuilding('building_government_administration').QueueConstruction )]"
+				onclick = "[Execute( State.GetBuilding('building_government_administration').QueueConstruction )]"
+				onrightclick = "[Execute( State.GetBuilding('building_government_administration').CancelConstruction )]"
+				parentanchor = vcenter
+				textbox = {
+					align = right|nobaseline
+					autoresize = yes
+					raw_text = " "
+					visible = "[Not(GreaterThan_int32(State.GetBuilding('building_government_administration').GetExpansionLevelsInQueue, '(int32)0'))]"				
+					parentanchor = vcenter
+				}
+				textbox = {
+					align = right|nobaseline
+					autoresize = yes	
+					text = "YELLOW_STATE_GET_BUILDING_GOV"
+					visible = "[GreaterThan_int32(State.GetBuilding('building_government_administration').GetExpansionLevelsInQueue, '(int32)0')]"			
+					parentanchor = vcenter
+				}	
+			}
+			
+			#Unemploy
+			icon = {
+				texture = "gfx/interface/icons/pops_icons/unemployed.dds"
+				size = { 20 20 }
+				#tooltip = "STATE_UNEMPLOYED"
+				parentanchor = vcenter
+			}
+			textbox = {
+				align = right|nobaseline
+				autoresize = yes
+				margin_right = 3
+				minimumsize = { 48 -1 }
+				maximumsize = { 48 -1 }
+				text = "STATE_GET_NUMUNEMPLOYED"
+				#tooltip = "STATE_UNEMPLOYED"
+				parentanchor = vcenter
+			}
+
+			#peasants
+			icon = {
+				texture = "gfx/interface/icons/pops_icons/peasants.dds"
+				size = { 20 20 }
+				#tooltip = "STATE_PEASANTS"
+				parentanchor = vcenter
+			}
+			
+			textbox = {
+				align = right|nobaseline
+				autoresize = yes
+				margin_right = 3
+				minimumsize = { 48 -1 }
+				maximumsize = { 48 -1 }
+				text = "STATE_GET_NUMWORKINGADULTS"
+				#tooltip = "STATE_PEASANTS"
+				parentanchor = vcenter
+				elide = right
+			}
+
+			#pops		
+			icon = {
+				texture = "gfx/interface/icons/generic_icons/population.dds"
+				size = { 20 20 }
+				#tooltip = "TOOLTIP_STATE_POPULATION"
+				parentanchor = vcenter
+			}
+			
+			textbox = {
+				align = right|nobaseline
+				autoresize = yes
+				margin_right = 3
+				minimumsize = { 48 -1 }
+				maximumsize = { 48 -1 }
+				text = "STATE_GET_POPULATIONSIZE"
+				tooltip = "TOOLTIP_STATE_POPULATION"
+				parentanchor = vcenter
+				elide = right
+			}
+				
+		}
+		blockoverride "onclick" {
+			onclick = "[InformationPanelBar.OpenStatePanel( State.AccessSelf )]"
+		}
+	}
+
+	type outliner_colonies = pinnable_outliner_group {
+		datacontext = "[Outliner.AccessCategory('colonies')]"
+
+		blockoverride "entry_size" {
+			size = { 485 30 }
+		}
+
+		blockoverride "item" {
+			state_item = {
+				blockoverride "text_size" {
+					minimumsize = { 130 30 }
+					maximumsize = { 130 30 }
+				parentanchor = vcenter
+				align = left|nobaseline
+				elide=right
+				}
+			}
+		}
+	}
+
+	type outliner_states = pinnable_outliner_group {
+		datacontext = "[Outliner.AccessCategory('states')]"
+
+		blockoverride "entry_size" {
+			size = { 485 30 }
+		}
+
+		blockoverride "item" {
+			container = {
+				block "visibility" {
+					visible = yes
+				}
+
+				container = {
+					visible = "[Not(OutlinerEntry.IsCategory)]"
+					state_item = {
+						blockoverride "text_size" {
+							minimumsize = { 100 30 }
+							maximumsize = { 100 30 }
+						}
+					}
+				}
+				pinnable_outliner_group = {
+					visible = "[And(OutlinerEntry.IsCategory, OutlinerEntry.IsShown)]"
+
+					blockoverride "item" {
+						state_item = {
+
+							blockoverride "text_size" {
+								minimumsize = { 100 30 }
+								maximumsize = { 100 30 }
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

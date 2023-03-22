@@ -1,0 +1,195 @@
+types pinnable_outliner_items {
+	type market_item = pinnable_outliner_entry {
+		datacontext = "[OutlinerEntry.AccessScope.AccessMarket]"
+		blockoverride "text" {
+		}
+		blockoverride "tooltip" {
+			tooltipwidget = {
+				FancyTooltip_Market = {}
+			}
+		}
+		blockoverride "onclick" {
+			onclick = "[InformationPanelBar.OpenMarketPanel( Market.AccessSelf )]"
+		}
+		blockoverride  "onrightclick" {
+			onrightclick = "[RightClickMenuManager.ShowForMarket(Market.AccessSelf)]"
+		}
+		tiny_flag = {
+			datacontext = "[Market.GetOwner]"
+			blockoverride "tooltip" {}
+			parentanchor = left|vcenter
+			alpha = 1
+		}
+		widget = {
+			size = { 415 25 }
+			position = { 40 5 }
+			scissor = yes
+
+			flowcontainer = {
+				righttoleft = yes
+				spacing = 8
+				datamodel = "[Market.AccessGoodsSortedByBalance]"
+
+				item = {
+					button = {
+						size = { 75 23 }
+
+						flowcontainer = {
+							spacing = 0
+
+							icon = {
+								size = { 23 23 }
+								texture = "[Goods.GetTexture]"
+							}
+
+							textbox = {
+								autoresize = yes
+								minimumsize = {38 -1}
+								maximumsize = {38 -1}
+								align = right
+								raw_text = "#gold [Goods.GetMarketBuyAndSellOrdersBalance|0=*]"
+								margin_right = 2
+							}
+
+							textbox = {
+								autoresize = yes
+								scale = 0.9
+								align = vcenter
+								#raw_text = "[Goods.GetMarketPrice|0]"
+								text = "[Goods.GetCompareIconAgainstBasePrice( Goods.GetMarketPrice )]"
+							}
+						}
+
+						onclick = "[InformationPanelBar.OpenGoodsPanel( Market.Self, Goods.Self )]"
+						onrightclick = "[RightClickMenuManager.ShowForGoods( Goods.AccessSelf )]"
+
+						tooltipwidget = {
+							FancyTooltip_Goods = { }
+						}
+					}
+				}
+			}
+		}
+		widget = {
+			size = { 415 25 }
+			scissor = yes
+			position = { 40 30 }
+			flowcontainer = {
+				spacing = 8
+				datamodel = "[Market.AccessGoodsSortedByBalance]"
+				item = {
+					button = {
+						size = { 75 23 }
+
+						flowcontainer = {
+							spacing = 0
+
+							icon = {
+								size = { 23 23 }
+								texture = "[Goods.GetTexture]"
+							}
+
+							textbox = {
+								autoresize = yes
+								minimumsize = {38 -1}
+								maximumsize = {38 -1}
+								align = right
+								raw_text = "#blue [Goods.GetMarketBuyAndSellOrdersBalance|0=*]"
+								margin_right = 2
+							}
+							textbox = {
+								autoresize = yes
+								scale = 0.9
+								align = right
+								#raw_text = "[Goods.GetMarketPrice|0]"
+								text = "[Goods.GetCompareIconAgainstBasePrice( Goods.GetMarketPrice )]"
+							}
+						}
+
+						onclick = "[InformationPanelBar.OpenGoodsPanel( Market.Self, Goods.Self )]"
+						onrightclick = "[RightClickMenuManager.ShowForGoods( Goods.AccessSelf )]"
+
+						tooltipwidget = {
+							FancyTooltip_Goods = { }
+						}
+					}
+				}
+			}
+		}
+		widget = {
+			size = { 445 25 }
+			scissor = yes
+			position = { 40 55 }
+			divider_gold = {
+				#visible = "[Market.HasAnyGoodsShortage]"
+			}
+		}
+		widget = {
+			size = { 25 25 }
+			scissor = yes
+			position = { 10 65 }
+			icon = {
+				visible = "[Market.HasAnyGoodsShortage]"
+				texture = "gfx/interface/icons/generic_icons/goods_shortage.dds"
+				size = { 25 25 }
+				tooltip = "IMPORT_SUGGESTIONS_TITLE"
+			}
+		}
+		widget = {
+			size = { 415 40 }
+			scissor = yes
+			position = { 40 65 }
+
+			flowcontainer = {
+				spacing = 8
+				datamodel = "[Market.AccessGoodsSortedByBalance]"			
+				item = {
+					button = {
+						visible = "[Goods.HasGoodsShortage]"
+						size = { 75 23 }
+						flowcontainer = {
+							spacing = 0
+							icon = {
+								size = { 23 23 }
+								texture = "[Goods.GetTexture]"							
+							}
+							textbox = {
+								autoresize = yes
+								minimumsize = {38 -1}
+								maximumsize = {38 -1}
+								align = right
+								raw_text = "#red #bold [Goods.GetMarketBuyAndSellOrdersBalance|0=*]"
+								margin_right = 2
+							}
+							textbox = {
+								autoresize = yes
+								scale = 0.9
+								align = right
+								#raw_text = "[Goods.GetMarketPrice|0]"
+								text = "[Goods.GetCompareIconAgainstBasePrice( Goods.GetMarketPrice )]"
+							}
+						}
+
+						onclick = "[InformationPanelBar.OpenGoodsPanel( Market.Self, Goods.Self )]"
+						onrightclick = "[RightClickMenuManager.ShowForGoods( Goods.AccessSelf )]"
+
+						tooltipwidget = {
+							FancyTooltip_Goods = { }
+						}
+					}
+				}
+			}
+		}
+		widget = {
+			visible = "[Not(Market.HasAnyGoodsShortage)]"
+			size = { 415 40 }
+			scissor = yes
+			position = { 40 65 }
+			textbox = {
+				autoresize = yes
+				align = center
+				text = "NO_GOODS_SHORTAGE"
+			}								
+		}
+	}
+}

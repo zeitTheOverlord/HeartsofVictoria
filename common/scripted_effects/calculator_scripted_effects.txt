@@ -1,0 +1,127 @@
+﻿calculator_clear = {
+	set_global_variable = { name = calculator_result value = 0 }
+	set_global_variable = { name = calculator_stored value = 0 }
+	set_global_variable = { name = calculator_operator value = 0 }
+}
+
+calculator_add = {
+	change_global_variable = { name = calculator_stored add = global_var:calculator_result }
+	set_global_variable = { name = calculator_result value = 0 }
+	set_global_variable = { name = calculator_operator value = 1 }
+}
+
+calculator_subtract = {
+	if = {
+		limit = { global_var:calculator_stored = 0 }
+		change_global_variable = { name = calculator_stored add = global_var:calculator_result }
+	}
+	else = {
+		change_global_variable = { name = calculator_stored subtract = global_var:calculator_result }
+	}
+	set_global_variable = { name = calculator_result value = 0 }
+	set_global_variable = { name = calculator_operator value = 2 }
+}
+
+calculator_multiply = {
+	if = {
+		limit = { global_var:calculator_stored = 0 }
+		change_global_variable = { name = calculator_stored add = global_var:calculator_result }
+	}
+	else = {
+		change_global_variable = { name = calculator_stored multiply = global_var:calculator_result }
+	}
+	set_global_variable = { name = calculator_result value = 0 }
+	set_global_variable = { name = calculator_operator value = 3 }
+}
+
+calculator_divide = {
+	if = {
+		limit = { global_var:calculator_stored = 0 }
+		change_global_variable = { name = calculator_stored add = global_var:calculator_result }
+	}
+	else = {
+		change_global_variable = { name = calculator_stored divide = global_var:calculator_result }
+	}
+	set_global_variable = { name = calculator_result value = 0 }
+	set_global_variable = { name = calculator_operator value = 4 }
+}
+
+calculator_calculate = {
+	if = {
+		limit = { global_var:calculator_operator = 1 }
+		change_global_variable = { name = calculator_stored add = global_var:calculator_result }
+		set_global_variable = { name = calculator_result value = global_var:calculator_stored }
+		set_global_variable = { name = calculator_stored value = 0 }
+		set_global_variable = { name = calculator_operator value = 0 }
+	}
+	else_if = {
+		limit = { global_var:calculator_operator = 2 }
+		change_global_variable = { name = calculator_stored subtract = global_var:calculator_result }
+		set_global_variable = { name = calculator_result value = global_var:calculator_stored }
+		set_global_variable = { name = calculator_stored value = 0 }
+		set_global_variable = { name = calculator_operator value = 0 }
+	}
+	else_if = {
+		limit = { global_var:calculator_operator = 3 }
+		change_global_variable = { name = calculator_stored multiply = global_var:calculator_result }
+		set_global_variable = { name = calculator_result value = global_var:calculator_stored }
+		set_global_variable = { name = calculator_stored value = 0 }
+		set_global_variable = { name = calculator_operator value = 0 }
+	}
+	else_if = {
+		limit = { global_var:calculator_operator = 4 }
+		change_global_variable = { name = calculator_stored divide = global_var:calculator_result }
+		set_global_variable = { name = calculator_result value = global_var:calculator_stored }
+		set_global_variable = { name = calculator_stored value = 0 }
+		set_global_variable = { name = calculator_operator value = 0 }
+	}
+}
+
+calculator_number_0 = {
+	change_global_variable = { name = calculator_result multiply = 10 }
+}
+
+calculator_number_1 = {
+	change_global_variable = { name = calculator_result multiply = 10 }
+	change_global_variable = { name = calculator_result add = 1 }
+}
+
+calculator_number_2 = {
+	change_global_variable = { name = calculator_result multiply = 10 }
+	change_global_variable = { name = calculator_result add = 2 }
+}
+
+calculator_number_3 = {
+	change_global_variable = { name = calculator_result multiply = 10 }
+	change_global_variable = { name = calculator_result add = 3 }
+}
+
+calculator_number_4 = {
+	change_global_variable = { name = calculator_result multiply = 10 }
+	change_global_variable = { name = calculator_result add = 4 }
+}
+
+calculator_number_5 = {
+	change_global_variable = { name = calculator_result multiply = 10 }
+	change_global_variable = { name = calculator_result add = 5 }
+}
+
+calculator_number_6 = {
+	change_global_variable = { name = calculator_result multiply = 10 }
+	change_global_variable = { name = calculator_result add = 6 }
+}
+
+calculator_number_7 = {
+	change_global_variable = { name = calculator_result multiply = 10 }
+	change_global_variable = { name = calculator_result add = 7 }
+}
+
+calculator_number_8 = {
+	change_global_variable = { name = calculator_result multiply = 10 }
+	change_global_variable = { name = calculator_result add = 8 }
+}
+
+calculator_number_9 = {
+	change_global_variable = { name = calculator_result multiply = 10 }
+	change_global_variable = { name = calculator_result add = 9 }
+}

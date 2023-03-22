@@ -1,0 +1,96 @@
+types pinnable_outliner_items {
+
+	type goods_item = pinnable_outliner_entry {
+		datacontext = "[OutlinerEntry.AccessScope.AccessMarketGoods.GetGoods]"
+
+		blockoverride "entry_size" {
+			size = { 485 30 }
+		}
+
+		blockoverride "text" {
+			text = "[Goods.GetTextIcon] [Goods.GetNameNoFormatting]"
+		}
+		blockoverride "tooltip" {
+			tooltipwidget = {
+				FancyTooltip_Goods = {}
+			}
+		}
+
+		blockoverride "text_size" {
+			minimumsize = { 125 -1 }
+			maximumsize = { 125 -1 }
+		}
+
+		blockoverride "additional_info" {
+			flowcontainer = {
+				spacing = 5
+				
+				widget = {
+					size = { 25 25 }
+					icon = {
+						visible = "[Goods.HasGoodsShortage]"
+						texture = "gfx/interface/icons/generic_icons/goods_shortage.dds"
+						size = { 25 25 }
+					}
+				}
+				
+				textbox = {
+					autoresize = yes
+					minimumsize = { 120 -1 }
+					maximumsize = { 120 -1 }
+					raw_text = "@money![Goods.GetMarketPrice|0v] [Goods.GetCompareIconAgainstBasePriceNoFormatting( Goods.GetMarketPrice )]"
+					align = right|nobaseline
+				}
+
+				textbox = {
+					visible = "[GreaterThanOrEqualTo_CFixedPoint(Goods.GetPercentageDeltaAgainstBasePrice(Goods.GetMarketPrice), '(CFixedPoint)0.01')]"
+					text = "MARKET_PANEL_GOODS_PRICE_GOLD"
+					autoresize = yes
+					minimumsize = { 70 -1 }
+					maximumsize = { 70 -1 }
+					align = right|nobaseline
+				}
+
+				textbox = {
+					visible = "[And( Not(LessThanOrEqualTo_CFixedPoint(Goods.GetPercentageDeltaAgainstBasePrice(Goods.GetMarketPrice), '(CFixedPoint)-0.01')), Not(GreaterThanOrEqualTo_CFixedPoint(Goods.GetPercentageDeltaAgainstBasePrice(Goods.GetMarketPrice), '(CFixedPoint)0.01')))]"
+					text = "MARKET_PANEL_GOODS_PRICE"
+					autoresize = yes
+					minimumsize = { 70 -1 }
+					maximumsize = { 70 -1 }
+					align = right|nobaseline
+				}
+
+				textbox = {
+					visible = "[LessThanOrEqualTo_CFixedPoint(Goods.GetPercentageDeltaAgainstBasePrice(Goods.GetMarketPrice), '(CFixedPoint)-0.01')]"
+					text = "MARKET_PANEL_GOODS_PRICE_BLUE"
+					autoresize = yes
+					minimumsize = { 70 -1 }
+					maximumsize = { 70 -1 }
+					align = right|nobaseline
+				}
+				textbox = {
+					autoresize = yes
+					minimumsize = {70 -1}
+					maximumsize = {70 -1}
+					align = right|nobaseline
+					raw_text = "[Goods.GetMarketBuyAndSellOrdersBalance|0=]"
+					margin_left = 25
+				}
+			}
+		}
+
+		blockoverride  "onrightclick" {
+			onrightclick = "[RightClickMenuManager.ShowForGoods( Goods.AccessSelf )]"
+		}
+
+		blockoverride "onclick" {
+			onclick = "[InformationPanelBar.OpenGoodsPanel( Goods.GetMarket, Goods.Self  )]"
+		}
+
+		blockoverride "onhover" {
+			onmousehierarchyenter = "[AccessHighlightManager.HighlightMarket( Goods.GetMarket )]"
+			onmousehierarchyleave = "[AccessHighlightManager.RemoveHighlight]"
+		}
+	}
+}
+

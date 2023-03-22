@@ -1,0 +1,49 @@
+types pinnable_outliner_items {
+
+	type outliner_interest_groups = pinnable_outliner_group {
+		datacontext = "[Outliner.AccessCategory('interest_groups')]"
+		
+		blockoverride "entry_size" {
+			size = { 485 30 }
+		}
+
+		blockoverride "item" {
+			blockoverride "entry_size" {
+				size = { 485 30 }
+			}
+			container = {
+				block "visibility" {
+					visible = yes
+				}
+				
+				container = {
+					visible = "[Not(OutlinerEntry.IsCategory)]"
+					interest_group_item = {
+						position = { 0 0 }
+					}
+				}
+				pinnable_outliner_group = {
+
+					position = { 0 0 }
+
+					visible = "[And(OutlinerEntry.IsCategory, OutlinerEntry.IsShown)]"
+					blockoverride "entry_size" {
+						size = { 485 30 }
+					}
+					blockoverride "item" {
+						container = {
+							blockoverride "entry_size" {
+								size = { 485 30 }
+							}
+							
+							interest_group_item = {
+								position = { 0 0 }
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+}

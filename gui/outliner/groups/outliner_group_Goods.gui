@@ -1,0 +1,30 @@
+types pinnable_outliner_items {
+	type outliner_goods = pinnable_outliner_group {
+		datacontext = "[Outliner.AccessCategory('goods')]"
+
+		blockoverride "entry_size" {
+			size = { 485 30 }
+		}
+
+		blockoverride "item" {
+			# Market group
+			pinnable_outliner_group = {
+				blockoverride "entry_size" {
+					size = { 485 30 }
+				}
+				
+				blockoverride "item" {
+					# Goods group (staple / military etc)
+					pinnable_outliner_group = {
+						blockoverride "entry_size" {
+							size = { 485 30 }
+						}
+						blockoverride "item" {
+							goods_item = {}
+						}
+					}
+				}
+			}
+		}
+	}
+}

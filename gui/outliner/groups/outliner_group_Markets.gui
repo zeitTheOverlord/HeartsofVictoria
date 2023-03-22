@@ -1,0 +1,32 @@
+types pinnable_outliner_items {
+	type outliner_markets = pinnable_outliner_group {
+		parentanchor = right
+		datacontext = "[Outliner.AccessCategory('markets')]"
+
+		blockoverride "entry_size" {
+			size = { 485 30 }
+		}
+
+		blockoverride "item" {
+			container = {
+				block "visibility" {
+					visible = yes
+				}
+
+				container = {
+					visible = "[Not(OutlinerEntry.IsCategory)]"
+					market_item = {
+						blockoverride "entry_size" {
+							size = { 485 100 }
+						}
+
+						blockoverride "text_size" {
+							minimumsize = { 135 -1 }
+							maximumsize = { 135 -1 }
+						}
+					}
+				}
+			}
+		}
+	}
+}

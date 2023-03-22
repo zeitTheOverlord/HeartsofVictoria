@@ -1,0 +1,9 @@
+﻿l_simp_chinese:
+ UNLOCK_TOPBAR_MOD:0 "点击解锁#!"
+ TURMOIL_TOOLTIP:0 "#BOLD #V [concept_turmoil]#!#!\n现在有 [GetPlayer.CalcNumStatesInTurmoil|v]#! 个地区在 [concept_turmoil] 从 [concept_radical] [Concept('concept_pop', '$concept_pops$')]."
+ MORE_TOP_STATS_TT:0 "点击鼠标左键翻页.\n\n点击鼠标右键显示人口清单."
+ ARABLE_LAND_TT:0 "#title [concept_arable_land]#!\n现在一共有 #v [Country.GetArableLand]#! 块可开垦农场和 #v [Country.GetFreeArableLand]#! 块自耕农场."
+ LEGITIMACY_TT:0 "当前政府[concept_legitimacy]：#variable [GetPlayer.GetGovernmentLegitimacy]#!"
+ TOTAL_URBANIZATION_TT:0 "[concept_urbanization]：#v [Country.GetTotalUrbanization|1]#!"
+ CONVOYS_TOPBAR_TTT:0 "现在我们一共拥有#v [Country.GetNumUsableConvoys|1]#! 支船队. \n当前贸易规模需要#v [Country.GetRequiredConvoys|1]#! 支船队.\n\n[Country.GetNumConvoysDesc]"
+ TOPBAR_POP_TT:0 "[GetPlayer.GetName]有 #v [PopType.GetPopulation(GetPlayer)|v/d]#! #v [PopType.GetNameNoIcon]#!  拥有 [PopType.GetPolStrAsPercentage(GetPlayer)|v/%d] 的政治力量\n[PopType.GetInterestGroupSupportDesc( GetPlayer.Self )]\n\n#v [PopType.GetNameNoIcon]#! 提供 #v [PopType.GetWorkforceAsPercentage( GetPlayer.Self )|/%d]#! 的劳动力."

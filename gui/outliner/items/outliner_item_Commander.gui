@@ -1,0 +1,136 @@
+types pinnable_outliner_items {
+	type commander_item = pinnable_expandable_outliner_entry {
+		datacontext = "[OutlinerEntry.AccessScope.AccessCharacter]"
+
+		icon = {
+			visible = "[Character.IsBeingHighlighted]"
+			using = highlighted_square_selection
+		}
+
+		blockoverride "text" {
+			text = "[Character.GetCustom('GetUniversalFullNameNoFormatting')]"
+			autoresize = yes
+			minimumsize = { 180 -1 }
+			maximumsize = { 180 -1 }
+			margin_right = 2
+			fontsize_min = 6
+		}
+		blockoverride "tooltip" {
+			tooltipwidget = {
+				FancyTooltip_Character = {}
+			}
+		}
+		blockoverride "onclick" {
+			onclick = "[InformationPanelBar.OpenCommanderPanel(Character.AccessSelf)]"
+			#onclick = "[InformationPanelBar.OpenPanelCycleTabs('commander_panel', 'overview')]"
+			onrightclick = "[RightClickMenuManager.ShowForCharacter(Character.AccessSelf)]"
+		}
+
+		blockoverride "onhover" {
+			onmousehierarchyenter = "[AccessHighlightManager.HighlightCharacter( Character.Self )]"
+			onmousehierarchyleave = "[AccessHighlightManager.RemoveHighlight]"
+		}
+
+		blockoverride "icon" {
+			flowcontainer = {
+				character_portrait_mini = {}
+
+				icon = {
+					size = { 25 25 }
+					visible = "[Or(Character.IsAdmiral, Character.IsGeneral)]"
+					texture = "[Character.GetCommanderOrder.GetType.GetTexture]"
+					tooltip = "[Character.GetSwitchOrderButtonDesc( Character.GetCommanderOrder.GetType.Self )]"
+				}
+				widget = {
+					size = { 2 2 }
+				}
+				icon = {
+					size = { 25 25 }
+					texture = "[Character.GetCommanderRank.GetTexture]"
+					datacontext = "[Character.GetCommanderRank]"
+					using = tooltip_above
+					#tooltip = FancyTooltip_CommanderRank
+					parentanchor = vcenter
+				}
+				widget = {
+					size = { 2 2 }
+				}
+			}
+		}
+
+		blockoverride "additional_info" {
+			textbox = {
+				visible = "[Character.IsGeneral]"
+				tooltip = "MILITARY_PANEL_COMMAND_LIMIT_BREAKDOWN_TOOLTIP"
+				text = "BATTALIONS_VARIABLE_CHARACTER_GET_COMBATUNITS"
+				autoresize = yes
+				margin_right = 10
+				minimumsize = { 50 -1 }
+				maximumsize = { 50 -1 }
+				align = left|nobaseline
+				parentanchor = vcenter
+			}
+
+			textbox = {
+				visible = "[Character.IsAdmiral]"
+				tooltip = "MILITARY_PANEL_COMMAND_LIMIT_BREAKDOWN_TOOLTIP"
+				text = "FLOTILLAS_VARIABLE_CHARACTER_GET_COMBATUNITS"
+				autoresize = yes
+				margin_right = 10
+				minimumsize = { 50 -1 }
+				maximumsize = { 50 -1 }
+				align = left|nobaseline
+				parentanchor = vcenter
+			}
+			
+			textbox = {
+				autoresize = yes
+				minimumsize = { 130 -1 }
+				maximumsize = { 130 -1 }
+				text = "CHARACTER_GET_HOMEHQ.GETNOFLAG"
+				align = right|nobaseline
+				parentanchor = vcenter
+				elide = right
+			}
+		}
+	}
+
+	type outliner_commanders = pinnable_outliner_group {
+		datacontext = "[Outliner.AccessCategory('commanders')]"
+		
+		blockoverride "entry_size" {
+			size = { 485 30 }
+		}
+
+		blockoverride "item" {
+			pinnable_outliner_group = {
+				blockoverride "entry_size" {
+					size = { 485 30 }
+				}
+				blockoverride "item" {
+					pinnable_outliner_group = {
+						blockoverride "entry_size" {
+							size = { 485 30 }
+						}
+						blockoverride "title" {
+							commander_item = {
+								blockoverride "text_size" {
+									minimumsize = { 145 -1 }
+									maximumsize = { 145 -1 }
+								}
+							}
+						}
+						blockoverride "item" {
+							blockoverride "text_size" {
+								minimumsize = { 145 -1 }
+								maximumsize = { 145 -1 }
+							}
+
+							outliner_entry = { }
+						}
+					}
+				}
+			}
+		}
+	}
+}
