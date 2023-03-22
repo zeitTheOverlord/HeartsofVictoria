@@ -152,7 +152,7 @@ IFR = {
 	
 	is_major_formation = no
 	
-	required_states_fraction = 0.95
+	required_states_fraction = 1
 	
 	ai_will_do = { always = no }
 
