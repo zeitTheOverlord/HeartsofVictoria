@@ -90,7 +90,7 @@ plains = {
 			effect = "vfx_entity_ui_state_plains"
 		}
 	}
-	combat_width = 4.5
+	combat_width = 5
 	risk = 0.1
 	materials = {
 		Gravel_01 = 0.5
@@ -122,7 +122,7 @@ ocean = {
 			effect = "vfx_entity_ui_state_ocean"
 		}
 	}
-	combat_width = 4.5
+	combat_width = 5
 	materials = {
 		Beach_01 = 0.1
 		Beach_02 = 0.001
@@ -189,7 +189,7 @@ forest = {
 			effect = "vfx_entity_ui_state_forest"
 		}
 	}
-	combat_width = 2
+	combat_width = 2.5
 	risk = 0.5
 	materials = {
 		Woodlands_01 = 0.75
@@ -364,7 +364,7 @@ jungle = {
 			effect = "vfx_entity_ui_state_jungle"
 		}
 	}
-	combat_width = 1
+	combat_width = 1.5
 	risk = 0.6
 	materials = {
 		Woodlands_03 = 1
@@ -390,7 +390,7 @@ wetland = {
 			effect = "vfx_entity_ui_state_wetland"
 		}
 	}
-	combat_width = 1.5
+	combat_width = 2
 	risk = 0.3
 	materials = {
 		Marchlands_01 = 2
@@ -474,7 +474,7 @@ tundra = {
 			effect = "vfx_entity_ui_state_tundra"
 		}
 	}
-	combat_width = 2
+	combat_width = 2.5
 	risk = 0.15
 	materials = {
 		Permafrost_01 = 3
@@ -502,7 +502,7 @@ savanna = {
 		}
 	}
 	combat_width = 3
-	risk = 0.2
+	risk = 0.15
 	materials = {
 		Savanna_01 = 10
 		Savanna_03 = 10
@@ -528,7 +528,7 @@ snow = {
 			effect = "vfx_entity_ui_state_arctic"
 		}
 	}
-	combat_width = 2
+	combat_width = 2.5
 	risk = 0.2
 	materials = {
 		Snow_02 = 10
@@ -612,7 +612,7 @@ farmland_rye = {
 			effect = "vfx_entity_ui_state_farmland_generic"
 		}
 	}
-	combat_width = 4
+	combat_width = 3.5
 	risk = 0.1
 	created_material = DYNAMIC-Farmlands_01
 	debug_color = {
@@ -637,7 +637,7 @@ pasture = {
 			effect = "vfx_entity_ui_state_pasture"
 		}
 	}
-	combat_width = 4
+	combat_width = 3.5
 	risk = 0.1
 	created_material = DYNAMIC-Farmlands_01
 	debug_color = {
@@ -719,7 +719,7 @@ farmland_rice = {
 			effect = "vfx_entity_ui_state_farmland_generic"
 		}
 	}
-	combat_width = 4
+	combat_width = 3.5
 	risk = 0.1
 	created_material = DYNAMIC-Farmlands_02
 	debug_color = {
@@ -801,7 +801,7 @@ farmland_millet = {
 			effect = "vfx_entity_ui_state_farmland_generic"
 		}
 	}
-	combat_width = 4
+	combat_width = 3.5
 	risk = 0.1
 	created_material = DYNAMIC-Farmlands_03
 	debug_color = {
@@ -826,7 +826,7 @@ plantation = {
 			effect = "vfx_entity_ui_state_plantation"
 		}
 	}
-	combat_width = 4
+	combat_width = 3.5
 	risk = 0.1
 	created_material = DYNAMIC-Farmlands_01
 	debug_color = {
@@ -908,7 +908,7 @@ farmland_wheat = {
 			effect = "vfx_entity_ui_state_farmland_generic"
 		}
 	}
-	combat_width = 4
+	combat_width = 3.5
 	risk = 0.1
 	created_material = DYNAMIC-Farmlands_05
 	debug_color = {
@@ -990,7 +990,7 @@ farmland_maize = {
 			effect = "vfx_entity_ui_state_farmland_generic"
 		}
 	}
-	combat_width = 4
+	combat_width = 3.5
 	risk = 0.1
 	created_material = DYNAMIC-Farmlands_06
 	debug_color = {
@@ -1076,7 +1076,7 @@ mining = {
 			effect = "vfx_entity_ui_state_mining"
 		}
 	}
-	combat_width = 1.5
+	combat_width = 2
 	risk = 0.5
 	created_material = DYNAMIC-Mining_01
 	debug_color = {
@@ -1309,7 +1309,7 @@ docks = {
 			effect = "vfx_entity_ui_state_plains_arid"
 		}
 	}
-	combat_width = 2.6
+	combat_width = 3
 	risk = 0.5
 	debug_color = {
 		0.7

@@ -2,16 +2,143 @@
 # root = commander
 # is_advancing_side = whether this side is the one advancing or not (defending = no)
 front_commander_pick_weight = {
-    value = root.num_units
+	value = root.num_units
 
-    if = {
-        limit = {
+	if = {
+		limit = {
+			has_commander_order = defend
+			commander_pm_usage = {
+				target = root.owner
+				production_method = pm_trench_infantry
+				value >= 0.5
+			}
+		}
+		add = 25
+	}
+
+	if = {
+		limit = {
+			has_trait = stalwart_defender 
+			has_commander_order = defend
+		}
+		add = 5
+	}
+
+	else_if = {
+		limit = {
+			has_trait = trench_rat
+			has_commander_order = defend
+		}
+		add = 10
+	}
+
+	else_if = {
+		limit = {
+			has_trait = defense_in_depth_specialist
+			has_commander_order = defend
+		}
+		add = 15
+	}
+
+	if = {
+		limit = {
+			has_trait = basic_defensive_strategist
+			has_commander_order = defend
+		}
+		multiply = 5
+	}
+
+	else_if = {
+		limit = {
+			has_trait = experienced_defensive_strategist
+			has_commander_order = defend
+		}
+		multiply = 10
+	}
+
+	else_if = {
+		limit = {
+			has_trait = expert_defensive_strategist
+			has_commander_order = defend
+		}
+		multiply = 15
+	}
+
+	if = {
+		limit = {
+			scope:is_advancing_side = yes
+			commander_pm_usage = {
+				target = root.owner
+				production_method = pm_skirmish_infantry
+				value >= 0.5
+			}
+		}
+		add = 15
+	}
+
+	else_if = {
+		limit = {
+			scope:is_advancing_side = yes
+			commander_pm_usage = {
+				target = root.owner
+				production_method = pm_squad_infantry
+				value >= 0.5
+			}
+		}
+		add = 20
+	}
+
+	else_if = {
+		limit = {
+			scope:is_advancing_side = yes
+			commander_pm_usage = {
+				target = root.owner
+				production_method = pm_mechanized_infantry
+				value >= 0.5
+			}
+		}
+		add = 25
+	}
+
+	if = {
+		limit = {
+			scope:is_advancing_side = yes
+			has_trait = basic_offensive_planner
+		}
+		multiply = 2
+	}
+
+	else_if = {
+		limit = {
+			scope:is_advancing_side = yes
+			has_trait = experienced_offensive_planner
+		}
+		multiply = 3
+	}
+
+	else_if = {
+		limit = {
+			scope:is_advancing_side = yes
+			has_trait = expert_offensive_planner
+		}
+		multiply = 4
+	}
+
+	if = {
+		limit = {
 			scope:is_advancing_side = no
 			has_commander_order = defend
-        }
-        
-        multiply = 4
-    }
+		}
+		multiply = 4
+	}
+
+	# Commanders shouldn't be picked for multiple battles
+	if = {
+		limit = {
+			is_in_battle = yes
+		}
+		multiply = 0
+	}
 }
 
 # the troop distribution weight of a Front for a country/commander
@@ -19,19 +146,17 @@ front_commander_pick_weight = {
 # front = the front to calculate troop weight for
 # character = the country commander (if any; could be garrison)
 front_country_troop_weight = {
-    value = "scope:front.num_enemy_units(root)"
-
-    if = {
-        limit = {
-            exists = scope:character
-            scope:character = {
-                is_advancing_on_front = scope:front
-            }
-        }
-
-        min = 5
-        multiply = 4
-    }
+	value = "scope:front.num_enemy_units(root)"
+	if = {
+		limit = {
+			exists = scope:character
+			scope:character = {
+				is_advancing_on_front = scope:front
+			}
+		}
+		min = 5
+		multiply = 4
+	}
 }
 
 # root = province
@@ -39,51 +164,21 @@ front_country_troop_weight = {
 # own_commander = the commander leading this side in battle (if any; could be garrison)
 # enemy_commander = the commander leading this side in battle (if any; could be garrison)
 front_battle_province_weight = {
-    value = 10
-	
-	add = {
-		value = state.infrastructure
-		divide = 2
-		multiply = combat_width
-	}
-	
-	# Increase weights for provinces in capital states
+    value = 100000
+
 	if = {
 		limit = {
-			state = { is_capital = yes }
+			exists = scope:distance_to_strategic_objective
 		}
-		multiply = 10
-	}	
+		divide = scope:distance_to_strategic_objective
+	}
 	
-	# Increase weight for provinces in states that contain wargoals, or are adjacent to states that contain wargoals
-	if = {
-		limit = {
-			exists = scope:own_commander
-			state = { is_target_of_wargoal = scope:own_commander.owner }
-		}
-		multiply = 10
-	}
 	else_if = {
 		limit = {
-			exists = scope:own_commander
-			state = { any_neighbouring_state = { is_target_of_wargoal = scope:own_commander.owner } }
+			exists = scope:distance_to_closest_war_goal
 		}
-		multiply = 6
+		divide = scope:distance_to_closest_war_goal
 	}
-	else_if = {
-		limit = {
-			exists = scope:own_commander
-			state = { 
-				any_neighbouring_state = { 					
-					any_neighbouring_state = { 
-						is_target_of_wargoal = scope:own_commander.owner 
-					}
-				} 
-				
-			}
-		}
-		multiply = 3
-	}	
 }
 
 # the battalion size for each side in a land battle
@@ -96,206 +191,209 @@ front_battle_province_weight = {
 # is_naval_invasion = if the battle is a naval landing battle
 # province = the province where the battle is happening
 land_battle_size = {
-    # Start with a baseline number of battalions equal to the amount of allied troops on the front
-    if = {
-        limit = {
-            exists = scope:front
-        }
-
-        value = "scope:front.num_total_battalions(root)"
-    }
-	else_if = {
-        limit = {
-            exists = scope:own_commander
-			scope:is_advancing_side = yes
-        }
-
-        value = "scope:own_commander.num_mobilized_battalions"	
+	# Start with a baseline number of battalions equal to the amount of allied troops on the front
+	if = {
+		limit = {
+			exists = scope:front
+		}
+		value = "scope:front.num_total_battalions(root)"
 	}
-	else_if = { # For naval invasions
-        limit = {
-            exists = scope:province.land_hq
+	else_if = {
+		limit = {
+			exists = scope:own_commander
+			scope:is_advancing_side = yes
+		}
+		value = "scope:own_commander.num_mobilized_battalions"
+	}
+	else_if = {
+		# For naval invasions
+		limit = {
+			exists = scope:province.land_hq
 			scope:is_advancing_side = no
-        }
-
-        value = "scope:province.land_hq.num_garrison_units"	
-	}		
-	else_if = { # Fallback
-        limit = {
-            exists = scope:own_commander
-        }
-
-        value = "scope:own_commander.num_battalions"	
-	}	
-	
+		}
+		value = "scope:province.land_hq.num_garrison_units"
+	}
+	else_if = {
+		# Fallback
+		limit = {
+			exists = scope:own_commander
+		}
+		value = "scope:own_commander.num_battalions"
+	}
 	# Cap to infrastructure-based combat width
 	if = {
-        limit = {
-            exists = scope:province
-        }
-
+		limit = {
+			exists = scope:province
+		}
 		max = {
 			value = 5
 			add = {
 				value = scope:province.state.infrastructure
-				divide = 2
+				divide = 2.8
 			}
 			multiply = scope:province.combat_width
 		}
-		desc = "BATTLE_SIZE_COMBAT_WIDTH"	
+		desc = "BATTLE_SIZE_COMBAT_WIDTH"
 	}
-
-    # REMOVED: If we are defending and the enemy baseline force has higher combat stats where it matters, increase your force
+	#QQQQ If we are defending and the enemy baseline force has higher combat stats where it matters, increase your force
 	if = {
-        limit = {
-            exists = scope:own_commander
-            exists = scope:front
-            scope:is_advancing_side = no
-            "scope:front.average_offense(scope:enemy_country)" > "scope:front.average_defense(root)"
-        }
-        multiply = {
-            fixed_range = {
-                min = 1
-                max = {
-                    add = "scope:front.average_offense(scope:enemy_country)"
-                    divide = "scope:front.average_defense(root)"
+		limit = {
+			exists = scope:own_commander
+			exists = scope:front
+			scope:is_advancing_side = no
+			"scope:front.average_offense(scope:enemy_country)" > "scope:front.average_defense(root)"
+		}
+		multiply = {
+			fixed_range = {
+				min = 1
+				max = {
+					add = "scope:front.average_offense(scope:enemy_country)"
+					divide = "scope:front.average_defense(root)"
 					multiply = 0.3
 					add = 1
-					max = 1
-                }
-            }
-        }
+					max = 1.05
+				}
+			}
+		}
 		desc = "BATTLE_SIZE_ENEMY_SKILL_ADVANTAGE"
-    }
-
-    #  If we are advancing and the enemy baseline force has lower combat stats where it matters, increase your force (less than when defending)
+	}
+	#  If we are advancing and the enemy baseline force has lower combat stats where it matters, increase your force (less than when defending)
 	if = {
-        limit = {
-            exists = scope:own_commander
-            exists = scope:front
-            scope:is_advancing_side = yes
-            "scope:front.average_offense(root)" > "scope:front.average_defense(scope:enemy_country)"
-        }
-        multiply = {
-                    add = "scope:front.average_offense(root)"
-                    divide = "scope:front.average_defense(scope:enemy_country)"
-					add = 0
-					max = 2
-        }
-		desc = "BATTLE_SIZE_ENEMY_SKILL_ADVANTAGE"
-    }
-
-    # Add additional force if we outnumber the enemy
-    if = {
-        limit = {
-            exists = scope:front
-            "scope:front.num_total_battalions(root)" > "scope:front.num_total_battalions(scope:enemy_country)"
-        }
-        multiply = {
-            add = "scope:front.num_total_battalions(root)"
-            divide = "scope:front.num_total_battalions(scope:enemy_country)"
-            add = -1
-            multiply = 0.25
-            add = 1
-            max = 2
-        }
-    }
-
-    # Cap to *actually available* troops; either the total number, or if own_commander is advancing, exclude defending commanders' troops
-    if = {
-        limit = {
-            exists = scope:own_commander
-            exists = scope:front
-            scope:is_advancing_side = yes
-        }
-        max = {
-            add = "scope:front.num_total_battalions(root)"
-            subtract = "scope:front.num_defending_battalions(root)"
-        }
-		desc = "BATTLE_SIZE_MAX_AMOUNT_REACHED"
-    }
-	else_if = {
-        limit = {
-            exists = scope:front
-        }
-
-        max = "scope:front.num_total_battalions(root)"
-	}
-	else_if = {
-        limit = {
-           exists = scope:own_commander
-		    scope:is_advancing_side = yes
-        }
-
-        max = "scope:own_commander.num_mobilized_battalions"
-	}
-	else_if = { # For naval invasions
-        limit = {
-            exists = scope:province.land_hq
-			scope:is_advancing_side = no
-        }
-
-        max = "scope:province.land_hq.num_garrison_units"	
-	}		
-	else_if = { # Fallback
-        limit = {
-           exists = scope:own_commander
-        }
-
-        max = "scope:own_commander.num_battalions"
-	}		
-	
-    # Reduce final troops by up to one-third for attacker (random)
-    if = {
-        limit = {
-            exists = scope:own_commander
+		limit = {
+			exists = scope:own_commander
+			exists = scope:front
 			scope:is_advancing_side = yes
-        }
-        multiply = {
-            fixed_range = {
-                min = 0.9
-                max = 0.9
-            }
-        }
-		desc = "BATTLE_SIZE_LUCK"
-    }		
-	
-    # Reduce final troops by up to half for defender (random)
-    if = {
-        limit = {
-            exists = scope:own_commander
-			scope:is_advancing_side = no
-        }
+			"scope:front.average_offense(root)" > "scope:front.average_defense(scope:enemy_country)"
+		}
 		multiply = {
-            fixed_range = {
-                min = 1
-                max = 1
-            }
-        }
+			add = "scope:front.average_offense(root)"
+			divide = "scope:front.average_defense(scope:enemy_country)"
+			add = 0
+			max = 2
+		}
+		desc = "BATTLE_SIZE_ENEMY_SKILL_ADVANTAGE"
+	}
+	# Add additional force if we outnumber the enemy
+	if = {
+		limit = {
+			exists = scope:front
+			"scope:front.num_total_battalions(root)" < "scope:front.num_total_battalions(scope:enemy_country)"
+		}
+		multiply = {
+			add = "scope:front.num_total_battalions(root)"
+			divide = "scope:front.num_total_battalions(scope:enemy_country)"
+			add = -1
+			multiply = 0.25
+			add = 1
+			max = 1.25
+		}
+	}
+	# Cap to *actually available* troops; either the total number, or if own_commander is advancing, exclude defending commanders' troops
+	if = {
+		limit = {
+			exists = scope:own_commander
+			exists = scope:front
+			scope:is_advancing_side = yes
+		}
+		max = {
+			add = "scope:front.num_total_battalions(root)"
+			subtract = "scope:front.num_defending_battalions(root)"
+		}
+		desc = "BATTLE_SIZE_MAX_AMOUNT_REACHED"
+	}
+	else_if = {
+		limit = {
+			exists = scope:front
+		}
+		max = "scope:front.num_total_battalions(root)"
+	}
+	else_if = {
+		limit = {
+			exists = scope:own_commander
+			scope:is_advancing_side = yes
+		}
+		max = "scope:own_commander.num_mobilized_battalions"
+	}
+	else_if = {
+		# For naval invasions
+		limit = {
+			exists = scope:province.land_hq
+			scope:is_advancing_side = no
+		}
+		max = "scope:province.land_hq.num_garrison_units"
+	}
+	else_if = {
+		# Fallback
+		limit = {
+			exists = scope:own_commander
+		}
+		max = "scope:own_commander.num_battalions"
+	}
+	# Reduce final troops by up to one-third for attacker (random)
+	if = {
+		limit = {
+			exists = scope:own_commander
+			scope:is_advancing_side = yes
+		}
+		max = 100
 		desc = "BATTLE_SIZE_LUCK"
-    }
-	
+	}
+	# Reduce final troops by up to half for defender (random)
+	if = {
+		limit = {
+			exists = scope:own_commander
+			scope:is_advancing_side = no
+		}
+		max = 100
+		desc = "BATTLE_SIZE_LUCK"
+	}
 	# If own_commander is advancing, ensure at least 1 Battalion is doing so
-    if = {
-        limit = {
-            exists = scope:own_commander
-            scope:is_advancing_side = yes
-        }
-        min = 1
+	if = {
+		limit = {
+			exists = scope:own_commander
+			scope:is_advancing_side = yes
+		}
+		min = 1
 		desc = "BATTLE_SIZE_MIN_AMOUNT_REACHED"
-    }
+	}
 }
-
 
 # root = country
 # own_commander = the commander leading this side in battle (if any; could be garrison)
 # province = land province this battle takes place in
 land_battle_unit_selection_weight = {
-     value = {
-		integer_range = {
-			min = 1
-			max = 100
+	value = manpower
+	multiply = morale
+	
+	# Generals have a stronger tendency to bring their own Battalions than borrowed ones
+	if = {
+		limit = {
+			exists = scope:own_commander
+			exists = commander
+			commander = scope:own_commander
 		}
+		multiply = 2
+	}
+
+	if = {
+		limit = {
+			exists = scope:own_commander
+		}
+		multiply = mobilization
+	}
+
+	if = {
+		limit = {
+			scope:is_advancing_side = yes
+		}
+		multiply = offense
+	}
+
+	else_if = {
+		limit = {
+			scope:is_advancing_side = no
+		}
+		multiply = defense
 	}
 }
 
@@ -305,23 +403,27 @@ land_battle_unit_selection_weight = {
 # own_commander = the commander leading this side in battle (if any; could be garrison)
 # enemy_commander = the commander leading this side in battle (if any; could be garrison)
 naval_battle_size = {
-     if = {
-        limit = {
-            exists = scope:own_commander
-        }
-        value = scope:own_commander.num_units
-    }
+	if = {
+		limit = {
+			exists = scope:own_commander
+		}
+		value = scope:own_commander.num_units
+	}
 }
 
 # root = country
 # own_commander = the commander leading this side in battle
 # province = naval province this battle takes place in
 naval_battle_unit_selection_weight = {
-     value = 1
+	value = 1
 }
 
 # the weight for how likely a unit is to take casualties over others
 # root = combat unit
 battle_unit_casualty_weight = {
-    value = 1
+	value = 1
+	divide = {
+		value = morale
+		min = 0.01
+	}
 }
