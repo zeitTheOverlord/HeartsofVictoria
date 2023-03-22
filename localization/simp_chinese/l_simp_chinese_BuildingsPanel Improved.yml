@@ -1,2 +1,0 @@
-﻿l_simp_chinese:
- TAX_SUB:0 "#BOLD #V #!税金：#N @money!#bold #green +[Building.GetTaxationRevenue|D]#!\n\n补贴：#N @money!#bold -[Building.GetSubsidies|D]#!"

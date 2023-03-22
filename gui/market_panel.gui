@@ -504,15 +504,15 @@ types market_panel
 		flowcontainer = {
 			direction = vertical
 			using = default_list_position
-			margin_bottom = 5
+			margin_bottom = 20
 
 			flowcontainer = {
 				using = default_list_position
-				margin = { 0 5 }
-				margin_top = 10
+				margin = { 0 0 }
+				margin_top = 0
 				
 				sort_button = {
-					size = { 50 20 }
+					size = { 105 20 }
 					tooltip = "SORT_BY_MARKET_GOODS"
 					onclick = "[Market.Sort('name')]"
 					onclick = "[Market.RestoreSort]"
@@ -528,7 +528,7 @@ types market_panel
 					name = "tutorial_highlight_market_details_panel_sell_orders"
 					align = hcenter|nobaseline
 					text = "[concept_sell_orders]"
-					size = { 78 20 }
+					size = { 95 20 }
 					onclick = "[Market.Sort('sell')]"
 					onclick = "[Market.RestoreSort]"
 				}
@@ -537,7 +537,7 @@ types market_panel
 					name = "tutorial_highlight_market_details_panel_buy_orders"
 					align = hcenter|nobaseline
 					text = "[concept_buy_orders]"
-					size = { 78 20 }
+					size = { 95 20 }
 					onclick = "[Market.Sort('buy')]"
 					onclick = "[Market.RestoreSort]"
 					margin_right = 7
@@ -546,7 +546,7 @@ types market_panel
 				sort_button = {
 					align = hcenter|nobaseline
 					text = "BALANCE"
-					size = { 82 20 }
+					size = { 80 20 }
 					onclick = "[Market.Sort('balance')]"
 					onclick = "[Market.RestoreSort]"
 					margin_right = 7
@@ -556,7 +556,7 @@ types market_panel
 				sort_button = {
 					align = hcenter|nobaseline
 					text = "[concept_market_price]"
-					size = { 250 20 }
+					size = { 165 20 }
 					onclick = "[Market.Sort('price')]"
 					onclick = "[Market.RestoreSort]"
 				}
@@ -571,7 +571,7 @@ types market_panel
 					name = "tutorial_highlight_market_details_panel_all_goods"
 					direction = vertical
 					datamodel = "[Market.AccessAllGoods( MarketPanel.GetFilters )]"
-					spacing = 2
+					spacing = 0
 					
 					item = {
 						goods_entry_button = {}
@@ -798,11 +798,7 @@ types market_panel
 	}
 	
 	type goods_entry_button = button {
-		### ----
-		#size = { @panel_width 50 }
-		### ++++
-		size = { @panel_width 42 }
-		### ====
+		size = { @panel_width 35 }
 		using = default_button
 		onclick = "[InformationPanelBar.OpenGoodsPanel(Goods.GetMarket, Goods.Self)]"
 		using = select_button_sound
@@ -821,13 +817,8 @@ types market_panel
 				align = right|nobaseline
 				visible = "[GreaterThan_CFixedPoint(Goods.GetMarketSellOrders, '(CFixedPoint)0')]"
 				text = "[Goods.GetMarketSellOrdersWithTooltip]"
-				### ----
-				#size = { 105 40 }
-				#margin_right = 10
-				### ++++
-				size = { 75 40 }
-				margin_right = 7
-				### ====
+				size = { 95 25 }
+				margin_right = 10
 				parentanchor = vcenter
 			}
 
@@ -836,13 +827,8 @@ types market_panel
 				visible = "[Not(GreaterThan_CFixedPoint(Goods.GetMarketSellOrders, '(CFixedPoint)0'))]"
 				raw_text = "-"
 				alpha = 0.5
-				### ----
-				#size = { 105 40 }
-				#margin_right = 10
-				### ++++
-				size = { 75 40 }
-				margin_right = 7
-				### ====
+				size = { 95 25 }
+				margin_right = 10
 				parentanchor = vcenter
 			}
 
@@ -852,13 +838,8 @@ types market_panel
 				align = right|nobaseline
 				visible = "[GreaterThan_CFixedPoint(Goods.GetMarketBuyOrders, '(CFixedPoint)0')]"
 				text = "[Goods.GetMarketBuyOrdersWithTooltip]"
-				### ----
-				#size = { 100 40 }
-				#margin_right = 10
-				### ++++
-				size = { 75 40 }
-				margin_right = 7
-				### ====
+				size = { 95 25 }
+				margin_right = 10
 				parentanchor = vcenter
 			}
 
@@ -867,13 +848,8 @@ types market_panel
 				visible = "[Not(GreaterThan_CFixedPoint(Goods.GetMarketBuyOrders, '(CFixedPoint)0'))]"
 				raw_text = "-"
 				alpha = 0.5
-				### ----
-				#size = { 100 40 }
-				#margin_right = 10
-				### ++++
-				size = { 75 40 }
-				margin_right = 7
-				### ====
+				size = { 95 25 }
+				margin_right = 10
 				parentanchor = vcenter
 			}
 
@@ -881,15 +857,7 @@ types market_panel
 			
 			flowcontainer = {
 				direction = vertical
-				### ----
-				#minimumsize = { 90 52 }
-				#margin_top = 10
-				#spacing = 5
-				### ++++
-				minimumsize = { 82 44 }
-				margin_top = 10
-				spacing = 2
-				### ====
+				minimumsize = { 80 25 }
 				tooltip = "MARKET_GOODS_BALANCE_TOOLTIP"
 
 				textbox = {
@@ -897,11 +865,7 @@ types market_panel
 					align = right|nobaseline
 					text = "MARKET_PANEL_BALANCE_GOLD"
 					autoresize = yes
-					### ----
-					#margin_right = 15
-					### ++++
-					margin_right = 8
-					### ====
+					margin_right = 10
 					parentanchor = right
 				}
 
@@ -910,7 +874,8 @@ types market_panel
 					align = hcenter|nobaseline
 					text = "MARKET_PANEL_BALANCE"
 					autoresize = yes
-					parentanchor = hcenter
+					margin_right = 10
+					parentanchor = right
 				}
 
 				textbox = {
@@ -918,16 +883,12 @@ types market_panel
 					align = left|nobaseline
 					text = "MARKET_PANEL_BALANCE_BLUE"
 					autoresize = yes
-					### ----
-					#margin_left = 15
-					### ++++
-					margin_left = 6
-					### ====
-					parentanchor = left
+					margin_right = 10
+					parentanchor = right
 				}
 
 				double_direction_progressbar_gold = {
-					size = { 60 6 }
+					size = { 60 5 }
 					parentanchor = hcenter
 
 					blockoverride "negative_min_max_values" {
@@ -953,37 +914,25 @@ types market_panel
 			
 			widget = {
 				using = market_price_tooltip_with_graph
-				### ----
-				#size = { 190 55 }
-				### ++++
-				size = { 153 44 }
-				### ====
+				size = { 165 25 }
 				
-				textbox = {
-					align = right|nobaseline
-					raw_text = "@money![Goods.GetMarketPrice|0v] [Goods.GetCompareIconAgainstBasePriceNoFormatting( Goods.GetMarketPrice )]"
-					### ----
-					#size = { 110 40 }
-					#margin_right = 10
-					### ++++
-					size = { 153 40 }
-					margin_top = 10
-					margin_right = 78
-					### ====
-					parentanchor = vcenter
+				flowcontainer = {
+					direction = vertical
+					minimumsize = { 80 25 }
+					margin_top = 4
+					parentanchor = left
+					textbox = {
+						align = left|nobaseline
+						raw_text = "[Goods.GetCompareIconAgainstBasePriceNoFormatting( Goods.GetMarketPrice )] @money![Goods.GetMarketPrice|0v]"
+						size = { 90 25 }
+						margin_left = 10
+						parentanchor = vcenter
+					}
 				}
 
 				flowcontainer = {
 					direction = vertical
-					### ----
-					#minimumsize = { 80 52 }
-					#spacing = 5
-					#margin_top = 10
-					### ++++
-					minimumsize = { 76 44 }
-					spacing = 2
-					margin_top = 10
-					### ====
+					minimumsize = { 80 25 }
 					parentanchor = right
 
 					textbox = {
@@ -991,11 +940,7 @@ types market_panel
 						align = right|nobaseline
 						text = "MARKET_PANEL_GOODS_PRICE_GOLD"
 						autoresize = yes
-						### ----
-						#margin_right = 10
-						### ++++
-						margin_right = 8
-						### ====
+						margin_right = 10
 						parentanchor = right
 					}
 
@@ -1004,7 +949,8 @@ types market_panel
 						align = hcenter|nobaseline
 						text = "MARKET_PANEL_GOODS_PRICE"
 						autoresize = yes
-						parentanchor = hcenter
+						margin_right = 10
+						parentanchor = right
 					}
 
 					textbox = {
@@ -1012,16 +958,12 @@ types market_panel
 						align = left|nobaseline
 						text = "MARKET_PANEL_GOODS_PRICE_BLUE"
 						autoresize = yes
-						### ----
-						#margin_left = 10
-						### ++++
-						margin_left = 8
-						### ====
-						parentanchor = left
+						margin_right = 10
+						parentanchor = right
 					}
 
 					double_direction_progressbar_gold = {
-						size = { 60 6 }
+						size = { 60 5 }
 						parentanchor = hcenter
 
 						blockoverride "negative_min_max_values" {
@@ -1043,82 +985,6 @@ types market_panel
 					}
 				}
 			}
-			### ++++
-			vertical_divider = {}
-			widget = {
-				size = { 113 42 }
-				parentanchor = vcenter
-				flowcontainer = {
-					margin_left = 2
-					visible = "[Goods.IsTradeable]"
-					parentanchor = vcenter
-					### from gui/budget_panel.gui
-					### prio import
-					set_level_bar_item = {
-						### ++++
-						size = { 32 32 }
-						### ====
-						tooltip = "[SelectLocalization(Goods.GetMarket.GetOwner.IsPlayer, GetPlayer.GetGoodsTariffDescImportPriority(Goods.Self), 'NOT_PLAYER_MARKET_PRIORITY')]"
-						
-						blockoverride "button_texture" {
-							texture = "gfx/interface/icons/trade_icons/import_focused.dds"
-						}
-						blockoverride "click" {
-							enabled = "[And(IsValid( GetPlayer.SetGoodsTariffImportPriority(Goods.Self) ), Goods.GetMarket.GetOwner.IsPlayer)]"
-							onclick = "[Execute( GetPlayer.SetGoodsTariffImportPriority(Goods.Self) )]"
-						}
-						blockoverride "setvisible" {
-							visible = "[Not(IsValid( GetPlayer.SetGoodsTariffImportPriority(Goods.Self) ))]"
-						}
-						blockoverride "setvisible_2" {
-							visible = "[IsValid( GetPlayer.SetGoodsTariffImportPriority(Goods.Self) )]"
-						}
-					}
-					### no prio
-					set_level_bar_item = {
-						### ++++
-						size = { 32 32 }
-						### ====
-						tooltip = "[SelectLocalization(Goods.GetMarket.GetOwner.IsPlayer, GetPlayer.GetGoodsTariffDescNoPriority(Goods.Self), 'NOT_PLAYER_MARKET_PRIORITY')]"
-						
-						blockoverride "button_texture" {
-							texture = "gfx/interface/icons/trade_icons/unfocused.dds"
-						}
-						blockoverride "click" {
-							enabled = "[And(IsValid( GetPlayer.SetGoodsTariffNoPriority(Goods.Self) ), Goods.GetMarket.GetOwner.IsPlayer)]"
-							onclick = "[Execute( GetPlayer.SetGoodsTariffNoPriority(Goods.Self) )]"
-						}
-						blockoverride "setvisible" {
-							visible = "[Not(IsValid( GetPlayer.SetGoodsTariffNoPriority(Goods.Self) ))]"
-						}
-						blockoverride "setvisible_2" {
-							visible = "[IsValid( GetPlayer.SetGoodsTariffNoPriority(Goods.Self) )]"
-						}
-					}
-					### prio export
-					set_level_bar_item = {
-						### ++++
-						size = { 32 32 }
-						### ====
-						tooltip = "[SelectLocalization(Goods.GetMarket.GetOwner.IsPlayer, GetPlayer.GetGoodsTariffDescExportPriority(Goods.Self), 'NOT_PLAYER_MARKET_PRIORITY')]"
-						
-						blockoverride "button_texture" {
-							texture = "gfx/interface/icons/trade_icons/export_focused.dds"
-						}
-						blockoverride "click" {
-							enabled = "[And(IsValid( GetPlayer.SetGoodsTariffExportPriority(Goods.Self) ), Goods.GetMarket.GetOwner.IsPlayer)]"
-							onclick = "[Execute( GetPlayer.SetGoodsTariffExportPriority(Goods.Self) )]"
-						}
-						blockoverride "setvisible" {
-							visible = "[Not(IsValid( GetPlayer.SetGoodsTariffExportPriority(Goods.Self) ))]"
-						}
-						blockoverride "setvisible_2" {
-							visible = "[IsValid( GetPlayer.SetGoodsTariffExportPriority(Goods.Self) )]"
-						}
-					}
-				}
-			}
-			### ====
 		}
 	}
 
@@ -1169,6 +1035,55 @@ types market_panel
 
 template goods_list_item {
 	widget = {
+		size = { 105 35 }
+		block "goods_list_item_datacontext" {}
+		parentanchor = vcenter
+
+		tooltipwidget = {
+			FancyTooltip_Goods = {}
+		}
+		
+		icon = {
+			texture = "gfx/interface/market_view/trade_good_list_bg.dds"
+			position = { 15 0 }
+			size = { 190 31 }
+			parentanchor = vcenter
+			color = "[Goods.GetCategoryColor]"
+		}
+
+		icon = {
+			texture = "gfx/interface/market_view/trade_good_icon_bg.dds"
+			size = { 35 35 }
+			color = "[Goods.GetCategoryColor]"
+			
+			icon = {
+				texture = "[Goods.GetTexture]"
+				size = { 38 38 }
+				parentanchor = center
+			}
+			icon = {
+				size = { 25 25 }
+				visible = "[Goods.HasGoodsShortage]"
+				texture = "gfx/interface/icons/generic_icons/goods_shortage.dds"
+				tooltip = "GOODS_SHORTAGE_TOOLTIP"
+				parentanchor = bottom
+			}
+			textbox = {
+				position = { 45 0 }
+				align = left|nobaseline
+				text = "[Goods.GetName]"
+				autoresize = yes
+				fontsize_min = 14
+				maximumsize = { 60 -1 }
+				elide = right
+				parentanchor = vcenter
+			}
+		}
+	}
+}
+
+template goods_list_item_trade {
+	widget = {
 		size = { 55 55 }
 		block "goods_list_item_datacontext" {}
 		parentanchor = vcenter
@@ -1192,7 +1107,7 @@ template goods_list_item {
 			
 			icon = {
 				texture = "[Goods.GetTexture]"
-				size = { 35 35 }
+				size = { 40 40 }
 				parentanchor = center
 			}
 			icon = {

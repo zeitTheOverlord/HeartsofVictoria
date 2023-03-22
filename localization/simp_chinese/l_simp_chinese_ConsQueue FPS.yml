@@ -1,6 +1,0 @@
-﻿l_simp_chinese:
- 
- NEW_CONSTRUCTION_QUEUE_GOV:0 "#V 建 [GetPlayer.GetNumActiveShownGovernmentConstructionQueueElements] / #yellow 队 [GetPlayer.GetNumInactiveAndNonShownGovernmentConstructionQueueElements] / #green 剩 [Country.EstimatedGovernmentConstructionQueueDuration|v] 周 
- #/ #V 剩余 [Country.GetWeeksLeftUntilConstructionQueueFinished]周 "
- NEW_CONSTRUCTION_QUEUE_PRI:0 "#V 建 [GetPlayer.GetNumActiveShownPrivateConstructionQueueElements] / #yellow 队 [GetPlayer.GetNumInactiveAndNonShownPrivateConstructionQueueElements] / #green 剩 [Country.EstimatedPrivateConstructionQueueDuration|v] 周 
- #/ #V 剩余 [Country.GetWeeksLeftUntilConstructionQueueFinished]周 "

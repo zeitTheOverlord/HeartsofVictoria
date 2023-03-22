@@ -1,4 +1,0 @@
-﻿l_simp_chinese:
- CONSTRUCTION_CURRENT_PAGE_G:0 "第[ProductionMethodsPanel.AccessCurrentGovernmentConstructionQueuePage(GetMetaPlayer.GetPlayedOrObservedCountry)]/[ProductionMethodsPanel.GetNumGovernmentConstructionQueuePages(GetMetaPlayer.GetPlayedOrObservedCountry)]页"
- CONSTRUCTION_CURRENT_PAGE_P:0 "第[ProductionMethodsPanel.AccessCurrentPrivateConstructionQueuePage(GetMetaPlayer.GetPlayedOrObservedCountry)]/[ProductionMethodsPanel.GetNumPrivateConstructionQueuePages(GetMetaPlayer.GetPlayedOrObservedCountry)]页"
- CONSTRUCTION_QUEUE_ELEMENT_A:0 "@construction![ConstructionQueueElement.GetBaseConstructionSpeed|2]/[ConstructionQueueElement.GetConstructionSpeed|2]"

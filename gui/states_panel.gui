@@ -2031,7 +2031,7 @@ types state_panel_types
 					}
 
 					blockoverride "name" {
-						raw_text = "#variable [State.GetNumUnemployedWorkingAdults|D]#!"
+						text = "#variable [State.GetNumUnemployedWorkingAdults|D]#!"
 					}
 				}
 
@@ -2420,7 +2420,7 @@ types state_panel_types
 						}
 	
 						textbox = {
-							raw_text = "#BOLD [StatesPanel.AccessState.GetNumConstructableUrbanBuildings|+]#!"
+							text = "#BOLD [StatesPanel.AccessState.GetNumConstructableUrbanBuildings|+]#!"
 							parentanchor = right|vcenter
 							align = hcenter|nobaseline
 							autoresize = yes
@@ -2604,12 +2604,12 @@ types information_panels_types
 			blockoverride "icon_2" {
 				texture = "gfx/interface/cso/arrow_down.dds"
 			}
-			#blockoverride "tooltip_1" {
-			#	tooltip = "CSO_TOOLTIP_HIDE_EMPTY_BUILDINGS"
-			#}
-			#blockoverride "tooltip_2" {
-			#	tooltip = "CSO_TOOLTIP_SHOW_EMPTY_BUILDINGS"
-			#}
+			blockoverride "tooltip_1" {
+				tooltip = "CSO_TOOLTIP_HIDE_EMPTY_BUILDINGS"
+			}
+			blockoverride "tooltip_2" {
+				tooltip = "CSO_TOOLTIP_SHOW_EMPTY_BUILDINGS"
+			}
 		}
 	}
 }
