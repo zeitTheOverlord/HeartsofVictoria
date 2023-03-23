@@ -16,7 +16,7 @@ decree_road_maintenance = {
 	unlocking_technologies = { 
 		centralization
 	}
-	cost = 75
+	cost = 150
 
 	ai_weight = {
 		value = 25		
@@ -87,7 +87,7 @@ decree_encourage_construction = {
 	unlocking_technologies = { 
 		urbanization
 	}
-	cost = 75
+	cost = 150
 
 	ai_weight = {
 		value = 25		
@@ -170,7 +170,7 @@ decree_violent_suppression = {
 		state_political_strength_from_discrimination_mult = -0.2
 		state_political_strength_from_welfare_mult = -0.2
 	}
-	cost = 75
+	cost = 150
 	
 	ai_weight = {
 		value = 100
@@ -221,7 +221,7 @@ decree_emergency_relief = {
 		building_working_conditions_mult = -0.15
 		state_mortality_mult = -0.01
 	}
-	cost = 75
+	cost = 150
 	
 	ai_weight = {
 		value = 0
@@ -250,14 +250,14 @@ decree_promote_social_innovation = {
 	texture = "gfx/interface/icons/decree/learning.dds"
 	unlocking_technologies = {
 		academia
-}		
+ }		
 	modifier = {
 		state_education_access_add = 0.25
 		state_pop_qualifications_mult = 0.25
 		building_group_bg_technology_throughput_mult = 0.2
 		building_group_bg_arts_throughput_mult = 0.2
 	}
-	cost = 75
+	cost = 150
 	
 	ai_weight = {
 		value = 0
@@ -331,7 +331,7 @@ decree_worker_exploitation = {
 		building_minimum_wage_mult = -0.35
 		building_working_conditions_mult = 0.15
 	}
-	cost = 40
+	cost = 80
 	
 	valid = {is_player = yes}
 }
@@ -351,7 +351,7 @@ decree_promote_national_values = {
 		state_conversion_mult = 1.25
 		state_loyalists_from_sol_change_mult = 0.15
 	}
-	cost = 75
+	cost = 80
 	
 	ai_weight = {
 		value = 0
@@ -432,7 +432,7 @@ decree_encourage_urban_services = {
 		building_group_bg_canals_throughput_mult = 0.2
 		building_group_bg_power_throughput_mult = 0.2
 	}
-	cost = 75
+	cost = 80
 	
 	ai_weight = {
 		value = 0
@@ -488,7 +488,7 @@ decree_encourage_manufacturing_industry = {
 		building_group_bg_manufacturing_throughput_mult = 0.25
 		state_construction_mult = 0.05
 	}
-	cost = 75
+	cost = 150
 	
 	ai_weight = {
 		value = 0
@@ -546,7 +546,7 @@ decree_encourage_agricultural_industry = {
 		building_group_bg_ranching_throughput_mult = 0.2
 		building_group_bg_plantations_throughput_mult = 0.2
 	}
-	cost = 75
+	cost = 150
 	
 	ai_weight = {
 		value = 0
@@ -621,7 +621,7 @@ decree_encourage_resource_industry = {
 		building_group_bg_whaling_throughput_mult = 0.2
 		building_group_bg_oil_extraction_throughput_mult = 0.2
 	}
-	cost = 75
+	cost = 150
 	
 	ai_weight = {
 		value = 0
@@ -691,7 +691,7 @@ decree_greener_grass_campaign = {
 	unlocking_technologies = { 
 		romanticism
 	}
-	cost = 75
+	cost = 80
 
 	ai_weight = {
 		value = 0
@@ -763,7 +763,7 @@ decree_penal_colony = {
 	unlocking_technologies = { 
 		colonization
 	}
-	cost = 75
+	cost = 80
 
 	valid = {is_player = yes}
 }
@@ -777,7 +777,7 @@ decree_military_training = {
 	unlocking_technologies = {
 		mandatory_service
 	}
-	cost = 140
+	cost = 200
 	
 	ai_weight = {
 		value = 0	
@@ -828,7 +828,7 @@ decree_promote_health = {
 		state_mortality_mult = -0.075
 		state_birth_rate_mult = 0.075
 	}
-	cost = 75
+	cost = 150
 	
 	ai_weight = {
 		value = 20

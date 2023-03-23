@@ -17,8 +17,7 @@
  SMMP_unifier_ruler:0 "The Unifier"
  decree_state_bureau:0 "Promote Bureaucracy"
  decree_state_bureau_desc:0 "Improves the efficiency of government administration in a state."
- decree_encourage_construction:0 "Exploit them!"
- decree_encourage_construction_desc:0 "Exploit them fiercely!"
+ 
  modifier_building_group_bg_bureaucracy_throughput_mult:0 "Government Administration Throughput"
  modifier_building_group_bg_bureaucracy_throughput_mult_desc:0 "A bonus or deduction on both the supply and repulsion of government administration."
  cleaned_nation:0 "Nationalized"
