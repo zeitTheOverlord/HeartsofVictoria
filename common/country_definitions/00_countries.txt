@@ -54,7 +54,7 @@ FRA = {
 }
 
 PRU = {
-	color = { 100 100 100 }
+	color = { 180 180 180 }
 	
 	country_type = recognized
 
