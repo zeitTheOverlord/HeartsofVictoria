@@ -275,19 +275,33 @@ land_battle_size = {
 	}
 	# Add additional force if we outnumber the enemy
 	if = {
-		limit = {
-			exists = scope:front
-			"scope:front.num_total_battalions(root)" < "scope:front.num_total_battalions(scope:enemy_country)"
+        limit = {
+			scope:is_naval_invasion = no
+            exists = scope:own_commander
+            exists = scope:front
+			"scope:front.num_total_battalions(root)" > "scope:front.num_total_battalions(scope:enemy_country)"
+			"scope:front.num_total_battalions(scope:enemy_country)" > 0
 		}
-		multiply = {
-			add = "scope:front.num_total_battalions(root)"
-			divide = "scope:front.num_total_battalions(scope:enemy_country)"
-			add = -1
-			multiply = 0.25
-			add = 1
-			max = 1.25
+		value = {
+			add = scope:pre_numeric_advantage
+			divide = 2
+			multiply = {
+				fixed_range = {
+					min = 1
+					max = {
+						add = "scope:front.num_total_battalions(root)"
+						divide = "scope:front.num_total_battalions(scope:enemy_country)"
+						subtract = 1
+						multiply = 0.25
+						add = 1
+						max = 1.10
+					}
+				}
+			}
+			ceiling = yes
+			desc = "BATTLE_SIZE_NUMERIC_ADVANTAGE"
 		}
-	}
+    }
 	# Cap to *actually available* troops; either the total number, or if own_commander is advancing, exclude defending commanders' troops
 	if = {
 		limit = {
