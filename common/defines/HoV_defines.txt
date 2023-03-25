@@ -11,6 +11,3 @@ NDefines.NWar.DEVASTATION_INCREASE_RATE = 0.09 # Per day, scales with level of o
 NDefines.NWar.DEVASTATION_DECAY_RATE = -0.15 # Per day, when there are no occupations
 NDefines.NWar.DEVASTATION_FROM_BATTLES = 0.02 # For each battle
 
-NDefines.NEconomy.DOWNSIZE_BUILDING_POP_TYPE_RADICALIZATION_SHARED_FACTOR = 0.03 # This percentage of a pop becomes radicalized when a building they would have ownership shares in is downsized in the state (multiplied by per-pop shares)
-NDefines.NEconomy.FIRED_POP_RADICALIZATION_BASE_FRACTION = 0.09		# This percentage of a pop becomes radicalized when they lose their job, for instance due to a building being downsized
-NDefines.NEconomy.FIRED_POP_RADICALIZATION_SHARES_FACTOR = 0.02	# Additional percentage of pop that becomes radicalized they lost their job for each per-pop share they had in the building			
