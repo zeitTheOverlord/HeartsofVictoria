@@ -12,7 +12,7 @@
 	buildable = no
 	expandable = no
 	downsizeable = no
-	min_raise_to_hire = 0.30
+	min_raise_to_hire = 0.24
 	slaves_role = peasants
 }
 
@@ -30,7 +30,7 @@ building_subsistence_east_asia = {
 	buildable = no
 	expandable = no
 	downsizeable = no
-	min_raise_to_hire = 0.30
+	min_raise_to_hire = 0.24
 	slaves_role = peasants
 }
 
@@ -48,7 +48,7 @@ building_subsistence_south_east_asia = {
 	buildable = no
 	expandable = no
 	downsizeable = no
-	min_raise_to_hire = 0.30
+	min_raise_to_hire = 0.24
 	slaves_role = peasants
 }
 
@@ -66,7 +66,7 @@ building_subsistence_india = {
 	buildable = no
 	expandable = no
 	downsizeable = no
-	min_raise_to_hire = 0.30
+	min_raise_to_hire = 0.24
 	slaves_role = peasants
 }
 
@@ -84,7 +84,7 @@ building_subsistence_central_asia = {
 	buildable = no
 	expandable = no
 	downsizeable = no
-	min_raise_to_hire = 0.30
+	min_raise_to_hire = 0.24
 	slaves_role = peasants
 }
 
@@ -102,7 +102,7 @@ building_subsistence_russia = {
 	buildable = no
 	expandable = no
 	downsizeable = no
-	min_raise_to_hire = 0.30
+	min_raise_to_hire = 0.24
 	slaves_role = peasants
 }
 
@@ -120,7 +120,7 @@ building_subsistence_mediterranean = {
 	buildable = no
 	expandable = no
 	downsizeable = no
-	min_raise_to_hire = 0.30
+	min_raise_to_hire = 0.24
 	slaves_role = peasants
 }
 
@@ -138,7 +138,7 @@ building_subsistence_european = {
 	buildable = no
 	expandable = no
 	downsizeable = no
-	min_raise_to_hire = 0.30
+	min_raise_to_hire = 0.24
 	slaves_role = peasants
 }
 
@@ -156,7 +156,7 @@ building_subsistence_north_america = {
 	buildable = no
 	expandable = no
 	downsizeable = no
-	min_raise_to_hire = 0.30
+	min_raise_to_hire = 0.24
 	slaves_role = peasants
 }
 
@@ -174,7 +174,7 @@ building_subsistence_tropical = {
 	buildable = no
 	expandable = no
 	downsizeable = no
-	min_raise_to_hire = 0.30
+	min_raise_to_hire = 0.24
 	slaves_role = peasants
 }
 
@@ -192,7 +192,7 @@ building_subsistence_arctic = {
 	buildable = no
 	expandable = no
 	downsizeable = no
-	min_raise_to_hire = 0.30
+	min_raise_to_hire = 0.24
 	slaves_role = peasants
 }
 
@@ -210,7 +210,7 @@ building_subsistence_dry = {
 	buildable = no
 	expandable = no
 	downsizeable = no
-	min_raise_to_hire = 0.30
+	min_raise_to_hire = 0.24
 	slaves_role = peasants
 }
 
@@ -228,6 +228,6 @@ building_subsistence_middle_eastern = {
 	buildable = no
 	expandable = no
 	downsizeable = no
-	min_raise_to_hire = 0.30
+	min_raise_to_hire = 0.24
 	slaves_role = peasants
 }
