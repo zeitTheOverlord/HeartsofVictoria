@@ -1,0 +1,7 @@
+﻿l_turkish:
+ concept_league_of_nations:0 "Milletler Cemiyeti"
+ concept_league_of_nations_short:0 "Milletler Cemiyeti"
+ concept_league_of_nations_desc:0 "Kötü şöhretli ülkelere yaptırım uygulayabilen, savaşlara arabuluculuk yapabilen uluslararası bir kuruluş."
+ concept_sanction:0 "Ekonomik yaptırımlar"
+ concept_sanction_short:0 "Yaptırımlar"
+ concept_sanction_desc:0 "When a country is sanction by [Concept('concept_league_of_nations', '$concept_league_of_nations_short$')],[Concept('concept_league_of_nations', '$concept_league_of_nations_short$')]'s members are obliged to initiate [concept_embargo] against this country."
