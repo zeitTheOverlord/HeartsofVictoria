@@ -18,8 +18,8 @@ pm_irregular_infantry = {
 		}
 
 		throughput_scaled = {
-			unit_offense_add = 5
-			unit_defense_add = 10
+			unit_offense_add = 6
+			unit_defense_add = 6
 		}
 
 		unscaled = {
@@ -47,8 +47,8 @@ pm_irregular_infantry_conscription = {
 		}
 
 		throughput_scaled = {
-			unit_offense_add = 5
-			unit_defense_add = 10
+			unit_offense_add = 6
+			unit_defense_add = 6
 		}
 
 		unscaled = {
@@ -65,8 +65,10 @@ pm_line_infantry = {
 	}
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_small_arms_add = 1
-			building_input_equipmentz_add = 1
+		 
+			building_input_small_arms_add = 1.5
+			building_input_equipmentz_add = 0.5
+			building_input_groceries_add = 1
 		}
 
 		level_scaled = {
@@ -76,8 +78,8 @@ pm_line_infantry = {
 		}
 
 		throughput_scaled = {
-			unit_offense_add = 15
-			unit_defense_add = 20
+			unit_offense_add = 16
+			unit_defense_add = 16
 		}
 
 		unscaled = {
@@ -101,8 +103,10 @@ pm_line_infantry_conscription = {
 	}
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_small_arms_add = 1
-			building_input_equipmentz_add = 1
+			 
+			building_input_small_arms_add = 1.5
+			building_input_equipmentz_add = 0.5
+			building_input_groceries_add = 1
  
 		}
 
@@ -113,8 +117,8 @@ pm_line_infantry_conscription = {
 		}
 
 		throughput_scaled = {
-			unit_offense_add = 15
-			unit_defense_add = 20
+			unit_offense_add = 16
+			unit_defense_add = 16
 		}
 
 		unscaled = {
@@ -146,8 +150,8 @@ pm_skirmish_infantry = {
 		}
 
 		throughput_scaled = {
-			unit_offense_add = 25
-			unit_defense_add = 30
+			unit_offense_add = 23
+			unit_defense_add = 23
 		}
 
 		unscaled = {
@@ -186,8 +190,8 @@ pm_skirmish_infantry_conscription = {
 		}
 
 		throughput_scaled = {
-			unit_offense_add = 25
-			unit_defense_add = 30
+			unit_offense_add = 23
+			unit_defense_add = 23
 		}
 		
 		unscaled = {
@@ -221,7 +225,7 @@ pm_trench_infantry = {
 		throughput_scaled = {
 			
 			unit_offense_add = 40
-			unit_defense_add = 60
+			unit_defense_add = 45
 		}
 
 		unscaled = {
@@ -263,7 +267,7 @@ pm_trench_infantry_conscription = {
 
 		throughput_scaled = {
 			unit_offense_add = 40
-			unit_defense_add = 60
+			unit_defense_add = 45
 		}
 
 		unscaled = {
@@ -299,7 +303,7 @@ pm_squad_infantry = {
 
 		throughput_scaled = {
 			unit_offense_add = 55
-			unit_defense_add = 65
+			unit_defense_add = 55
 		}
 		
 		unscaled = {
@@ -341,7 +345,7 @@ pm_squad_infantry_conscription = {
 
 		throughput_scaled = {
 			unit_offense_add = 55
-			unit_defense_add = 60
+			unit_defense_add = 55
 		}
 
 		unscaled = {
@@ -380,8 +384,8 @@ pm_mechanized_infantry = {
 		}
 
 		throughput_scaled = {
-			unit_offense_add = 75
-			unit_defense_add = 75
+			unit_offense_add = 70
+			unit_defense_add = 70
 		}
 
 		unscaled = {
@@ -426,8 +430,8 @@ pm_mechanized_infantry_conscription = {
 		}
 
 		throughput_scaled = {
-			unit_offense_add = 75
-			unit_defense_add = 75
+			unit_offense_add = 70
+			unit_defense_add = 70
 		}
 
 		unscaled = {
@@ -445,8 +449,8 @@ pm_no_artillery = {
 	texture = "gfx/interface/icons/production_method_icons/no_artillery.dds"
 	building_modifiers = {
 		throughput_scaled = {
-			unit_offense_add = -2
-			unit_defense_add = -2
+			unit_offense_add = -1
+			unit_defense_add = -1
 		}
 
 		unscaled = {
@@ -458,8 +462,8 @@ pm_no_artillery_conscription = {
 	texture = "gfx/interface/icons/production_method_icons/no_artillery.dds"
 	building_modifiers = {
 		throughput_scaled = {
-			unit_offense_add = -2
-			unit_defense_add = -2
+			unit_offense_add = -1
+			unit_defense_add = -1
 		}
 
 		unscaled = {
@@ -478,6 +482,7 @@ pm_cannon_artillery = {
 	building_modifiers = {
 		workforce_scaled = {
 			building_input_artillery_add = 0.5
+			building_input_ammunition_add = 0.5
 		}
 
 		throughput_scaled = {
@@ -512,6 +517,7 @@ pm_cannon_artillery_conscription = {
 	building_modifiers = {
 		workforce_scaled = {
 			building_input_artillery_add = 0.5
+			building_input_ammunition_add = 0.5
 		}
 
 		throughput_scaled = {
@@ -538,6 +544,7 @@ pm_mobile_artillery = {
 	building_modifiers = {
 		workforce_scaled = {
 			building_input_artillery_add = 1
+			building_input_ammunition_add = 1
 		}
 
 		throughput_scaled = {
@@ -573,6 +580,7 @@ pm_mobile_artillery_conscription = {
 	building_modifiers = {
 		workforce_scaled = {
 			building_input_artillery_add = 1
+			building_input_ammunition_add = 1
 		}
 
 		throughput_scaled = {
@@ -604,7 +612,7 @@ pm_shrapnel_artillery = {
 	building_modifiers = {
 		workforce_scaled = {
 			building_input_artillery_add = 1
-			building_input_ammunition_add = 2
+			building_input_ammunition_add = 1.5
 		}
 
 		throughput_scaled = {
@@ -640,7 +648,7 @@ pm_shrapnel_artillery_conscription = {
 	building_modifiers = {
 		workforce_scaled = {
 			building_input_artillery_add = 1
-			building_input_ammunition_add = 2
+			building_input_ammunition_add = 1.5
 		}
 
 		throughput_scaled = {
@@ -676,8 +684,8 @@ pm_siege_artillery = {
 		}
 
 		throughput_scaled = {
-			unit_offense_add = 45
-			unit_defense_add = 35
+			unit_offense_add = 40
+			unit_defense_add = 40
 		}
 
 		unscaled = {
@@ -712,8 +720,8 @@ pm_siege_artillery_conscription = {
 		}
 
 		throughput_scaled = {
-			unit_offense_add = 45
-			unit_defense_add = 30
+			unit_offense_add = 40
+			unit_defense_add = 40
 		}
 
 		unscaled = {
@@ -732,12 +740,12 @@ pm_cavalry_scouts = {
 	texture = "gfx/interface/icons/production_method_icons/cavalry.dds"
 	building_modifiers = {
 		throughput_scaled = {
-			unit_offense_add = -2
-			unit_defense_add = -2
+			unit_offense_add = -1
+			unit_defense_add = -1
 		}
 
 		unscaled = {
-			unit_provinces_captured_mult = -0.35
+			unit_provinces_captured_mult = -0.45
 		}
 	}
 }
@@ -745,12 +753,12 @@ pm_cavalry_scouts_conscription = {
 	texture = "gfx/interface/icons/production_method_icons/cavalry.dds"
 	building_modifiers = {
 		throughput_scaled = {
-			unit_offense_add = -2
-			unit_defense_add = -2
+			unit_offense_add = -1
+			unit_defense_add = -1
 		}
 
 		unscaled = {
-			unit_provinces_captured_mult = -0.35
+			unit_provinces_captured_mult = -0.45
 		}
 	}
 }
@@ -952,7 +960,7 @@ pm_no_specialists = {
 	texture = "gfx/interface/icons/production_method_icons/no_specialists.dds"
 	building_modifiers = {
 		throughput_scaled = {
-			unit_defense_add = -2
+			unit_defense_add = -1
 		}
 	}
 }
@@ -960,7 +968,7 @@ pm_no_specialists_conscription = {
 	texture = "gfx/interface/icons/production_method_icons/no_specialists.dds"
 	building_modifiers = {
 		throughput_scaled = {
-			unit_defense_add = -2
+			unit_defense_add = -1
 		}
 	}
 }
@@ -977,7 +985,7 @@ pm_machine_gunners = {
 			building_input_ammunition_add = 2
 		}
 		throughput_scaled = {
-			unit_defense_add = 30
+			unit_defense_add = 20
 		}
 
 		unscaled = {
@@ -1011,7 +1019,7 @@ pm_machine_gunners_conscription = {
 			building_input_ammunition_add = 2
 		}
 		throughput_scaled = {
-			unit_defense_add = 30
+			unit_defense_add = 20
 		}
 
 		unscaled = {
@@ -1104,7 +1112,7 @@ pm_flamethrower_company = {
 			building_input_oil_add = 1
 		}
 		throughput_scaled = {
-			unit_offense_add = 25
+			unit_offense_add = 26
 		}
 
 		unscaled = {
@@ -1139,7 +1147,7 @@ pm_flamethrower_company_conscription = {
 			building_input_oil_add = 1
 		}
 		throughput_scaled = {
-			unit_offense_add = 25
+			unit_offense_add = 26
 		}
 
 		unscaled = {
@@ -1170,7 +1178,7 @@ pm_chemical_weapons_specialists = {
 			building_input_oil_add = 1
 		}
 		throughput_scaled = {
-			unit_offense_add = 60
+			unit_offense_add = 40
 		}
 
 		unscaled = {
@@ -1206,7 +1214,7 @@ pm_chemical_weapons_specialists_conscription = {
 			building_input_oil_add = 1
 		}
 		throughput_scaled = {
-			unit_offense_add = 60
+			unit_offense_add = 40
 		}
 
 		unscaled = {
@@ -1229,6 +1237,7 @@ pm_wound_dressing = {
 		workforce_scaled = {
 			building_input_liquor_add = 0.5
 			building_input_fabric_add = 0.5
+			building_input_tools_add = 0.5
 		}
 		unscaled = {
 			unit_recovery_rate_add = 0.25
@@ -1243,9 +1252,9 @@ pm_first_aid = {
 	}
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_liquor_add = 2
+			building_input_liquor_add = 1
 			building_input_fabric_add = 1
-			building_input_tools_add = 0.5
+			building_input_tools_add = 1
 		}
 
 		unscaled = {
