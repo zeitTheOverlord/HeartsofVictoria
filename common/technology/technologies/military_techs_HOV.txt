@@ -8,7 +8,7 @@ prussian_reform = {
 	category = military
 	can_research = no
 	modifier = {
-		building_mobilization_cost_mult = -0.1
+		building_mobilization_cost_mult = -0.125
 		country_bureaucracy_mult = 0.1
 	}
 	
