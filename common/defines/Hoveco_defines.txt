@@ -35,6 +35,7 @@ NEconomy = {
 	GOODS_SHORTAGE_PENALTY_MAX = 1	# Goods shortage penalty can't be higher than this                                                                                                       
 	MINIMUM_WAGE_RATE = 0.05	# The wage rate can never drop below this, no matter what (weekly £ per POP_SIZE_PACKAGE employees)                                                      
 	BUILDING_INITIAL_WAGE_WEEKS = 1	# A building will not adjust its wages for the first this many weeks of its existence                                                                    
+	BUILDING_WEEKS_BETWEEN_PAY_RAISES = 2 # Cooldown between pay raises towards expected minimum
 	MAX_WAGE_STEP_CHANGE = 1	# Wage rates can change at most this much each week                                                                                                      
 	COUNTRY_MIN_CREDIT_BASE = 0.0001	# Added to the total Building Cash Reserves to determine credit limit (base)	                                                                         
 	COUNTRY_MIN_CREDIT_SCALED = 0.0001	# Added to the total Building Cash Reserves to determine credit limit (multiplied by GDP)	                                                             
