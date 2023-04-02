@@ -1,5 +1,5 @@
 ﻿NPops = {
-
+ASSIMILATION_RATE = 0.004
 	LOW_POP_THRESHOLD = 3000					# If a state has less than this amount of pops per arable land, apply the low pop modifier
 	HIGH_POP_THRESHOLD = 4500					# If a state has more than this amount of pops per arable land, apply the high pop modifier
 	

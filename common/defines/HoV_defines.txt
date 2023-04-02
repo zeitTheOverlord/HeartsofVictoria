@@ -10,4 +10,7 @@ NDefines.NCharacters.CHARACTER_LIFE_EXPECTANCY_BASE_YEARS = 65
 NDefines.NWar.DEVASTATION_INCREASE_RATE = 0.09 # Per day, scales with level of occupation
 NDefines.NWar.DEVASTATION_DECAY_RATE = -0.15 # Per day, when there are no occupations
 NDefines.NWar.DEVASTATION_FROM_BATTLES = 0.02 # For each battle
-
+NDefines.NPolitics.REVOLUTION_MAX_STATE_FRACTION = 0.33
+NDefines.NPolitics.MIN_RADICALISM_FOR_REVOLUTION_PROGRESSION = 66
+NDefines.NPolitics.MAX_PROGRESS_FOR_UNSUPPORTED_REVOLUTIONS = 0.3
+NDefines.NPolitics.REVOLUTIONS_PROGRESS_DECAY = 0.03

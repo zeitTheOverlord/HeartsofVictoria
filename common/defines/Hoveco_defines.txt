@@ -1,4 +1,5 @@
 ﻿NAI = {
+CHANGE_LAW_POLITICAL_MOVEMENT_RADICALISM_FACTOR = 3
 	GOVERNMENT_MONEY_SPENDING_ENABLED = no	# If this is set to no, the AI for government money spending will be disabled
 	# GOVERNMENT_AUTHORITY_SPENDING_ENABLED = no  # If this is set to no, the AI for authority spending will be disabled
 	TAX_LEVEL_CHANGES_ENABLED = no	# If this is set to no, the AI will not change its tax levels (but might still use consumption taxes if GOVERNMENT_AUTHORITY_SPENDING_ENABLED = yes)
