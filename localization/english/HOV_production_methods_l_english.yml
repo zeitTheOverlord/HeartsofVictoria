@@ -1,47 +1,48 @@
-﻿l_turkish:
- pm_none::0 "Üretimi durdur"
- pmg_equipment:0 "Ekipman Üretimi"
- pm_equipment1:0 "Basit Ekipman"
-  # Barracks
+﻿l_english:
+ pm_none::0 "Stop production"
+ pmg_equipment:0 "Equipment production"
+ pm_equipment1:0 "Basic Equipment"
+ 
+ # Barracks
   
- pmg_organization:0 "Düzen"
+ pmg_organization:0 "Organization"
 
- pm_irregular_infantry:0 "Düzensiz Piyade(Saldırı)"
- pm_irregular_infantry_def:0 "Düzensiz Piyade(Savunma)"
+ pm_irregular_infantry:0 "Irregular Infantry(Offensive)"
+ pm_irregular_infantry_def:0 "Irregular Infantry(Defensive)"
 
- pm_line_infantry:0 "Hat Piyadesi(Saldırı)"
- pm_line_infantry_def:0 "Hat Piyadesi(Savunma)"
+ pm_line_infantry:0 "Line Infantry(Offensive)"
+ pm_line_infantry_def:0 "Line Infantry(Defensive)"
 
- pm_skirmish_infantry:0 "Çatışma Piyadesi(Saldırı)"
- pm_skirmish_infantry_def:0 "Çatışma Piyadesi(Savunma)"
+ pm_skirmish_infantry:0 "Skirmish Infantry(Offensive)"
+ pm_skirmish_infantry_def:0 "Skirmish Infantry(Defensive)"
 
- pm_trench_infantry:0 "Siper Piyadesi(Saldırı)"
- pm_trench_infantry_def:0 "Siper Piyadesi(Savunma)"
+ pm_trench_infantry:0 "Trench Infantry(Offensive)"
+ pm_trench_infantry_def:0 "Trench Infantry(Defensive)"
 
- pm_squad_infantry:0 "Manga Piyadesi(Saldırı)"
- pm_squad_infantry_def:0 "Manga Piyadesi(Savunma)"
+ pm_squad_infantry:0 "Squad Infantry(Offensive)"
+ pm_squad_infantry_def:0 "Squad Infantry(Defensive)"
 
- pm_mechanized_infantry:0 "Mekanize Piyade(Saldırı)"
- pm_mechanized_infantry_def:0 "Mekanize Piyade(Savunma)"
+ pm_mechanized_infantry:0 "Mechanized Infantry(Offensive)"
+ pm_mechanized_infantry_def:0 "Mechanized Infantry(Defensive)"
 
- pmg_artillery:0 "Topçu Desteği"
- pm_no_artillery:0 "Piyade Odaklı"
- pm_cannon_artillery:0 "Dökme Topçu"
- pm_mobile_artillery:0 "Seyyar Topçu"
- pm_shrapnel_artillery:0 "Şarapnel Topçusu"
- pm_siege_artillery:0 "Kuşatma Topçusu"
+ pmg_artillery:0 "Artillery Support"
+ pm_no_artillery:0 "Infantry Focus"
+ pm_cannon_artillery:0 "Cannon Artillery"
+ pm_mobile_artillery:0 "Mobile Artillery"
+ pm_shrapnel_artillery:0 "Shrapnel Artillery"
+ pm_siege_artillery:0 "Siege Artillery"
 
- pmg_reconaissance:0 "Keşif"
- pm_cavalry_scouts:0 "Süvari Öncüler"
- pm_bicycle_messengers:0 "Bisikletli Ulaklar"
- pm_aerial_recon:0 "Havadan Keşif"
+ pmg_reconaissance:0 "Reconnaissance"
+ pm_cavalry_scouts:0 "Cavalry Scouts"
+ pm_bicycle_messengers:0 "Bicycle Messengers"
+ pm_aerial_recon:0 "Aerial Reconnaissance"
 
- pmg_specialist_companies:0 "Uzman Bölükler"
- pm_no_specialists:0 "Standartlaştırılmış Piyade"
- pm_machine_gunners:0 "Makineli Tüfek Nişancıları"
- pm_infiltrators:0 "Casuslar"
- pm_flamethrower_company:0 "Alev Makinesi Bölükleri"
- pm_chemical_weapons_specialists:0 "Kimyasal Silah Uzmanları"
+ pmg_specialist_companies:0 "Specialist Companies"
+ pm_no_specialists:0 "Standardized Infantry"
+ pm_machine_gunners:0 "Machine Gunners"
+ pm_infiltrators:0 "Infiltrators"
+ pm_flamethrower_company:0 "Flamethrower Companies"
+ pm_chemical_weapons_specialists:0 "Chemical Weapon Specialists"
  
  ###
  
@@ -62,8 +63,11 @@
  pm_squad_infantry_conscription:0 "$pm_squad_infantry$"
  pm_squad_infantry_conscription_def:0 "$pm_squad_infantry_def$"
 
+
+
  pm_mechanized_infantry_conscription:0 "$pm_mechanized_infantry$"
  pm_mechanized_infantry_conscription_def:0 "$pm_mechanized_infantry_def$"
+
 
  pmg_artillery_conscription:0 "$pmg_artillery$"
  pm_no_artillery_conscription:0 "$pm_no_artillery$"
@@ -84,7 +88,7 @@
  pm_flamethrower_company_conscription:0 "$pm_flamethrower_company$"
  pm_chemical_weapons_specialists_conscription:0 "$pm_chemical_weapons_specialists$"
   
- pmg_medical_aid:0 "Tıbbi Yardım"
- pm_wound_dressing:0 "Sargı Bezi"
- pm_first_aid:0 "İlk Yardım"
- pm_field_hospitals:0 "Sahra Hastaneleri"
+ pmg_medical_aid:0 "Medical Aid"
+ pm_wound_dressing:0 "Wound Dressing"
+ pm_first_aid:0 "First Aid"
+ pm_field_hospitals:0 "Field Hospitals"
