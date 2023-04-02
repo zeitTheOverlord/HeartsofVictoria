@@ -4,17 +4,17 @@
 
 	production_methods = {
 		pm_irregular_infantry
-		pm_irregular_infantry_def
+		pm_irregular_infantry_ofs
 		pm_line_infantry
-		pm_line_infantry_def
+		pm_line_infantry_ofs
 		pm_skirmish_infantry
-		pm_skirmish_infantry_def
+		pm_skirmish_infantry_ofs
 		pm_trench_infantry
-		pm_trench_infantry_def
+		pm_trench_infantry_ofs
 		pm_squad_infantry
-		pm_squad_infantry_def
+		pm_squad_infantry_ofs
 		pm_mechanized_infantry
-		pm_mechanized_infantry_def
+		pm_mechanized_infantry_ofs
 	}
 }
 
@@ -25,13 +25,13 @@ pmg_artillery = {
 	production_methods = {
 		pm_no_artillery
 		pm_cannon_artillery
-		pm_cannon_artillery_def
+		pm_cannon_artillery_ofs
 		pm_mobile_artillery
-		pm_mobile_artillery_def
+		pm_mobile_artillery_ofs
 		pm_shrapnel_artillery
-		pm_shrapnel_artillery_def
+		pm_shrapnel_artillery_ofs
 		pm_siege_artillery
-		pm_siege_artillery_def
+		pm_siege_artillery_ofs
 	}
 }
 
@@ -66,15 +66,15 @@ pmg_organization_conscription = {
 
 	production_methods = {
 		pm_irregular_infantry_conscription
-		pm_irregular_infantry_conscription_def
+		pm_irregular_infantry_conscription_ofs
 		pm_line_infantry_conscription
-		pm_line_infantry_conscription_def
+		pm_line_infantry_conscription_ofs
 		pm_skirmish_infantry_conscription
-		pm_skirmish_infantry_conscription_def
+		pm_skirmish_infantry_conscription_ofs
 		pm_trench_infantry_conscription
-		pm_trench_infantry_conscription_def
-		pm_squad_infantry_conscription_def
-		pm_mechanized_infantry_conscription_def
+		pm_trench_infantry_conscription_ofs
+		pm_squad_infantry_conscription_ofs
+		pm_mechanized_infantry_conscription_ofs
 	}
 }
 
@@ -85,13 +85,13 @@ pmg_artillery_conscription = {
 	production_methods = {
 		pm_no_artillery_conscription
 		pm_cannon_artillery_conscription
-		pm_cannon_artillery_conscription_def
+		pm_cannon_artillery_conscription_ofs
 		pm_mobile_artillery_conscription
-		pm_mobile_artillery_conscription_def
+		pm_mobile_artillery_conscription_ofs
 		pm_shrapnel_artillery_conscription
-		pm_shrapnel_artillery_conscription_def
+		pm_shrapnel_artillery_conscription_ofs
 		pm_siege_artillery_conscription
-		pm_siege_artillery_conscription_def
+		pm_siege_artillery_conscription_ofs
 	}
 }
 

@@ -314,10 +314,10 @@ je_sick_man_army = {
 				OR = {
 					building_has_goods_shortage = yes
 					has_active_production_method = pm_irregular_infantry
-					has_active_production_method = pm_irregular_infantry_def
+					has_active_production_method = pm_irregular_infantry_ofs
 					has_active_production_method = pm_no_artillery
 					has_active_production_method = pm_cannon_artillery
-					has_active_production_method = pm_cannon_artillery_def
+					has_active_production_method = pm_cannon_artillery_ofs
 
 				}
 			}

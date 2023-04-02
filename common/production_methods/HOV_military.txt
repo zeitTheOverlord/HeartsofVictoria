@@ -33,7 +33,7 @@ pm_irregular_infantry = {
 		}
 	}
 }
-pm_irregular_infantry_def = {
+pm_irregular_infantry_ofs = {
 	texture = "gfx/interface/icons/production_method_icons/irregular_infantry.dds"
 	is_default = yes
 	building_modifiers = {
@@ -90,7 +90,7 @@ pm_irregular_infantry_conscription = {
 		}
 	}
 }
-pm_irregular_infantry_conscription_def = {
+pm_irregular_infantry_conscription_ofs = {
 	texture = "gfx/interface/icons/production_method_icons/irregular_infantry.dds"
 	is_default = yes
 	building_modifiers = {
@@ -155,7 +155,7 @@ pm_line_infantry = {
 		pm_offense_defense_readjustment
 	}
 }
-pm_line_infantry_def = {
+pm_line_infantry_ofs = {
 	texture = "gfx/interface/icons/production_method_icons/line_infantry.dds"
 	is_default = yes
 	unlocking_technologies = {
@@ -231,7 +231,7 @@ pm_line_infantry_conscription = {
 		pm_offense_defense_readjustment
 	}
 }
-pm_line_infantry_conscription_def = {
+pm_line_infantry_conscription_ofs = {
 	texture = "gfx/interface/icons/production_method_icons/line_infantry.dds"
 	is_default = yes
 	unlocking_technologies = {
@@ -304,7 +304,7 @@ pm_skirmish_infantry = {
 		pm_offense_defense_readjustment
 	}
 }
-pm_skirmish_infantry_def = {
+pm_skirmish_infantry_ofs = {
 	texture = "gfx/interface/icons/production_method_icons/skirmish_infantry.dds"
 	unlocking_technologies = {
 		general_staff
@@ -378,7 +378,7 @@ pm_skirmish_infantry_conscription = {
 		pm_offense_defense_readjustment
 	}
 }
-pm_skirmish_infantry_conscription_def = {
+pm_skirmish_infantry_conscription_ofs = {
 	texture = "gfx/interface/icons/production_method_icons/skirmish_infantry.dds"
 	unlocking_technologies = {
 		general_staff
@@ -455,7 +455,7 @@ pm_trench_infantry = {
 		pm_offense_defense_readjustment
 	}
 }
-pm_trench_infantry_def = {
+pm_trench_infantry_ofs = {
 	texture = "gfx/interface/icons/production_method_icons/trench_infantry.dds"
 	unlocking_technologies = {
 		trench_works
@@ -534,7 +534,7 @@ pm_trench_infantry_conscription = {
 		pm_offense_defense_readjustment
 	}
 }
-pm_trench_infantry_conscription_def = {
+pm_trench_infantry_conscription_ofs = {
 	texture = "gfx/interface/icons/production_method_icons/trench_infantry.dds"
 	unlocking_technologies = {
 		trench_works
@@ -612,7 +612,7 @@ pm_squad_infantry = {
 		pm_offense_defense_readjustment
 	}
 }
-pm_squad_infantry_def = {
+pm_squad_infantry_ofs = {
 	texture = "gfx/interface/icons/production_method_icons/squad_infantry.dds"
 	unlocking_technologies = {
 		nco_training
@@ -690,7 +690,7 @@ pm_squad_infantry_conscription = {
 		pm_offense_defense_readjustment
 	}
 }
-pm_squad_infantry_conscription_def = {
+pm_squad_infantry_conscription_ofs = {
 	texture = "gfx/interface/icons/production_method_icons/squad_infantry.dds"
 	unlocking_technologies = {
 		nco_training
@@ -775,7 +775,7 @@ pm_mechanized_infantry = {
 		pm_offense_defense_readjustment
 	}
 }
-pm_mechanized_infantry_def = {
+pm_mechanized_infantry_ofs = {
 	texture = "gfx/interface/icons/production_method_icons/armored_division.dds"
 	unlocking_technologies = {
 		mobile_armor
@@ -863,7 +863,7 @@ pm_mechanized_infantry_conscription = {
 		pm_offense_defense_readjustment
 	}
 }
-pm_mechanized_infantry_conscription_def = {
+pm_mechanized_infantry_conscription_ofs = {
 	texture = "gfx/interface/icons/production_method_icons/armored_division.dds"
 	unlocking_technologies = {
 		mobile_armor
@@ -964,7 +964,7 @@ pm_cannon_artillery = {
 		pm_offense_defense_readjustment_minor
 	}
 }
-pm_cannon_artillery_def = {
+pm_cannon_artillery_ofs = {
 	texture = "gfx/interface/icons/production_method_icons/cannon_artillery.dds"
 
 	unlocking_technologies = {
@@ -1026,7 +1026,7 @@ pm_cannon_artillery_conscription = {
 		pm_offense_defense_readjustment_minor
 	}
 }
-pm_cannon_artillery_conscription_def = {
+pm_cannon_artillery_conscription_ofs = {
 	texture = "gfx/interface/icons/production_method_icons/cannon_artillery.dds"
 
 	unlocking_technologies = {
@@ -1087,7 +1087,7 @@ pm_mobile_artillery = {
 		pm_offense_defense_readjustment_minor
 	}
 }
-pm_mobile_artillery_def = {
+pm_mobile_artillery_ofs = {
 	texture = "gfx/interface/icons/production_method_icons/mobile_artillery.dds"
 
 	unlocking_technologies = {
@@ -1149,7 +1149,7 @@ pm_mobile_artillery_conscription = {
 		pm_offense_defense_readjustment_minor
 	}
 }
-pm_mobile_artillery_conscription_def = {
+pm_mobile_artillery_conscription_ofs = {
 	texture = "gfx/interface/icons/production_method_icons/mobile_artillery.dds"
 
 	unlocking_technologies = {
@@ -1216,7 +1216,7 @@ pm_shrapnel_artillery = {
 		pm_offense_defense_readjustment_minor
 	}
 }
-pm_shrapnel_artillery_def = {
+pm_shrapnel_artillery_ofs = {
 	texture = "gfx/interface/icons/production_method_icons/shrapnel_artillery.dds"
 
 	unlocking_technologies = {
@@ -1284,7 +1284,7 @@ pm_shrapnel_artillery_conscription = {
 		pm_offense_defense_readjustment_minor
 	}
 }
-pm_shrapnel_artillery_conscription_def = {
+pm_shrapnel_artillery_conscription_ofs = {
 	texture = "gfx/interface/icons/production_method_icons/shrapnel_artillery.dds"
 
 	unlocking_technologies = {
@@ -1352,7 +1352,7 @@ pm_siege_artillery = {
 		pm_offense_defense_readjustment_minor
 	}
 }
-pm_siege_artillery_def = {
+pm_siege_artillery_ofs = {
 	texture = "gfx/interface/icons/production_method_icons/siege_artillery.dds"
 
 	unlocking_technologies = {
@@ -1420,7 +1420,7 @@ pm_siege_artillery_conscription = {
 		pm_offense_defense_readjustment_minor
 	}
 }
-pm_siege_artillery_conscription_def = {
+pm_siege_artillery_conscription_ofs = {
 	texture = "gfx/interface/icons/production_method_icons/siege_artillery.dds"
 
 	unlocking_technologies = {

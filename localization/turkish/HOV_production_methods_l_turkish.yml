@@ -6,38 +6,38 @@
   
  pmg_organization:0 "Düzen"
 
- pm_irregular_infantry:0 "Düzensiz Piyade(Saldırı)"
- pm_irregular_infantry_def:0 "Düzensiz Piyade(Savunma)"
+ pm_irregular_infantry:0 "Düzensiz Piyade(Savunma)"
+ pm_irregular_infantry_ofs:0 "Düzensiz Piyade(Saldırı)"
 
- pm_line_infantry:0 "Hat Piyadesi(Saldırı)"
- pm_line_infantry_def:0 "Hat Piyadesi(Savunma)"
+ pm_line_infantry:0 "Hat Piyadesi(Savunma)"
+ pm_line_infantry_ofs:0 "Hat Piyadesi(Saldırı)"
 
- pm_skirmish_infantry:0 "Çatışma Piyadesi(Saldırı)"
- pm_skirmish_infantry_def:0 "Çatışma Piyadesi(Savunma)"
+ pm_skirmish_infantry:0 "Çatışma Piyadesi(Savunma)"
+ pm_skirmish_infantry_ofs:0 "Çatışma Piyadesi(Saldırı)"
 
- pm_trench_infantry:0 "Siper Piyadesi(Saldırı)"
- pm_trench_infantry_def:0 "Siper Piyadesi(Savunma)"
+ pm_trench_infantry:0 "Siper Piyadesi(Savunma)"
+ pm_trench_infantry_ofs:0 "Siper Piyadesi(Saldırı)"
 
- pm_squad_infantry:0 "Manga Piyadesi(Saldırı)"
- pm_squad_infantry_def:0 "Manga Piyadesi(Savunma)"
+ pm_squad_infantry:0 "Manga Piyadesi(Savunma)"
+ pm_squad_infantry_ofs:0 "Manga Piyadesi(Saldırı)"
 
- pm_mechanized_infantry:0 "Mekanize Piyade(Saldırı)"
- pm_mechanized_infantry_def:0 "Mekanize Piyade(Savunma)"
+ pm_mechanized_infantry:0 "Mekanize Piyade(Savunma)"
+ pm_mechanized_infantry_ofs:0 "Mekanize Piyade(Saldırı)"
 
  pmg_artillery:0 "Topçu Desteği"
  pm_no_artillery:0 "Piyade Odaklı"
 
- pm_cannon_artillery:0 "Dökme Topçu(Saldırı)"
- pm_cannon_artillery_def:0 "Dökme Topçu(Savunma)"
+ pm_cannon_artillery:0 "Dökme Topçu(Savunma)"
+ pm_cannon_artillery_ofs:0 "Dökme Topçu(Saldırı)"
 
- pm_mobile_artillery:0 "Seyyar Topçu(Saldırı)"
- pm_mobile_artillery_def:0 "Seyyar Topçu(Savunma)"
+ pm_mobile_artillery:0 "Seyyar Topçu(Savunma)"
+ pm_mobile_artillery_ofs:0 "Seyyar Topçu(Saldırı)"
 
- pm_shrapnel_artillery:0 "Şarapnel Topçusu(Saldırı)"
- pm_shrapnel_artillery_def:0 "Şarapnel Topçusu(Savunma)"
+ pm_shrapnel_artillery:0 "Şarapnel Topçusu(Savunma)"
+ pm_shrapnel_artillery_ofs:0 "Şarapnel Topçusu(Saldırı)"
 
- pm_siege_artillery:0 "Kuşatma Topçusu(Saldırı)"
- pm_siege_artillery_def:0 "Kuşatma Topçusu(Savunma)"
+ pm_siege_artillery:0 "Kuşatma Topçusu(Savunma)"
+ pm_siege_artillery_ofs:0 "Kuşatma Topçusu(Saldırı)"
 
 
  pmg_reconaissance:0 "Keşif"
@@ -57,38 +57,38 @@
  pmg_organization_conscription:0 "$pmg_organization$"
 
  pm_irregular_infantry_conscription:0 "$pm_irregular_infantry$"
- pm_irregular_infantry_conscription_def:0 "$pm_irregular_infantry_def$"
+ pm_irregular_infantry_conscription_ofs:0 "$pm_irregular_infantry_ofs$"
 
  pm_line_infantry_conscription:0 "$pm_line_infantry$"
- pm_line_infantry_conscription_def:0 "$pm_line_infantry_def$"
+ pm_line_infantry_conscription_ofs:0 "$pm_line_infantry_ofs$"
 
  pm_skirmish_infantry_conscription:0 "$pm_skirmish_infantry$"
- pm_skirmish_infantry_conscription_def:0 "$pm_skirmish_infantry_def$"
+ pm_skirmish_infantry_conscription_ofs:0 "$pm_skirmish_infantry_ofs$"
 
  pm_trench_infantry_conscription:0 "$pm_trench_infantry$"
- pm_trench_infantry_conscription_def:0 "$pm_trench_infantry_def$"
+ pm_trench_infantry_conscription_ofs:0 "$pm_trench_infantry_ofs$"
 
  pm_squad_infantry_conscription:0 "$pm_squad_infantry$"
- pm_squad_infantry_conscription_def:0 "$pm_squad_infantry_def$"
+ pm_squad_infantry_conscription_ofs:0 "$pm_squad_infantry_ofs$"
 
  pm_mechanized_infantry_conscription:0 "$pm_mechanized_infantry$"
- pm_mechanized_infantry_conscription_def:0 "$pm_mechanized_infantry_def$"
+ pm_mechanized_infantry_conscription_ofs:0 "$pm_mechanized_infantry_ofs$"
 
  pmg_artillery_conscription:0 "$pmg_artillery$"
  pm_no_artillery_conscription:0 "$pm_no_artillery$"
 
 
  pm_cannon_artillery_conscription:0 "$pm_cannon_artillery$"
- pm_cannon_artillery_conscription_def:0 "$pm_cannon_artillery_def$"
+ pm_cannon_artillery_conscription_ofs:0 "$pm_cannon_artillery_ofs$"
 
  pm_mobile_artillery_conscription:0 "$pm_mobile_artillery$"
- pm_mobile_artillery_conscription_def:0 "$pm_mobile_artillery_def$"
+ pm_mobile_artillery_conscription_ofs:0 "$pm_mobile_artillery_ofs$"
 
  pm_shrapnel_artillery_conscription:0 "$pm_shrapnel_artillery$"
- pm_shrapnel_artillery_conscription_def:0 "$pm_shrapnel_artillery_def$"
+ pm_shrapnel_artillery_conscription_ofs:0 "$pm_shrapnel_artillery_ofs$"
 
  pm_siege_artillery_conscription:0 "$pm_siege_artillery$"
- pm_siege_artillery_conscription_def:0 "$pm_siege_artillery_def$"
+ pm_siege_artillery_conscription_ofs:0 "$pm_siege_artillery_ofs$"
 
 
  pmg_reconaissance_conscription:0 "$pmg_reconaissance$"

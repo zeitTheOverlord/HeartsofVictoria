@@ -7,38 +7,38 @@
   
  pmg_organization:0 "Organization"
 
- pm_irregular_infantry:0 "Irregular Infantry(Offensive)"
- pm_irregular_infantry_def:0 "Irregular Infantry(Defensive)"
+ pm_irregular_infantry:0 "Irregular Infantry(Defensive)"
+ pm_irregular_infantry_ofs:0 "Irregular Infantry(Offensive)"
 
- pm_line_infantry:0 "Line Infantry(Offensive)"
- pm_line_infantry_def:0 "Line Infantry(Defensive)"
+ pm_line_infantry:0 "Line Infantry(Defensive)"
+ pm_line_infantry_ofs:0 "Line Infantry(Offensive)"
 
- pm_skirmish_infantry:0 "Skirmish Infantry(Offensive)"
- pm_skirmish_infantry_def:0 "Skirmish Infantry(Defensive)"
+ pm_skirmish_infantry:0 "Skirmish Infantry(Defensive)"
+ pm_skirmish_infantry_ofs:0 "Skirmish Infantry(Offensive)"
 
- pm_trench_infantry:0 "Trench Infantry(Offensive)"
- pm_trench_infantry_def:0 "Trench Infantry(Defensive)"
+ pm_trench_infantry:0 "Trench Infantry(Defensive)"
+ pm_trench_infantry_ofs:0 "Trench Infantry(Offensive)"
 
- pm_squad_infantry:0 "Squad Infantry(Offensive)"
- pm_squad_infantry_def:0 "Squad Infantry(Defensive)"
+ pm_squad_infantry:0 "Squad Infantry(Defensive)"
+ pm_squad_infantry_ofs:0 "Squad Infantry(Offensive)"
 
- pm_mechanized_infantry:0 "Mechanized Infantry(Offensive)"
- pm_mechanized_infantry_def:0 "Mechanized Infantry(Defensive)"
+ pm_mechanized_infantry:0 "Mechanized Infantry(Defensive)"
+ pm_mechanized_infantry_ofs:0 "Mechanized Infantry(Offensive)"
 
  pmg_artillery:0 "Artillery Support"
  pm_no_artillery:0 "Infantry Focus"
 
- pm_cannon_artillery:0 "Cannon Artillery(Offensive)"
- pm_cannon_artillery_def:0 "Cannon Artillery(Defensive)"
+ pm_cannon_artillery:0 "Cannon Artillery(Defensive)"
+ pm_cannon_artillery_ofs:0 "Cannon Artillery(Offensive)"
 
- pm_mobile_artillery:0 "Mobile Artillery(Offensive)"
- pm_mobile_artillery_def:0 "Mobile Artillery(Defensive)"
+ pm_mobile_artillery:0 "Mobile Artillery(Defensive)"
+ pm_mobile_artillery_ofs:0 "Mobile Artillery(Offensive)"
 
- pm_shrapnel_artillery:0 "Shrapnel Artillery(Offensive)"
- pm_shrapnel_artillery_def:0 "Shrapnel Artillery(Defensive)"
+ pm_shrapnel_artillery:0 "Shrapnel Artillery(Defensive)"
+ pm_shrapnel_artillery_ofs:0 "Shrapnel Artillery(Offensive)"
 
- pm_siege_artillery:0 "Siege Artillery(Offensive)"
- pm_siege_artillery_def:0 "Siege Artillery(Defensive)"
+ pm_siege_artillery:0 "Siege Artillery(Defensive)"
+ pm_siege_artillery_ofs:0 "Siege Artillery(Offensive)"
 
 
  pmg_reconaissance:0 "Reconnaissance"
@@ -58,40 +58,40 @@
  pmg_organization_conscription:0 "$pmg_organization$"
 
  pm_irregular_infantry_conscription:0 "$pm_irregular_infantry$"
- pm_irregular_infantry_conscription_def:0 "$pm_irregular_infantry_def$"
+ pm_irregular_infantry_conscription_ofs:0 "$pm_irregular_infantry_ofs$"
 
  pm_line_infantry_conscription:0 "$pm_line_infantry$"
- pm_line_infantry_conscription_def:0 "$pm_line_infantry_def$"
+ pm_line_infantry_conscription_ofs:0 "$pm_line_infantry_ofs$"
 
  pm_skirmish_infantry_conscription:0 "$pm_skirmish_infantry$"
- pm_skirmish_infantry_conscription_def:0 "$pm_skirmish_infantry_def$"
+ pm_skirmish_infantry_conscription_ofs:0 "$pm_skirmish_infantry_ofs$"
 
  pm_trench_infantry_conscription:0 "$pm_trench_infantry$"
- pm_trench_infantry_conscription_def:0 "$pm_trench_infantry_def$"
+ pm_trench_infantry_conscription_ofs:0 "$pm_trench_infantry_ofs$"
 
  pm_squad_infantry_conscription:0 "$pm_squad_infantry$"
- pm_squad_infantry_conscription_def:0 "$pm_squad_infantry_def$"
+ pm_squad_infantry_conscription_ofs:0 "$pm_squad_infantry_ofs$"
 
 
 
  pm_mechanized_infantry_conscription:0 "$pm_mechanized_infantry$"
- pm_mechanized_infantry_conscription_def:0 "$pm_mechanized_infantry_def$"
+ pm_mechanized_infantry_conscription_ofs:0 "$pm_mechanized_infantry_ofs$"
 
 
  pmg_artillery_conscription:0 "$pmg_artillery$"
  pm_no_artillery_conscription:0 "$pm_no_artillery$"
 
  pm_cannon_artillery_conscription:0 "$pm_cannon_artillery$"
-pm_cannon_artillery_conscription_def:0 "$pm_cannon_artillery_def$"
+pm_cannon_artillery_conscription_ofs:0 "$pm_cannon_artillery_ofs$"
 
  pm_mobile_artillery_conscription:0 "$pm_mobile_artillery$"
- pm_mobile_artillery_conscription_def:0 "$pm_mobile_artillery_def$"
+ pm_mobile_artillery_conscription_ofs:0 "$pm_mobile_artillery_ofs$"
 
  pm_shrapnel_artillery_conscription:0 "$pm_shrapnel_artillery$"
- pm_shrapnel_artillery_conscription_def:0 "$pm_shrapnel_artillery_def$"
+ pm_shrapnel_artillery_conscription_ofs:0 "$pm_shrapnel_artillery_ofs$"
 
  pm_siege_artillery_conscription:0 "$pm_siege_artillery$"
- pm_siege_artillery_conscription_def:0 "$pm_siege_artillery_def$"
+ pm_siege_artillery_conscription_ofs:0 "$pm_siege_artillery_ofs$"
 
 
  pmg_reconaissance_conscription:0 "$pmg_reconaissance$"

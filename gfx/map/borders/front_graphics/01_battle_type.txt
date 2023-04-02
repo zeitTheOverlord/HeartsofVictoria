@@ -11,7 +11,7 @@
 				building = {
 					has_active_production_method = pm_aerial_recon
 					has_active_production_method = pm_trench_infantry
-					has_active_production_method = pm_trench_infantry_def
+					has_active_production_method = pm_trench_infantry_ofs
 				}
 			}
 		}
@@ -22,7 +22,7 @@
 				building = {
 					has_active_production_method = pm_aerial_recon
 					has_active_production_method = pm_siege_artillery
-					has_active_production_method = pm_siege_artillery_def
+					has_active_production_method = pm_siege_artillery_ofs
 
 				}
 			}
@@ -34,7 +34,7 @@
 				building = {
 					has_active_production_method = pm_aerial_recon
 					has_active_production_method = pm_mechanized_infantry
-					has_active_production_method = pm_mechanized_infantry_def
+					has_active_production_method = pm_mechanized_infantry_ofs
 				}
 			}
 		}
@@ -44,7 +44,7 @@
 			trigger = { 
 				building = {
 					has_active_production_method = pm_mechanized_infantry
-					has_active_production_method = pm_mechanized_infantry_def
+					has_active_production_method = pm_mechanized_infantry_ofs
 				}
 			}
 		}
@@ -121,7 +121,7 @@
 				building = {
 					has_active_production_method = pm_machine_gunners
 					has_active_production_method = pm_siege_artillery
-					has_active_production_method = pm_siege_artillery_def
+					has_active_production_method = pm_siege_artillery_ofs
 				}
 			}
 		}
@@ -131,7 +131,7 @@
 			trigger = { 
 				building = {
 					has_active_production_method = pm_siege_artillery
-					has_active_production_method = pm_siege_artillery_def
+					has_active_production_method = pm_siege_artillery_ofs
 				}
 			}
 		}
@@ -160,7 +160,7 @@
 			trigger = { 
 				building = {
 					has_active_production_method = pm_shrapnel_artillery
-					has_active_production_method = pm_shrapnel_artillery_def
+					has_active_production_method = pm_shrapnel_artillery_ofs
 				}
 			}
 		}
@@ -170,7 +170,7 @@
 			trigger = { 
 				building = {
 					has_active_production_method = pm_mobile_artillery
-					has_active_production_method = pm_mobile_artillery_def
+					has_active_production_method = pm_mobile_artillery_ofs
 				}
 				culture = {
 					has_culture_graphics = african
@@ -183,7 +183,7 @@
 			trigger = { 
 				building = {
 					has_active_production_method = pm_mobile_artillery
-					has_active_production_method = pm_mobile_artillery_def
+					has_active_production_method = pm_mobile_artillery_ofs
 				}
 				culture = {
 					has_culture_graphics = european
@@ -196,7 +196,7 @@
 			trigger = { 
 				building = {
 					has_active_production_method = pm_mobile_artillery
-					has_active_production_method = pm_mobile_artillery_def
+					has_active_production_method = pm_mobile_artillery_ofs
 				}
 				culture = {
 					has_culture_graphics = asian
@@ -209,7 +209,7 @@
 			trigger = { 
 				building = {
 					has_active_production_method = pm_mobile_artillery
-					has_active_production_method = pm_mobile_artillery_def
+					has_active_production_method = pm_mobile_artillery_ofs
 				}
 				culture = {
 					has_culture_graphics = mideast_indian
@@ -222,7 +222,7 @@
 			trigger = { 
 				building = {
 					has_active_production_method = pm_mobile_artillery
-					has_active_production_method = pm_mobile_artillery_def
+					has_active_production_method = pm_mobile_artillery_ofs
 				}
 			}
 		}
@@ -232,7 +232,7 @@
 			trigger = { 
 				building = {
 					has_active_production_method = pm_cannon_artillery
-					has_active_production_method = pm_cannon_artillery_def
+					has_active_production_method = pm_cannon_artillery_ofs
 				}
 				culture = {
 					has_culture_graphics = african
@@ -245,7 +245,7 @@
 			trigger = { 
 				building = {
 					has_active_production_method = pm_cannon_artillery
-					has_active_production_method = pm_cannon_artillery_def
+					has_active_production_method = pm_cannon_artillery_ofs
 				}
 				culture = {
 					has_culture_graphics = european
@@ -258,7 +258,7 @@
 			trigger = { 
 				building = {
 					has_active_production_method = pm_cannon_artillery
-					has_active_production_method = pm_cannon_artillery_def
+					has_active_production_method = pm_cannon_artillery_ofs
 				}
 				culture = {
 					has_culture_graphics = asian
@@ -271,7 +271,7 @@
 			trigger = { 
 				building = {
 					has_active_production_method = pm_cannon_artillery
-					has_active_production_method = pm_cannon_artillery_def
+					has_active_production_method = pm_cannon_artillery_ofs
 				}
 				culture = {
 					OR = {
@@ -287,7 +287,7 @@
 			trigger = { 
 				building = {
 					has_active_production_method = pm_cannon_artillery
-					has_active_production_method = pm_cannon_artillery_def
+					has_active_production_method = pm_cannon_artillery_ofs
 				}
 			}
 		}
@@ -297,7 +297,7 @@
 			trigger = { 
 				building = {
 					has_active_production_method = pm_skirmish_infantry
-					has_active_production_method = pm_skirmish_infantry_def
+					has_active_production_method = pm_skirmish_infantry_ofs
 				}
 				culture = {
 					has_culture_graphics = african
@@ -310,7 +310,7 @@
 			trigger = { 
 				building = {
 					has_active_production_method = pm_skirmish_infantry
-					has_active_production_method = pm_skirmish_infantry_def
+					has_active_production_method = pm_skirmish_infantry_ofs
 				}
 				culture = {
 					has_culture_graphics = european
@@ -323,7 +323,7 @@
 			trigger = { 
 				building = {
 					has_active_production_method = pm_skirmish_infantry
-					has_active_production_method = pm_skirmish_infantry_def
+					has_active_production_method = pm_skirmish_infantry_ofs
 				}
 				culture = {
 					has_culture_graphics = asian
@@ -336,7 +336,7 @@
 			trigger = { 
 				building = {
 					has_active_production_method = pm_skirmish_infantry
-					has_active_production_method = pm_skirmish_infantry_def
+					has_active_production_method = pm_skirmish_infantry_ofs
 				}
 				culture = {
 					has_culture_graphics = mideast_indian
@@ -349,7 +349,7 @@
 			trigger = { 
 				building = {
 					has_active_production_method = pm_skirmish_infantry
-					has_active_production_method = pm_skirmish_infantry_def
+					has_active_production_method = pm_skirmish_infantry_ofs
 				}
 			}
 		}
@@ -359,7 +359,7 @@
 			trigger = { 
 				building = {
 					has_active_production_method = pm_line_infantry
-					has_active_production_method = pm_line_infantry_def
+					has_active_production_method = pm_line_infantry_ofs
 				}
 				culture = {
 					has_culture_graphics = african
@@ -372,7 +372,7 @@
 			trigger = { 
 				building = {
 					has_active_production_method = pm_line_infantry
-					has_active_production_method = pm_line_infantry_def
+					has_active_production_method = pm_line_infantry_ofs
 				}
 				culture = {
 					has_culture_graphics = european
@@ -385,7 +385,7 @@
 			trigger = { 
 				building = {
 					has_active_production_method = pm_line_infantry
-					has_active_production_method = pm_line_infantry_def
+					has_active_production_method = pm_line_infantry_ofs
 				}
 				culture = {
 					has_culture_graphics = asian
@@ -398,7 +398,7 @@
 			trigger = {
 				building = {
 					has_active_production_method = pm_line_infantry
-					has_active_production_method = pm_line_infantry_def
+					has_active_production_method = pm_line_infantry_ofs
 				}
 				culture = {
 					has_culture_graphics = mideast_indian
@@ -411,7 +411,7 @@
 			trigger = { 
 				building = {
 					has_active_production_method = pm_line_infantry
-					has_active_production_method = pm_line_infantry_def
+					has_active_production_method = pm_line_infantry_ofs
 				}
 			}
 		}
@@ -421,7 +421,7 @@
 			trigger = { 
 				building = {
 					has_active_production_method = pm_irregular_infantry
-					has_active_production_method = pm_irregular_infantry_def
+					has_active_production_method = pm_irregular_infantry_ofs
 				}
 				culture = {
 					has_culture_graphics = african
@@ -434,7 +434,7 @@
 			trigger = { 
 				building = {
 					has_active_production_method = pm_irregular_infantry
-					has_active_production_method = pm_irregular_infantry_def
+					has_active_production_method = pm_irregular_infantry_ofs
 				}
 				culture = {
 					has_culture_graphics = mideast_indian
@@ -447,7 +447,7 @@
 			trigger = { 
 				building = {
 					has_active_production_method = pm_irregular_infantry
-					has_active_production_method = pm_irregular_infantry_def
+					has_active_production_method = pm_irregular_infantry_ofs
 				}
 				culture = {
 					has_culture_graphics = european
@@ -460,7 +460,7 @@
 			trigger = { 
 				building = {
 					has_active_production_method = pm_irregular_infantry
-					has_active_production_method = pm_irregular_infantry_def
+					has_active_production_method = pm_irregular_infantry_ofs
 				}
 				culture = {
 					has_culture_graphics = asian
@@ -473,7 +473,7 @@
 			trigger = { 
 				building = {
 					has_active_production_method = pm_irregular_infantry
-					has_active_production_method = pm_irregular_infantry_def
+					has_active_production_method = pm_irregular_infantry_ofs
 				}
 			}
 		}

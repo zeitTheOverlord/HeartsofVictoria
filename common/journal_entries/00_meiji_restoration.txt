@@ -177,10 +177,10 @@ je_meiji_army = {
 				is_building_type = building_barracks
 				OR = {
 					has_active_production_method = pm_irregular_infantry
-					has_active_production_method = pm_irregular_infantry_def
+					has_active_production_method = pm_irregular_infantry_ofs
 					has_active_production_method = pm_no_artillery
 					has_active_production_method = pm_cannon_artillery
-					has_active_production_method = pm_cannon_artillery_def
+					has_active_production_method = pm_cannon_artillery_ofs
 				}
 			}
 		}
