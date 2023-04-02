@@ -25,9 +25,13 @@ pmg_artillery = {
 	production_methods = {
 		pm_no_artillery
 		pm_cannon_artillery
+		pm_cannon_artillery_def
 		pm_mobile_artillery
+		pm_mobile_artillery_def
 		pm_shrapnel_artillery
+		pm_shrapnel_artillery_def
 		pm_siege_artillery
+		pm_siege_artillery_def
 	}
 }
 
@@ -81,9 +85,13 @@ pmg_artillery_conscription = {
 	production_methods = {
 		pm_no_artillery_conscription
 		pm_cannon_artillery_conscription
+		pm_cannon_artillery_conscription_def
 		pm_mobile_artillery_conscription
+		pm_mobile_artillery_conscription_def
 		pm_shrapnel_artillery_conscription
+		pm_shrapnel_artillery_conscription_def
 		pm_siege_artillery_conscription
+		pm_siege_artillery_conscription_def
 	}
 }
 

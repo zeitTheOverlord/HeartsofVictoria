@@ -26,10 +26,19 @@
 
  pmg_artillery:0 "Topçu Desteği"
  pm_no_artillery:0 "Piyade Odaklı"
- pm_cannon_artillery:0 "Dökme Topçu"
- pm_mobile_artillery:0 "Seyyar Topçu"
- pm_shrapnel_artillery:0 "Şarapnel Topçusu"
- pm_siege_artillery:0 "Kuşatma Topçusu"
+
+ pm_cannon_artillery:0 "Dökme Topçu(Saldırı)"
+ pm_cannon_artillery_def:0 "Dökme Topçu(Savunma)"
+
+ pm_mobile_artillery:0 "Seyyar Topçu(Saldırı)"
+ pm_mobile_artillery_def:0 "Seyyar Topçu(Savunma)"
+
+ pm_shrapnel_artillery:0 "Şarapnel Topçusu(Saldırı)"
+ pm_shrapnel_artillery_def:0 "Şarapnel Topçusu(Savunma)"
+
+ pm_siege_artillery:0 "Kuşatma Topçusu(Saldırı)"
+ pm_siege_artillery_def:0 "Kuşatma Topçusu(Savunma)"
+
 
  pmg_reconaissance:0 "Keşif"
  pm_cavalry_scouts:0 "Süvari Öncüler"
@@ -67,10 +76,20 @@
 
  pmg_artillery_conscription:0 "$pmg_artillery$"
  pm_no_artillery_conscription:0 "$pm_no_artillery$"
+
+
  pm_cannon_artillery_conscription:0 "$pm_cannon_artillery$"
+ pm_cannon_artillery_conscription_def:0 "$pm_cannon_artillery_def$"
+
  pm_mobile_artillery_conscription:0 "$pm_mobile_artillery$"
+ pm_mobile_artillery_conscription_def:0 "$pm_mobile_artillery_def$"
+
  pm_shrapnel_artillery_conscription:0 "$pm_shrapnel_artillery$"
+ pm_shrapnel_artillery_conscription_def:0 "$pm_shrapnel_artillery_def$"
+
  pm_siege_artillery_conscription:0 "$pm_siege_artillery$"
+ pm_siege_artillery_conscription_def:0 "$pm_siege_artillery_def$"
+
 
  pmg_reconaissance_conscription:0 "$pmg_reconaissance$"
  pm_cavalry_scouts_conscription:0 "$pm_cavalry_scouts$"

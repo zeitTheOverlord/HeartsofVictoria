@@ -27,10 +27,19 @@
 
  pmg_artillery:0 "Artillery Support"
  pm_no_artillery:0 "Infantry Focus"
- pm_cannon_artillery:0 "Cannon Artillery"
- pm_mobile_artillery:0 "Mobile Artillery"
- pm_shrapnel_artillery:0 "Shrapnel Artillery"
- pm_siege_artillery:0 "Siege Artillery"
+
+ pm_cannon_artillery:0 "Cannon Artillery(Offensive)"
+ pm_cannon_artillery_def:0 "Cannon Artillery(Defensive)"
+
+ pm_mobile_artillery:0 "Mobile Artillery(Offensive)"
+ pm_mobile_artillery_def:0 "Mobile Artillery(Defensive)"
+
+ pm_shrapnel_artillery:0 "Shrapnel Artillery(Offensive)"
+ pm_shrapnel_artillery_def:0 "Shrapnel Artillery(Defensive)"
+
+ pm_siege_artillery:0 "Siege Artillery(Offensive)"
+ pm_siege_artillery_def:0 "Siege Artillery(Defensive)"
+
 
  pmg_reconaissance:0 "Reconnaissance"
  pm_cavalry_scouts:0 "Cavalry Scouts"
@@ -71,10 +80,19 @@
 
  pmg_artillery_conscription:0 "$pmg_artillery$"
  pm_no_artillery_conscription:0 "$pm_no_artillery$"
+
  pm_cannon_artillery_conscription:0 "$pm_cannon_artillery$"
+pm_cannon_artillery_conscription_def:0 "$pm_cannon_artillery_def$"
+
  pm_mobile_artillery_conscription:0 "$pm_mobile_artillery$"
+ pm_mobile_artillery_conscription_def:0 "$pm_mobile_artillery_def$"
+
  pm_shrapnel_artillery_conscription:0 "$pm_shrapnel_artillery$"
+ pm_shrapnel_artillery_conscription_def:0 "$pm_shrapnel_artillery_def$"
+
  pm_siege_artillery_conscription:0 "$pm_siege_artillery$"
+ pm_siege_artillery_conscription_def:0 "$pm_siege_artillery_def$"
+
 
  pmg_reconaissance_conscription:0 "$pmg_reconaissance$"
  pm_cavalry_scouts_conscription:0 "$pm_cavalry_scouts$"
