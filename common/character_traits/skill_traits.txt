@@ -437,7 +437,7 @@ basic_offensive_planner = {
 	texture = "gfx/interface/icons/character_trait_icons/basic_offensive_planner.dds"
 	
 	command_modifier = {
-		unit_offense_mult = 0.1
+		unit_offense_mult = 0.05
 		character_battle_condition_surprise_maneuver_mult = 0.5
 	}
 	
@@ -465,7 +465,7 @@ experienced_offensive_planner = {
 	texture = "gfx/interface/icons/character_trait_icons/experienced_offensive_planner.dds"
 	
 	command_modifier = {
-		unit_offense_mult = 0.2
+		unit_offense_mult = 0.1
 		character_battle_condition_surprise_maneuver_mult = 1
 	}
 	
@@ -487,7 +487,7 @@ expert_offensive_planner = {
 	texture = "gfx/interface/icons/character_trait_icons/expert_offensive_planner.dds"
 	
 	command_modifier = {
-		unit_offense_mult = 0.3
+		unit_offense_mult = 0.15
 		character_battle_condition_surprise_maneuver_mult = 2
 	}
 	
@@ -509,7 +509,7 @@ basic_defensive_strategist = {
 	texture = "gfx/interface/icons/character_trait_icons/basic_defensive_strategist.dds"
 	
 	command_modifier = {
-		unit_defense_mult = 0.1
+		unit_defense_mult = 0.05
 		character_battle_condition_dug_in_mult = 1
 		character_battle_condition_camouflaged_mult = 1
 	}
@@ -538,7 +538,7 @@ experienced_defensive_strategist = {
 	texture = "gfx/interface/icons/character_trait_icons/experienced_defensive_strategist.dds"
 	
 	command_modifier = {
-		unit_defense_mult = 0.2
+		unit_defense_mult = 0.1
 		character_battle_condition_dug_in_mult = 2
 		character_battle_condition_camouflaged_mult = 2
 	}
@@ -561,7 +561,7 @@ expert_defensive_strategist = {
 	texture = "gfx/interface/icons/character_trait_icons/expert_defensive_strategist.dds"
 	
 	command_modifier = {
-		unit_defense_mult = 0.3
+		unit_defense_mult = 0.15
 		character_battle_condition_dug_in_mult = 3
 		character_battle_condition_camouflaged_mult = 3
 	}

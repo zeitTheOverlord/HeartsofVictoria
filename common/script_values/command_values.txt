@@ -185,7 +185,7 @@ land_battle_size = {
 		value = {
 			value = "scope:front.num_total_battalions(root)"
 			desc = "BATTLE_SIZE_BASE_TOTAL_BATTALIONS_ON_FRONT"
-			max = 150
+			max = 200
 		}
 	}
 	else_if = {
@@ -199,7 +199,7 @@ land_battle_size = {
 			value = {
 				value = "scope:own_commander.num_mobilized_battalions"
 				desc = "BATTLE_SIZE_BASE_NAVAL_INVASION_GENERALS_BATTALIONS"
-				max = 150
+				max = 100
 			}
 		}
 		else_if = {
@@ -209,7 +209,7 @@ land_battle_size = {
 			value = {
 				value = "scope:province.land_hq.num_garrison_units"
 				desc = "BATTLE_SIZE_BASE_NAVAL_INVASION_GARRISONED_BATTALIONS"
-				max = 150
+				max = 100
 			}
 		}
 	}
@@ -265,9 +265,9 @@ land_battle_size = {
 						add = "scope:front.num_total_battalions(root)"
 						divide = "scope:front.num_total_battalions(scope:enemy_country)"
 						subtract = 1
-						multiply = 1.11
+						multiply = 1.2
 						add = 1
-						max = 1.4
+						max = 3
 					}
 				}
 			}
