@@ -1,12 +1,7 @@
 ﻿BUILDINGS={
 	s:STATE_LOWER_EGYPT={
 		region_state:EGY={
-		create_building={
-				building="building_equip_industry"
-				level=3
-				reserves=1
-				activate_production_methods={ "pmg_equipmentz" }
-			}
+ 
 			create_building={
 				building="building_government_administration"
 				level=7
@@ -336,12 +331,7 @@
 	}
 	s:STATE_FEZ={
 		region_state:MOR={
-		create_building={
-				building="building_equip_industry"
-				level=1
-				reserves=1
-				activate_production_methods={ "pmg_equipmentz" }
-			}
+ 
 			create_building={
 				building="building_government_administration"
 				level=3

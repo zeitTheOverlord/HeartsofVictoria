@@ -1,9 +1,0 @@
-﻿
-building_output_equipmentz_add = {
-	good = yes
-	percent = no
-}
-building_input_equipmentz_add = {
-	good = no
-	percent = no
-}

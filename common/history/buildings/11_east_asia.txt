@@ -649,12 +649,7 @@
 	}
 	s:STATE_ZHEJIANG={
 		region_state:CHI={
-		create_building={
-				building="building_equip_industry"
-				level=7
-				reserves=1
-				activate_production_methods={ "pmg_equipmentz" }
-			}
+ 
 			create_building={
 				building="building_government_administration"
 				level=10
@@ -1257,12 +1252,7 @@
 	}
 	s:STATE_BANGKOK={
 		region_state:SIA={
-		create_building={
-				building="building_equip_industry"
-				level=3
-				reserves=1
-				activate_production_methods={ "pmg_equipmentz" }
-			}
+ 
 			create_building={
 				building="building_government_administration"
 				level=2
@@ -1865,12 +1855,7 @@
 	}
 	s:STATE_KYUSHU={
 		region_state:JAP={
-		create_building={
-				building="building_equip_industry"
-				level=4
-				reserves=1
-				activate_production_methods={ "pmg_equipmentz" }
-			}
+ 
 			create_building={
 				building="building_government_administration"
 				level=4

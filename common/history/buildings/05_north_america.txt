@@ -804,12 +804,7 @@
 	}
 	s:STATE_PENNSYLVANIA={
 		region_state:USA={
-		create_building={
-				building="building_equip_industry"
-				level=5
-				reserves=1
-				activate_production_methods={ "pmg_equipmentz" }
-			}
+ 
 			create_building={
 				building="building_government_administration"
 				level=3
@@ -1295,12 +1290,7 @@
 	}
 	s:STATE_ONTARIO={
 		region_state:HBC={
-		create_building={
-				building="building_equip_industry"
-				level=1
-				reserves=1
-				activate_production_methods={ "pmg_equipmentz" }
-			}
+ 
 			create_building={
 				building="building_logging_camp"
 				level=1
@@ -1666,12 +1656,7 @@
 	}
 	s:STATE_MEXICO={
 		region_state:MEX={
-		create_building={
-				building="building_equip_industry"
-				level=4
-				reserves=1
-				activate_production_methods={ "pmg_equipmentz" }
-			}
+ 
 			create_building={
 				building="building_government_administration"
 				level=7
