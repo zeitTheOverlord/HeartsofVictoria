@@ -34,7 +34,7 @@ NEconomy = {
 	GOODS_SHORTAGE_PENALTY_THRESHOLD = 0.01	# If supply / demand is lower than this, start applying output penalties, by default this should ( 1 / BUY_SELL_DIFF_AT_MAX_FACTOR )                     
 	GOODS_SHORTAGE_PENALTY_DECREASE_SPEED = 0.01	# Goods shortage penalty updates by this amount towards target each day                                                                                  
 	GOODS_SHORTAGE_PENALTY_MAX = 1	# Goods shortage penalty can't be higher than this                                                                                                       
-	MINIMUM_WAGE_RATE = 0.01	# The wage rate can never drop below this, no matter what (weekly £ per POP_SIZE_PACKAGE employees)                                                      
+		# The wage rate can never drop below this, no matter what (weekly £ per POP_SIZE_PACKAGE employees)                                                      
 	BUILDING_INITIAL_WAGE_WEEKS = 1	# A building will not adjust its wages for the first this many weeks of its existence                                                                    
 	BUILDING_WEEKS_BETWEEN_PAY_RAISES = 2	# Cooldown between pay raises towards expected minimum
 	MAX_WAGE_STEP_CHANGE = 1.5	# Wage rates can change at most this much each week                                                                                                      
@@ -80,8 +80,6 @@ Nwar = {
 
 NPops = {
 	ASSIMILATION_RATE = 0.004
-	LOW_POP_THRESHOLD = 3000	# If a state has less than this amount of pops per arable land, apply the low pop modifier
-	HIGH_POP_THRESHOLD = 4500	# If a state has more than this amount of pops per arable land, apply the high pop modifier
 	MIGRATION_PULL_EMPTY_STATE = 100	# If a state has no pops at all, give it a huge migration pull
 	MIGRATION_PULL_FROM_LIVING_STANDARD = 1	# Migration pull from each point of average living standard in target state	
 	MIGRATION_PULL_FROM_AVAILABLE_EMPLOYMENT = 1	# Migration pull is increased by for each 10k available non subsistence jobs
@@ -131,10 +129,3 @@ NPops = {
 }
 
 ### Pop Growth Constants   
-#@min_birthrate = 0.0015
-#@max_birthrate = 0.005
-#@min_mortality = 0.001
-#@max_mortality = 0.006
-#@pop_growth_sol_equilibrium = 5# Equilibrium is where (with no birthrate/death-rate mods) growth is stagnant
-#@pop_growth_sol_delta_cap = 12# SoL Delta Cap is where net growth stops increasing with rising SoL, i.e. both drop at the same pace
-#@pop_growth_sol_cap = 25# SoL Cap is where they birthrate/death-rate stop dropping
