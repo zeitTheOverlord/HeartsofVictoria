@@ -44,7 +44,7 @@ NEconomy = {
 	GOLD_RESERVE_LIMIT_FACTOR = 1	# The base factor of annual GDP that should be provided as a Gold Reserve                                                                                
 	GOLD_RESERVE_RETURNS_FACTOR = 0.1	# How rapidly diminishing returns will cause gold reserves to drop off after the limit has been reached (higher value increases penalty)                 
 	SUBSISTENCE_OUTPUT_AVERAGE_WAGE_RATE_FACTOR = 5	# Each 1.0 of subsistence output counts as this much wage rate when setting normal wages                                                                
-	MIN_RAISE_TO_HIRE = 0.05	#0.10						# The minimum required increase in wages for an employee to switch jobs (1.0 = +100% = x2)							
+	MIN_RAISE_TO_HIRE = 0.10	#0.10						# The minimum required increase in wages for an employee to switch jobs (1.0 = +100% = x2)							
 	DOWNSIZE_BUILDING_POP_TYPE_RADICALIZATION_SHARED_FACTOR = 0.03	# This percentage of a pop becomes radicalized when a building they would have ownership shares in is downsized in the state (multiplied by per-pop shares)
 	FIRED_POP_RADICALIZATION_BASE_FRACTION = 0.05	#0.2		# This percentage of a pop becomes radicalized when they lose their job, for instance due to a building being downsized
 	FIRED_POP_RADICALIZATION_SHARES_FACTOR = 0.01	#0.05	# Additional percentage of pop that becomes radicalized they lost their job for each per-pop share they had in the building
@@ -67,7 +67,7 @@ NMilitary = {
 
 NCharacters = {
 	OLD_AGE = 50
-	MAX_TRAITS_SKILL = 6	# The max amount of Skill Traits a character can develop normally (note: not adhered to by add_trait effect)
+	MAX_TRAITS_SKILL = 5	# The max amount of Skill Traits a character can develop normally (note: not adhered to by add_trait effect)
 	MAX_TRAITS_CONDITION = 3	# The max amount of Condition Traits a character can develop normally (note: not adhered to by add_trait effect)
 	CHARACTER_LIFE_EXPECTANCY_BASE_YEARS = 65
 }
