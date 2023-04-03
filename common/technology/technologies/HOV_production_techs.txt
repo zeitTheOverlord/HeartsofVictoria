@@ -1,0 +1,94 @@
+#########################
+###ADDED 
+#########################
+#########################
+###10_production
+#########################
+
+mechanized_workshops = { #changed
+	# Unlocks Slaughterhouses PM in Livestock Ranches
+	# Unlocks Sewing Machines PM and Mechanized Looms PM in Textile Mills
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/mechanized_workshops.dds"
+	category = production
+	
+	#modifier = {
+	#	building_economy_of_scale_level_cap_add = 10
+	#}
+	
+	unlocking_technologies = {
+		canneries
+		mechanical_tools
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
+shift_work = { #changed
+	era = era_3
+	texture = "gfx/interface/icons/invention_icons/shift_work.dds"
+	category = production
+	
+	modifier = {
+		building_economy_of_scale_level_cap_add = 10 #20
+	}
+	
+	unlocking_technologies = {	
+		mechanized_workshops
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}	
+
+aniline = {
+	# Unlocks Synthetic Plants building
+	era = era_4 #era_3
+	texture = "gfx/interface/icons/invention_icons/aniline.dds"
+	category = production
+	
+	unlocking_technologies = {	
+		#rubber_mastication
+		improved_fertilizer #added
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
+automatic_bottle_blowers = {
+	# Unlocks the Automatic Bottle Blowers PM in Glassworks
+	era = era_4
+	texture = "gfx/interface/icons/invention_icons/automatic_bottle_blowers.dds"
+	category = production
+	
+	unlocking_technologies = {	
+		#vulcanization
+		vacuum_canning #added
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
+
+pasteurization = {
+	# #todo! Does nothing at the moment, should probably do something at Livestock Ranches or Food Industries
+	era = era_4
+	texture = "gfx/interface/icons/invention_icons/pasteurization.dds"
+	category = production
+	
+	unlocking_technologies = {	
+		#vacuum_canning
+		automatic_bottle_blowers #added
+		electrical_capacitors
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
