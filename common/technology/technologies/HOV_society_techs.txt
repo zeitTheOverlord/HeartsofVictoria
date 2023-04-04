@@ -254,8 +254,7 @@ dialectics = {
 	
 	modifier = {
 		country_institution_schools_max_investment_add = 1
-		country_weekly_innovation_max_add = 20 #added
-	}
+ 	}
 	
 	unlocking_technologies = {
 		empiricism
