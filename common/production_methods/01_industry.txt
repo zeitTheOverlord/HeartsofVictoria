@@ -144,7 +144,7 @@ pm_pot_stills = {
 			
 			# output goods
 			building_output_liquor_add = 60				# x30 = 1800
-			building_output_groceries_add = 40 #-30 		# x30 = -900
+			building_output_groceries_add = -40 #-30 		# x30 = -900
 		}
 
 		level_scaled = {
