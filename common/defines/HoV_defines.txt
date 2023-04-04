@@ -22,6 +22,25 @@
 	CONSUMPTION_TAX_HIGH_INCOME_THRESHOLD = 5	# Income-to-expenses threshold at which consumption taxes should be removed (if removal would not put us below this)
 	CONSUMPTION_TAX_MAX_NUM_TAXED_GOODS_BASE = 6	# Base max number of goods AI wants to tax
 	#CONSUMPTION_TAX_MAX_NUM_TAXED_GOODS_PER_MISSING_TAX_TYPE = 2 # Added to max number of goods AI wants to tax for each other type of tax it does not collect
+	#peace
+	AI_PEACE_AGREEMENT_BASE_VALUE = -100	# Was 0. See ~SHORT_WAR
+	AI_PEACE_AGREEMENT_WHITE_PEACE_BASE = 25	# Was 10. See ~
+	AI_PEACE_AGREEMENT_WHITE_PEACE_WAR_DURATION = 4	# For each month the war goes on add this to the acceptance for a white peace
+	AI_PEACE_AGREEMENT_WAR_SUPPORT_FACTOR = -2	# Was -1, war support should be a big factor for AI in negotiated peace.
+	AI_PEACE_AGREEMENT_ALLY_WARGOAL_FACTOR = 20	# Was 10
+	AI_PEACE_AGREEMENT_SELF_WARGOAL_FACTOR = 50	# Was 30, bilateral peace was a cool mechanic, but setting this at 30 basically crippled the idea
+	AI_PEACE_AGREEMENT_ENEMY_WARGOAL_SELF_FACTOR = -50	# Was -50
+	AI_PEACE_AGREEMENT_ENEMY_WARGOAL_ALLY_FACTOR = -20	# Was -10
+	AI_PEACE_AGREEMENT_PEACE_DESIRE_FACTOR = 1	# Was 1.0. Not touching this, would be nice if this were dynamic and decreases over time to simulate WW1
+	AI_MONTHS_OF_REDUCED_PEACE_DESIRE = 12	# Before this amount of months, reduce AI peace desire
+	AI_PEACE_DESIRE_FROM_SHORT_WAR = -100	# Subtract this amount of peace desire for the above number of months (multiplied by AI_MONTHS_OF_REDUCED_PEACE_DESIRE - months of war duration)
+	AI_PEACE_DESIRE_FROM_TURMOIL = 100	# Add this amount of peace desire at 100% radicals
+	AI_PEACE_DESIRE_FROM_DEVASTATION = 100	# Add this amount of peace desire at 100% devastation
+	AI_PEACE_DESIRE_FROM_LOYALISTS = -100	# Subtract this amount of peace desire at 100% loyalists
+	AI_PEACE_DESIRE_FROM_DEBT_LEVEL = 100	# Add this amount of peace desire at 100% debt level
+	AI_PEACE_DESIRE_FROM_BANKRUPTCY = 100	# Add this amount of peace desire when bankrupt
+	AI_PEACE_DESIRE_FROM_GOLD_RESERVES = -25	# Subtract this amount of peace desire at 100% gold reserves
+	AI_PEACE_DESIRE_FROM_FORCE_BALANCE = 25	# Up to this amount is added or subtracted from war support based on DIPLO_PLAY_FORCE_BALANCE_SCALE of the two sides
 }
 
 NEconomy = {
@@ -57,6 +76,7 @@ NPolitics = {
 NMilitary = {
 	MANPOWER_LOST_DUE_TO_ATTRITION_PER_WEEK_MIN = 0.02	# The minimum percentage of manpower a unit can lose each week due to attrition
 	MANPOWER_LOST_DUE_TO_ATTRITION_PER_WEEK_MAX = 0.2	# The maximum percentage of manpower a unit can lose each week due to attrition
+	BATTLE_PLAN_ADVANCE_PROGRESS_TO_LAUNCH = 500	# required accumulated advance progress to launch
 }
 
 NCharacters = {
@@ -66,10 +86,25 @@ NCharacters = {
 	CHARACTER_LIFE_EXPECTANCY_BASE_YEARS = 65
 }
 
+NDiplomacy = {
+	MIN_WAR_SUPPORT = -200
+	MAX_WAR_SUPPORT = 100
+	BASE_WAR_SUPPORT = 100
+}
+
 Nwar = {
 	DEVASTATION_INCREASE_RATE = 0.09	# Per day, scales with level of occupation
 	DEVASTATION_DECAY_RATE = -0.15	# Per day, when there are no occupations
-	DEVASTATION_FROM_BATTLES = 0.02	# For each battle
+	DEVASTATION_FROM_BATTLES = 0.08	# For each battle
+
+	AUTO_CAPITULATE_WAR_SUPPORT = -200	#-100 # When war support is this low, the country will auto capitulate
+
+	DAYS_BETWEEN_WAR_EXHAUSTION = 14	# Every this many days war support will be reduced by the war exhaustion formula
+	WAR_EXHAUSTION_BASE = 0.1
+	WAR_EXHAUSTION_KIA_FACTOR = 20	# Scaled by casualties compared to total manpower
+	WAR_EXHAUSTION_KIA_BASE_MULTIPLIER = 0.05	#was 0.1  # War Exhaustion from casualties is always multiplied by at least this
+	WAR_EXHAUSTION_KIA_BATTLES_LOST_MULTIPLIER = 0.2	#was 0.25	# At 100% of battles lost by our side, War Exhaustion from casualties is further multiplied by this
+	WAR_EXHAUSTION_CONTESTED_ENEMY_WARGOALS = 1	#was 1 
 }
 
 NPops = {
@@ -121,5 +156,3 @@ NPops = {
 	MAX_BASE_COLONIAL_GROWTH = 0.1	# Country base colonial growth from population cannot be higher than this
 	MAX_COLONIAL_GROWTH = 0.03	# Colonies can grow by this much at most per day 
 }
-
-### Pop Growth Constants   
