@@ -779,7 +779,7 @@ pm_atmospheric_engine_pump_building_iron_mine = {
 			building_input_coal_add = 10
 			
 			# output goods
-			building_output_iron_add = 40
+			building_output_iron_add = 30
 		}
 
 		level_scaled = {
@@ -960,7 +960,7 @@ pm_atmospheric_engine_pump_building_lead_mine = {
 			building_input_coal_add = 10
 			
 			# output goods
-			building_output_lead_add = 40
+			building_output_lead_add = 30
 		}
 
 		level_scaled = {
@@ -1100,7 +1100,7 @@ pm_atmospheric_engine_pump_building_sulfur_mine = {
 			building_input_coal_add = 10
 			
 			# output goods
-			building_output_sulfur_add = 40
+			building_output_sulfur_add = 30
 		}
 
 		level_scaled = {

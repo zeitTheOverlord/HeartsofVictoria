@@ -2,7 +2,7 @@
 # icon = graphical icon shown in-game
 # modifier = {} modifier on country for having adopted this law
 
-law_consumption_based_taxation = { #changed
+law_consumption_based_taxation = {
 	group = lawgroup_taxation
 	
 	progressiveness = -100
@@ -11,7 +11,7 @@ law_consumption_based_taxation = { #changed
 	
 	modifier = {
 		state_bureaucracy_population_base_cost_factor_mult = -0.25
-		country_consumption_tax_cost_mult = -0.50 #added
+		country_consumption_tax_cost_mult = -0.50
 	}
 	
 	tax_modifier_very_low = {
@@ -19,19 +19,19 @@ law_consumption_based_taxation = { #changed
 	}	
 	
 	tax_modifier_low = {
-		tax_consumption_add = 0.4 #0.275
+		tax_consumption_add = 0.275
 	}
 	
 	tax_modifier_medium = {
-		tax_consumption_add = 0.6 #0.35
+		tax_consumption_add = 0.35
 	}	
 	
 	tax_modifier_high = {
-		tax_consumption_add = 0.8 #0.425
+		tax_consumption_add = 0.425
 	}
 	
 	tax_modifier_very_high = {
-		tax_consumption_add = 1 #0.50
+		tax_consumption_add = 0.50
 	}	
 	
 	possible_political_movements = {
@@ -53,7 +53,7 @@ law_consumption_based_taxation = { #changed
 				value = 0.75
 			}
 		}
-	}	
+	}
 	
 	# AI shouldn't change to consumption-based-taxation as it's likely to wreck their economy
 	ai_will_do = {
@@ -69,31 +69,31 @@ law_land_based_taxation = {
 	progressiveness = -50
 	
 	tax_modifier_very_low = {
-		tax_consumption_add = 0.4 #0.20
+		tax_consumption_add = 0.20
 		tax_land_add = 0.40
 		tax_income_add = 0.04
 	}	
 	
 	tax_modifier_low = {
-		tax_consumption_add = 0.4 #0.275
+		tax_consumption_add = 0.275
 		tax_land_add = 0.55
 		tax_income_add = 0.065
 	}
 	
 	tax_modifier_medium = {
-		tax_consumption_add = 0.4 #0.35
+		tax_consumption_add = 0.35
 		tax_land_add = 0.65
 		tax_income_add = 0.07
 	}	
 	
 	tax_modifier_high = {
-		tax_consumption_add = 0.4 #0.425
+		tax_consumption_add = 0.425
 		tax_land_add = 0.85
 		tax_income_add = 0.085
 	}
 	
 	tax_modifier_very_high = {
-		tax_consumption_add = 0.4 #0.50
+		tax_consumption_add = 0.50
 		tax_land_add = 1.00
 		tax_income_add = 0.10
 	}	
@@ -116,7 +116,7 @@ law_land_based_taxation = {
 			}
 		}
 	}
-	
+
 	# AI shouldn't change to land based taxation from more advanced taxation forms
 	ai_will_do = {
 		has_law = law_type:law_consumption_based_taxation
@@ -139,35 +139,35 @@ law_per_capita_based_taxation = {
 	}
 	
 	tax_modifier_very_low = {
-		tax_consumption_add = 0.4 #0.20
+		tax_consumption_add = 0.20
 		tax_per_capita_add = 0.40
 		tax_land_add = 0.20
 		tax_income_add = 0.10
 	}	
 	
 	tax_modifier_low = {
-		tax_consumption_add = 0.4 #0.275
+		tax_consumption_add = 0.275
 		tax_per_capita_add = 0.55
 		tax_land_add = 0.275
 		tax_income_add = 0.125
 	}
 	
 	tax_modifier_medium = {
-		tax_consumption_add = 0.4 #0.35
+		tax_consumption_add = 0.35
 		tax_per_capita_add = 0.70
 		tax_land_add = 0.35
 		tax_income_add = 0.15
 	}	
 	
 	tax_modifier_high = {
-		tax_consumption_add = 0.4 #0.425
+		tax_consumption_add = 0.425
 		tax_per_capita_add = 0.85
 		tax_land_add = 0.425
 		tax_income_add = 0.175
 	}
 	
 	tax_modifier_very_high = {
-		tax_consumption_add = 0.4 #0.50
+		tax_consumption_add = 0.50
 		tax_per_capita_add = 1.0
 		tax_land_add = 0.50
 		tax_income_add = 0.20
@@ -195,7 +195,7 @@ law_per_capita_based_taxation = {
 	}
 }
 
-law_proportional_taxation = { #changed
+law_proportional_taxation = {
 	group = lawgroup_taxation
 	
 	progressiveness = 50
@@ -204,45 +204,40 @@ law_proportional_taxation = { #changed
 	
 	disallowing_laws = {
 		law_traditionalism
-		law_laissez_faire #added
 	}	
 	
 	unlocking_technologies = {
 		egalitarianism
 	}
-	
-	modifier = { #added
-		country_consumption_tax_cost_mult = 1
-	}
 
 	tax_modifier_very_low = {
-		tax_consumption_add = 0.4 #0.20
-		tax_income_add = 0.1 #0.15
-		tax_dividends_add = 0.1 #0.15
+		tax_consumption_add = 0.20
+		tax_income_add = 0.15
+		tax_dividends_add = 0.15
 	}	
 	
 	tax_modifier_low = {
-		tax_consumption_add = 0.4 #0.275
-		tax_income_add = 0.15 #0.20
-		tax_dividends_add = 0.15 #0.20
+		tax_consumption_add = 0.275
+		tax_income_add = 0.20
+		tax_dividends_add = 0.20
 	}
 	
 	tax_modifier_medium = {
-		tax_consumption_add = 0.4 #0.35
-		tax_income_add = 0.2 #0.25
-		tax_dividends_add = 0.2 #0.25
+		tax_consumption_add = 0.35
+		tax_income_add = 0.25
+		tax_dividends_add = 0.25
 	}	
 	
 	tax_modifier_high = {
-		tax_consumption_add = 0.4 #0.425
-		tax_income_add = 0.25 #0.30
-		tax_dividends_add = 0.25 #0.30
+		tax_consumption_add = 0.425
+		tax_income_add = 0.30
+		tax_dividends_add = 0.30
 	}
 	
 	tax_modifier_very_high = {
-		tax_consumption_add = 0.4 #0.50
-		tax_income_add = 0.3 #0.35
-		tax_dividends_add = 0.3 #0.35
+		tax_consumption_add = 0.50
+		tax_income_add = 0.35
+		tax_dividends_add = 0.35
 	}	
 
 	possible_political_movements = {
@@ -267,7 +262,7 @@ law_proportional_taxation = { #changed
 	}
 }
 
-law_graduated_taxation = { #changed
+law_graduated_taxation = {
 	group = lawgroup_taxation
 	
 	progressiveness = 100
@@ -276,43 +271,38 @@ law_graduated_taxation = { #changed
 	
 	disallowing_laws = {
 		law_traditionalism
-		law_laissez_faire #added
 	}	
 	
 	unlocking_technologies = {
 		socialism
 	}
 	
-	modifier = { #added
-		country_consumption_tax_cost_mult = 1
-	}
-	
 	tax_modifier_very_low = {
-		tax_consumption_add = 0.4 #0.20
+		tax_consumption_add = 0.20
 		tax_income_add = 0.10
 		tax_dividends_add = 0.30
 	}	
 	
 	tax_modifier_low = {
-		tax_consumption_add = 0.4 #0.275
+		tax_consumption_add = 0.275
 		tax_income_add = 0.125
 		tax_dividends_add = 0.35
 	}
 	
 	tax_modifier_medium = {
-		tax_consumption_add = 0.4 #0.35
+		tax_consumption_add = 0.35
 		tax_income_add = 0.15
 		tax_dividends_add = 0.40
 	}	
 	
 	tax_modifier_high = {
-		tax_consumption_add = 0.4 #0.425
+		tax_consumption_add = 0.425
 		tax_income_add = 0.175
 		tax_dividends_add = 0.45
 	}
 	
 	tax_modifier_very_high = {
-		tax_consumption_add = 0.4 #0.50
+		tax_consumption_add = 0.50
 		tax_income_add = 0.20
 		tax_dividends_add = 0.50
 	}
@@ -335,5 +325,5 @@ law_graduated_taxation = { #changed
 				value = 0.75
 			}
 		}
-	}	
+	}
 }

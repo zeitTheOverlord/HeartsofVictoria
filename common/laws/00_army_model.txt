@@ -6,11 +6,11 @@
 	
 	modifier = {
 		unit_morale_loss_mult = 0.1
-		state_conscription_rate_add = 0.03
-		interest_group_ig_landowners_pol_str_mult = 0.5 #0.25
+		state_conscription_rate_add = 0.02
+		interest_group_ig_landowners_pol_str_mult = 0.25
 		country_military_goods_cost_mult = -0.25
-		state_building_barracks_max_level_add = 10
-		state_building_conscription_center_max_level_add = 15 #25
+		state_building_barracks_max_level_add = 25
+		state_building_conscription_center_max_level_add = 25
 	}
 	
 	on_enact = {
@@ -54,9 +54,9 @@ law_professional_army = {
 	modifier = {
 		unit_morale_loss_mult = -0.1
 		state_conscription_rate_add = 0.01
-		interest_group_ig_armed_forces_pol_str_mult = 0.5 #0.25
-		state_building_barracks_max_level_add = 25 #100
-		state_building_conscription_center_max_level_add = 5
+		interest_group_ig_armed_forces_pol_str_mult = 0.25
+		state_building_barracks_max_level_add = 100
+		state_building_conscription_center_max_level_add = 50
 	}
 	
 	possible_political_movements = {
@@ -99,8 +99,8 @@ law_national_militia = {
 	modifier = {
 		unit_morale_loss_mult = -0.05
 		state_conscription_rate_add = 0.05
-		interest_group_ig_armed_forces_pol_str_mult = -0.5 #-0.25
-		state_building_barracks_max_level_add = 10
+		interest_group_ig_armed_forces_pol_str_mult = -0.25
+		state_building_barracks_max_level_add = 5
 		state_building_conscription_center_max_level_add = 100
 	}
 	
@@ -141,10 +141,9 @@ law_mass_conscription = {
 	
 	modifier = {
 		unit_morale_loss_mult = 0.05
-		state_conscription_rate_add = 0.05 #0.04
-		interest_group_ig_armed_forces_pol_str_mult = 0.25 #added
+		state_conscription_rate_add = 0.04
 		building_training_rate_mult = 1
-		state_building_barracks_max_level_add = 25 #100
+		state_building_barracks_max_level_add = 100
 		state_building_conscription_center_max_level_add = 100
 	}
 	
@@ -153,6 +152,6 @@ law_mass_conscription = {
 	}
 
 	pop_support = {
-		value = 10
+		value = 0
 	}
 }

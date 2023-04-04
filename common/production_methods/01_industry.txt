@@ -2704,7 +2704,7 @@ pm_rifles = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_steel_add = 10
+			building_input_steel_add = 15
 			building_input_hardwood_add = 10
 			building_input_tools_add = 15
 			
@@ -2732,7 +2732,7 @@ pm_repeaters = {
 			# input goods
 			building_input_steel_add = 20
 			building_input_hardwood_add = 10
-			building_input_tools_add = 10
+			building_input_tools_add = 20
 			
 			# output goods
 			building_output_small_arms_add = 60
@@ -2760,7 +2760,7 @@ pm_bolt_action_rifles = {
 			building_input_steel_add = 20
 			building_input_hardwood_add = 10
 			building_input_tools_add = 20
-			building_input_oil_add = 15
+			building_input_oil_add = 5
 			
 			# output goods
 			building_output_small_arms_add = 80
