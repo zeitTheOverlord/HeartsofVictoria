@@ -16,7 +16,7 @@ law_autocracy = {
 	}
 
 	modifier = {
-		country_law_enactment_time_mult = -0.5
+		country_law_enactment_time_mult = -0.2
 		country_legitimacy_headofstate_add = 50
 		country_legitimacy_govt_total_clout_add = 120
 		country_legitimacy_ideological_incoherence_mult = 0.5

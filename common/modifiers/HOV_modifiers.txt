@@ -167,9 +167,12 @@ efficient_bureaucracy = {
 legislative_efficiency = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
 	country_law_enactment_time_mult = -0.25
-	country_law_enactment_success_add = 0.1 #added
 }
-
+political_dysfunction = {
+	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
+	country_opposition_ig_approval_add = -10
+	country_law_enactment_time_mult = 0.5
+}
 unincorporated_state = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_gear_negative.dds
 	state_infrastructure_mult = -0.25

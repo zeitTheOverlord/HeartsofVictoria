@@ -57,9 +57,6 @@ law_appointed_bureaucrats = {
 	possible_political_movements = {
 		law_elected_bureaucrats
 	}
-	disallowing_laws = {
-		law_autocracy
-	}
 	pop_support = {
 		value = 0
 		# Academics like technocracy
