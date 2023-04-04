@@ -22,7 +22,7 @@
 	CONSUMPTION_TAX_HIGH_INCOME_THRESHOLD = 5	# Income-to-expenses threshold at which consumption taxes should be removed (if removal would not put us below this)
 	CONSUMPTION_TAX_MAX_NUM_TAXED_GOODS_BASE = 6	# Base max number of goods AI wants to tax
 	#CONSUMPTION_TAX_MAX_NUM_TAXED_GOODS_PER_MISSING_TAX_TYPE = 2 # Added to max number of goods AI wants to tax for each other type of tax it does not collect
-	#peace
+	#peace ai
 	AI_PEACE_AGREEMENT_BASE_VALUE = -100	# Was 0. See ~SHORT_WAR
 	AI_PEACE_AGREEMENT_WHITE_PEACE_BASE = 25	# Was 10. See ~
 	AI_PEACE_AGREEMENT_WHITE_PEACE_WAR_DURATION = 4	# For each month the war goes on add this to the acceptance for a white peace
@@ -92,7 +92,7 @@ NDiplomacy = {
 	BASE_WAR_SUPPORT = 100
 }
 
-Nwar = {
+NWar = {
 	DEVASTATION_INCREASE_RATE = 0.09	# Per day, scales with level of occupation
 	DEVASTATION_DECAY_RATE = -0.15	# Per day, when there are no occupations
 	DEVASTATION_FROM_BATTLES = 0.08	# For each battle
