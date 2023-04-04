@@ -1,0 +1,46 @@
+﻿l_english:
+ 
+ dp_unify_japan:0 "A Unified Empire once again"
+ dp_unify_japan_tooltip:0 "The start of a $dp_unify_holy_roman_empire$[concept_diplomatic_play]"
+ dp_leadership_japan:0 "The leader of the Holy Roman Empire"
+ dp_leadership_japan_desc:0 "Create a $dp_leadership_holy_roman_empire$ [concept_diplomatic_play]"
+ 
+ je_japan_unification:0 "Boshin War"
+ je_JAP_unify:0 "Is Japan"
+ je_japan_unification_reason:0 "It is time for our leadership to be unquestioned in Japan. It is time to overthrow the Shogunate!"
+ 
+ japan_unify.1.t:0 "Japanese Unification Process"
+ japan_unify.1.d:0 "Japan is destined for Greatness!"
+ japan_unify.1.f:0 "Together we will forge a new Power!"
+ japan_unify.1.a:0 "Banzai!"
+ 
+ japan_unify.2.t:0 "Japanese Unity"
+ japan_unify.2.d:0 "With the work of our loyal armies and supportive Diamyos, we have overthrown the Shogun."
+ japan_unify.2.f:0 "With the work of our loyal armies and supportive Diamyos, we have overthrown the Shogun."
+ japan_unify.2.a:0 "Cheers to [ROOT.GetCountry.GetRuler.GetPrimaryRoleTitle]"
+ japan_unify.2.b:0 "This is the great solidarity of the Japanese people"
+ 
+ japan_conquer.1.t:0 "Expansion!"
+ japan_conquer.1.d:0 "Our armies occupy the enemy land, adding it to our Empire!"
+ japan_conquer.1.f:0 "Patriotic Ferver throughout the nation flares!"
+ japan_conquer.1.a:0 "Wonderful!"
+ 
+ je_hokkaido:0 "Dominating Hokkaido"
+ je_hokkaido_reason:0 "The Natives of Ainu have been a pain in our backside since the Sengoku Jidai. It is time to show them the superior nation."
+ je_sakhalin:0 "Into Sakhalin"
+ je_sakhalin_reason:0 "Sakhalin is very much included within the Island Chain of Japan. We must include it within our national borders."
+ je_formosa:0 "Colonize Formosa"
+ je_formosa_reason:0 "Formosa, or Taiwan, while it is a stretch to say is in the Japanese Island Chain, certainly is a great base for a prosperous model colony to project Japanese power on the global stage. We must take control of it."
+ je_korea_1:0 "Subjugate Korea"
+ je_korea_1_reason:0 "Korea has, since its history, been subjugated by the Chinese. In order to stop Chinese growth and give way to Japanese Dominance of East Asia, we must take korea and threaten the Heart of China itself."
+ je_korea_2:0 "Complete Control over Korea"
+ je_korea_2_reason:0 "It is time for Korea to end any glimmer of Independence it may hold, direct control over the region is required to maintain Japanese dominance."
+ 
+ shogun.1.t:0 "Ryukyu enters the fold!"
+ shogun.1.d:0 "Our Military has occupied the Ryukyu Islands!"
+ shogun.1.f:0 "We may now unite Japan under complete Shogun Control!"
+ shogun.1.a:0 "Glory to the Shogun!"
+ 
+ je_ryukyu:0 "Conquer Ryukyu"
+ je_ryukyu_reason:0 "We must take action against the Chinese, and wrestle Japan out of their hands forevermore!"
+

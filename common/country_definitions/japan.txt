@@ -1,0 +1,72 @@
+IMP = {
+	color = { 127 109 58 }
+	country_type = unrecognized
+	
+	tier = empire
+	
+	cultures = { japanese }
+	capital = STATE_KANSAI
+}
+SAT = {
+	color = { 139 122 102 }
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { japanese }
+	capital = STATE_KYUSHU
+}
+RYU = {
+	color = { 102 81 127 }
+	country_type = unrecognized
+	
+	tier = kingdom
+	
+	cultures = { japanese }
+	capital = STATE_RYUKYU_ISLANDS
+}
+TOS = {
+	color = { 128 123 70 }
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { japanese }
+	capital = STATE_SHIKOKU
+}
+SND = {
+	color = { 130 119 91 }
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { japanese }
+	capital = STATE_TOHOKU
+}
+CHO = {
+	color = { 139 103 84 }
+	country_type = unrecognized
+	
+	tier = principality
+	
+	cultures = { japanese }
+	capital = STATE_SHIKOKU
+}
+SHG = {
+	color = { 153 139 96 }
+	country_type = unrecognized
+	
+	tier = empire
+	
+	cultures = { japanese }
+	capital = STATE_KANTO
+}
+JAP = {
+	color = { 254 254 254 }
+	country_type = unrecognized
+	
+	tier = empire
+	
+	cultures = { japanese }
+	capital = STATE_KANTO
+}

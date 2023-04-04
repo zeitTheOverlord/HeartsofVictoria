@@ -1,0 +1,172 @@
+﻿je_hokkaido = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	is_shown_when_inactive = {
+		exists = c:JAP
+		c:JAP = ROOT
+	}
+
+	possible = {
+		exists = c:AIN
+	}
+
+	complete = {
+		# If-else clause to avoid errors because of missing variable before JE activates
+		
+		is_at_war = no
+		owns_entire_state_region = STATE_HOKKAIDO
+		NOT = {
+			exists = c:AIN
+		}
+		has_law = law_type:law_colonial_resettlement
+	}
+
+	on_complete = {
+		
+		trigger_event = {
+			id = japan_conquer.1
+		}
+	}
+
+	weight = 5000
+	#should_be_pinned_by_default = yes
+}
+
+je_sakhalin = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	is_shown_when_inactive = {
+		exists = c:JAP
+		c:JAP = ROOT
+	}
+
+	possible = {
+		exists = c:SKH
+	}
+
+	complete = {
+		# If-else clause to avoid errors because of missing variable before JE activates
+		
+		is_at_war = no
+		owns_entire_state_region = STATE_SAKHALIN
+		has_law = law_type:law_colonial_resettlement
+	}
+
+	on_complete = {
+		
+		trigger_event = {
+			id = japan_conquer.1
+		}
+	}
+
+	weight = 5000
+	#should_be_pinned_by_default = yes
+}
+
+je_formosa = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	is_shown_when_inactive = {
+		exists = c:JAP
+		c:JAP = ROOT
+	}
+
+	possible = {
+		exists = c:CHI
+	}
+
+	complete = {
+		# If-else clause to avoid errors because of missing variable before JE activates
+		
+		is_at_war = no
+		owns_entire_state_region = STATE_FORMOSA
+		has_law = law_type:law_colonial_resettlement
+	}
+
+	on_complete = {
+		
+		trigger_event = {
+			id = japan_conquer.1
+		}
+	}
+
+	weight = 5000
+	#should_be_pinned_by_default = yes
+}
+
+je_korea_1 = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	is_shown_when_inactive = {
+		exists = c:JAP
+		c:JAP = ROOT
+	}
+
+	possible = {
+		exists = c:KOR
+	}
+
+	complete = {
+		# If-else clause to avoid errors because of missing variable before JE activates
+		
+		is_at_war = no
+		c:JAP = {
+			has_diplomatic_pact = {
+					who = C:KOR
+					type = puppet
+			}
+		}
+
+	}
+
+	on_complete = {
+		
+		trigger_event = {
+			id = japan_conquer.1
+		}
+	}
+
+	weight = 5000
+	#should_be_pinned_by_default = yes
+}
+je_korea_2 = {
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+
+	is_shown_when_inactive = {
+		exists = c:JAP
+		c:JAP = ROOT
+	}
+
+	possible = {
+		exists = c:KOR
+		c:JAP = {
+			has_diplomatic_pact = {
+					who = C:KOR
+					type = puppet
+			}
+		}
+	}
+
+	complete = {
+		# If-else clause to avoid errors because of missing variable before JE activates
+		
+		is_at_war = no
+		owns_entire_state_region = STATE_BUSAN
+		owns_entire_state_region = STATE_YANGHO
+		owns_entire_state_region = STATE_SARIWON
+		owns_entire_state_region = STATE_PYONGYANG
+		owns_entire_state_region = STATE_SEOUL
+
+
+	}
+
+	on_complete = {
+		
+		trigger_event = {
+			id = japan_conquer.1
+		}
+	}
+
+	weight = 5000
+	#should_be_pinned_by_default = yes
+}

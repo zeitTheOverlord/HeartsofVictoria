@@ -1,0 +1,31 @@
+﻿namespace = japan_conquer
+
+japan_conquer.1 = {
+	type = country_event
+	placement = JAP
+	
+	title = japan_conquer.1.t
+	desc = japan_conquer.1.d
+	flavor = japan_conquer.1.f
+	
+	event_image = {
+		video = "gfx/event_pictures/unspecific_military_parade.bk2"
+	}
+	
+	on_created_soundeffect = "event:/SFX/UI/Alerts/event_appear"
+	on_opened_soundeffect = "event:/SFX/Events/unspecific/military_parade"
+	
+	icon = "gfx/interface/icons/event_icons/event_military.dds"
+	
+	duration = 3
+	
+	option = {
+		name = japan_conquer.1.a
+		default_option = yes
+		add_loyalists = {
+			value = 0.05
+			country_legitimacy_base_add = 10
+		}
+	}
+}
+
