@@ -44,7 +44,13 @@
 		# If-else clause to avoid errors because of missing variable before JE activates
 		trigger_if = {
 			limit = { exists = var:shogunate_var }
-			scope:journal_entry = { is_goal_complete = yes }
+			OR = {
+				custom_tooltip = {
+					text = defeat_shogunate_civil_war_tt
+					scope:journal_entry = { is_goal_complete = yes }
+				}
+				scope:journal_entry = { is_goal_complete = yes }
+			}
 		}
 		trigger_else = {
 			custom_tooltip = je_meiji_restoration_goal
@@ -70,11 +76,10 @@
 	}
 
 	goal_add_value = {
-		value = 1
+		value = 120
 	}
 
 	progressbar = yes
-
 
 	weight = 10000
 	should_be_pinned_by_default = yes
@@ -174,7 +179,6 @@ je_meiji_army = {
 					has_active_production_method = pm_irregular_infantry
 					has_active_production_method = pm_irregular_infantry_ofs
 					has_active_production_method = pm_no_artillery
-					has_active_production_method = pm_no_artillery_ofs
 					has_active_production_method = pm_cannon_artillery
 					has_active_production_method = pm_cannon_artillery_ofs
 				}
