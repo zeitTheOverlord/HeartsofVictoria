@@ -352,7 +352,7 @@ pm_hydroelectric_plant = {
 	building_modifiers = { 
 		workforce_scaled = {
 			building_input_engines_add = 10
-			building_output_electricity_add = 50
+			building_output_electricity_add = 80
 		}
 
 		level_scaled = {
@@ -374,8 +374,8 @@ pm_coal-fired_plant = {
 	building_modifiers = { 
 		workforce_scaled = {
 			building_input_engines_add = 15
-			building_input_coal_add = 30
-			building_output_electricity_add = 100
+			building_input_coal_add = 20
+			building_output_electricity_add = 120
 		}
 
 		level_scaled = {
@@ -397,8 +397,8 @@ pm_oil-fired_plant = {
 	building_modifiers = { 
 		workforce_scaled = {
 			building_input_engines_add = 20
-			building_input_oil_add = 40
-			building_output_electricity_add = 150
+			building_input_oil_add = 10
+			building_output_electricity_add = 160
 		}
 
 		level_scaled = {
