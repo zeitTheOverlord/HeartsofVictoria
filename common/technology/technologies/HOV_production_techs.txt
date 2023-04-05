@@ -12,9 +12,9 @@ mechanized_workshops = { #changed
 	texture = "gfx/interface/icons/invention_icons/mechanized_workshops.dds"
 	category = production
 	
-	#modifier = {
-	#	building_economy_of_scale_level_cap_add = 10
-	#}
+	modifier = {
+		building_economy_of_scale_level_cap_add = 10
+	}
 	
 	unlocking_technologies = {
 		canneries
@@ -32,7 +32,7 @@ shift_work = { #changed
 	category = production
 	
 	modifier = {
-		building_economy_of_scale_level_cap_add = 10 #20
+		building_economy_of_scale_level_cap_add = 20 
 	}
 	
 	unlocking_technologies = {	

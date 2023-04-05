@@ -76,7 +76,7 @@ NPolitics = {
 NMilitary = {
 	MANPOWER_LOST_DUE_TO_ATTRITION_PER_WEEK_MIN = 0.02	# The minimum percentage of manpower a unit can lose each week due to attrition
 	MANPOWER_LOST_DUE_TO_ATTRITION_PER_WEEK_MAX = 0.2	# The maximum percentage of manpower a unit can lose each week due to attrition
-	BATTLE_PLAN_ADVANCE_PROGRESS_TO_LAUNCH = 500	# required accumulated advance progress to launch
+	BATTLE_PLAN_ADVANCE_PROGRESS_TO_LAUNCH = 200	# required accumulated advance progress to launch
 }
 
 NCharacters = {

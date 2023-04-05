@@ -79,7 +79,7 @@ centralization = {
 	category = society
 	
 	modifier = {
-		state_tax_capacity_add = 20 #25
+		state_tax_capacity_add = 25 #25
 		country_institution_home_affairs_max_investment_add = 1
 	}
 	
@@ -213,7 +213,7 @@ central_archives = {
 	category = society
 	
 	modifier = {
-		state_tax_capacity_add = 20 #25
+		state_tax_capacity_add = 25 #25
 		country_institution_home_affairs_max_investment_add = 1
 	}
 	
@@ -297,8 +297,8 @@ pan-nationalism = {
 	category = society
 	
 	modifier = {
-		#country_authority_mult = 0.1
-		country_authority_add = 50 #added
+		country_authority_mult = 0.1
+
 	}
 	
 	unlocking_technologies = {
@@ -318,7 +318,7 @@ identification_documents = {
 	category = society
 
 	modifier = {
-		state_tax_capacity_add = 20 #25
+		state_tax_capacity_add = 25 #25
 		country_institution_home_affairs_max_investment_add = 1
 	}
 	
@@ -583,7 +583,7 @@ mass_surveillance = {
 	category = society
 	
 	modifier = {
-		state_tax_capacity_add = 20 #25
+		state_tax_capacity_add = 25 #25
 	}
 	
 	unlocking_technologies = {

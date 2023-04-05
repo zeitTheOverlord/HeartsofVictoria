@@ -192,7 +192,7 @@ capital_state = {
 	state_pop_pol_str_mult = 0.25
 	state_tax_capacity_mult = 0.25
 	building_group_bg_bureaucracy_throughput_mult = 0.1 #added
-	state_building_barracks_max_level_add = 50 #added
+	state_building_barracks_max_level_add = 100 #added
 }
 
 tax_modifier_very_low = {
