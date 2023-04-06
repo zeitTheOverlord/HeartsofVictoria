@@ -1669,7 +1669,7 @@ pm_wound_dressing = {
 	texture = "gfx/interface/icons/production_method_icons/wound_dressing.dds"
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_liquor_add = 0.5
+			building_input_liquor_add = 1
 			building_input_fabric_add = 0.5
 		}
 		unscaled = {
@@ -1710,7 +1710,7 @@ pm_field_hospitals = {
 		}
 		unscaled = {
 			unit_morale_loss_mult = -0.6
-			unit_recovery_rate_add = 0.8
+			unit_recovery_rate_add = 0.75
 		}
 	}
 }

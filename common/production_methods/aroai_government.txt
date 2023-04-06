@@ -13,7 +13,7 @@
 	
 	country_modifiers = {
 		workforce_scaled = {
-			country_convoys_capacity_add = 40
+			country_convoys_capacity_add = 50
 		}
 	}
 	
@@ -97,7 +97,7 @@ pm_modern_port = {
 	building_modifiers = {
 		workforce_scaled = {	
 			building_input_steamers_add = 5	
-			building_input_oil_add = 10
+			building_input_oil_add = 5
 		}
 		level_scaled = {
 			building_employment_laborers_add = 750
@@ -109,7 +109,7 @@ pm_modern_port = {
 
 	country_modifiers = {
 		workforce_scaled = {
-			country_convoys_capacity_add = 800
+			country_convoys_capacity_add = 600
 		}
 	}
 	state_modifiers = {
@@ -186,7 +186,7 @@ pm_vertical_filing_cabinets = {
     
     country_modifiers = {
         workforce_scaled = {
-            country_bureaucracy_add = 65
+            country_bureaucracy_add = 75
         }
     }    
     
@@ -198,7 +198,7 @@ pm_vertical_filing_cabinets = {
 
     building_modifiers = {
         workforce_scaled = {
-            building_input_paper_add = 20
+            building_input_paper_add = 15
         }    
     
         level_scaled = {
@@ -223,13 +223,13 @@ pm_switch_boards = {
 
     state_modifiers = {
         workforce_scaled = {
-            state_tax_capacity_add = 30
+            state_tax_capacity_add = 20
         }        
     }
     
     building_modifiers = {
         workforce_scaled = {
-            building_input_paper_add = 20
+            building_input_paper_add = 10
             building_input_telephones_add = 5
         }
 
