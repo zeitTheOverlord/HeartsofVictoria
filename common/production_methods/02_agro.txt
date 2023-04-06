@@ -166,7 +166,7 @@ pm_tractors = {
 		workforce_scaled = {
 			# input goods								
 			building_input_coal_add = 4.5 
-			building_input_engines_add = 4.5
+			building_input_engines_add = 3
 		}
 
 		level_scaled = {
@@ -187,7 +187,7 @@ pm_compression_ignition_tractors = {
 		workforce_scaled = {
 			# input goods								
 			building_input_oil_add = 4
-			building_input_engines_add = 6
+			building_input_engines_add = 4
 		}
 
 		level_scaled = {

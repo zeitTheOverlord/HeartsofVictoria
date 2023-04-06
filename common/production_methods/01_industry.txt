@@ -343,7 +343,7 @@ pm_dye_workshops = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_fabric_add = 30		# x20 =  800
+			building_input_fabric_add = 40		# x20 =  800
 			building_input_dye_add = 5			# x40 =  200
 			
 			# output goods
@@ -368,9 +368,9 @@ pm_sewing_machines = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_fabric_add = 30		# x20 = 1200
-			building_input_dye_add = 5			# x40 =  400
-			building_input_tools_add = 10		# x40 =  200
+			building_input_fabric_add = 40		# x20 = 1200
+			building_input_dye_add = 10			# x40 =  400
+			building_input_tools_add = 5		# x40 =  200
 			
 			# output goods
 			building_output_clothes_add = 80	# x30 = 3000
@@ -395,10 +395,10 @@ pm_electric_sewing_machines = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_fabric_add = 30
-			building_input_dye_add = 5
-			building_input_tools_add = 10
-			building_input_electricity_add = 10
+			building_input_fabric_add = 40
+			building_input_dye_add = 15
+			building_input_tools_add = 5
+			building_input_electricity_add = 5
 			
 			# output goods
 			building_output_clothes_add = 100
@@ -629,11 +629,11 @@ pm_handcrafted_furniture = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_wood_add = 40		# x20 =  600
+			building_input_wood_add = 20		# x20 =  600
 			building_input_fabric_add = 10		# x20 =  200
 			
 			# output goods
-			building_output_furniture_add = 50	# x30 = 1350
+			building_output_furniture_add = 40	# x30 = 1350
 		}
 
 		level_scaled = {
@@ -653,12 +653,12 @@ pm_lathe = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_wood_add = 40
-			building_input_fabric_add = 10
+			building_input_wood_add = 30
+			building_input_fabric_add = 15
 			building_input_tools_add = 10
 			
 			# output goods
-			building_output_furniture_add = 75
+			building_output_furniture_add = 80
 		}
 
 		level_scaled = {
@@ -683,11 +683,11 @@ pm_mechanized_workshops = {
 		workforce_scaled = {
 			# input goods
 			building_input_wood_add = 40
-			building_input_fabric_add = 10
+			building_input_fabric_add = 20
 			building_input_tools_add = 20
 			
 			# output goods
-			building_output_furniture_add = 100
+			building_output_furniture_add = 120
 		}
 
 		level_scaled = {
@@ -710,11 +710,10 @@ pm_luxury_furniture = {
 			# input goods
 			building_input_hardwood_add = 10
 			building_input_wood_add = -10
-			building_input_tools_add = 5
 
 	
 			# output goods
-			building_output_furniture_add = -40
+			building_output_furniture_add = -20
 			building_output_luxury_furniture_add = 20
 		}
 		
@@ -1085,8 +1084,8 @@ pm_automatic_bottle_blowers = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_tools_add = 9
-			building_input_oil_add = 6
+			building_input_tools_add = 7.5
+			building_input_oil_add = 5
 		}
 
 		level_scaled = {
@@ -2675,10 +2674,10 @@ pm_muskets = {
 		workforce_scaled = {
 			# input goods
 			building_input_iron_add = 10
-			building_input_hardwood_add = 10
+			building_input_hardwood_add = 20
 			
 			# output goods
-			building_output_small_arms_add = 20
+			building_output_small_arms_add = 30
 		}
 
 		level_scaled = {
@@ -2699,12 +2698,12 @@ pm_rifles = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_steel_add = 15
-			building_input_hardwood_add = 10
-			building_input_tools_add = 15
+			building_input_steel_add = 10
+			building_input_hardwood_add = 15
+			building_input_tools_add = 10
 			
 			# output goods
-			building_output_small_arms_add = 40
+			building_output_small_arms_add = 45
 		}
 
 		level_scaled = {
@@ -2725,9 +2724,9 @@ pm_repeaters = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_steel_add = 20
+			building_input_steel_add = 15
 			building_input_hardwood_add = 10
-			building_input_tools_add = 20
+			building_input_tools_add = 15
 			
 			# output goods
 			building_output_small_arms_add = 60
@@ -2752,13 +2751,13 @@ pm_bolt_action_rifles = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_steel_add = 20
-			building_input_hardwood_add = 10
-			building_input_tools_add = 20
+			building_input_steel_add = 15
+			building_input_hardwood_add = 5
+			building_input_tools_add = 15
 			building_input_oil_add = 5
 			
 			# output goods
-			building_output_small_arms_add = 80
+			building_output_small_arms_add = 75
 		}
 
 		level_scaled = {
@@ -2806,7 +2805,7 @@ pm_smoothbores = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_output_small_arms_add = -10
+			building_output_small_arms_add = -15
 			building_input_steel_add = 15
 
 			# output goods
