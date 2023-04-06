@@ -552,7 +552,7 @@ pm_simple_whaling = {
 			
 			# output
 			building_output_meat_add = 5
-			building_output_oil_add = 10
+			building_output_oil_add = 5
 		}
 
 		level_scaled = {
@@ -572,7 +572,7 @@ pm_wooden_whaling_ships = {
 			
 			# output
 			building_output_meat_add = 10
-			building_output_oil_add = 20
+			building_output_oil_add = 10
 		}
 
 		level_scaled = {
@@ -596,8 +596,8 @@ pm_steam_whaling_ships = {
 			# input
 			building_input_steamers_add = 5
 			
-			building_output_meat_add = 15
-			building_output_oil_add = 30
+			building_output_meat_add = 20
+			building_output_oil_add = 20
 		}
 
 		level_scaled = {

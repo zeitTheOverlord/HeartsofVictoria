@@ -1726,8 +1726,8 @@ pm_ironclads = {
 	building_modifiers = {
 		workforce_scaled = {
 			building_input_ironclads_add = 2
-			building_input_ammunition_add = 1
-			building_input_coal_add = 1			#added
+			building_input_ammunition_add = 2
+			building_input_coal_add = 2			#added
 		}
 		level_scaled = {
 			building_employment_soldiers_add = 900
@@ -1762,16 +1762,16 @@ pm_monitors = {
 		workforce_scaled = {
 			# input goods
 			building_input_ironclads_add = 3
-			building_input_ammunition_add = 2
-			building_input_coal_add = 2			#added
+			building_input_ammunition_add = 3
+			building_input_coal_add = 3			#added
 		}
 		level_scaled = {
 			building_employment_soldiers_add = 900
 			building_employment_officers_add = 100
 		}
 		throughput_scaled = {
-			unit_offense_add = 50
-			unit_defense_add = 50
+			unit_offense_add = 60
+			unit_defense_add = 60
 		}
 		unscaled = {
 			unit_morale_loss_add = 15
@@ -1800,7 +1800,7 @@ pm_dreadnoughts = {
 			building_input_ironclads_add = 4
 			building_input_ammunition_add = 4
 			building_input_radios_add = 1
-			building_input_coal_add = 3			#added
+			building_input_coal_add = 4			#added
 		}
 		level_scaled = {
 			building_employment_soldiers_add = 900
@@ -1811,7 +1811,7 @@ pm_dreadnoughts = {
 			unit_defense_add = 80
 		}
 		unscaled = {
-			unit_morale_loss_add = 8
+			unit_morale_loss_add = 10
 		}
 	}
 	country_modifiers = {
@@ -1835,9 +1835,9 @@ pm_battleships = {
 		workforce_scaled = {
 			# input goods
 			building_input_ironclads_add = 5
-			building_input_ammunition_add = 6
-			building_input_radios_add = 2
-			building_input_coal_add = 2			#added
+			building_input_ammunition_add = 5
+			building_input_radios_add = 1
+			building_input_coal_add = 5			#added
 			building_input_oil_add = 1			#added
 		}
 		level_scaled = {
@@ -1872,13 +1872,12 @@ pm_torpedo_boat = {
 		workforce_scaled = {
 			# input goods
 			building_input_ammunition_add = 2
-			building_input_coal_add = 1			#added
+			building_input_coal_add = 2			#added
 		}
 		level_scaled = {
 		}
 		throughput_scaled = {
-			unit_offense_add = 20
-			unit_defense_add = -10
+			unit_offense_add = 10
 		}
 		unscaled = {
 			unit_convoy_raiding_mult = 0.25
@@ -1897,15 +1896,14 @@ pm_submarine = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_ironclads_add = 1
-			building_input_ammunition_add = 1
+			building_input_ironclads_add = 3
+			building_input_ammunition_add = 3
 			building_input_oil_add = 1			#added
 		}
 		level_scaled = {
 		}
 		throughput_scaled = {
-			unit_offense_add = 40
-			unit_defense_add = -20
+			unit_offense_add = 20
 		}
 		unscaled = {
 			building_training_rate_add = -5
@@ -1927,7 +1925,7 @@ pm_destroyers = {
 			# input goods
 			building_input_ironclads_add = 2
 			building_input_ammunition_add = 2
-			building_input_coal_add = 1			#added
+			building_input_coal_add = 2			#added
 		}
 		level_scaled = {
 		}
@@ -1954,16 +1952,16 @@ pm_carriers = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_ironclads_add = 2
-			building_input_ammunition_add = 2
-			building_input_aeroplanes_add = 2
-			building_input_radios_add = 2
+			building_input_ironclads_add = 3
+			building_input_ammunition_add = 3
+			building_input_aeroplanes_add = 1
+			building_input_radios_add = 1
 			building_input_oil_add = 1			#added
 		}
 		level_scaled = {
 		}
 		throughput_scaled = {
-			unit_offense_add = 30
+			unit_offense_add = 20
 			unit_defense_add = 40
 		}
 		unscaled = {
