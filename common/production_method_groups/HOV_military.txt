@@ -73,7 +73,9 @@ pmg_organization_conscription = {
 		pm_skirmish_infantry_conscription_ofs
 		pm_trench_infantry_conscription
 		pm_trench_infantry_conscription_ofs
+		pm_squad_infantry_conscription
 		pm_squad_infantry_conscription_ofs
+		pm_mechanized_infantry_conscription
 		pm_mechanized_infantry_conscription_ofs
 	}
 }

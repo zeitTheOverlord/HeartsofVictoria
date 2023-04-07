@@ -87,24 +87,24 @@ NCharacters = {
 }
 
 NDiplomacy = {
-	MIN_WAR_SUPPORT = -200
-	MAX_WAR_SUPPORT = 100
-	BASE_WAR_SUPPORT = 100
+	MIN_WAR_SUPPORT = -100
+	MAX_WAR_SUPPORT = 150
+	BASE_WAR_SUPPORT = 150
 }
 
 NWar = {
 	DEVASTATION_INCREASE_RATE = 0.09	# Per day, scales with level of occupation
 	DEVASTATION_DECAY_RATE = -0.15	# Per day, when there are no occupations
 	DEVASTATION_FROM_BATTLES = 0.08	# For each battle
-
 	AUTO_CAPITULATE_WAR_SUPPORT = -200	#-100 # When war support is this low, the country will auto capitulate
-
 	DAYS_BETWEEN_WAR_EXHAUSTION = 14	# Every this many days war support will be reduced by the war exhaustion formula
 	WAR_EXHAUSTION_BASE = 0.1
 	WAR_EXHAUSTION_KIA_FACTOR = 20	# Scaled by casualties compared to total manpower
 	WAR_EXHAUSTION_KIA_BASE_MULTIPLIER = 0.05	#was 0.1  # War Exhaustion from casualties is always multiplied by at least this
-	WAR_EXHAUSTION_KIA_BATTLES_LOST_MULTIPLIER = 0.2	#was 0.25	# At 100% of battles lost by our side, War Exhaustion from casualties is further multiplied by this
+	WAR_EXHAUSTION_KIA_BATTLES_LOST_MULTIPLIER = 0	#was 0.25	# At 100% of battles lost by our side, War Exhaustion from casualties is further multiplied by this
 	WAR_EXHAUSTION_CONTESTED_ENEMY_WARGOALS = 1	#was 1 
+
+	OCCUPATION_STATE_INCORPORATED_WEIGHT = 1
 }
 
 NPops = {
