@@ -1560,7 +1560,7 @@ pm_flamethrower_company = {
 		workforce_scaled = {
 			building_input_small_arms_add = 1
 			building_input_oil_add = 1
-			building_input_ammunition_add = 0.5
+			building_input_ammunition_add = 1
 		}
 		throughput_scaled = {
 			unit_offense_add = 30
@@ -1898,6 +1898,7 @@ pm_submarine = {
 			# input goods
 			building_input_ironclads_add = 3
 			building_input_ammunition_add = 3
+			building_input_coal_add = 3
 			building_input_oil_add = 1			#added
 		}
 		level_scaled = {
@@ -1954,6 +1955,7 @@ pm_carriers = {
 			# input goods
 			building_input_ironclads_add = 3
 			building_input_ammunition_add = 3
+			building_input_coal_add = 3
 			building_input_aeroplanes_add = 1
 			building_input_radios_add = 1
 			building_input_oil_add = 1			#added
