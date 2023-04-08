@@ -213,7 +213,8 @@ central_archives = {
 	category = society
 	
 	modifier = {
-		state_tax_capacity_add = 25 #25
+		# state_tax_capacity_add = 25 #25
+		state_tax_capacity_mult = 0.20
 		country_institution_home_affairs_max_investment_add = 1
 	}
 	
@@ -318,7 +319,8 @@ identification_documents = {
 	category = society
 
 	modifier = {
-		state_tax_capacity_add = 25 #25
+		# state_tax_capacity_add = 25 #25
+		state_tax_capacity_mult = 0.20
 		country_institution_home_affairs_max_investment_add = 1
 	}
 	
