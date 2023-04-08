@@ -563,7 +563,7 @@ meiji.4 = {
 			}
 		}
 		any_country = {
-			country_rank >= 3
+			country_rank >= rank_value:great_power
 			relations:root >= relations_threshold:neutral
 			relations:root >= 0
 			NOT = { is_owed_obligation_by = ROOT }
@@ -578,7 +578,7 @@ meiji.4 = {
 	immediate = {
 		random_country = {
 			limit = {
-				country_rank >= 3
+				country_rank >= rank_value:great_power
 				relations:root >= relations_threshold:neutral
 				NOT = { is_owed_obligation_by = ROOT }
 				NOT = { has_war_with = ROOT }
@@ -690,7 +690,7 @@ meiji.5 = {
 			}
 		}
 		any_country = {
-			country_rank >= 3
+			country_rank >= rank_value:great_power
 			relations:root >= relations_threshold:neutral
 			NOT = { has_war_with = ROOT }
 			NOT = { is_owed_obligation_by = ROOT }
@@ -699,7 +699,7 @@ meiji.5 = {
 	immediate = {
 		random_country = {
 			limit = {
-				country_rank >= 3
+				country_rank >= rank_value:great_power
 				relations:root >= relations_threshold:neutral
 				NOT = { has_war_with = ROOT }
 				NOT = { is_owed_obligation_by = ROOT }
@@ -830,7 +830,7 @@ meiji.6 = {
 			}
 		}		
 		any_country = {
-			country_rank >= 3
+			country_rank >= rank_value:great_power
 			relations:root >= relations_threshold:neutral
 			NOT = { has_war_with = ROOT }
 			NOT = { is_owed_obligation_by = ROOT }
@@ -843,7 +843,7 @@ meiji.6 = {
 	immediate = {
 		random_country = {
 			limit = {
-				country_rank >= 3
+				country_rank >= rank_value:great_power
 				relations:root >= relations_threshold:neutral
 				NOT = { has_war_with = ROOT }
 				NOT = { is_owed_obligation_by = ROOT }
