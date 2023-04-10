@@ -247,7 +247,7 @@ field_works = {
 		# defensive bonus, either directly to army or (ideally) a fortifications bonus, if we get forts
 		# Lower kill rate?
 		unit_morale_loss_mult = -0.05
-		unit_army_defense_mult = 0.1
+		unit_army_defense_mult = 0.05
 	}
 	
 	unlocking_technologies = {
@@ -752,7 +752,7 @@ defense_in_depth = {
 	modifier = {
 		unit_morale_loss_mult = -0.05
 		# defensive bonus, either to the army or ideally to fortifications
-		unit_army_defense_mult = 0.3
+		unit_army_defense_mult = 0.05
 	}
 	
 	unlocking_technologies = {	
@@ -793,6 +793,20 @@ automatic_machine_guns = {
 	
 	ai_weight = {
 		value = 1.5 # important for everyone
+	}
+}
+stormtroopers = {
+	# #todo#! Does nothing yet
+	era = era_4
+	texture = "gfx/interface/icons/invention_icons/stormtroopers.dds"
+	category = military
+	
+	unlocking_technologies = {	
+		bolt_action_rifles
+	}
+	
+	ai_weight = {
+		value = 1
 	}
 }
 
@@ -955,7 +969,7 @@ chemical_warfare = {
 	category = military
 	
 	unlocking_technologies = {	
-		automatic_machine_guns
+		stormtroopers
 	}
 	
 	ai_weight = {
@@ -963,21 +977,6 @@ chemical_warfare = {
 	}
 }
 
-stormtroopers = {
-	# #todo#! Does nothing yet
-	era = era_5
-	texture = "gfx/interface/icons/invention_icons/stormtroopers.dds"
-	category = military
-	
-	unlocking_technologies = {	
-		wargaming
-		trench_works
-	}
-	
-	ai_weight = {
-		value = 1
-	}
-}
 
 concrete_fortifications = {
 	# Increases defense
@@ -989,7 +988,7 @@ concrete_fortifications = {
 		unit_morale_loss_mult = -0.05
 		# build the maginot line and be completely unstoppable, forever, especially if you're France
 		# bonus to general defensiveness or specifically to forts if they become a thing
-		unit_army_defense_mult = 0.4
+		unit_army_defense_mult = 0.05
 	}
 	
 	unlocking_technologies = {	
@@ -1047,8 +1046,7 @@ flamethrowers = {
 	category = military
 	
 	unlocking_technologies = {	
-		trench_works
-		automatic_machine_guns
+		stormtroopers
 	}
 	modifier = {
 		unit_kill_rate_add = 0.05
