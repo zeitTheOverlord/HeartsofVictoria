@@ -28,7 +28,7 @@ base_values = {
 	state_unincorporated_starting_wages_mult = -0.15	# To balance for unincorporated states not paying taxes
 	country_construction_add = 10	#5
 	building_mobilization_cost_mult = 0.6
-	building_economy_of_scale_level_cap_add = 20
+	building_economy_of_scale_level_cap_add = 19
 }
 
 coastal_state = {
