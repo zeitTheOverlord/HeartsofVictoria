@@ -37,7 +37,7 @@
 	AI_PEACE_AGREEMENT_ENEMY_WARGOAL_SELF_FACTOR = -50	# Was -50
 	AI_PEACE_AGREEMENT_ENEMY_WARGOAL_ALLY_FACTOR = -20	# Was -10
 	AI_PEACE_AGREEMENT_PEACE_DESIRE_FACTOR = 1	# Was 1.0. Not touching this, would be nice if this were dynamic and decreases over time to simulate WW1
-	AI_MONTHS_OF_REDUCED_PEACE_DESIRE = 12	# Before this amount of months, reduce AI peace desire
+	AI_MONTHS_OF_REDUCED_PEACE_DESIRE = 3	# Before this amount of months, reduce AI peace desire
 	AI_PEACE_DESIRE_FROM_SHORT_WAR = -100	# Subtract this amount of peace desire for the above number of months (multiplied by AI_MONTHS_OF_REDUCED_PEACE_DESIRE - months of war duration)
 	AI_PEACE_DESIRE_FROM_TURMOIL = 100	# Add this amount of peace desire at 100% radicals
 	AI_PEACE_DESIRE_FROM_DEVASTATION = 100	# Add this amount of peace desire at 100% devastation
