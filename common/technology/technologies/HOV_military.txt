@@ -1,5 +1,20 @@
-﻿### ERA 1
+﻿#######new
+prussian_reform = {
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/prussian_reform.dds"
+	category = military
+	can_research = no
+	modifier = {
+		building_mobilization_cost_mult = -0.125
+		country_bureaucracy_mult = 0.1
+	}
+	
+	ai_weight = {
+		value = 1
+	}
+}
 
+### ERA 1
 standing_army = {
 	# Unlocks Barracks building
 	era = era_1
