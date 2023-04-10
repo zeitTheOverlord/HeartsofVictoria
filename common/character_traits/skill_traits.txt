@@ -1107,7 +1107,7 @@ basic_colonial_administrator  = {
 	texture = "gfx/interface/icons/character_trait_icons/basic_colonial_administrator.dds"
 	
 	country_modifier = {	
-		state_colony_growth_speed_mult = 0.1
+		state_colony_growth_creation_mult = 0.1
 	}
 	
 	possible = {
@@ -1146,7 +1146,7 @@ experienced_colonial_administrator  = {
 	texture = "gfx/interface/icons/character_trait_icons/experienced_colonial_administrator.dds"
 	
 	country_modifier = {	
-		state_colony_growth_speed_mult = 0.2
+		state_colony_growth_creation_mult = 0.2
 	}
 	
 	possible = {
@@ -1179,7 +1179,7 @@ expert_colonial_administrator  = {
 	texture = "gfx/interface/icons/character_trait_icons/expert_colonial_administrator.dds"
 	
 	country_modifier = {	
-		state_colony_growth_speed_mult = 0.4
+		state_colony_growth_creation_mult = 0.3
 	}
 	
 	possible = {

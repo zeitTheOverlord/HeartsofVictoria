@@ -28,23 +28,26 @@
 	CONSUMPTION_TAX_MAX_NUM_TAXED_GOODS_BASE = 6	# Base max number of goods AI wants to tax
 	#CONSUMPTION_TAX_MAX_NUM_TAXED_GOODS_PER_MISSING_TAX_TYPE = 2 # Added to max number of goods AI wants to tax for each other type of tax it does not collect
 	#peace ai
-	AI_PEACE_AGREEMENT_BASE_VALUE = -100	# Was 0. See ~SHORT_WAR
-	AI_PEACE_AGREEMENT_WHITE_PEACE_BASE = 25	# Was 10. See ~
-	AI_PEACE_AGREEMENT_WHITE_PEACE_WAR_DURATION = 4	# For each month the war goes on add this to the acceptance for a white peace
-	AI_PEACE_AGREEMENT_WAR_SUPPORT_FACTOR = -2	# Was -1, war support should be a big factor for AI in negotiated peace.
+	AI_PEACE_AGREEMENT_BASE_VALUE = 0	# Was 0. See ~SHORT_WAR
+	AI_PEACE_AGREEMENT_WHITE_PEACE_BASE = 50	# Was 10. See ~
+	AI_PEACE_AGREEMENT_WHITE_PEACE_WAR_DURATION = 3	# For each month the war goes on add this to the acceptance for a white peace
+	AI_PEACE_AGREEMENT_WAR_SUPPORT_FACTOR = -0.5	#  
 	AI_PEACE_AGREEMENT_ALLY_WARGOAL_FACTOR = 20	# Was 10
 	AI_PEACE_AGREEMENT_SELF_WARGOAL_FACTOR = 50	# Was 30, bilateral peace was a cool mechanic, but setting this at 30 basically crippled the idea
 	AI_PEACE_AGREEMENT_ENEMY_WARGOAL_SELF_FACTOR = -50	# Was -50
 	AI_PEACE_AGREEMENT_ENEMY_WARGOAL_ALLY_FACTOR = -20	# Was -10
 	AI_PEACE_AGREEMENT_PEACE_DESIRE_FACTOR = 1	# Was 1.0. Not touching this, would be nice if this were dynamic and decreases over time to simulate WW1
+	
 	AI_MONTHS_OF_REDUCED_PEACE_DESIRE = 3	# Before this amount of months, reduce AI peace desire
+	AI_CAPITULATE_PEACE_DESIRE_FACTOR	= 1	# Peace desire is multiplied by this when added to capitulation score
 	AI_PEACE_DESIRE_FROM_SHORT_WAR = -100	# Subtract this amount of peace desire for the above number of months (multiplied by AI_MONTHS_OF_REDUCED_PEACE_DESIRE - months of war duration)
+	
 	AI_PEACE_DESIRE_FROM_TURMOIL = 100	# Add this amount of peace desire at 100% radicals
 	AI_PEACE_DESIRE_FROM_DEVASTATION = 100	# Add this amount of peace desire at 100% devastation
 	AI_PEACE_DESIRE_FROM_LOYALISTS = -100	# Subtract this amount of peace desire at 100% loyalists
 	AI_PEACE_DESIRE_FROM_DEBT_LEVEL = 100	# Add this amount of peace desire at 100% debt level
 	AI_PEACE_DESIRE_FROM_BANKRUPTCY = 100	# Add this amount of peace desire when bankrupt
-	AI_PEACE_DESIRE_FROM_GOLD_RESERVES = -25	# Subtract this amount of peace desire at 100% gold reserves
+	AI_PEACE_DESIRE_FROM_GOLD_RESERVES = -5	# Subtract this amount of peace desire at 100% gold reserves
 	AI_PEACE_DESIRE_FROM_FORCE_BALANCE = 25	# Up to this amount is added or subtracted from war support based on DIPLO_PLAY_FORCE_BALANCE_SCALE of the two sides
 }
 
@@ -93,8 +96,8 @@ NCharacters = {
 
 NDiplomacy = {
 	MIN_WAR_SUPPORT = -100
-	MAX_WAR_SUPPORT = 150
-	BASE_WAR_SUPPORT = 150
+	MAX_WAR_SUPPORT = 100
+	BASE_WAR_SUPPORT = 100
 }
 
 NWar = {
