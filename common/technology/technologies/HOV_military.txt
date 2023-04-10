@@ -171,10 +171,6 @@ army_reserves = {
 		state_conscription_rate_mult = 0.2
 	}
 	
-	unlocking_technologies = {	
-		line_infantry
-	}
-	
 	ai_weight = {
 		value = 1
 	}
@@ -256,7 +252,6 @@ logistics = {
 	
 	unlocking_technologies = {	
 		napoleonic_warfare
-		army_reserves
 	}
 	
 	ai_weight = {
@@ -332,7 +327,7 @@ general_staff = {
 	category = military
 	
 	unlocking_technologies = {	
-		army_reserves
+		napoleonic_warfare
 	}
 	
 	ai_weight = {
