@@ -5,7 +5,6 @@
 	progressiveness = -50
 	
 	modifier = {
-		unit_morale_loss_mult = 0.25
 		state_conscription_rate_add = 0.01
 		interest_group_ig_landowners_pol_str_mult = 0.25
 		country_military_goods_cost_mult = -0.25
@@ -55,7 +54,7 @@ law_professional_army = {
 		state_conscription_rate_add = 0.004
 		interest_group_ig_armed_forces_pol_str_mult = 0.25
 		state_building_barracks_max_level_add = 100
-		state_building_conscription_center_max_level_add = 10
+		state_building_conscription_center_max_level_add = 100
 	}
 	
 	possible_political_movements = {
@@ -138,11 +137,10 @@ law_mass_conscription = {
 	unlocking_technologies = { enlistment_offices }
 	
 	modifier = {
-		unit_morale_loss_mult = 0.1
 		state_conscription_rate_add = 0.02
 		building_training_rate_mult = 1
-		state_building_barracks_max_level_add = 50
-		state_building_conscription_center_max_level_add = 50
+		state_building_barracks_max_level_add = 100
+		state_building_conscription_center_max_level_add = 100
 	}
 	
 	possible_political_movements = {

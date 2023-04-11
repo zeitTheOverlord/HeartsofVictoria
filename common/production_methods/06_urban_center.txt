@@ -76,8 +76,8 @@ pm_arcades = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_glass_add = 7
-			building_input_steel_add = 7
+			building_input_glass_add = 6
+			building_input_steel_add = 6
 			building_output_services_add = 80
 		}
 
