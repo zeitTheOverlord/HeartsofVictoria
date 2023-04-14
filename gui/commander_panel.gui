@@ -732,7 +732,18 @@ types commander_panel_types
 								}
 								blockoverride "single_text_entry" {}
 							}
+							
+							widget = {
 
+								visible = "[Character.IsCommander]"
+								size = { 220 50 }
+
+								demote_commander_button = {
+									parentanchor = center
+									size = { 195 40 }
+								}
+							}
+							
 							widget = {
 
 								visible = "[Character.IsCommander]"
@@ -1326,7 +1337,18 @@ types commander_panel_types
 		enabled = "[IsValid(Character.GetRetireCommand)]"
 		onclick = "[PopupManager.AskConfirmationWithSound(Character.GetRetireCommand, 'event:/SFX/UI/Military/commander_retire')]"
 	}
-	
+	type demote_commander_button = button {
+		visible = "[Or(Character.IsGeneral, Character.IsAdmiral)]"
+		using = default_button_action
+		block "size" {
+			size = { 140 35 }
+		}
+		text = "Demote"
+		tooltip = "#v Demote#! [Character.GetFullName]. The [Character.GetInterestGroup.GetName] will get #N -0.5 #![concept_approval] for #V 5 years#! (Stacking). Right-Click to Demote to Completely."
+		enabled = "[Not(EqualTo_string( Character.GetRankTitle, 'Brigadier General' ))]"
+		onclick = "[GetScriptedGui('se_demote').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+		onrightclick = "[GetScriptedGui('se_total_demote').Execute( GuiScope.SetRoot( Character.MakeScope ).End )]"
+	}
 	type add_general_role_button = button_icon_round {
 
 		block "parentanchor" {
