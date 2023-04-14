@@ -1617,7 +1617,7 @@ pm_chemical_weapons_specialists = {
 			unit_offense_add = 40
 		}
 		unscaled = {
-			unit_kill_rate_add = 0.15
+			unit_kill_rate_add = 0.20
 			unit_devastation_mult = 0.4
 		}
 	}
