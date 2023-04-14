@@ -77,40 +77,10 @@ artillery = {
 	category = military
 	unlocking_technologies = {
 		gunsmithing
+		army_reserves
 	}
 	ai_weight = {
 		value = 2		# Important tech in general
-	}
-}
-line_infantry = {
-	# Unlocks Line Infantry PM in Barracks
-	era = era_1
-	texture = "gfx/interface/icons/invention_icons/line_infantry.dds"
-	category = military
-	unlocking_technologies = {
-		mandatory_service
-	}
-	ai_weight = {
-		value = 2		# Important tech in general
-	}
-}
-
-napoleonic_warfare = {
-	# Unlocks Mobile Artillery PM in Barracks
-	era = era_1
-	texture = "gfx/interface/icons/invention_icons/napoleonic_warfare.dds"
-	category = military
-	unlocking_technologies = {
-		artillery
-	}
-	ai_weight = {
-		value = 1.5		# Important tech in general
-		if = {
-			limit = {
-				has_journal_entry = je_sick_man_army
-			}
-			add = 5
-		}
 	}
 }
 
@@ -122,14 +92,30 @@ army_reserves = {
 		state_conscription_rate_mult = 0.2
 	}
 	unlocking_technologies = {
-		line_infantry
-		military_drill
-		artillery
+		gunsmithing
 	}
 	ai_weight = {
 		value = 1
 	}
 }
+
+line_infantry = {
+	# Unlocks Line Infantry PM in Barracks
+	era = era_1
+	texture = "gfx/interface/icons/invention_icons/line_infantry.dds"
+	category = military
+	unlocking_technologies = {
+		gunsmithing
+		army_reserves
+	}
+	ai_weight = {
+		value = 2		# Important tech in general
+	}
+}
+
+
+
+
 
 #NAVY
 navigation = {
@@ -207,8 +193,25 @@ paddle_steamer = {
 																				### ERA 2
 
 
-
-
+napoleonic_warfare = {
+	# Unlocks Mobile Artillery PM in Barracks
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/napoleonic_warfare.dds"
+	category = military
+	unlocking_technologies = {
+		artillery
+		field_works
+	}
+	ai_weight = {
+		value = 1.5		# Important tech in general
+		if = {
+			limit = {
+				has_journal_entry = je_sick_man_army
+			}
+			add = 5
+		}
+	}
+}
 logistics = {
 	# #todo#! Does nothing yet
 	era = era_2
@@ -218,20 +221,39 @@ logistics = {
 		state_conscription_rate_mult = 0.2
 	}
 	unlocking_technologies = {
-		napoleonic_warfare
 		army_reserves
 	}
 	ai_weight = {
 		value = 1
 	}
 }
+field_works = {
+	# Increases defense
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/field_works.dds"
+	category = military
+	modifier = {
+		# defensive bonus, either directly to army or (ideally) a fortifications bonus, if we get forts
+		# Lower kill rate?
+		unit_morale_loss_mult = -0.05
+		unit_army_defense_mult = 0.05
+	}
+	unlocking_technologies = {
+		logistics
+	}
+	ai_weight = {
+		value = 1
+	}
+}
+
+
 triage = {
 	# Unlocks Basic Medical Aid PM in Barracks
 	era = era_2
 	texture = "gfx/interface/icons/invention_icons/triage.dds"
 	category = military
 	unlocking_technologies = {
-		logistics
+		field_works
 	}
 	ai_weight = {
 		value = 1
@@ -244,7 +266,6 @@ shell_gun = {
 	category = military
 	unlocking_technologies = {
 		napoleonic_warfare
-		percussion_cap
 	}
 	ai_weight = {
 		value = 1
@@ -257,7 +278,7 @@ percussion_cap = {
 	texture = "gfx/interface/icons/invention_icons/percussion_cap.dds"
 	category = military
 	unlocking_technologies = {
-		napoleonic_warfare
+		field_works
 	}
 	ai_weight = {
 		value = 2		# Important tech in general
@@ -269,10 +290,23 @@ rifling = {
 	texture = "gfx/interface/icons/invention_icons/rifling.dds"
 	category = military
 	unlocking_technologies = {
-		percussion_cap
+		general_staff
 	}
 	ai_weight = {
 		value = 2		# Important tech in general
+	}
+}
+repeaters = {
+	# Unlocks Repeaters PM in Arms Industry
+	# Global Unlock for Repeaters PM in Barracks
+	era = era_2
+	texture = "gfx/interface/icons/invention_icons/repeaters.dds"
+	category = military
+	unlocking_technologies = {
+		rifling
+	}
+	ai_weight = {
+		value = 1.5		# Important tech in general
 	}
 }
 general_staff = {
@@ -282,7 +316,7 @@ general_staff = {
 	category = military
 	unlocking_technologies = {
 		line_infantry
-		army_reserves
+		field_works
 	}
 	ai_weight = {
 		value = 2		# Important tech in general
@@ -353,20 +387,62 @@ hydraulic_cranes = {
 
 																					### ERA 3
 
-
-field_works = {
-	# Increases defense
+breech_loading_artillery = {
+	# Unlocks Breech Loading Artillery Production PM in Arms Industries
+	# Unlocks Breech Loading Artillery PM in Barracks
+	# Unlocks Railway Guns PM in Railways
 	era = era_3
-	texture = "gfx/interface/icons/invention_icons/field_works.dds"
+	texture = "gfx/interface/icons/invention_icons/breech_loading_artillery.dds"
+	category = military
+	unlocking_technologies = {
+		electric_telegraph
+		napoleonic_warfare
+		shell_gun
+	}
+	ai_weight = {
+		value = 1.5		# Important tech in general
+	}
+}
+electric_telegraph = {
+	era = era_3
+	texture = "gfx/interface/icons/invention_icons/electrical_telegraph.dds"
 	category = military
 	modifier = {
-		# defensive bonus, either directly to army or (ideally) a fortifications bonus, if we get forts
-		# Lower kill rate?
-		unit_morale_loss_mult = -0.05
-		unit_army_defense_mult = 0.05
+		country_war_exhaustion_casualties_mult = -0.25
 	}
 	unlocking_technologies = {
-		army_reserves
+		triage
+		rifling
+	}
+	ai_weight = {
+		value = 1
+	}
+}
+
+enlistment_offices = {
+	era = era_3
+	texture = "gfx/interface/icons/invention_icons/enlistment_offices.dds"
+	category = military
+	modifier = {
+		state_conscription_rate_mult = 0.2
+	}
+	unlocking_technologies = {
+		electric_telegraph
+	}
+	ai_weight = {
+		value = 1
+	}
+}
+
+military_statistics = {
+	era = era_3
+	texture = "gfx/interface/icons/invention_icons/military_statistics.dds"
+	category = military
+	modifier = {
+		building_mobilization_cost_mult = -0.2
+	}
+	unlocking_technologies = {
+		electric_telegraph
 	}
 	ai_weight = {
 		value = 1
@@ -378,99 +454,32 @@ modern_nursing = {
 	texture = "gfx/interface/icons/invention_icons/modern_nursing.dds"
 	category = military
 	unlocking_technologies = {
+		electric_telegraph
 		triage
 	}
 	ai_weight = {
 		value = 1
 	}
 }
-enlistment_offices = {
+
+trench_works = {
+	# Unlocks Officer Training PM in Barracks
+	# Unlocks Barbed Wire Fences in Livestock Ranches
+	# Unlocks Trench Infantry
 	era = era_3
-	texture = "gfx/interface/icons/invention_icons/enlistment_offices.dds"
+	texture = "gfx/interface/icons/invention_icons/trench_works.dds"
 	category = military
-	modifier = {
-		state_conscription_rate_mult = 0.2
-	}
 	unlocking_technologies = {
-		logistics
-	}
-	ai_weight = {
-		value = 1
-	}
-}
-electric_telegraph = {
-	era = era_3
-	texture = "gfx/interface/icons/invention_icons/electrical_telegraph.dds"
-	category = military
-	modifier = {
-		country_war_exhaustion_casualties_mult = -0.25
-	}
-	unlocking_technologies = {
-		logistics
-	}
-	ai_weight = {
-		value = 1
-	}
-}
-military_statistics = {
-	era = era_3
-	texture = "gfx/interface/icons/invention_icons/military_statistics.dds"
-	category = military
-	modifier = {
-		building_mobilization_cost_mult = -0.2
-	}
-	unlocking_technologies = {
-		electric_telegraph
 		general_staff
-	}
-	ai_weight = {
-		value = 1
-	}
-}
-repeaters = {
-	# Unlocks Repeaters PM in Arms Industry
-	# Global Unlock for Repeaters PM in Barracks
-	era = era_3
-	texture = "gfx/interface/icons/invention_icons/repeaters.dds"
-	category = military
-	unlocking_technologies = {
-		rifling
-	}
-	ai_weight = {
-		value = 1.5		# Important tech in general
-	}
-}
-breech_loading_artillery = {
-	# Unlocks Breech Loading Artillery Production PM in Arms Industries
-	# Unlocks Breech Loading Artillery PM in Barracks
-	# Unlocks Railway Guns PM in Railways
-	era = era_3
-	texture = "gfx/interface/icons/invention_icons/breech_loading_artillery.dds"
-	category = military
-	unlocking_technologies = {
-		rifling
-		shell_gun
-	}
-	ai_weight = {
-		value = 1.5		# Important tech in general
-	}
-}
-handcranked_machine_gun = {
-	era = era_3
-	texture = "gfx/interface/icons/invention_icons/handcranked_machine_gun.dds"
-	category = military
-	modifier = {
-		unit_army_defense_add = 5
-		unit_kill_rate_add = 0.05
-	}
-	unlocking_technologies = {
+		electric_telegraph
 		repeaters
-		breech_loading_artillery
 	}
 	ai_weight = {
-		value = 1
+		value = 2		# important for everyone
 	}
 }
+
+
 
 
 #NAVY
@@ -592,37 +601,8 @@ gantry_cranes = {
 }
 
 																						### ERA 4
-trench_works = {
-	# Unlocks Officer Training PM in Barracks
-	# Unlocks Barbed Wire Fences in Livestock Ranches
-	# Unlocks Trench Infantry
-	era = era_4
-	texture = "gfx/interface/icons/invention_icons/trench_works.dds"
-	category = military
-	unlocking_technologies = {
-		general_staff
-		electric_telegraph
-	}
-	ai_weight = {
-		value = 2		# important for everyone
-	}
-}
+#ARMY
 
-war_propaganda = {
-	era = era_4
-	texture = "gfx/interface/icons/invention_icons/war_propaganda.dds"
-	category = military
-	modifier = {
-		unit_morale_loss_mult = -0.05
-		state_conscription_rate_mult = 0.2
-	}
-	unlocking_technologies = {
-		enlistment_offices
-	}
-	ai_weight = {
-		value = 1
-	}
-}
 
 wargaming = {
 	# #todo#! Does nothing yet
@@ -633,13 +613,13 @@ wargaming = {
 		unit_morale_loss_mult = -0.05
 	}
 	unlocking_technologies = {
-		military_statistics
+		defense_in_depth
+		breech_loading_artillery
 	}
 	ai_weight = {
 		value = 1
 	}
 }
-
 defense_in_depth = {
 	# Increases defense
 	# Unlock Delay Order?
@@ -652,13 +632,29 @@ defense_in_depth = {
 		unit_army_defense_mult = 0.05
 	}
 	unlocking_technologies = {
-		trench_works
+		enlistment_offices
+		military_statistics
+		modern_nursing
 	}
 	ai_weight = {
 		value = 1
 	}
 }
-
+war_propaganda = {
+	era = era_4
+	texture = "gfx/interface/icons/invention_icons/war_propaganda.dds"
+	category = military
+	modifier = {
+		unit_morale_loss_mult = -0.05
+		state_conscription_rate_mult = 0.2
+	}
+	unlocking_technologies = {
+		defense_in_depth
+	}
+	ai_weight = {
+		value = 1
+	}
+}
 bolt_action_rifles = {
 	# Unlocks Bolt Action Rifles PM in Arms Industry
 	# Global Unlock for Bolt Action Rifles PM in Barracks
@@ -667,31 +663,20 @@ bolt_action_rifles = {
 	category = military
 	unlocking_technologies = {
 		repeaters
+		trench_works
 	}
 	ai_weight = {
 		value = 2		# important for everyone
 	}
 }
-
-automatic_machine_guns = {
-	# #todo#! Does nothing yet
-	era = era_4
-	texture = "gfx/interface/icons/invention_icons/machine_gun.dds"
+handcranked_machine_gun = {
+	era = era_3
+	texture = "gfx/interface/icons/invention_icons/handcranked_machine_gun.dds"
 	category = military
-	unlocking_technologies = {
-		handcranked_machine_gun
-		bolt_action_rifles
+	modifier = {
+		unit_army_defense_add = 5
+		unit_kill_rate_add = 0.05
 	}
-	ai_weight = {
-		value = 1.5		# important for everyone
-	}
-}
-
-stormtroopers = {
-	# #todo#! Does nothing yet
-	era = era_4
-	texture = "gfx/interface/icons/invention_icons/stormtroopers.dds"
-	category = military
 	unlocking_technologies = {
 		bolt_action_rifles
 	}
@@ -699,7 +684,48 @@ stormtroopers = {
 		value = 1
 	}
 }
+nco_training = {
+	# Unlocks Advanced Officer Training PM in Barracks
+	era = era_4
+	texture = "gfx/interface/icons/invention_icons/nco_training.dds"
+	category = military
+	unlocking_technologies = {
+		handcranked_machine_gun
+		defense_in_depth
+		trench_works
+	}
+	ai_weight = {
+		value = 2		# Important tech in general
+	}
+}
+automatic_machine_guns = {
+	# #todo#! Does nothing yet
+	era = era_4
+	texture = "gfx/interface/icons/invention_icons/machine_gun.dds"
+	category = military
+	unlocking_technologies = {
+		nco_training
+		handcranked_machine_gun
+	}
+	ai_weight = {
+		value = 1.5		# important for everyone
+	}
+}
+stormtroopers = {
+	# #todo#! Does nothing yet
+	era = era_4
+	texture = "gfx/interface/icons/invention_icons/stormtroopers.dds"
+	category = military
+	unlocking_technologies = {
+		handcranked_machine_gun
+		nco_training
+	}
+	ai_weight = {
+		value = 1
+	}
+}
 
+#NAVY
 submarine = {
 	# Unlocks Submarine PM on Naval Bases
 	era = era_4
@@ -715,7 +741,6 @@ submarine = {
 		value = 1
 	}
 }
-
 destroyer = {
 	# #todo#! Does nothing yet
 	era = era_4
@@ -729,7 +754,6 @@ destroyer = {
 		value = 1
 	}
 }
-
 dreadnought = {
 	# Unlocks Dreadnoughts PM in Naval Bases
 	era = era_4
@@ -755,7 +779,6 @@ dreadnought = {
 		}
 	}
 }
-
 sea_lane_strategies = {
 	# Unlocks Sea Lane Strategies PM in Naval Bases
 	era = era_4
@@ -771,7 +794,6 @@ sea_lane_strategies = {
 		value = 1
 	}
 }
-
 landing_craft = {
 	era = era_4
 	texture = "gfx/interface/icons/invention_icons/landing_craft.dds"
@@ -794,7 +816,6 @@ landing_craft = {
 		}
 	}
 }
-
 concrete_dockyards = {
 	# Unlocks Modern Port PM in Ports
 	# Increases Max Port Level by 4
@@ -820,19 +841,7 @@ concrete_dockyards = {
 }
 
 																							### ERA 5
-nco_training = {
-	# Unlocks Advanced Officer Training PM in Barracks
-	era = era_5
-	texture = "gfx/interface/icons/invention_icons/nco_training.dds"
-	category = military
-	unlocking_technologies = {
-		military_statistics
-		trench_works
-	}
-	ai_weight = {
-		value = 2		# Important tech in general
-	}
-}
+#ARMY
 
 chemical_warfare = {
 	# Unlocks Chemical Artillery PM in Barracks
@@ -840,13 +849,13 @@ chemical_warfare = {
 	texture = "gfx/interface/icons/invention_icons/chemical_warfare.dds"
 	category = military
 	unlocking_technologies = {
-		stormtroopers
+		wargaming
+		concrete_fortifications
 	}
 	ai_weight = {
 		value = 1
 	}
 }
-
 concrete_fortifications = {
 	# Increases defense
 	era = era_5
@@ -865,7 +874,6 @@ concrete_fortifications = {
 		value = 1
 	}
 }
-
 mobile_armor = {
 	# Unlocks Tanks PM in Vehicles Industries
 	# Unlocks Tanks, Planes and Tanks PM in Barracks
@@ -873,15 +881,12 @@ mobile_armor = {
 	texture = "gfx/interface/icons/invention_icons/mobile_armor.dds"
 	category = military
 	unlocking_technologies = {
-		military_aviation
 		concrete_fortifications
-		nco_training
 	}
 	ai_weight = {
 		value = 1.5		# Important tech in general
 	}
 }
-
 military_aviation = {
 	# Unlocks Vehicles Industries
 	# Unlocks Tanks, Planes and Tanks PM in Barracks
@@ -893,26 +898,26 @@ military_aviation = {
 		# increased recon/scouting/go fast
 	}
 	unlocking_technologies = {
-		defense_in_depth
+		concrete_fortifications
 	}
 	ai_weight = {
 		value = 1.5		# Important tech in general
 	}
 }
-
 flamethrowers = {
 	# Increases kill rate (lowers opponent survival rate)
 	era = era_5
 	texture = "gfx/interface/icons/invention_icons/flamethrowers.dds"
 	category = military
 	unlocking_technologies = {
-		stormtroopers
+		wargaming
+		concrete_fortifications
 	}
 	ai_weight = {
 		value = 1
 	}
 }
-
+#NAVY
 carrier_tech = {
 	# Unlocks Carriers PM in Naval Bases
 	era = era_5
@@ -932,7 +937,6 @@ carrier_tech = {
 		}
 	}
 }
-
 battleship_tech = {
 	# Unlocks Battleships PM in Naval Bases
 	era = era_5
@@ -952,7 +956,6 @@ battleship_tech = {
 		}
 	}
 }
-
 battlefleet_tactics = {
 	# Unlocks Battlefleet Tactics PM in Naval Bases
 	era = era_5
