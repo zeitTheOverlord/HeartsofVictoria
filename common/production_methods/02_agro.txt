@@ -506,7 +506,7 @@ pm_standard_fences = {
 pm_barbed_wire_fences = {
 	texture = "gfx/interface/icons/production_method_icons/barbed_wire_fencing.dds"
 	unlocking_technologies = {
-		trench_works	
+		steelworking	
 	}	
 	building_modifiers = {
 		workforce_scaled = {
