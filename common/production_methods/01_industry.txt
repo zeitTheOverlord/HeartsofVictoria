@@ -423,11 +423,10 @@ pm_craftsman_sewing = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_silk_add = 10				# x40 =  400
-			building_input_fabric_add = -10				# x20 =  200
+			building_input_silk_add = 10				# x40 =  400			# x20 =  200
 			
 			# output goods
-			building_output_clothes_add = -20			# x30 = -600
+			building_output_clothes_add = -10			# x30 = -600
 			building_output_luxury_clothes_add = 20		# x60 = 1200
 		}
 		
@@ -450,7 +449,6 @@ pm_elastics = {
 			# input goods
 			building_input_rubber_add = 10
 			building_input_silk_add = 10
-			building_input_fabric_add = -10
 			
 			# output goods
 			building_output_clothes_add = -20
@@ -633,7 +631,7 @@ pm_handcrafted_furniture = {
 			building_input_fabric_add = 10		# x20 =  200
 			
 			# output goods
-			building_output_furniture_add = 30	# x30 = 1350
+			building_output_furniture_add = 40	# x30 = 1350
 		}
 
 		level_scaled = {
@@ -653,8 +651,8 @@ pm_lathe = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_wood_add = 15
-			building_input_fabric_add = 15
+			building_input_wood_add = 10
+			building_input_fabric_add = 10
 			building_input_tools_add = 10
 			
 			# output goods
@@ -682,12 +680,12 @@ pm_mechanized_workshops = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_wood_add = 20
-			building_input_fabric_add = 20
-			building_input_tools_add = 20
+			building_input_wood_add = 10
+			building_input_fabric_add = 10
+			building_input_tools_add = 15
 			
 			# output goods
-			building_output_furniture_add = 90
+			building_output_furniture_add = 80
 		}
 
 		level_scaled = {
@@ -709,7 +707,7 @@ pm_luxury_furniture = {
 		workforce_scaled = {
 			# input goods
 			building_input_hardwood_add = 10
-			building_input_wood_add = -10
+			building_input_tools_add = 5
 
 	
 			# output goods
@@ -735,7 +733,6 @@ pm_precision_tools = {
 			# input goods
 			building_input_hardwood_add = 20
 			building_input_tools_add = 10
-			building_input_wood_add = -20
 			
 			# output goods
 			building_output_furniture_add = -20
@@ -935,10 +932,10 @@ pm_forest_glass = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_wood_add = 30
+			building_input_wood_add = 40
 			
 			# output goods
-			building_output_glass_add = 30
+			building_output_glass_add = 40
 		}
 
 		level_scaled = {
@@ -983,10 +980,10 @@ pm_crystal_glass = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_lead_add = 45
+			building_input_lead_add = 40
 			
 			# output goods
-			building_output_glass_add = 90
+			building_output_glass_add = 80
 		}
 
 		level_scaled = {
@@ -1009,10 +1006,10 @@ pm_houseware_plastics = {
 		workforce_scaled = {
 			# input goods
 			building_input_oil_add = 10
-			building_input_lead_add = 45
+			building_input_lead_add = 40
 			
 			# output goods
-			building_output_glass_add = 120
+			building_output_glass_add = 100
 		}
 
 		level_scaled = {
@@ -1059,7 +1056,7 @@ pm_bone_china = {
 			building_input_dye_add = 30
 			
 			# output goods
-			building_output_glass_add = -30
+			building_output_glass_add = -20
 			building_output_porcelain_add = 45
 		}
 		
@@ -1259,7 +1256,7 @@ pm_steel = {
 		workforce_scaled = {
 			# input goods
 			building_input_wood_add = 10 #30
-			building_input_steel_add = 40
+			building_input_steel_add = 30
 			
 			# output goods
 			building_output_tools_add = 90
@@ -1500,8 +1497,8 @@ pm_bleached_paper = {
 		workforce_scaled = {
 			# input goods
 			building_input_wood_add = 30
-			building_input_sulfur_add = 15
-			building_input_dye_add = 15
+			building_input_sulfur_add = 10
+			building_input_dye_add = 10
 			
 			# output goods
 			building_output_paper_add = 120
@@ -1731,7 +1728,7 @@ pm_nitrogen_fixation = {
 		workforce_scaled = {
 			# input goods
 			building_input_sulfur_add = 15
-			building_input_oil_add = 5
+			building_input_oil_add = 10
 			building_input_iron_add = 15
 
 			# output goods
@@ -2115,10 +2112,10 @@ pm_steam_engines = {
 	
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_coal_add = 10
+			building_input_coal_add = 20
 			building_input_steel_add = 20
 			
-			building_output_engines_add = 40
+			building_output_engines_add = 50
 		}
 
 		level_scaled = {
@@ -2141,11 +2138,11 @@ pm_electric_engines = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_steel_add = 40
-			building_input_electricity_add = 20
+			building_input_steel_add = 30
+			building_input_electricity_add = 30
 			
 			# output goods
-			building_output_engines_add = 80
+			building_output_engines_add = 75
 		}
 
 		level_scaled = {
@@ -2168,11 +2165,11 @@ pm_diesel_engines = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_steel_add = 60
+			building_input_steel_add = 40
 			building_input_oil_add = 20
 			
 			# output goods
-			building_output_engines_add = 120
+			building_output_engines_add = 100
 		}
 
 		level_scaled = {
@@ -2285,7 +2282,7 @@ pm_basic_shipbuilding = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_wood_add = 40
+			building_input_wood_add = 60
 			building_input_fabric_add = 20
 			
 			# output goods
@@ -2310,7 +2307,7 @@ pm_complex_shipbuilding = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_hardwood_add = 20
+			building_input_hardwood_add = 30
 			building_input_fabric_add = 20
 			building_input_engines_add = 10
 			
@@ -2400,8 +2397,8 @@ pm_military_shipbuilding_wooden = {
 	building_modifiers = {
 		workforce_scaled = {
 			# output goods
-			building_output_clippers_add = -15
-			building_output_manowars_add = 15
+			building_output_clippers_add = -20
+			building_output_manowars_add = 20
 		}
 	}
 }
@@ -2416,8 +2413,8 @@ pm_military_shipbuilding_wooden_2 = {
 	building_modifiers = {
 		workforce_scaled = {
 			# output goods
-			building_output_clippers_add = -30
-			building_output_manowars_add = 30
+			building_output_clippers_add = -40
+			building_output_manowars_add = 40
 		}
 	}
 }			
@@ -2433,8 +2430,8 @@ pm_military_shipbuilding_steam = {
 	building_modifiers = {
 		workforce_scaled = {
 			# output goods
-			building_output_steamers_add = -20
-			building_output_ironclads_add = 20
+			building_output_steamers_add = -30
+			building_output_ironclads_add = 30
 		}
 	}
 }
@@ -2450,8 +2447,8 @@ pm_military_shipbuilding_steam_2 = {
 	building_modifiers = {
 		workforce_scaled = {
 			# output goods
-			building_output_steamers_add = -40
-			building_output_ironclads_add = 40
+			building_output_steamers_add = -60
+			building_output_ironclads_add = 60
 		}
 	}
 }			
@@ -2607,10 +2604,10 @@ pm_tank_production = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_engines_add = 10
 			building_input_steel_add = 10
-			building_input_oil_add = 10
-			building_output_aeroplanes_add = -20
+			building_input_hardwood_add = -10
+			building_input_fabric_add = -10
+			building_output_aeroplanes_add = -60
 
 			# output goods
 			building_output_tanks_add = 60
@@ -2632,7 +2629,7 @@ pm_telephones = {
 			building_input_lead_add = 20
 			building_input_tools_add = 10
 			
-			building_output_telephones_add = 60
+			building_output_telephones_add = 90
 		}
 
 		level_scaled = {
@@ -2653,9 +2650,11 @@ pm_radios = {
 	}	
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_electricity_add = 80
-			building_output_telephones_add = -40
-			building_output_radios_add = 80
+			building_input_electricity_add = 30
+
+
+			building_output_telephones_add = -90
+			building_output_radios_add = 90
 		}
 		
 		level_scaled = {
@@ -3007,7 +3006,7 @@ pm_percussion_caps = {
 			building_input_lead_add = 20
 			
 			# output goods
-			building_output_ammunition_add = 60
+			building_output_ammunition_add = 80
 		}
 
 		level_scaled = {
@@ -3034,7 +3033,7 @@ pm_explosive_shells = {
 			building_input_lead_add = 30
 			
 			# output goods
-			building_output_ammunition_add = 90
+			building_output_ammunition_add = 120
 		}
 
 		level_scaled = {

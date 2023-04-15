@@ -3,8 +3,8 @@
 	
 	building_modifiers = { 
 		workforce_scaled = {
-			building_input_wood_add = 5
-			building_output_services_add = 20
+			building_input_wood_add = 3
+			building_output_services_add = 15
 		}
 
 		level_scaled = {
@@ -26,9 +26,9 @@ pm_market_squares = {
 	
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_wood_add = 5
-			building_input_glass_add = 5
-			building_output_services_add = 40
+			building_input_wood_add = 3
+			building_input_glass_add = 3
+			building_output_services_add = 30
 		}
 
 		level_scaled = {
@@ -51,9 +51,9 @@ pm_covered_markets = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_glass_add = 5
-			building_input_steel_add = 5
-			building_output_services_add = 60
+			building_input_glass_add = 3
+			building_input_steel_add = 3
+			building_output_services_add = 45
 		}
 
 		level_scaled = {
@@ -76,9 +76,9 @@ pm_arcades = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_glass_add = 6
-			building_input_steel_add = 6
-			building_output_services_add = 80
+			building_input_glass_add = 4
+			building_input_steel_add = 4
+			building_output_services_add = 60
 		}
 
 		level_scaled = {
@@ -105,8 +105,8 @@ pm_gas_streetlights = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_coal_add = 2
-			building_output_services_add = 10
+			building_input_coal_add = 3
+			building_output_services_add = 15
 		}
 		level_scaled = {
 			building_employment_laborers_add = 200
@@ -124,8 +124,8 @@ pm_electric_streetlights = {
 	
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_electricity_add = 4
-			building_output_services_add = 20
+			building_input_electricity_add = 6
+			building_output_services_add = 30
 		}
 
 		level_scaled = {
@@ -351,7 +351,7 @@ pm_hydroelectric_plant = {
 	
 	building_modifiers = { 
 		workforce_scaled = {
-			building_input_engines_add = 10
+			building_input_engines_add = 15
 			building_output_electricity_add = 80
 		}
 
@@ -396,8 +396,8 @@ pm_oil-fired_plant = {
 	
 	building_modifiers = { 
 		workforce_scaled = {
-			building_input_engines_add = 20
-			building_input_oil_add = 10
+			building_input_engines_add = 15
+			building_input_oil_add = 20
 			building_output_electricity_add = 160
 		}
 
