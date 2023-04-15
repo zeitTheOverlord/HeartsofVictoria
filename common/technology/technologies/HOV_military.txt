@@ -696,7 +696,7 @@ handcranked_machine_gun = {
 		unit_kill_rate_add = 0.05
 	}
 	unlocking_technologies = {
-		bolt_action_rifles
+		trench_works
 	}
 	ai_weight = {
 		value = 1
@@ -709,9 +709,11 @@ nco_training = {
 	texture = "gfx/interface/icons/invention_icons/nco_training.dds"
 	category = military
 	unlocking_technologies = {
+		defense_in_depth
 		handcranked_machine_gun
 		defense_in_depth
 		trench_works
+		bolt_action_rifles
 	}
 	ai_weight = {
 		value = 2		# Important tech in general
@@ -725,7 +727,6 @@ automatic_machine_guns = {
 	category = military
 	unlocking_technologies = {
 		nco_training
-		handcranked_machine_gun
 	}
 	ai_weight = {
 		value = 1.5		# important for everyone
@@ -738,8 +739,7 @@ stormtroopers = {
 	texture = "gfx/interface/icons/invention_icons/stormtroopers.dds"
 	category = military
 	unlocking_technologies = {
-		handcranked_machine_gun
-		nco_training
+		wargaming
 	}
 	ai_weight = {
 		value = 1
@@ -868,19 +868,6 @@ concrete_dockyards = {
 
 ### ERA 5
 #ARMY
-chemical_warfare = {
-	# Unlocks Chemical Artillery PM in Barracks
-	era = era_5
-	texture = "gfx/interface/icons/invention_icons/chemical_warfare.dds"
-	category = military
-	unlocking_technologies = {
-		wargaming
-		concrete_fortifications
-	}
-	ai_weight = {
-		value = 1
-	}
-}
 
 concrete_fortifications = {
 	# Increases defense
@@ -940,8 +927,22 @@ flamethrowers = {
 	texture = "gfx/interface/icons/invention_icons/flamethrowers.dds"
 	category = military
 	unlocking_technologies = {
-		wargaming
 		concrete_fortifications
+		stormtroopers
+	}
+	ai_weight = {
+		value = 1
+	}
+}
+
+chemical_warfare = {
+	# Unlocks Chemical Artillery PM in Barracks
+	era = era_5
+	texture = "gfx/interface/icons/invention_icons/chemical_warfare.dds"
+	category = military
+	unlocking_technologies = {
+		concrete_fortifications
+		stormtroopers
 	}
 	ai_weight = {
 		value = 1
