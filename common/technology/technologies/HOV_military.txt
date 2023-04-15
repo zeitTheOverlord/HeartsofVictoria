@@ -425,7 +425,6 @@ electric_telegraph = {
 	}
 	unlocking_technologies = {
 		triage
-		rifling
 	}
 	ai_weight = {
 		value = 1
