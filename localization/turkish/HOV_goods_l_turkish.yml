@@ -1,7 +1,0 @@
-﻿l_turkish:
-  
- equipmentz:0 "Piyade Ekipmanı"
- modifier_building_output_equipment1_add:0 "@equipment1! equipment output per level"
- modifier_building_output_equipment1_add_desc:0 "The amount of @equipment1! rifles produced by buildings"
- modifier_building_input_equipment1_add:0 "@equipment1! equipment input per level"
- modifier_building_input_equipment1_add_desc:0 "The amount of @equipment1! rifles consumed by buildings"

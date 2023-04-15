@@ -2,7 +2,7 @@
 snori_kor_clothes_modifier = {
 
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_documents_positive.dds
-	country_influence_add = 0.2
+	country_influence_add = 0.1
 	
 }
 
