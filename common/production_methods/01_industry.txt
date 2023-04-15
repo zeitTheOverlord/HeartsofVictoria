@@ -1211,7 +1211,7 @@ pm_crude_tools = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_wood_add = 30
+			building_input_wood_add = 20
 			
 			# output goods
 			building_output_tools_add = 30
@@ -1255,8 +1255,8 @@ pm_steel = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_wood_add = 10 #30
-			building_input_steel_add = 30
+			building_input_wood_add = 20 #30
+			building_input_steel_add = 20
 			
 			# output goods
 			building_output_tools_add = 90
