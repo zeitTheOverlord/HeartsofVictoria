@@ -880,7 +880,6 @@ concrete_fortifications = {
 		unit_army_defense_mult = 0.05
 	}
 	unlocking_technologies = {
-		defense_in_depth
 		war_propaganda
 	}
 	ai_weight = {
