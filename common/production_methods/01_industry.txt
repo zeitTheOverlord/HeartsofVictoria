@@ -7,7 +7,7 @@
 			building_input_grain_add = 40		# x20 =  800
 
 			# output goods
-			building_output_groceries_add = 40 #45	# x30 = 1350
+			building_output_groceries_add = 60 #45	# x30 = 1350
 		}
 
 		level_scaled = {
@@ -28,7 +28,7 @@ pm_sweeteners = {
 		workforce_scaled = {
 			# input goods
 			building_input_grain_add = 40		# x20 = 800
-			building_input_sugar_add = 20 #15		# x30 = 450
+			building_input_sugar_add = 10 #15		# x30 = 450
  
 			# output goods
 			building_output_groceries_add = 80 # 65	# x30 = 1950
@@ -52,11 +52,11 @@ pm_baking_powder = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_grain_add = 60 #80		# x20 = 1600
-			building_input_sugar_add = 30		# x30 =  900
+			building_input_grain_add = 40 #80		# x20 = 1600
+			building_input_sugar_add = 20		# x30 =  900
 
 			# output goods
-			building_output_groceries_add = 120	# x30 = 3600
+			building_output_groceries_add = 100	# x30 = 3600
 		}
 
 		level_scaled = {
