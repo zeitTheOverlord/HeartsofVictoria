@@ -274,7 +274,7 @@ default_building_rubber_plantation = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			building_output_rubber_add = 30
+			building_output_rubber_add = 36
 		}
 
 		level_scaled = {
@@ -794,7 +794,7 @@ pm_steam_derricks = {
 			building_input_coal_add = 10
 			
 			# output goods
-			building_output_oil_add = 50
+			building_output_oil_add = 60
 		}
 
 		level_scaled = {
