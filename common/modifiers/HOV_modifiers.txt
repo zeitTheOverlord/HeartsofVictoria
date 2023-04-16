@@ -65,6 +65,7 @@ political_dysfunction = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
 	country_opposition_ig_approval_add = -10
 	country_law_enactment_time_mult = 0.5
+	country_legitimacy_base_add = -10 #koydum sadece komutu birdaha aramamak için
 }
 
 unincorporated_state = {
