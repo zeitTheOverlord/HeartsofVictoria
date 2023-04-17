@@ -712,7 +712,6 @@ nco_training = {
 		handcranked_machine_gun
 		defense_in_depth
 		trench_works
-		bolt_action_rifles
 	}
 	ai_weight = {
 		value = 2		# Important tech in general

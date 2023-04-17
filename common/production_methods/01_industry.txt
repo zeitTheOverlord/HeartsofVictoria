@@ -1030,11 +1030,11 @@ pm_ceramics = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_dye_add = 30
+			building_input_dye_add = 15
 
 			# output goods
-			building_output_glass_add = -15
-			building_output_porcelain_add = 30
+			building_output_glass_add = -10
+			building_output_porcelain_add = 20
 		}
 		
 		level_scaled = {
@@ -1053,11 +1053,11 @@ pm_bone_china = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_dye_add = 60
+			building_input_dye_add = 30
 			
 			# output goods
-			building_output_glass_add = -30
-			building_output_porcelain_add = 60
+			building_output_glass_add = -20
+			building_output_porcelain_add = 40
 		}
 		
 		level_scaled = {
@@ -1727,8 +1727,8 @@ pm_nitrogen_fixation = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_sulfur_add = 30
-			building_input_oil_add = 5
+			building_input_sulfur_add = 20
+			building_input_oil_add = 10
 			building_input_iron_add = 10
 
 			# output goods
@@ -2668,8 +2668,8 @@ pm_muskets = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_iron_add = 10
-			building_input_hardwood_add = 20
+			building_input_iron_add = 5
+			building_input_hardwood_add = 10
 			
 			# output goods
 			building_output_small_arms_add = 30
@@ -2694,7 +2694,7 @@ pm_rifles = {
 		workforce_scaled = {
 			# input goods
 			building_input_steel_add = 10
-			building_input_hardwood_add = 15
+			building_input_hardwood_add = 10
 			building_input_tools_add = 10
 			
 			# output goods
@@ -2719,9 +2719,9 @@ pm_repeaters = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_steel_add = 15
+			building_input_steel_add = 10
 			building_input_hardwood_add = 10
-			building_input_tools_add = 15
+			building_input_tools_add = 10
 			
 			# output goods
 			building_output_small_arms_add = 60
@@ -2746,10 +2746,10 @@ pm_bolt_action_rifles = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_steel_add = 15
-			building_input_hardwood_add = 5
-			building_input_tools_add = 15
-			building_input_oil_add = 5
+			building_input_steel_add = 10
+			building_input_hardwood_add = 10
+			building_input_tools_add = 10
+			building_input_oil_add = 10
 			
 			# output goods
 			building_output_small_arms_add = 75

@@ -193,7 +193,7 @@ law_multicultural = {
 	}
 	
 	unlocking_technologies = {
-		human_rights
+		mass_propaganda
 	}
 	disallowing_laws = {
 		law_autocracy
