@@ -6,7 +6,7 @@ modifier_building_group_bg_technology_throughput_mult:0 "Universite Üretim Hacm
 modifier_building_group_bg_arts_throughput_mult:0 "Sanat Akademisi Üretim Hacmi"
 modifier_building_group_bg_trade_throughput_mult:0 "Ticartet Merkezi Üretim Hacmi"
 modifier_building_group_bg_service_throughput_mult:0 "Kent Merkezi Üretim Hacmi"
-modifier_building_group_bg_monuments_throughput_mult:0 "Gökdelen Üretim Hacmi"
+modifier_building_group_bg_monuments_throughput_mult:0 "Anıt Üretim Hacmi"
 modifier_building_group_bg_power_throughput_mult:0 "Eletkrik Santrali Üretim Hacmi"
 modifier_building_canals_throughput_mult:0 "Kanal Üretim Hacmi"
 modifier_building_group_bg_military_throughput_mult:0 "Kışla Üretim Hacmi"
