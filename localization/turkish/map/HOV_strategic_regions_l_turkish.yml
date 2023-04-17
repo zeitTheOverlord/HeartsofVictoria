@@ -1,7 +1,7 @@
 ﻿l_turkish:
  region_aragon:0 "Aragon"
- region_italy:0 "Kuzey İtalya"
+ region_north_italy:0 "Kuzey İtalya"
  region_south_italy:0 "Güney İtalya"
- region_saxony:0 "Saksonya"
- region_northern_japan:0 "Kuzey Japon"
- region_sweden:0 "İsveç"
+ region_north_japan:0 "Kuzey Japonya"
+ region_south_japan:0 "Güney Japonya"
+ region_denmark:0 "Danimarka"
