@@ -1,0 +1,5 @@
+﻿country_colonial_capacity_cap_add = {
+	good = yes
+	percent = no
+	num_decimals = 0
+}

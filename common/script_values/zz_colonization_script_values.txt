@@ -1,0 +1,39 @@
+﻿### Hopefully these are self-explanatory
+
+num_active_colonies = {
+	value = {
+		value = 0
+        every_scope_state = {
+			limit = { 
+				state_is_colony = yes
+			}
+			add = 1
+		}	
+    }
+}
+
+state_region_num_provinces_half = {
+	value = {
+		every_state = {
+			limit = {
+				state_region = root.state_region
+			}
+			add = num_provinces
+		}
+		multiply = 0.5
+		round = yes # safeguard
+	}
+}
+
+state_region_num_provinces_fifth = {
+	value = {
+		every_state = {
+			limit = {
+				state_region = root.state_region
+			}
+			add = num_provinces
+		}
+		multiply = 0.2
+		round = yes # safeguard
+	}
+}
