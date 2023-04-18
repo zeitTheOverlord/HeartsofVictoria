@@ -291,31 +291,28 @@ pm_scholastic_education = {
 	
 	country_modifiers = {
 		workforce_scaled = { 
-			country_tech_spread_add = 2
+			country_weekly_innovation_add = 2
 		}
 	}
 	
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_paper_add = 24 # x 30 720
-			building_input_tools_add = 16 # x 40 640
-			building_input_coal_add = 8 # x 30 240
-			building_input_hardwood_add = 8 # x 40 320
-										#total 1920
- 
+			building_input_paper_add = 10
+			building_input_fine_art_add = 10
+			building_input_services_add = 10
 		}	
 	
 		level_scaled = {
 			building_employment_clerks_add = 1500
-			building_employment_laborers_add = 5000
+			building_employment_laborers_add = 1500
 		}
 	}
 	
 	state_modifiers = {
-		unscaled = {
-			state_pop_qualifications_mult = 0.05
-			state_education_access_add = 0.1
-		}
+		workforce_scaled = { 
+			state_pop_qualifications_mult = 0.5
+			state_education_access_add = 0.05
+		}	
 	}
 }
 
@@ -328,29 +325,27 @@ pm_philosophy_department = {
 	
 	country_modifiers = {
 		workforce_scaled = { 
-			country_tech_spread_add = 4
+			country_weekly_innovation_add = 3
 		}
 	}
 	
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_paper_add = 36 # x 30 1080 +12
-			building_input_tools_add = 24 # x 40 960 +8
-			building_input_coal_add = 12 # x 30 360 +4
-			building_input_hardwood_add = 12 # x 40 480 +4
-										#total 2880
+			building_input_paper_add = 15
+			building_input_fine_art_add = 15
+			building_input_services_add = 15
 		}
 		
 		level_scaled = {
 			building_employment_clerks_add = 1750
-			building_employment_laborers_add = 7500
+			building_employment_laborers_add = 1250
 		}					
 	}
 	
 	state_modifiers = {
-		unscaled = { 
-			state_pop_qualifications_mult = 0.1
-			state_education_access_add = 0.15
+		workforce_scaled = { 
+			state_pop_qualifications_mult = 0.75
+			state_education_access_add = 0.075
 		}	
 	}
 }
@@ -364,33 +359,30 @@ pm_analytical_philosophy_department = {
 	
 	country_modifiers = {
 		workforce_scaled = { 
-			country_tech_spread_add = 6
+			country_weekly_innovation_add = 4
 		}
 	}
 	
 	building_modifiers = {
 		workforce_scaled = { 
-			building_input_paper_add = 48 # x 30 1440 +24
-			building_input_tools_add = 32 # x 40 1280 +16
-			building_input_coal_add = 16 # x 30 480 +8 
-			building_input_hardwood_add = 16 # x 40 640 +8
-										#total 3840
- 
+			building_input_paper_add = 20
+			building_input_fine_art_add = 20
+			building_input_services_add = 20
 		}
 		
 		level_scaled = {
 			building_employment_clerks_add = 2000
-			building_employment_laborers_add = 10000
+			building_employment_laborers_add = 1000
 		}					
 	}
 	
 	state_modifiers = {
-		unscaled = {
-			state_pop_qualifications_mult = 0.15
-			state_education_access_add = 0.2
+		workforce_scaled = { 
+			state_pop_qualifications_mult = 1
+			state_education_access_add = 0.1
 		}	
 	}
-}	
+}
 
 pm_secular_academia = {
 	texture = "gfx/interface/icons/production_method_icons/ownership_academics.dds"

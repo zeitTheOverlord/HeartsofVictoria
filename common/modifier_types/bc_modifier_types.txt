@@ -28,3 +28,13 @@ state_non_accepted_mortality_mult = {
 	good = no
 	percent = yes
 }
+
+building_input_fine_art_add = {
+	good = yes
+	percent = no
+}
+
+building_input_services_add = {
+	good = yes
+	percent = no
+}
