@@ -1,9 +1,0 @@
-﻿l_turkish:
- UNLOCK_TOPBAR_MOD:0 "Click to #bold Unlock#!"
- TURMOIL_TOOLTIP:0 "#BOLD #V [concept_turmoil]#!#!\nThere are currently [GetPlayer.CalcNumStatesInTurmoil|v] states in [concept_turmoil] from [concept_radical] [Concept('concept_pop', '$concept_pops$')]"
- MORE_TOP_STATS_TT:0 "Click to toggle second row contents.\n\nRight click to toggle pop list"
- ARABLE_LAND_TT:0 "#title [concept_arable_land]#!\nThere is currently #v [Country.GetArableLand]#! total arable land and #v [Country.GetFreeArableLand]#! free arable land."
- LEGITIMACY_TT:0 "[concept_legitimacy] is currently #variable [GetPlayer.GetGovernmentLegitimacy]#!"
- TOTAL_URBANIZATION_TT:0 "Total [concept_urbanization] is #v [Country.GetTotalUrbanization|1]#!"
- CONVOYS_TOPBAR_TTT:0 "There are #v [Country.GetNumUsableConvoys|1]#! total convoys. #v [Country.GetRequiredConvoys]#! convoys are required for current trade routes.\n\n[Country.GetNumConvoysDesc]"
- TOPBAR_POP_TT:0 "There are #v [PopType.GetPopulation(GetPlayer)|v/d]#! #v [PopType.GetNameNoIcon]#! pops in [GetPlayer.GetName]. They have [PopType.GetPolStrAsPercentage(GetPlayer)|v/%d] political strength\n[PopType.GetInterestGroupSupportDesc( GetPlayer.Self )]\n\n#v [PopType.GetNameNoIcon]#! make up #v [PopType.GetWorkforceAsPercentage( GetPlayer.Self )|/%d]#! of the workforce."
