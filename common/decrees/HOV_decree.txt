@@ -228,12 +228,11 @@ decree_promote_social_innovation = {
 		academia
 	}
 	modifier = {
-		state_education_access_add = 0.25
-		state_pop_qualifications_mult = 0.25
-		building_group_bg_technology_throughput_mult = 0.2
-		building_group_bg_arts_throughput_mult = 0.2
+		state_education_access_add = 0.1
+		state_pop_qualifications_mult = 0.05
+		building_group_bg_technology_throughput_mult = 0.5
 	}
-	cost = 150
+	cost = 50
 	ai_weight = {
 		value = 0
 		if = {
