@@ -195,7 +195,7 @@ decree_emergency_relief = {
 		}
 	}
 	modifier = {
-		state_welfare_payments_add = 0.6
+		state_welfare_payments_add = 0.5
 		country_tension_decay_mult = 0.25
 		building_working_conditions_mult = -0.25
 	}
