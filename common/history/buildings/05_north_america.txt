@@ -82,12 +82,6 @@
 				activate_production_methods={ "pm_percussion_caps" "pm_privately_owned_industry" }
 			}			
 			create_building={
-				building="building_university"
-				level=1
-				reserves=1
-				activate_production_methods={ "pm_scholastic_education" }
-			}
-			create_building={
 				building="building_iron_mine"
 				level=3
 				reserves=1
@@ -503,12 +497,6 @@
 				level=1
 				reserves=1
 				activate_production_methods={ "pm_horizontal_drawer_cabinets" }
-			}
-			create_building={
-				building="building_university"
-				level=1
-				reserves=1
-				activate_production_methods={ "pm_scholastic_education" }
 			}
 			create_building={
 				building="building_food_industry"
@@ -973,12 +961,6 @@
 				level=1
 				reserves=1
 				activate_production_methods={ "pm_iron_frame_buildings" }
-			}				
-			create_building={
-				building="building_university"
-				level=1
-				reserves=1
-				activate_production_methods={ "pm_scholastic_education" }
 			}
 			create_building={
 				building="building_textile_mills"
@@ -1379,12 +1361,6 @@
 	}
 	s:STATE_QUEBEC={
 		region_state:QUE={
-			create_building={
-				building="building_university"
-				level=1
-				reserves=1
-				activate_production_methods={ "pm_scholastic_education" }
-			}
 			create_building={
 				building="building_shipyards"
 				level=1
@@ -1837,12 +1813,6 @@
 				level=4
 				reserves=1
 				activate_production_methods={ "pm_simple_organization" }
-			}
-			create_building={
-				building="building_university"
-				level=1
-				reserves=1
-				activate_production_methods={ "pm_scholastic_education" }
 			}
 			create_building={
 				building="building_logging_camp"
