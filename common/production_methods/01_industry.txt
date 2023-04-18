@@ -423,10 +423,10 @@ pm_craftsman_sewing = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_silk_add = 5				# x40 =  400			# x20 =  200
+			building_input_silk_add = 10				# x40 =  400			# x20 =  200
 			
 			# output goods
-			building_output_clothes_add = -20			# x30 = -600
+			building_output_clothes_add = -10			# x30 = -600
 			building_output_luxury_clothes_add = 20		# x60 = 1200
 		}
 		
@@ -448,10 +448,10 @@ pm_elastics = {
 		workforce_scaled = {
 			# input goods
 			building_input_rubber_add = 5
-			building_input_silk_add = 5
+			building_input_silk_add = 10
 			
 			# output goods
-			building_output_clothes_add = -40
+			building_output_clothes_add = -20
 			building_output_luxury_clothes_add = 40
 		}
 		

@@ -229,7 +229,7 @@ decree_promote_social_innovation = {
 	}
 	modifier = {
 		state_education_access_add = 0.1
-		state_pop_qualifications_mult = 0.05
+		state_pop_qualifications_mult = 0.5
 	}
 	cost = 50
 	ai_weight = {
