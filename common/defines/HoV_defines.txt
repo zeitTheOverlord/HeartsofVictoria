@@ -52,6 +52,8 @@
 }
 
 NEconomy = {
+	ECONOMY_OF_SCALE_START_LEVEL = 1 # Level at which buildings start getting economy of scale bonuses. Levels lower than this value provide no bonus [>=1]
+	
 	MIN_CONSTRUCTION_EFFICIENCY = 0.1	#0.05				# Construction efficiency cannot go below this amount
 	MIN_GOODS_PRICE = 0.0001	# A good cannot have a lower base price than this                                                                                                      
 	EXPENSIVE_GOODS_THRESHOLD = 1.5	# Used for some triggers and gui functions
