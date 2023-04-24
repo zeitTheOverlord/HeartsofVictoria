@@ -158,10 +158,10 @@ front_battle_province_weight = {
 }
 
 province_terrain_infrastructure_force_limit = {
-	value = 5
+	value = 50
 	add = {
 		value = scope:province.state.infrastructure
-		divide = 1.5
+		divide = 4
 	}
 	multiply = scope:province.combat_width
 }
@@ -218,22 +218,14 @@ land_battle_size = {
 		limit = {
 			exists = scope:front
 		}
-		subtract = {
-			fixed_range = {
-				min = 0
-				max = {
-					add = "scope:front.num_total_battalions(root)"
-					subtract = {
-						add = "scope:front.num_total_battalions(root)"
-						divide = "scope:front.front_length"
-					}
-					divide = 2
-				}
-			}
+		add = {
+			add=0
 			floor = yes
 			desc = "BATTLE_SIZE_CONCENTRATION_ACROSS_LENGTH_OF_FRONT"
 		}
 	}
+
+
 	save_temporary_value_as = pre_combat_width_cap
 	# Cap to infrastructure-based combat width
 	if = {
