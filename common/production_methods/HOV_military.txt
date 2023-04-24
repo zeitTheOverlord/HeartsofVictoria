@@ -1660,7 +1660,7 @@ pm_wound_dressing = {
 	building_modifiers = {
 		workforce_scaled = {
 			building_input_liquor_add = 1
-			building_input_fabric_add = 0.5
+			building_input_fabric_add = 1
 		}
 		unscaled = {
 			unit_recovery_rate_add = 0.25
@@ -1680,7 +1680,7 @@ pm_first_aid = {
 			building_input_tools_add = 1
 		}
 		unscaled = {
-			unit_morale_loss_mult = -0.3
+			unit_morale_loss_mult = -0.1
 			unit_recovery_rate_add = 0.5
 		}
 	}
@@ -1693,13 +1693,13 @@ pm_field_hospitals = {
 	}
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_liquor_add = 4
+			building_input_liquor_add = 2
 			building_input_opium_add = 2
-			building_input_fabric_add = 2
-			building_input_tools_add = 2
+			building_input_fabric_add = 1
+			building_input_tools_add = 1
 		}
 		unscaled = {
-			unit_morale_loss_mult = -0.6
+			unit_morale_loss_mult = -0.2
 			unit_recovery_rate_add = 0.75
 		}
 	}
@@ -1946,7 +1946,7 @@ pm_carriers = {
 			building_input_ironclads_add = 3
 			building_input_ammunition_add = 3
 			building_input_coal_add = 3
-			building_input_aeroplanes_add = 1
+			building_input_aeroplanes_add = 3
 			building_input_radios_add = 1
 			building_input_oil_add = 1			#added
 		}
