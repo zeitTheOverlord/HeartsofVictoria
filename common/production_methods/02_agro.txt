@@ -96,8 +96,8 @@ pm_potatoes = {
 	
 	building_modifiers = {
 		workforce_scaled = {
-			building_output_grain_add = -15
-			building_output_liquor_add = 15
+			building_output_grain_add = -30
+			building_output_liquor_add = 20
 		}
 	}
 }
@@ -107,9 +107,9 @@ pm_apple_orchards = {
 	
 	building_modifiers = {
 		workforce_scaled = {
-			building_output_grain_add = -15
-			building_output_fruit_add = 10
-			building_output_sugar_add = 5
+			building_output_grain_add = -30
+			building_output_fruit_add = 5
+			building_output_sugar_add = 15
 		}
 	}
 }
@@ -281,9 +281,9 @@ pm_citrus_orchards = {
 	
 	building_modifiers = {
 		workforce_scaled = {
-			building_output_grain_add = -15
-			building_output_fruit_add = 9
-			building_output_sugar_add = 6
+			building_output_grain_add = -30
+			building_output_fruit_add = 5
+			building_output_sugar_add = 15
 		}
 	}
 }
@@ -293,7 +293,7 @@ pm_vineyards = {
 	
 	building_modifiers = {
 		workforce_scaled = {
-			building_output_grain_add = -10
+			building_output_grain_add = -25
 			building_output_wine_add = 10
 			building_employment_shopkeepers_add = 200
 		}
@@ -394,9 +394,9 @@ pm_fig_orchards = {
 	
 	building_modifiers = {
 		workforce_scaled = {
-			building_output_grain_add = -15
-			building_output_fruit_add = 6
-			building_output_sugar_add = 9
+			building_output_grain_add = -30
+			building_output_fruit_add = 5
+			building_output_sugar_add = 15
 		}
 	}
 }						
@@ -406,8 +406,8 @@ pm_vineyards_building_maize_farm = {
 	
 	building_modifiers = {
 		workforce_scaled = {
-			building_output_grain_add = -12
-			building_output_wine_add = 6
+			building_output_grain_add = -25
+			building_output_wine_add = 10
 			building_employment_shopkeepers_add = 150
 		}
 	}
