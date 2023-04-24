@@ -1961,8 +1961,8 @@ pm_blister_steel_process = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_iron_add = 40 #40
-			building_input_coal_add = 10
+			building_input_iron_add = 30 #40
+			building_input_coal_add = 30
 			
 			# output goods
 			building_output_steel_add = 60 #65
@@ -1988,8 +1988,8 @@ pm_bessemer_process = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_iron_add = 50
-			building_input_coal_add = 20
+			building_input_iron_add = 40
+			building_input_coal_add = 40
 			
 			# output goods
 			building_output_steel_add = 80
@@ -2016,8 +2016,8 @@ pm_open_hearth_process = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_iron_add = 60
-			building_input_coal_add = 30
+			building_input_iron_add = 50
+			building_input_coal_add = 50
 			
 			# output goods
 			building_output_steel_add = 100
@@ -2044,9 +2044,9 @@ pm_electric_arc_process = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_iron_add = 60 #100
-			building_input_coal_add = 30 
-			building_input_electricity_add = 25
+			building_input_iron_add = 50 #100
+			building_input_coal_add = 50 
+			building_input_electricity_add = 20
 			
 			# output goods
 			building_output_steel_add = 120
@@ -2112,7 +2112,7 @@ pm_steam_engines = {
 	
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_steel_add = 50
+			building_input_steel_add = 40
 			
 			building_output_engines_add = 60
 		}
@@ -2137,8 +2137,8 @@ pm_electric_engines = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_steel_add = 50
-			building_input_electricity_add = 20
+			building_input_steel_add = 40
+			building_input_electricity_add = 30
 			
 			# output goods
 			building_output_engines_add = 80
@@ -2164,8 +2164,8 @@ pm_diesel_engines = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_steel_add = 60
-			building_input_oil_add = 20
+			building_input_steel_add = 50
+			building_input_oil_add = 30
 			
 			# output goods
 			building_output_engines_add = 100

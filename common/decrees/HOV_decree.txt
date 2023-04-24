@@ -154,7 +154,7 @@ decree_violent_suppression = {
 		state_political_strength_from_discrimination_mult = -0.25
 		state_political_strength_from_welfare_mult = -0.25
 	}
-	cost = 50
+	cost = 100
 	ai_weight = {
 		value = 100
 		if = {
