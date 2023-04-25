@@ -23,7 +23,7 @@ pm_irregular_infantry = {
 	}
 	country_modifiers = {
 		workforce_scaled = {
-			country_army_power_projection_add = 1
+			country_army_power_projection_add = 1.25
 		}
 	}
 }
@@ -71,7 +71,7 @@ pm_irregular_infantry_ofs = {
 	}
 	country_modifiers = {
 		workforce_scaled = {
-			country_army_power_projection_add = 1
+			country_army_power_projection_add = 1.25
 		}
 	}
 }
@@ -124,7 +124,7 @@ pm_line_infantry = {
 	}
 	country_modifiers = {
 		workforce_scaled = {
-			country_army_power_projection_add = 3
+			country_army_power_projection_add = 2.5
 		}
 	}
 	timed_modifiers = {
@@ -322,7 +322,7 @@ pm_skirmish_infantry_ofs = {
 	}
 	country_modifiers = {
 		workforce_scaled = {
-			country_army_power_projection_add = 5
+			country_army_power_projection_add = 6
 		}
 	}
 	timed_modifiers = {
@@ -390,7 +390,7 @@ pm_trench_infantry = {
 	}
 	country_modifiers = {
 		workforce_scaled = {
-			country_army_power_projection_add = 7
+			country_army_power_projection_add = 7.5
 		}
 	}
 	timed_modifiers = {
@@ -459,7 +459,7 @@ pm_trench_infantry_ofs = {
 	}
 	country_modifiers = {
 		workforce_scaled = {
-			country_army_power_projection_add = 7
+			country_army_power_projection_add = 9
 		}
 	}
 	timed_modifiers = {
@@ -530,7 +530,7 @@ pm_squad_infantry = {
 	}
 	country_modifiers = {
 		workforce_scaled = {
-			country_army_power_projection_add = 9
+			country_army_power_projection_add = 10
 		}
 	}
 	timed_modifiers = {
@@ -602,7 +602,7 @@ pm_squad_infantry_ofs = {
 	}
 	country_modifiers = {
 		workforce_scaled = {
-			country_army_power_projection_add = 9
+			country_army_power_projection_add = 12
 		}
 	}
 	timed_modifiers = {
@@ -678,7 +678,7 @@ pm_mechanized_infantry = {
 	}
 	country_modifiers = {
 		workforce_scaled = {
-			country_army_power_projection_add = 11
+			country_army_power_projection_add = 12.5
 		}
 	}
 	timed_modifiers = {
@@ -758,7 +758,7 @@ pm_mechanized_infantry_ofs = {
 	}
 	country_modifiers = {
 		workforce_scaled = {
-			country_army_power_projection_add = 11
+			country_army_power_projection_add = 15
 		}
 	}
 	timed_modifiers = {
@@ -866,7 +866,7 @@ pm_cannon_artillery_ofs = {
 	}
 	country_modifiers = {
 		workforce_scaled = {
-			country_army_power_projection_add = 1
+			country_army_power_projection_add = 1.2
 		}
 	}
 	timed_modifiers = {
@@ -945,7 +945,7 @@ pm_mobile_artillery = {
 	}
 	country_modifiers = {
 		workforce_scaled = {
-			country_army_power_projection_add = 3
+			country_army_power_projection_add = 2
 		}
 	}
 	timed_modifiers = {
@@ -974,7 +974,7 @@ pm_mobile_artillery_ofs = {
 	}
 	country_modifiers = {
 		workforce_scaled = {
-			country_army_power_projection_add = 3
+			country_army_power_projection_add = 2.4
 		}
 	}
 	timed_modifiers = {
@@ -1057,7 +1057,7 @@ pm_shrapnel_artillery = {
 	}
 	country_modifiers = {
 		workforce_scaled = {
-			country_army_power_projection_add = 5
+			country_army_power_projection_add = 3
 		}
 	}
 	timed_modifiers = {
@@ -1090,7 +1090,7 @@ pm_shrapnel_artillery_ofs = {
 	}
 	country_modifiers = {
 		workforce_scaled = {
-			country_army_power_projection_add = 5
+			country_army_power_projection_add = 3.6
 		}
 	}
 	timed_modifiers = {
@@ -1173,7 +1173,7 @@ pm_siege_artillery = {
 	}
 	country_modifiers = {
 		workforce_scaled = {
-			country_army_power_projection_add = 7
+			country_army_power_projection_add = 4
 		}
 	}
 	timed_modifiers = {
@@ -1206,7 +1206,7 @@ pm_siege_artillery_ofs = {
 	}
 	country_modifiers = {
 		workforce_scaled = {
-			country_army_power_projection_add = 7
+			country_army_power_projection_add = 4.8
 		}
 	}
 	timed_modifiers = {
@@ -1347,7 +1347,7 @@ pm_motorized_recon = {
 	}
 	country_modifiers = {
 		workforce_scaled = {
-			country_army_power_projection_add = 3
+			country_army_power_projection_add = 2
 		}
 	}
 	timed_modifiers = {
@@ -1402,7 +1402,7 @@ pm_aerial_recon = {
 	}
 	country_modifiers = {
 		workforce_scaled = {
-			country_army_power_projection_add = 5
+			country_army_power_projection_add = 3
 		}
 	}
 	timed_modifiers = {
@@ -1463,7 +1463,7 @@ pm_machine_gunners = {
 	}
 	country_modifiers = {
 		workforce_scaled = {
-			country_army_power_projection_add = 4
+			country_army_power_projection_add = 2
 		}
 	}
 	timed_modifiers = {
@@ -1516,7 +1516,7 @@ pm_infiltrators = {
 	}
 	country_modifiers = {
 		workforce_scaled = {
-			country_army_power_projection_add = 4
+			country_army_power_projection_add = 2.4
 		}
 	}
 	timed_modifiers = {
@@ -1557,7 +1557,7 @@ pm_flamethrower_company = {
 	building_modifiers = {
 		workforce_scaled = {
 			building_input_oil_add = 1
-			building_input_ammunition_add = 4.5
+			building_input_ammunition_add = 5
 		}
 		throughput_scaled = {
 			unit_offense_add = 40
@@ -1569,7 +1569,7 @@ pm_flamethrower_company = {
 	}
 	country_modifiers = {
 		workforce_scaled = {
-			country_army_power_projection_add = 8
+			country_army_power_projection_add = 5
 		}
 	}
 	timed_modifiers = {
@@ -1589,7 +1589,7 @@ pm_flamethrower_company_conscription = {
 	building_modifiers = {
 		workforce_scaled = {
 			building_input_oil_add = 1
-			building_input_ammunition_add = 4.5
+			building_input_ammunition_add = 5
 		}
 		throughput_scaled = {
 			unit_offense_add = 40
@@ -1611,7 +1611,7 @@ pm_chemical_weapons_specialists = {
 	building_modifiers = {
 		workforce_scaled = {
 			building_input_oil_add = 1
-			building_input_ammunition_add = 4.5
+			building_input_ammunition_add = 5
 		}
 		throughput_scaled = {
 			unit_offense_add = 40
@@ -1623,7 +1623,7 @@ pm_chemical_weapons_specialists = {
 	}
 	country_modifiers = {
 		workforce_scaled = {
-			country_army_power_projection_add = 8
+			country_army_power_projection_add = 5
 		}
 	}
 	timed_modifiers = {
@@ -1643,7 +1643,7 @@ pm_chemical_weapons_specialists_conscription = {
 	building_modifiers = {
 		workforce_scaled = {
 			building_input_oil_add = 1
-			building_input_ammunition_add = 4.5
+			building_input_ammunition_add = 5
 		}
 		throughput_scaled = {
 			unit_offense_add = 40
@@ -1769,7 +1769,7 @@ pm_monitors = {
 	}
 	country_modifiers = {
 		workforce_scaled = {
-			country_navy_power_projection_add = 25
+			country_navy_power_projection_add = 30
 			country_max_declared_interests_add = 0.15
 		}
 	}
@@ -1873,6 +1873,11 @@ pm_torpedo_boat = {
 			unit_convoy_raiding_mult = 0.25
 		}
 	}
+	country_modifiers = {
+		workforce_scaled = {
+			country_navy_power_projection_add = 10
+		}
+	}
 	timed_modifiers = {
 		pm_offense_defense_readjustment_minor
 	}
@@ -1901,6 +1906,9 @@ pm_submarine = {
 			unit_convoy_raiding_mult = 0.5
 		}
 	}
+	workforce_scaled = {
+		country_navy_power_projection_add = 20
+	}
 	timed_modifiers = {
 		pm_offense_defense_readjustment_minor
 	}
@@ -1928,6 +1936,9 @@ pm_destroyers = {
 			unit_morale_loss_mult = -0.1
 			#			todo: unit_convoy_defence_mult = 0.25
 		}
+	}
+	workforce_scaled = {
+		country_navy_power_projection_add = 10
 	}
 	timed_modifiers = {
 		pm_offense_defense_readjustment_minor
