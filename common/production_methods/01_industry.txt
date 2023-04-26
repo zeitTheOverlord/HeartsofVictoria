@@ -711,7 +711,7 @@ pm_luxury_furniture = {
 
 	
 			# output goods
-			building_output_furniture_add = -20
+			building_output_furniture_add = -10
 			building_output_luxury_furniture_add = 20
 		}
 		
@@ -2046,7 +2046,7 @@ pm_electric_arc_process = {
 			# input goods
 			building_input_iron_add = 50 #100
 			building_input_coal_add = 50 
-			building_input_electricity_add = 20
+			building_input_electricity_add = 25
 			
 			# output goods
 			building_output_steel_add = 120
