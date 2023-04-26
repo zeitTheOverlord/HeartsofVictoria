@@ -128,7 +128,7 @@ pm_dynamite_building_coal_mine = {
 	
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_explosives_add = 2
+			building_input_explosives_add = 3
 			
 			# output goods
 			building_output_coal_add = 15
@@ -874,7 +874,7 @@ pm_dynamite_building_iron_mine = {
 	
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_explosives_add = 5
+			building_input_explosives_add = 6
 			
 			# output goods
 			building_output_iron_add = 15
@@ -1055,7 +1055,7 @@ pm_dynamite_building_lead_mine = {
 	
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_explosives_add = 5
+			building_input_explosives_add = 6
 			
 			# output goods
 			building_output_lead_add = 15
@@ -1195,7 +1195,7 @@ pm_dynamite_building_sulfur_mine = {
 	
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_explosives_add = 8
+			building_input_explosives_add = 9
 			
 			# output goods
 			building_output_sulfur_add = 15
@@ -1366,7 +1366,7 @@ pm_dynamite_building_gold_mine = {
 	
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_explosives_add = 8
+			building_input_explosives_add = 9
 			
 			# output goods
 			building_output_gold_add = 15

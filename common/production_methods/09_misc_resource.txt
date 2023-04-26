@@ -817,7 +817,7 @@ pm_combustion_derricks = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_engines_add = 10
+			building_input_engines_add = 20
 			
 			# output goods
 			building_output_oil_add = 90

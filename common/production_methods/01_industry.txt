@@ -2668,11 +2668,11 @@ pm_muskets = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_iron_add = 5
-			building_input_hardwood_add = 10
+			building_input_iron_add = 10
+			building_input_hardwood_add = 20
 			
 			# output goods
-			building_output_small_arms_add = 30
+			building_output_small_arms_add = 45
 		}
 
 		level_scaled = {
@@ -2693,12 +2693,12 @@ pm_rifles = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_steel_add = 10
-			building_input_hardwood_add = 10
-			building_input_tools_add = 10
+			building_input_steel_add = 15
+			building_input_hardwood_add = 20
+			#building_input_tools_add = 10
 			
 			# output goods
-			building_output_small_arms_add = 45
+			building_output_small_arms_add = 60
 		}
 
 		level_scaled = {
@@ -2719,12 +2719,12 @@ pm_repeaters = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_steel_add = 10
-			building_input_hardwood_add = 10
+			building_input_steel_add = 15
+			building_input_hardwood_add = 20
 			building_input_tools_add = 10
 			
 			# output goods
-			building_output_small_arms_add = 60
+			building_output_small_arms_add = 75
 		}
 
 		level_scaled = {
@@ -2746,13 +2746,13 @@ pm_bolt_action_rifles = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_steel_add = 10
-			building_input_hardwood_add = 10
-			building_input_tools_add = 10
+			building_input_steel_add = 15
+			building_input_hardwood_add = 20
+			building_input_tools_add = 15
 			building_input_oil_add = 10
 			
 			# output goods
-			building_output_small_arms_add = 75
+			building_output_small_arms_add = 90
 		}
 
 		level_scaled = {
@@ -2778,10 +2778,10 @@ pm_cannons = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_output_small_arms_add = -10
-			building_input_iron_add = 10
+			building_output_small_arms_add = -15
+			building_input_iron_add = 15
 			# output goods
-			building_output_artillery_add = 20
+			building_output_artillery_add = 30
 		}
 
 		level_scaled = {
@@ -2800,11 +2800,11 @@ pm_smoothbores = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_output_small_arms_add = -15
-			building_input_steel_add = 15
+			building_output_small_arms_add = -20
+			building_input_steel_add = 20
 
 			# output goods
-			building_output_artillery_add = 30
+			building_output_artillery_add = 40
 		}
 
 		level_scaled = {
@@ -2824,11 +2824,11 @@ pm_breech_loaders = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_output_small_arms_add = -20
-			building_input_steel_add = 20
+			building_output_small_arms_add = -25
+			building_input_steel_add = 25
 
 			# output goods
-			building_output_artillery_add = 40
+			building_output_artillery_add = 50
 		}
 
 		level_scaled = {
