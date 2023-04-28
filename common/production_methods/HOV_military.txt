@@ -511,7 +511,7 @@ pm_squad_infantry = {
 		workforce_scaled = {
 			building_input_ammunition_add = 3
 			building_input_small_arms_add = 3
-			building_input_radios_add = 1
+			building_input_radios_add = 2
 			building_input_groceries_add = 2
 		}
 		level_scaled = {
@@ -551,7 +551,7 @@ pm_squad_infantry_conscription = {
 		workforce_scaled = {
 			building_input_ammunition_add = 3
 			building_input_small_arms_add = 3
-			building_input_radios_add = 1
+			building_input_radios_add = 2
 			building_input_groceries_add = 2
 		}
 		level_scaled = {
@@ -582,7 +582,7 @@ pm_squad_infantry_ofs = {
 		workforce_scaled = {
 			building_input_ammunition_add = 4.5
 			building_input_small_arms_add = 4.5
-			building_input_radios_add = 1.5
+			building_input_radios_add = 3
 			building_input_groceries_add = 2
 		}
 		level_scaled = {
@@ -622,7 +622,7 @@ pm_squad_infantry_conscription_ofs = {
 		workforce_scaled = {
 			building_input_ammunition_add = 4.5
 			building_input_small_arms_add = 4.5
-			building_input_radios_add = 1.5
+			building_input_radios_add = 3
 			building_input_groceries_add = 2
 		}
 		level_scaled = {
@@ -658,9 +658,9 @@ pm_mechanized_infantry = {
 			building_input_ammunition_add = 3
 			building_input_small_arms_add = 3
 			building_input_groceries_add = 2
-			building_input_tanks_add = 1
-			building_input_oil_add = 1
-			building_input_radios_add = 1
+			building_input_tanks_add = 2
+			building_input_oil_add = 2
+			building_input_radios_add = 2
 		}
 		level_scaled = {
 			building_employment_soldiers_add = 750
@@ -700,9 +700,9 @@ pm_mechanized_infantry_conscription = {
 			building_input_ammunition_add = 3
 			building_input_small_arms_add = 3
 			building_input_groceries_add = 2
-			building_input_tanks_add = 1
-			building_input_oil_add = 1
-			building_input_radios_add = 1
+			building_input_tanks_add = 2
+			building_input_oil_add = 2
+			building_input_radios_add = 2
 		}
 		level_scaled = {
 			building_employment_soldiers_add = 750
@@ -737,9 +737,9 @@ pm_mechanized_infantry_ofs = {
 			building_input_ammunition_add = 4.5
 			building_input_small_arms_add = 4.5
 			building_input_groceries_add = 2
-			building_input_tanks_add = 1.5
-			building_input_oil_add = 1.5
-			building_input_radios_add = 1.5
+			building_input_tanks_add = 3
+			building_input_oil_add = 3
+			building_input_radios_add = 3
 		}
 		level_scaled = {
 			building_employment_soldiers_add = 750
@@ -779,9 +779,9 @@ pm_mechanized_infantry_conscription_ofs = {
 			building_input_ammunition_add = 4.5
 			building_input_small_arms_add = 4.5
 			building_input_groceries_add = 2
-			building_input_tanks_add = 1.5
-			building_input_oil_add = 1.5
-			building_input_radios_add = 1.5
+			building_input_tanks_add = 3
+			building_input_oil_add = 3
+			building_input_radios_add = 3
 		}
 		level_scaled = {
 			building_employment_soldiers_add = 750
@@ -1733,7 +1733,6 @@ pm_ironclads = {
 	}
 	country_modifiers = {
 		workforce_scaled = {
-			country_navy_power_projection_add = 20
 			country_max_declared_interests_add = 0.125
 		}
 	}
@@ -1769,7 +1768,7 @@ pm_monitors = {
 	}
 	country_modifiers = {
 		workforce_scaled = {
-			country_navy_power_projection_add = 30
+			country_navy_power_projection_add = 5
 			country_max_declared_interests_add = 0.15
 		}
 	}
@@ -1789,7 +1788,7 @@ pm_dreadnoughts = {
 			# input goods
 			building_input_ironclads_add = 4
 			building_input_ammunition_add = 4
-			building_input_radios_add = 1
+			building_input_radios_add = 2
 			building_input_coal_add = 4			#added
 		}
 		level_scaled = {
@@ -1806,7 +1805,7 @@ pm_dreadnoughts = {
 	}
 	country_modifiers = {
 		workforce_scaled = {
-			country_navy_power_projection_add = 40
+			country_navy_power_projection_add = 10
 			country_max_declared_interests_add = 0.175
 		}
 	}
@@ -1826,9 +1825,9 @@ pm_battleships = {
 			# input goods
 			building_input_ironclads_add = 5
 			building_input_ammunition_add = 5
-			building_input_radios_add = 1
+			building_input_radios_add = 2
 			building_input_coal_add = 5			#added
-			building_input_oil_add = 1			#added
+			building_input_oil_add = 2			#added
 		}
 		level_scaled = {
 			building_employment_soldiers_add = 900
@@ -1844,7 +1843,7 @@ pm_battleships = {
 	}
 	country_modifiers = {
 		workforce_scaled = {
-			country_navy_power_projection_add = 50
+			country_navy_power_projection_add = 15
 			country_max_declared_interests_add = 0.2
 		}
 	}
@@ -1861,6 +1860,7 @@ pm_torpedo_boat = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
+			building_input_ironclads_add = 2
 			building_input_ammunition_add = 2
 			building_input_coal_add = 2			#added
 		}
@@ -1875,7 +1875,7 @@ pm_torpedo_boat = {
 	}
 	country_modifiers = {
 		workforce_scaled = {
-			country_navy_power_projection_add = 10
+			country_navy_power_projection_add = 5
 		}
 	}
 	timed_modifiers = {
@@ -1894,7 +1894,7 @@ pm_submarine = {
 			building_input_ironclads_add = 3
 			building_input_ammunition_add = 3
 			building_input_coal_add = 3
-			building_input_oil_add = 1			#added
+			building_input_oil_add = 2			#added
 		}
 		level_scaled = {
 		}
@@ -1906,8 +1906,10 @@ pm_submarine = {
 			unit_convoy_raiding_mult = 0.5
 		}
 	}
-	workforce_scaled = {
-		country_navy_power_projection_add = 20
+	country_modifiers = {
+		workforce_scaled = {
+			country_navy_power_projection_add = 10
+		}
 	}
 	timed_modifiers = {
 		pm_offense_defense_readjustment_minor
@@ -1938,7 +1940,7 @@ pm_destroyers = {
 		}
 	}
 	workforce_scaled = {
-		country_navy_power_projection_add = 10
+		country_navy_power_projection_add = 5
 	}
 	timed_modifiers = {
 		pm_offense_defense_readjustment_minor
@@ -1957,9 +1959,9 @@ pm_carriers = {
 			building_input_ironclads_add = 3
 			building_input_ammunition_add = 3
 			building_input_coal_add = 3
-			building_input_aeroplanes_add = 3
-			building_input_radios_add = 1
-			building_input_oil_add = 1			#added
+			building_input_aeroplanes_add = 2
+			building_input_radios_add = 2
+			building_input_oil_add = 2			#added
 		}
 		level_scaled = {
 		}
@@ -1975,7 +1977,7 @@ pm_carriers = {
 	}
 	country_modifiers = {
 		workforce_scaled = {
-			country_navy_power_projection_add = 20
+			country_navy_power_projection_add = 10
 		}
 	}
 	timed_modifiers = {

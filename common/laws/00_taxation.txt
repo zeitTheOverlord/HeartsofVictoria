@@ -212,32 +212,32 @@ law_proportional_taxation = {
 
 	tax_modifier_very_low = {
 		tax_consumption_add = 0.1
-		tax_income_add = 0.16
-		tax_dividends_add = 0.12
+		tax_income_add = 0.1
+		tax_dividends_add = 0.1
 	}	
 	
 	tax_modifier_low = {
 		tax_consumption_add = 0.125
-		tax_income_add = 0.20
-		tax_dividends_add = 0.15
+		tax_income_add = 0.125
+		tax_dividends_add = 0.125
 	}
 	
 	tax_modifier_medium = {
 		tax_consumption_add = 0.15
-		tax_income_add = 0.24
-		tax_dividends_add = 0.18
+		tax_income_add = 0.15
+		tax_dividends_add = 0.15
 	}	
 	
 	tax_modifier_high = {
 		tax_consumption_add = 0.175
-		tax_income_add = 0.28
-		tax_dividends_add = 0.21
+		tax_income_add = 0.175
+		tax_dividends_add = 0.175
 	}
 	
 	tax_modifier_very_high = {
 		tax_consumption_add = 0.2
-		tax_income_add = 0.32
-		tax_dividends_add = 0.24
+		tax_income_add = 0.2
+		tax_dividends_add = 0.2
 	}	
 
 	possible_political_movements = {
@@ -278,33 +278,33 @@ law_graduated_taxation = {
 	}
 	
 	tax_modifier_very_low = {
-		tax_consumption_add = 0.1
-		tax_income_add = 0.10
-		tax_dividends_add = 0.24
+		#tax_consumption_add = 0.1
+		tax_income_add = 0.1
+		tax_dividends_add = 0.2
 	}	
 	
 	tax_modifier_low = {
-		tax_consumption_add = 0.125
+		#tax_consumption_add = 0.125
 		tax_income_add = 0.125
-		tax_dividends_add = 0.30
+		tax_dividends_add = 0.25
 	}
 	
 	tax_modifier_medium = {
-		tax_consumption_add = 0.15
+		#tax_consumption_add = 0.15
 		tax_income_add = 0.15
-		tax_dividends_add = 0.36
+		tax_dividends_add = 0.3
 	}	
 	
 	tax_modifier_high = {
-		tax_consumption_add = 0.175
+		#tax_consumption_add = 0.175
 		tax_income_add = 0.175
-		tax_dividends_add = 0.42
+		tax_dividends_add = 0.35
 	}
 	
 	tax_modifier_very_high = {
-		tax_consumption_add = 0.2
+		#tax_consumption_add = 0.2
 		tax_income_add = 0.20
-		tax_dividends_add = 0.48
+		tax_dividends_add = 0.4
 	}
 
 	possible_political_movements = {

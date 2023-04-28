@@ -105,9 +105,6 @@ law_elected_bureaucrats = {
 	possible_political_movements = {
 		law_appointed_bureaucrats
 	}
-	disallowing_laws = {
-		law_autocracy
-	}
 	pop_support = {
 		value = 0
 		# Bureuacrats like non-hereditary

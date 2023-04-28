@@ -70,8 +70,8 @@ pm_hardwood = {
 	building_modifiers = {
 		workforce_scaled = {
 			# output goods										
-			building_output_wood_add = -20			
-			building_output_hardwood_add = 10	
+			building_output_wood_add = -30			
+			building_output_hardwood_add = 15	
 		}
 	}
 }

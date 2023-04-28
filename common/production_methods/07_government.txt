@@ -159,7 +159,7 @@ pm_horizontal_drawer_cabinets = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_paper_add = 10
+			building_input_paper_add = 5
 		}			
 	
 		level_scaled = {

@@ -129,6 +129,7 @@ law_total_separation = {
 
 	disallowing_laws = {
 		law_theocracy
+		law_autocracy
 	}
 	
 	on_enact = {
