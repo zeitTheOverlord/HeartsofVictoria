@@ -27,6 +27,10 @@ law_charitable_health_system = {
 		medical_degrees
 	}	
 
+	modifier = {
+		country_institution_health_system_max_investment_add = 2
+	}
+	
 	institution = institution_health_system
 	institution_modifier = {
 		state_mortality_mult = -0.05

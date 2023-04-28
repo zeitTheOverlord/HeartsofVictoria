@@ -32,6 +32,10 @@ law_national_guard = {
 		law_enforcement
 	}
 
+	modifier = {
+		country_institution_home_affairs_max_investment_add = 2
+	}
+	
 	institution = institution_home_affairs
 	institution_modifier = {
 		state_conscription_rate_add = 0.005

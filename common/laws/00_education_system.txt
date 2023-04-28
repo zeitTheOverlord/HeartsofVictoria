@@ -94,7 +94,7 @@ law_private_schools = {
 	
 	institution = institution_schools
 	institution_modifier = {
-		state_education_access_wealth_add = 0.005
+		state_education_access_wealth_add = 0.003
 		interest_group_ig_industrialists_pol_str_mult = 0.1
 	}
 	

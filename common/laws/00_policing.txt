@@ -34,6 +34,10 @@ law_local_police = {
 	
 	progressiveness = 50
 
+	modifier = {
+		country_institution_police_max_investment_add = 2
+	}
+	
 	institution = institution_police
 	institution_modifier = {
 		interest_group_ig_landowners_pol_str_mult = 0.10

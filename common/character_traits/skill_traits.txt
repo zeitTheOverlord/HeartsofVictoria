@@ -586,8 +586,8 @@ basic_naval_commander = {
 	texture = "gfx/interface/icons/character_trait_icons/basic_naval_commander.dds"
 	
 	command_modifier = {
-		unit_offense_mult = 0.1
-		unit_defense_mult = 0.1
+		unit_offense_mult = 0.05
+		unit_defense_mult = 0.05
 	}
 	
 	possible = {
@@ -614,8 +614,8 @@ experienced_naval_commander = {
 	texture = "gfx/interface/icons/character_trait_icons/experienced_naval_commander.dds"
 	
 	command_modifier = {
-		unit_offense_mult = 0.2
-		unit_defense_mult = 0.2
+		unit_offense_mult = 0.1
+		unit_defense_mult = 0.1
 		character_battle_condition_rough_waters_mult = -0.25
 	}
 	
@@ -637,8 +637,8 @@ expert_naval_commander = {
 	texture = "gfx/interface/icons/character_trait_icons/expert_naval_commander.dds"
 	
 	command_modifier = {
-		unit_offense_mult = 0.3
-		unit_defense_mult = 0.3
+		unit_offense_mult = 0.15
+		unit_defense_mult = 0.15
 		character_battle_condition_rough_waters_mult = -0.5
 	}
 	
