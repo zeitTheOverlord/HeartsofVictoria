@@ -149,7 +149,7 @@ pm_public_trams = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_transportation_add = 1.5
+			building_input_transportation_add = 2
 		}
 
 		level_scaled = {
@@ -168,7 +168,7 @@ pm_public_motor_carriages = {
 	
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_transportation_add = 3
+			building_input_transportation_add = 4
 		}
 
 		level_scaled = {
@@ -254,7 +254,7 @@ pm_photographic_art = {
 	
 		workforce_scaled = {
 			building_input_paper_add = 30 # 150
-			building_input_services_add = 45
+			building_input_services_add = 50
 			building_input_tools_add = 15 # 80
 
 			building_output_fine_art_add = 25 # 400 - profit of 170
@@ -274,7 +274,7 @@ pm_film_art = {
 		workforce_scaled = {
 			building_input_tools_add = 15 # 150
 			building_input_paper_add = 30 # 200
-			building_input_services_add = 45
+			building_input_services_add = 55
 			building_input_electricity_add = 20 # 60
 			
 			building_output_fine_art_add = 30 # 600 - profit of 190
@@ -355,7 +355,7 @@ pm_hydroelectric_plant = {
 	
 	building_modifiers = { 
 		workforce_scaled = {
-			building_input_engines_add = 20
+			building_input_engines_add = 15
 			building_output_electricity_add = 80
 		}
 
@@ -377,7 +377,7 @@ pm_coal-fired_plant = {
 	
 	building_modifiers = { 
 		workforce_scaled = {
-			building_input_engines_add = 25
+			building_input_engines_add = 20
 			building_input_coal_add = 20
 			building_output_electricity_add = 120
 		}
@@ -400,7 +400,7 @@ pm_oil-fired_plant = {
 	
 	building_modifiers = { 
 		workforce_scaled = {
-			building_input_engines_add = 30
+			building_input_engines_add = 25
 			building_input_oil_add = 30
 			building_output_electricity_add = 160
 		}

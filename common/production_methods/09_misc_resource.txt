@@ -90,7 +90,7 @@ pm_steam_donkey_building_logging_camp = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_engines_add = 1
+			building_input_engines_add = 2
 			building_input_coal_add = 2
 		}
 
@@ -110,7 +110,7 @@ pm_chainsaws = {
 		workforce_scaled = {
 			# input goods
 			building_input_tools_add = 4
-			building_input_oil_add = 1
+			building_input_oil_add = 4
 		}
 
 		level_scaled = {
@@ -130,7 +130,7 @@ pm_rail_transport_building_logging_camp = {
 	}
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_transportation_add = 6
+			building_input_transportation_add = 8
 		}
 
 		level_scaled = {
@@ -149,7 +149,7 @@ pm_log_carts = {
 	}
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_transportation_add = 9
+			building_input_transportation_add = 12
 		}
 
 		level_scaled = {
@@ -379,7 +379,7 @@ pm_refrigerated_storage_building_fishing_wharf = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input
-			building_input_electricity_add = 6
+			building_input_electricity_add = 8
 		}
 
 		level_scaled = {
@@ -400,8 +400,8 @@ pm_refrigerated_rail_cars_building_fishing_wharf = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input
-			building_input_electricity_add = 6
-			building_input_transportation_add = 6
+			building_input_electricity_add = 8
+			building_input_transportation_add = 8
 		}
 
 		level_scaled = {
@@ -421,8 +421,8 @@ pm_flash_freezing_building_fishing_wharf = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input
-			building_input_electricity_add = 9
-			building_input_transportation_add = 9
+			building_input_electricity_add = 12
+			building_input_transportation_add = 12
 		}
 
 		level_scaled = {
@@ -551,8 +551,8 @@ pm_simple_whaling = {
 			# input 
 			
 			# output
-			building_output_meat_add = 15
-			building_output_oil_add = 5
+			building_output_meat_add = 10
+			building_output_oil_add = 10
 		}
 
 		level_scaled = {
@@ -568,11 +568,11 @@ pm_wooden_whaling_ships = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input
-			building_input_clippers_add = 3 
+			building_input_clippers_add = 6 
 			
 			# output
-			building_output_meat_add = 30
-			building_output_oil_add = 10
+			building_output_meat_add = 20
+			building_output_oil_add = 20
 		}
 
 		level_scaled = {
@@ -594,10 +594,10 @@ pm_steam_whaling_ships = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input
-			building_input_steamers_add = 3
+			building_input_steamers_add = 36
 			
-			building_output_meat_add = 45
-			building_output_oil_add = 15
+			building_output_meat_add = 30
+			building_output_oil_add = 30
 		}
 
 		level_scaled = {
@@ -618,7 +618,7 @@ pm_refrigerated_storage_building_whaling_station = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input
-			building_input_electricity_add = 6
+			building_input_electricity_add = 8
 		}
 
 		level_scaled = {
@@ -639,8 +639,8 @@ pm_refrigerated_rail_cars_building_whaling_station = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input
-			building_input_electricity_add = 6
-			building_input_transportation_add = 6
+			building_input_electricity_add = 8
+			building_input_transportation_add = 8
 		}
 
 		level_scaled = {
@@ -660,8 +660,8 @@ pm_flash_freezing_building_whaling_station = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input
-			building_input_electricity_add = 9
-			building_input_transportation_add = 9
+			building_input_electricity_add = 12
+			building_input_transportation_add = 12
 		}
 
 		level_scaled = {
@@ -842,7 +842,7 @@ pm_rail_transport_building_oil_rig = {
 	
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_transportation_add = 6
+			building_input_transportation_add = 8
 		}
 
 		level_scaled = {
@@ -862,7 +862,7 @@ pm_tanker_cars = {
 	
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_transportation_add = 12
+			building_input_transportation_add = 16
 		}
 
 		level_scaled = {

@@ -108,8 +108,8 @@ pm_apple_orchards = {
 	building_modifiers = {
 		workforce_scaled = {
 			building_output_grain_add = -30
-			building_output_fruit_add = 5
-			building_output_sugar_add = 10
+			building_output_fruit_add = 8
+			building_output_sugar_add = 12
 		}
 	}
 }
@@ -124,7 +124,7 @@ pm_tools = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_tools_add = 3
+			building_input_tools_add = 4.5
 		}
 
 		level_scaled = {
@@ -144,8 +144,8 @@ pm_steam_threshers = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods													
-			building_input_tools_add = 3	
-			building_input_coal_add = 3
+			building_input_tools_add = 6	
+			building_input_coal_add = 4
 		}
 
 		level_scaled = {
@@ -165,8 +165,8 @@ pm_tractors = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods								
-			building_input_coal_add = 4.5 
-			building_input_engines_add = 3
+			building_input_coal_add = 6 
+			building_input_engines_add = 6
 		}
 
 		level_scaled = {
@@ -186,8 +186,8 @@ pm_compression_ignition_tractors = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods								
-			building_input_oil_add = 4
-			building_input_engines_add = 4
+			building_input_oil_add = 5
+			building_input_engines_add = 7
 		}
 
 		level_scaled = {
@@ -282,8 +282,8 @@ pm_citrus_orchards = {
 	building_modifiers = {
 		workforce_scaled = {
 			building_output_grain_add = -30
-			building_output_fruit_add = 5
-			building_output_sugar_add = 10
+			building_output_fruit_add = 8
+			building_output_sugar_add = 12
 		}
 	}
 }
@@ -293,8 +293,9 @@ pm_vineyards = {
 	
 	building_modifiers = {
 		workforce_scaled = {
-			building_output_grain_add = -25
-			building_output_wine_add = 10
+			building_output_grain_add = -30
+			building_output_wine_add = 15
+			building_employment_shopkeepers_add = 200
 		}
 	}
 }
@@ -394,8 +395,8 @@ pm_fig_orchards = {
 	building_modifiers = {
 		workforce_scaled = {
 			building_output_grain_add = -30
-			building_output_fruit_add = 5
-			building_output_sugar_add = 10
+			building_output_fruit_add = 8
+			building_output_sugar_add = 12
 		}
 	}
 }						
@@ -405,8 +406,9 @@ pm_vineyards_building_maize_farm = {
 	
 	building_modifiers = {
 		workforce_scaled = {
-			building_output_grain_add = -25
-			building_output_wine_add = 10
+			building_output_grain_add = -30
+			building_output_wine_add = 15
+			building_employment_shopkeepers_add = 200
 		}
 	}
 }
@@ -464,7 +466,7 @@ pm_butchering_tools = {
 	texture = "gfx/interface/icons/production_method_icons/butchering_tools.dds"			
 	building_modifiers = {				
 		workforce_scaled = {
-			building_input_tools_add = 5
+			building_input_tools_add = 2
 			building_output_meat_add = 20
 		}
 	}							
@@ -477,7 +479,7 @@ pm_slaughterhouses = {
 	}	
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_tools_add = 10
+			building_input_tools_add = 4
 			building_output_meat_add = 30
 		}
 	}
@@ -490,8 +492,8 @@ pm_mechanized_slaughtering = {
 	}
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_tools_add = 10
-			building_input_coal_add = 5
+			building_input_tools_add = 4
+			building_input_coal_add = 4
 			building_output_meat_add = 40
 		}
 	}
@@ -508,11 +510,11 @@ pm_barbed_wire_fences = {
 	}	
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_iron_add = 2
+			building_input_iron_add = 3
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = -450
+			building_employment_laborers_add = -500
 		}
 	}
 }		
@@ -524,12 +526,12 @@ pm_electric_fencing = {
 	}
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_iron_add = 2
-			building_input_electricity_add = 2
+			building_input_iron_add = 3
+			building_input_electricity_add = 4
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = -900
+			building_employment_laborers_add = -1000
 		}
 	}
 }
@@ -546,11 +548,11 @@ pm_refrigerated_storage_building_livestock_ranch = {
 	}
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_electricity_add = 9
+			building_input_electricity_add = 10
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = -1500
+			building_employment_laborers_add = -1250
 		}
 	}
 }
@@ -564,12 +566,12 @@ pm_refrigerated_rail_cars_building_livestock_ranch = {
 	
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_electricity_add = 9
-			building_input_transportation_add = 9
+			building_input_electricity_add = 10
+			building_input_transportation_add = 10
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = -3000
+			building_employment_laborers_add = -2500
 		}
 	}
 }

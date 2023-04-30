@@ -658,8 +658,8 @@ pm_mechanized_infantry = {
 			building_input_ammunition_add = 3
 			building_input_small_arms_add = 3
 			building_input_groceries_add = 2
-			building_input_tanks_add = 2
-			building_input_oil_add = 2
+			building_input_tanks_add = 1
+			building_input_oil_add = 1
 			building_input_radios_add = 2
 		}
 		level_scaled = {
@@ -700,8 +700,8 @@ pm_mechanized_infantry_conscription = {
 			building_input_ammunition_add = 3
 			building_input_small_arms_add = 3
 			building_input_groceries_add = 2
-			building_input_tanks_add = 2
-			building_input_oil_add = 2
+			building_input_tanks_add = 1
+			building_input_oil_add = 1
 			building_input_radios_add = 2
 		}
 		level_scaled = {
@@ -737,8 +737,8 @@ pm_mechanized_infantry_ofs = {
 			building_input_ammunition_add = 4.5
 			building_input_small_arms_add = 4.5
 			building_input_groceries_add = 2
-			building_input_tanks_add = 3
-			building_input_oil_add = 3
+			building_input_tanks_add = 1.5
+			building_input_oil_add = 1.5
 			building_input_radios_add = 3
 		}
 		level_scaled = {
@@ -779,8 +779,8 @@ pm_mechanized_infantry_conscription_ofs = {
 			building_input_ammunition_add = 4.5
 			building_input_small_arms_add = 4.5
 			building_input_groceries_add = 2
-			building_input_tanks_add = 3
-			building_input_oil_add = 3
+			building_input_tanks_add = 1.5
+			building_input_oil_add = 1.5
 			building_input_radios_add = 3
 		}
 		level_scaled = {
@@ -1279,7 +1279,7 @@ pm_bicycle_messengers = {
 	building_modifiers = {
 		workforce_scaled = {
 			building_input_tools_add = 1
-			building_input_rubber_add = 1
+			building_input_rubber_add = 0.5
 		}
 		throughput_scaled = {
 			unit_offense_add = 10
@@ -1311,7 +1311,7 @@ pm_bicycle_messengers_conscription = {
 	building_modifiers = {
 		workforce_scaled = {
 			building_input_tools_add = 1
-			building_input_rubber_add = 1
+			building_input_rubber_add = 0.5
 		}
 		throughput_scaled = {
 			unit_offense_add = 10
@@ -1335,7 +1335,7 @@ pm_motorized_recon = {
 	building_modifiers = {
 		workforce_scaled = {
 			building_input_automobiles_add = 1
-			building_input_oil_add = 1
+			building_input_oil_add = 0.5
 		}
 		throughput_scaled = {
 			unit_offense_add = 20
@@ -1367,7 +1367,7 @@ pm_motorized_recon_conscription = {
 	building_modifiers = {
 		workforce_scaled = {
 			building_input_automobiles_add = 1
-			building_input_oil_add = 1
+			building_input_oil_add = 0.5
 		}
 		throughput_scaled = {
 			unit_offense_add = 20
@@ -1389,7 +1389,7 @@ pm_aerial_recon = {
 	}
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_aeroplanes_add = 1
+			building_input_aeroplanes_add = 2
 			building_input_oil_add = 1
 		}
 		throughput_scaled = {
@@ -1421,7 +1421,7 @@ pm_aerial_recon_conscription = {
 	}
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_aeroplanes_add = 1
+			building_input_aeroplanes_add = 2
 			building_input_oil_add = 1
 		}
 		throughput_scaled = {
@@ -1827,7 +1827,7 @@ pm_battleships = {
 			building_input_ammunition_add = 5
 			building_input_radios_add = 2
 			building_input_coal_add = 5			#added
-			building_input_oil_add = 2			#added
+			building_input_oil_add = 1			#added
 		}
 		level_scaled = {
 			building_employment_soldiers_add = 900
@@ -1894,7 +1894,7 @@ pm_submarine = {
 			building_input_ironclads_add = 3
 			building_input_ammunition_add = 3
 			building_input_coal_add = 3
-			building_input_oil_add = 2			#added
+			building_input_oil_add = 1			#added
 		}
 		level_scaled = {
 		}
@@ -1961,7 +1961,7 @@ pm_carriers = {
 			building_input_coal_add = 3
 			building_input_aeroplanes_add = 2
 			building_input_radios_add = 2
-			building_input_oil_add = 2			#added
+			building_input_oil_add = 1			#added
 		}
 		level_scaled = {
 		}

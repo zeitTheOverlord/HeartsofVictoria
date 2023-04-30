@@ -372,7 +372,7 @@ decree_encourage_urban_services = {
 		building_railway_throughput_mult = 0.25
 		building_group_bg_power_throughput_mult = 0.25
 	}
-	cost = 50
+	cost = 25
 	ai_weight = {
 		value = 0
 		if = {
@@ -427,7 +427,7 @@ decree_encourage_manufacturing_industry = {
 	modifier = {
 		building_group_bg_manufacturing_throughput_mult = 0.25
 	}
-	cost = 50
+	cost = 25
 	ai_weight = {
 		value = 0
 		if = {
@@ -558,7 +558,7 @@ decree_encourage_resource_industry = {
 		building_group_bg_whaling_throughput_mult = 0.25
 		building_group_bg_oil_extraction_throughput_mult = 0.25
 	}
-	cost = 50
+	cost = 25
 	ai_weight = {
 		value = 0
 		if = {
