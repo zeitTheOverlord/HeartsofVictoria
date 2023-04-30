@@ -26,9 +26,9 @@ pm_home_workshops_no_building_subsistence_farms = {
 		law_command_economy
 	}
 	
-	building_modifiers = { # 80
+	building_modifiers = { # 90
 		unscaled = {
-			building_output_grain_add = 2  # 40
+			building_output_grain_add = 2.5  # 50
 			building_output_fabric_add = 1  # 20
 			building_output_wood_add = 1 # 20
 		}
