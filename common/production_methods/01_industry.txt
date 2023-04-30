@@ -447,7 +447,7 @@ pm_elastics = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_rubber_add = 5
+			building_input_rubber_add = 10
 			building_input_silk_add = 10
 			
 			# output goods
