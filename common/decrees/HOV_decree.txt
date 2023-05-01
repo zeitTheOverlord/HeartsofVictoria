@@ -8,7 +8,7 @@
 decree_road_maintenance = {
 	texture = "gfx/interface/icons/state_status_icons/incorporated_state.dds"
 	modifier = {
-		state_infrastructure_mult = 0.25
+		#state_infrastructure_mult = 0.25
 		state_tax_capacity_mult = 0.25
 		building_group_bg_bureaucracy_throughput_mult = 0.25
 	}
@@ -17,7 +17,7 @@ decree_road_maintenance = {
 	}
 	cost = 25
 	ai_weight = {
-		value = 25
+		value = 50
 		if = {
 			limit = {
 				OR = {
