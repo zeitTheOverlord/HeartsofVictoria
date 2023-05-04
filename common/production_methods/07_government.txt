@@ -79,7 +79,7 @@ pm_industrial_port = {
 	}
 	state_modifiers = {
 		workforce_scaled = {
-			state_infrastructure_add = 7.5
+			state_infrastructure_add = 15
 		}
 	}	
 }
@@ -110,7 +110,7 @@ pm_modern_port = {
 	}
 	state_modifiers = {
 		workforce_scaled = {
-			state_infrastructure_add = 10
+			state_infrastructure_add = 20
 		}
 	}
 }				

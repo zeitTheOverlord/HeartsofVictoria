@@ -2396,8 +2396,8 @@ pm_military_shipbuilding_wooden = {
 	building_modifiers = {
 		workforce_scaled = {
 			# output goods
-			building_output_clippers_add = -40
-			building_output_manowars_add = 40
+			building_output_clippers_add = -32
+			building_output_manowars_add = 32
 		}
 	}
 }
@@ -2412,8 +2412,8 @@ pm_military_shipbuilding_wooden_2 = {
 	building_modifiers = {
 		workforce_scaled = {
 			# output goods
-			building_output_clippers_add = -60
-			building_output_manowars_add = 60
+			building_output_clippers_add = -48
+			building_output_manowars_add = 48
 		}
 	}
 }			
@@ -2429,8 +2429,8 @@ pm_military_shipbuilding_steam = {
 	building_modifiers = {
 		workforce_scaled = {
 			# output goods
-			building_output_steamers_add = -60
-			building_output_ironclads_add = 60
+			building_output_steamers_add = -48
+			building_output_ironclads_add = 48
 		}
 	}
 }
@@ -2445,8 +2445,8 @@ pm_military_shipbuilding_steam_2 = {
 	building_modifiers = {
 		workforce_scaled = {
 			# output goods
-			building_output_steamers_add = -90
-			building_output_ironclads_add = 90
+			building_output_steamers_add = -74
+			building_output_ironclads_add = 74
 		}
 	}
 }			
