@@ -13,7 +13,7 @@ law_no_womens_rights = {
 	}
 
 	modifier = {
-		state_birth_rate_mult = 0.075
+		state_birth_rate_mult = 0.05
 	}
 	
 	possible_political_movements = {
@@ -45,7 +45,6 @@ law_women_own_property = {
 
 	modifier = {
 		state_working_adult_ratio_add = 0.05
-		state_birth_rate_mult = -0.025
 	}
 	
 	possible_political_movements = {
@@ -206,7 +205,7 @@ law_womens_suffrage = {
 
 	modifier = {
 		state_working_adult_ratio_add = 0.15
-		state_birth_rate_mult = -0.075
+		state_birth_rate_mult = -0.1
 		state_dependent_political_participation_add = 0.33
 	}
 	

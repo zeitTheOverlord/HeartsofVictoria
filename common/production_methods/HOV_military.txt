@@ -1714,7 +1714,7 @@ pm_man_o_wars = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_manowars_add = 4
+			building_input_manowars_add = 3
 		}
 
 		level_scaled = {
