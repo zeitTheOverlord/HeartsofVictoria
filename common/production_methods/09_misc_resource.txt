@@ -90,8 +90,8 @@ pm_steam_donkey_building_logging_camp = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_engines_add = 2
-			building_input_coal_add = 2
+			building_input_engines_add = 1
+			building_input_coal_add = 3
 		}
 
 		level_scaled = {

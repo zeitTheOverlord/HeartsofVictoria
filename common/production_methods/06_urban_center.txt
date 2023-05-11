@@ -378,7 +378,7 @@ pm_coal-fired_plant = {
 	building_modifiers = { 
 		workforce_scaled = {
 			building_input_engines_add = 20
-			building_input_coal_add = 20
+			building_input_coal_add = 15
 			building_output_electricity_add = 120
 		}
 

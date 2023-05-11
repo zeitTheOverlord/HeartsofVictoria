@@ -145,7 +145,7 @@ pm_steam_threshers = {
 		workforce_scaled = {
 			# input goods													
 			building_input_tools_add = 6	
-			building_input_coal_add = 4
+			building_input_coal_add = 3
 		}
 
 		level_scaled = {
@@ -165,8 +165,8 @@ pm_tractors = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods								
-			building_input_coal_add = 6 
-			building_input_engines_add = 6
+			building_input_coal_add = 7 
+			building_input_engines_add = 4
 		}
 
 		level_scaled = {

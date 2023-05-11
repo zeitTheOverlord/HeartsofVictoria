@@ -761,8 +761,8 @@ pm_watertube_boiler_building_furniture_manufacturies = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_tools_add = 3
-			building_input_coal_add = 4
+			building_input_tools_add = 4
+			building_input_coal_add = 2
 		}
 
 		level_scaled = {
@@ -783,8 +783,8 @@ pm_rotary_valve_engine_building_furniture_manufacturies = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_tools_add = 6
-			building_input_coal_add = 8
+			building_input_tools_add = 8
+			building_input_coal_add = 4
 		}
 
 		level_scaled = {
@@ -1281,7 +1281,8 @@ pm_watertube_boiler_building_tooling_workshops = {
 	
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_coal_add = 8
+			building_output_tools_add = -4
+			building_input_coal_add = 3
 		}
 
 		level_scaled = {
@@ -1301,7 +1302,8 @@ pm_rotary_valve_engine_building_tooling_workshops = {
 	
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_coal_add = 16
+			building_output_tools_add = -8
+			building_input_coal_add = 4
 		}
 
 		level_scaled = {
@@ -1525,7 +1527,7 @@ pm_watertube_boiler_building_paper_mills = {
 		workforce_scaled = {
 			# input goods
 			building_input_tools_add = 6
-			building_input_coal_add = 4
+			building_input_coal_add = 3
 		}
 
 		level_scaled = {
@@ -1547,7 +1549,7 @@ pm_rotary_valve_engine_building_paper_mills = {
 		workforce_scaled = {
 			# input goods
 			building_input_tools_add = 12
-			building_input_coal_add = 8
+			building_input_coal_add = 6
 		}
 
 		level_scaled = {
@@ -1756,10 +1758,10 @@ pm_leblanc_process = {
 		workforce_scaled = {
 			# input goods
 			building_input_coal_add = 10
-			building_output_fertilizer_add = -15
+			building_output_fertilizer_add = -20
 
 			# output goods
-			building_output_explosives_add = 20
+			building_output_explosives_add = 25
 		}
 		
 		level_scaled = {
@@ -1782,10 +1784,10 @@ pm_ammonia-soda_process = {
 			# input goods
 			building_input_sulfur_add = 10
 			building_input_coal_add = 15 
-			building_output_fertilizer_add = -20 
+			building_output_fertilizer_add = -30 
 
 			# output goods
-			building_output_explosives_add = 40
+			building_output_explosives_add = 50
 		}
 
 		level_scaled = {
@@ -1808,10 +1810,10 @@ pm_vacuum_evaporation = {
 			# input goods
 			building_input_sulfur_add = 20
 			building_input_coal_add = 20
-			building_output_fertilizer_add = -25
+			building_output_fertilizer_add = -40
 
 			# output goods
-			building_output_explosives_add = 60
+			building_output_explosives_add = 75
 		}
 
 		level_scaled = {
@@ -1835,10 +1837,10 @@ pm_brine_electrolysis = {
 			building_input_sulfur_add = 20
 			building_input_electricity_add = 25
 			building_input_coal_add = 20
-			building_output_fertilizer_add = -25
+			building_output_fertilizer_add = -40
 
 			# output goods
-			building_output_explosives_add = 80
+			building_output_explosives_add = 100
 		}
 
 		level_scaled = {
@@ -1962,7 +1964,7 @@ pm_blister_steel_process = {
 		workforce_scaled = {
 			# input goods
 			building_input_iron_add = 30 #40
-			building_input_coal_add = 20
+			building_input_coal_add = 15
 			
 			# output goods
 			building_output_steel_add = 60 #65
@@ -1989,7 +1991,7 @@ pm_bessemer_process = {
 		workforce_scaled = {
 			# input goods
 			building_input_iron_add = 40
-			building_input_coal_add = 30
+			building_input_coal_add = 20
 			
 			# output goods
 			building_output_steel_add = 80
@@ -2017,7 +2019,7 @@ pm_open_hearth_process = {
 		workforce_scaled = {
 			# input goods
 			building_input_iron_add = 50
-			building_input_coal_add = 40
+			building_input_coal_add = 25
 			
 			# output goods
 			building_output_steel_add = 100
@@ -2045,7 +2047,7 @@ pm_electric_arc_process = {
 		workforce_scaled = {
 			# input goods
 			building_input_iron_add = 50 #100
-			building_input_coal_add = 40 
+			building_input_coal_add = 25 
 			building_input_electricity_add = 25
 			
 			# output goods
@@ -2073,8 +2075,8 @@ pm_watertube_boiler_building_steel_mills = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_tools_add = 3
-			building_input_coal_add = 4
+			building_input_tools_add = 4
+			building_input_coal_add = 2
 		}
 
 		level_scaled = {
@@ -2095,8 +2097,8 @@ pm_rotary_valve_engine_building_steel_mills = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_tools_add = 6
-			building_input_coal_add = 8
+			building_input_tools_add = 8
+			building_input_coal_add = 4
 		}
 
 		level_scaled = {
@@ -2222,8 +2224,8 @@ pm_watertube_boiler_building_motor_industry = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_tools_add = 1.5
-			building_input_coal_add = 2
+			building_input_tools_add = 2
+			building_input_coal_add = 1
 		}
 
 		level_scaled = {
@@ -2244,8 +2246,8 @@ pm_rotary_valve_engine_building_motor_industry = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_tools_add = 3
-			building_input_coal_add = 4
+			building_input_tools_add = 4
+			building_input_coal_add = 2
 		}
 
 		level_scaled = {
@@ -2281,7 +2283,7 @@ pm_basic_shipbuilding = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_wood_add = 40
+			building_input_wood_add = 50
 			building_input_fabric_add = 10
 			
 			# output goods
@@ -2308,7 +2310,7 @@ pm_complex_shipbuilding = {
 			# input goods
 			building_input_hardwood_add = 20
 			building_input_fabric_add = 10
-			building_input_engines_add = 15
+			building_input_engines_add = 20
 			
 			# output goods
 			building_output_clippers_add = 60
@@ -2335,7 +2337,7 @@ pm_metal_shipbuilding = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_steel_add = 20
+			building_input_steel_add = 30
 			building_input_coal_add = 10
 			building_input_engines_add = 15
 			
@@ -2364,9 +2366,9 @@ pm_arc_welding_shipbuilding = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_steel_add = 40
-			building_input_electricity_add = 30
-			building_input_engines_add = 20
+			building_input_steel_add = 50
+			building_input_electricity_add = 20
+			building_input_engines_add = 25
 			
 			# output goods
 			building_output_steamers_add = 90
@@ -2397,7 +2399,7 @@ pm_military_shipbuilding_wooden = {
 		workforce_scaled = {
 			# output goods
 			building_output_clippers_add = -32
-			building_output_manowars_add = 32
+			building_output_manowars_add = 40
 		}
 	}
 }
@@ -2413,7 +2415,7 @@ pm_military_shipbuilding_wooden_2 = {
 		workforce_scaled = {
 			# output goods
 			building_output_clippers_add = -48
-			building_output_manowars_add = 48
+			building_output_manowars_add = 60
 		}
 	}
 }			
@@ -2430,7 +2432,7 @@ pm_military_shipbuilding_steam = {
 		workforce_scaled = {
 			# output goods
 			building_output_steamers_add = -48
-			building_output_ironclads_add = 48
+			building_output_ironclads_add = 60
 		}
 	}
 }
@@ -2445,8 +2447,8 @@ pm_military_shipbuilding_steam_2 = {
 	building_modifiers = {
 		workforce_scaled = {
 			# output goods
-			building_output_steamers_add = -74
-			building_output_ironclads_add = 74
+			building_output_steamers_add = -72
+			building_output_ironclads_add = 90
 		}
 	}
 }			
@@ -2850,7 +2852,8 @@ pm_rotary_valve_engine_building_arms_industry = {
 	
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_coal_add = 12
+			building_input_tools_add = 6
+			building_input_coal_add = 3
 		}
 
 		level_scaled = {
@@ -3055,7 +3058,8 @@ pm_rotary_valve_engine_building_munition_plants = {
 	
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_coal_add = 12
+			building_input_tools_add = 6
+			building_input_coal_add = 3
 		}
 
 		level_scaled = {
