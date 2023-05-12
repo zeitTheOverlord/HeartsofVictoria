@@ -109,8 +109,8 @@ pm_chainsaws = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_tools_add = 4
-			building_input_oil_add = 4
+			building_input_tools_add = 6
+			building_input_oil_add = 3
 		}
 
 		level_scaled = {
@@ -421,8 +421,8 @@ pm_flash_freezing_building_fishing_wharf = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input
-			building_input_electricity_add = 12
-			building_input_transportation_add = 12
+			building_input_electricity_add = 16
+			building_input_transportation_add = 8
 		}
 
 		level_scaled = {
@@ -594,7 +594,7 @@ pm_steam_whaling_ships = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input
-			building_input_steamers_add = 36
+			building_input_steamers_add = 6
 			
 			building_output_meat_add = 30
 			building_output_oil_add = 30
@@ -660,8 +660,8 @@ pm_flash_freezing_building_whaling_station = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input
-			building_input_electricity_add = 12
-			building_input_transportation_add = 12
+			building_input_electricity_add = 16
+			building_input_transportation_add = 8
 		}
 
 		level_scaled = {
