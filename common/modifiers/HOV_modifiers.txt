@@ -63,9 +63,9 @@ legislative_efficiency = {
 
 political_dysfunction = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_negative.dds
-	country_opposition_ig_approval_add = -10
+	country_opposition_ig_approval_add = -20
 	country_law_enactment_time_mult = 1
-	country_legitimacy_base_add = -100 #koydum sadece komutu birdaha aramamak için
+	#country_legitimacy_base_add = -100 #koydum sadece komutu birdaha aramamak için
 }
 
 unincorporated_state = {
@@ -83,7 +83,7 @@ capital_state = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_flag_positive.dds
 	state_pop_pol_str_mult = 0.25
 	state_tax_capacity_mult = 0.25
-	building_group_bg_bureaucracy_throughput_mult = 0.2	#added
+	#building_group_bg_bureaucracy_throughput_mult = 0.2	#added
 	#state_building_barracks_max_level_add = 100	#added
 }
 
@@ -124,41 +124,43 @@ tax_modifier_very_high = {
 government_wages_very_low = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds
 	country_government_wages_mult = -0.3
-	interest_group_ig_intelligentsia_approval_add = -5
-	interest_group_ig_petty_bourgeoisie_approval_add = -2
+	interest_group_ig_intelligentsia_approval_add = -4
+	interest_group_ig_petty_bourgeoisie_approval_add = -4
 	country_prestige_mult = -0.2
 }
 
 government_wages_low = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds
 	country_government_wages_mult = -0.15
-	interest_group_ig_intelligentsia_approval_add = -1
-	interest_group_ig_petty_bourgeoisie_approval_add = -1
+	interest_group_ig_intelligentsia_approval_add = -2
+	interest_group_ig_petty_bourgeoisie_approval_add = -2
 	country_prestige_mult = -0.1
 }
 
 government_wages_high = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
 	country_government_wages_mult = 0.15
-	interest_group_ig_intelligentsia_approval_add = 1
-	interest_group_ig_petty_bourgeoisie_approval_add = 1
+	interest_group_ig_intelligentsia_approval_add = 2
+	interest_group_ig_petty_bourgeoisie_approval_add = 2
 	#country_authority_mult = 0.05
-	country_authority_add = 100	#added
+	#country_authority_add = 100	#added
+	country_bureaucracy_mult = 0.05
 }
 
 government_wages_very_high = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
 	country_government_wages_mult = 0.3
-	interest_group_ig_intelligentsia_approval_add = 2
-	interest_group_ig_petty_bourgeoisie_approval_add = 2
+	interest_group_ig_intelligentsia_approval_add = 4
+	interest_group_ig_petty_bourgeoisie_approval_add = 4
 	#country_authority_mult = 0.1
-	country_authority_add = 200	#added
+	#country_authority_add = 200	#added
+	country_bureaucracy_mult = 0.1
 }
 
 military_wages_very_low = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_positive.dds
 	country_military_wages_mult = -0.3
-	interest_group_ig_armed_forces_approval_add = -5	#-2	
+	interest_group_ig_armed_forces_approval_add = -4	#-2	
 	building_training_rate_mult = -0.75
 	country_army_power_projection_mult = -0.2
 }
@@ -182,7 +184,7 @@ military_wages_high = {
 military_wages_very_high = {
 	icon = gfx/interface/icons/timed_modifier_icons/modifier_coins_negative.dds
 	country_military_wages_mult = 0.3
-	interest_group_ig_armed_forces_approval_add = 5	#2	
+	interest_group_ig_armed_forces_approval_add = 4	#2	
 	country_army_power_projection_mult = 0.2
 	unit_morale_recovery_mult = 0.2
 }

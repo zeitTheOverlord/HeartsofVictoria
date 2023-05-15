@@ -58,10 +58,10 @@ law_national_supremacy = {
 	}
 	
 	modifier = {
-		country_authority_add = 300
+		country_authority_add = 200
 		state_accepted_birth_rate_mult = 0.05 #added
-		state_radicals_from_sol_change_accepted_culture_mult = -0.15
-		state_loyalists_from_sol_change_accepted_culture_mult = 0.15			
+		state_radicals_from_sol_change_accepted_culture_mult = -0.1
+		state_loyalists_from_sol_change_accepted_culture_mult = 0.1			
 	}
 	
 	possible_political_movements = {
@@ -92,9 +92,9 @@ law_racial_segregation = {
 	}
 	
 	modifier = {
-		country_authority_add = 200
-		state_radicals_from_sol_change_accepted_culture_mult = -0.1
-		state_loyalists_from_sol_change_accepted_culture_mult = 0.1		
+		country_authority_add = 100
+		state_radicals_from_sol_change_accepted_culture_mult = -0.05
+		state_loyalists_from_sol_change_accepted_culture_mult = 0.05		
 	}
 	
 	possible_political_movements = {

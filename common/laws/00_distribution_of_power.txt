@@ -21,7 +21,9 @@ law_autocracy = {
 		country_legitimacy_govt_total_clout_add = 120
 		country_legitimacy_ideological_incoherence_mult = 0.5
 		country_aristocrats_pol_str_mult = 0.5
-		country_authority_add = 200
+		country_authority_add = 400
+		country_promotion_ig_attraction_mult = 1
+		country_suppression_ig_attraction_mult = -0.5
 	}
 	possible_political_movements = {
 		law_oligarchy

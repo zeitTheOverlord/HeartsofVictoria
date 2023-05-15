@@ -66,7 +66,7 @@ pm_iron_frame_buildings = {
 	
 	state_modifiers = {
 		workforce_scaled = {
-			state_construction_mult = 0.075
+			state_construction_mult = 0.0075
 		}	
 	}
 }
