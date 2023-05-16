@@ -84,7 +84,7 @@ law_racial_segregation = {
 	on_enact = {
 		recalculate_pop_ig_support = yes
 	}
-	disallowing_laws = {
+	#disallowing_laws = {
 		law_autocracy
 	}
 	cultural_acceptance_rule = {

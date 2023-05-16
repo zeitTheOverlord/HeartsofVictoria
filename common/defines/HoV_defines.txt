@@ -157,7 +157,7 @@ NPops = {
 	MASS_MIGRATION_TARGET_MIN_PULL = 40	# A state/country must have at least this in migration pull to be picked as a mass migration target
 	MASS_MIGRATION_TARGET_MIN_ARABLE_LAND = 100	# A state must have at least this much arable land to be a mass migration target
 	MASS_MIGRATION_STATE_MIN_MARKET_ACCESS = 0.7	# A state must have at least this much market access to their market to be a mass migration target or origin state
-	MASS_MIGRATION_SPAWN_CHANCE = 2	# Per week for each potential mass migration, scales with turmoil (1 = 1%)
+	MASS_MIGRATION_SPAWN_CHANCE = 0	# Per week for each potential mass migration, scales with turmoil (1 = 1%)
 	MASS_MIGRATION_SPAWN_CHANCE_STRUGGLING_FACTOR = 0.1	# Chance increases by this for each point of SoL below 10 for a culture in a country
 	MASS_MIGRATION_SPAWN_CHANCE_STARVING_FACTOR = 0.5	# Chance increases by this for each point of SoL below 5 for a culture in a country (added on top of struggling factor)
 	MASS_MIGRATION_TARGET_COUNTRY_RANDOM_FACTOR = 0.2	# The higher this is, the more random the selection of mass migration country targets will be
