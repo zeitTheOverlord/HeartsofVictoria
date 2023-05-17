@@ -149,7 +149,7 @@ pm_public_trams = {
 
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_transportation_add = 2
+			building_input_transportation_add = 1
 		}
 
 		level_scaled = {
@@ -168,7 +168,7 @@ pm_public_motor_carriages = {
 	
 	building_modifiers = {
 		workforce_scaled = {
-			building_input_transportation_add = 4
+			building_input_transportation_add = 2
 		}
 
 		level_scaled = {

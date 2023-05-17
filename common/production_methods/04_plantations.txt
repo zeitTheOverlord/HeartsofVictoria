@@ -9,9 +9,9 @@
 
 		level_scaled = {
 			# profit
-			building_employment_laborers_add = 4000
-			building_employment_farmers_add = 800
-			building_employment_clergymen_add = 100
+			building_employment_laborers_add = 5500
+			building_employment_farmers_add = 2300
+			building_employment_clergymen_add = 200
 		}
 	}
 }
@@ -34,10 +34,10 @@ automatic_irrigation_building_coffee_plantation = {
 
 		level_scaled = {
 			# profit
-			building_employment_laborers_add = 3000
-			building_employment_farmers_add = 1200
+			building_employment_laborers_add = 4500
+			building_employment_farmers_add = 2800
 			building_employment_machinists_add = 500
-			building_employment_clergymen_add = 100
+			building_employment_clergymen_add = 200
 		}
 	}
 }
@@ -58,7 +58,7 @@ pm_steam_rail_transport = {
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = -1000	
+			building_employment_laborers_add = -2000	
 		}
 	}
 }
@@ -91,9 +91,9 @@ default_building_cotton_plantation = {
 
 		level_scaled = {
 			# profit
-			building_employment_laborers_add = 4000
-			building_employment_farmers_add = 800
-			building_employment_clergymen_add = 100
+			building_employment_laborers_add = 5500
+			building_employment_farmers_add = 2300
+			building_employment_clergymen_add = 200
 		}
 	}
 }
@@ -116,10 +116,10 @@ automatic_irrigation_building_cotton_plantation = {
 
 		level_scaled = {
 			# profit
-			building_employment_laborers_add = 3000
-			building_employment_farmers_add = 1200
+			building_employment_laborers_add = 4500
+			building_employment_farmers_add = 2800
 			building_employment_machinists_add = 500
-			building_employment_clergymen_add = 100
+			building_employment_clergymen_add = 200
 		}
 	}
 }
@@ -135,9 +135,9 @@ default_building_dye_plantation = {
 
 		level_scaled = {
 			# profit
-			building_employment_laborers_add = 4000
-			building_employment_farmers_add = 800
-			building_employment_clergymen_add = 100
+			building_employment_laborers_add = 5500
+			building_employment_farmers_add = 2300
+			building_employment_clergymen_add = 200
 		}
 	}
 }
@@ -160,10 +160,10 @@ automatic_irrigation_building_dye_plantation = {
 
 		level_scaled = {
 			# profit
-			building_employment_laborers_add = 3000
-			building_employment_farmers_add = 1200
+			building_employment_laborers_add = 4500
+			building_employment_farmers_add = 2800
 			building_employment_machinists_add = 500
-			building_employment_clergymen_add = 100
+			building_employment_clergymen_add = 200
 		}
 	}
 }
@@ -179,9 +179,9 @@ default_building_opium_plantation = {
 
 		level_scaled = {
 			# profit
-			building_employment_laborers_add = 4000
-			building_employment_farmers_add = 800
-			building_employment_clergymen_add = 100
+			building_employment_laborers_add = 5500
+			building_employment_farmers_add = 2300
+			building_employment_clergymen_add = 200
 		}
 	}
 }
@@ -204,10 +204,10 @@ automatic_irrigation_building_opium_plantation = {
 
 		level_scaled = {
 			# profit
-			building_employment_laborers_add = 3000
-			building_employment_farmers_add = 1200
+			building_employment_laborers_add = 4500
+			building_employment_farmers_add = 2800
 			building_employment_machinists_add = 500
-			building_employment_clergymen_add = 100
+			building_employment_clergymen_add = 200
 		}
 	}
 }
@@ -223,9 +223,9 @@ default_building_tea_plantation = {
 
 		level_scaled = {
 			# profit
-			building_employment_laborers_add = 4000
-			building_employment_farmers_add = 800
-			building_employment_clergymen_add = 100
+			building_employment_laborers_add = 5500
+			building_employment_farmers_add = 2300
+			building_employment_clergymen_add = 200
 		}
 	}
 }
@@ -248,10 +248,10 @@ automatic_irrigation_building_tea_plantation = {
 
 		level_scaled = {
 			# profit
-			building_employment_laborers_add = 3000
-			building_employment_farmers_add = 1200
+			building_employment_laborers_add = 4500
+			building_employment_farmers_add = 2800
 			building_employment_machinists_add = 500
-			building_employment_clergymen_add = 100
+			building_employment_clergymen_add = 200
 		}
 	}
 }
@@ -267,9 +267,9 @@ default_building_tobacco_plantation = {
 
 		level_scaled = {
 			# profit
-			building_employment_laborers_add = 4000
-			building_employment_farmers_add = 800
-			building_employment_clergymen_add = 100
+			building_employment_laborers_add = 5500
+			building_employment_farmers_add = 2300
+			building_employment_clergymen_add = 200
 		}
 	}
 }
@@ -292,10 +292,10 @@ automatic_irrigation_building_tobacco_plantation = {
 
 		level_scaled = {
 			# profit
-			building_employment_laborers_add = 3000
-			building_employment_farmers_add = 1200
+			building_employment_laborers_add = 4500
+			building_employment_farmers_add = 2800
 			building_employment_machinists_add = 500
-			building_employment_clergymen_add = 100
+			building_employment_clergymen_add = 200
 		}
 	}
 }
@@ -311,9 +311,9 @@ default_building_sugar_plantation = {
 
 		level_scaled = {
 			# profit
-			building_employment_laborers_add = 4000
-			building_employment_farmers_add = 800
-			building_employment_clergymen_add = 100
+			building_employment_laborers_add = 5500
+			building_employment_farmers_add = 2300
+			building_employment_clergymen_add = 200
 		}
 	}
 }
@@ -336,10 +336,10 @@ automatic_irrigation_building_sugar_plantation = {
 
 		level_scaled = {
 			# profit
-			building_employment_laborers_add = 3000
-			building_employment_farmers_add = 1200
+			building_employment_laborers_add = 4500
+			building_employment_farmers_add = 2800
 			building_employment_machinists_add = 500
-			building_employment_clergymen_add = 100
+			building_employment_clergymen_add = 200
 		}
 	}
 }
@@ -353,9 +353,9 @@ default_building_banana_plantation = {
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = 4000
-			building_employment_farmers_add = 800
-			building_employment_clergymen_add = 100
+			building_employment_laborers_add = 5500
+			building_employment_farmers_add = 2300
+			building_employment_clergymen_add = 200
 		}
 	}
 }
@@ -378,10 +378,10 @@ automatic_irrigation_building_banana_plantation = {
 
 		level_scaled = {
 			# profit
-			building_employment_laborers_add = 3000
-			building_employment_farmers_add = 1200
+			building_employment_laborers_add = 4500
+			building_employment_farmers_add = 2800
 			building_employment_machinists_add = 500
-			building_employment_clergymen_add = 100
+			building_employment_clergymen_add = 200
 		}
 	}
 }
@@ -397,9 +397,9 @@ default_building_silk_plantation = {
 
 		level_scaled = {
 			# profit
-			building_employment_laborers_add = 4000
-			building_employment_farmers_add = 800
-			building_employment_clergymen_add = 100
+			building_employment_laborers_add = 5500
+			building_employment_farmers_add = 2300
+			building_employment_clergymen_add = 200
 		}
 	}
 }
@@ -422,10 +422,10 @@ automatic_irrigation_building_silk_plantation = {
 
 		level_scaled = {
 			# profit
-			building_employment_laborers_add = 3000
-			building_employment_farmers_add = 1200
+			building_employment_laborers_add = 4500
+			building_employment_farmers_add = 2800
 			building_employment_machinists_add = 500
-			building_employment_clergymen_add = 100
+			building_employment_clergymen_add = 200
 		}
 	}
 }

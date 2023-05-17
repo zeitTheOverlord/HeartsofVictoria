@@ -155,8 +155,8 @@ pm_steam_donkey_building_coal_mine = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods					
-				building_input_engines_add = 2
-				building_output_coal_add = -3
+				building_input_engines_add = 1
+				building_output_coal_add = -1.5
 			}
 
 		level_scaled = {
@@ -897,8 +897,8 @@ pm_steam_donkey_mine = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods					
-			building_input_engines_add = 2
-			building_input_coal_add = 3
+			building_input_engines_add = 1
+			building_input_coal_add = 1.5
 		}
 
 		level_scaled = {
@@ -918,7 +918,7 @@ pm_rail_transport_mine = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods					
-			building_input_transportation_add = 8
+			building_input_transportation_add = 4
 		}
 
 		level_scaled = {
