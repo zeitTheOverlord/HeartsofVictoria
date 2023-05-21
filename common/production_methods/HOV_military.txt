@@ -511,7 +511,7 @@ pm_squad_infantry = {
 		workforce_scaled = {
 			building_input_ammunition_add = 3
 			building_input_small_arms_add = 3
-			building_input_radios_add = 2
+			building_input_radios_add = 1
 			building_input_groceries_add = 2
 		}
 		level_scaled = {
@@ -551,7 +551,7 @@ pm_squad_infantry_conscription = {
 		workforce_scaled = {
 			building_input_ammunition_add = 3
 			building_input_small_arms_add = 3
-			building_input_radios_add = 2
+			building_input_radios_add = 1
 			building_input_groceries_add = 2
 		}
 		level_scaled = {
@@ -582,7 +582,7 @@ pm_squad_infantry_ofs = {
 		workforce_scaled = {
 			building_input_ammunition_add = 4.5
 			building_input_small_arms_add = 4.5
-			building_input_radios_add = 3
+			building_input_radios_add = 1.5
 			building_input_groceries_add = 2
 		}
 		level_scaled = {
@@ -622,7 +622,7 @@ pm_squad_infantry_conscription_ofs = {
 		workforce_scaled = {
 			building_input_ammunition_add = 4.5
 			building_input_small_arms_add = 4.5
-			building_input_radios_add = 3
+			building_input_radios_add = 1.5
 			building_input_groceries_add = 2
 		}
 		level_scaled = {
@@ -660,7 +660,7 @@ pm_mechanized_infantry = {
 			building_input_groceries_add = 2
 			building_input_tanks_add = 1
 			building_input_oil_add = 1
-			building_input_radios_add = 2
+			building_input_radios_add = 1
 		}
 		level_scaled = {
 			building_employment_soldiers_add = 750
@@ -702,7 +702,7 @@ pm_mechanized_infantry_conscription = {
 			building_input_groceries_add = 2
 			building_input_tanks_add = 1
 			building_input_oil_add = 1
-			building_input_radios_add = 2
+			building_input_radios_add = 1
 		}
 		level_scaled = {
 			building_employment_soldiers_add = 750
@@ -739,7 +739,7 @@ pm_mechanized_infantry_ofs = {
 			building_input_groceries_add = 2
 			building_input_tanks_add = 1.5
 			building_input_oil_add = 1.5
-			building_input_radios_add = 3
+			building_input_radios_add = 1.5
 		}
 		level_scaled = {
 			building_employment_soldiers_add = 750
@@ -781,7 +781,7 @@ pm_mechanized_infantry_conscription_ofs = {
 			building_input_groceries_add = 2
 			building_input_tanks_add = 1.5
 			building_input_oil_add = 1.5
-			building_input_radios_add = 3
+			building_input_radios_add = 1.5
 		}
 		level_scaled = {
 			building_employment_soldiers_add = 750
@@ -1825,7 +1825,7 @@ pm_dreadnoughts = {
 			# input goods
 			building_input_ironclads_add = 4
 			building_input_ammunition_add = 4
-			building_input_radios_add = 2
+			building_input_radios_add = 1
 			building_input_coal_add = 4			#added
 		}
 		level_scaled = {
@@ -1862,7 +1862,7 @@ pm_battleships = {
 			# input goods
 			building_input_ironclads_add = 5
 			building_input_ammunition_add = 5
-			building_input_radios_add = 2
+			building_input_radios_add = 1
 			building_input_coal_add = 5			#added
 			building_input_oil_add = 1			#added
 		}
@@ -1998,8 +1998,8 @@ pm_carriers = {
 			building_input_ironclads_add = 3
 			building_input_ammunition_add = 3
 			building_input_coal_add = 3
-			building_input_aeroplanes_add = 2
-			building_input_radios_add = 2
+			building_input_aeroplanes_add = 1
+			building_input_radios_add = 1
 			building_input_oil_add = 1			#added
 		}
 		level_scaled = {
