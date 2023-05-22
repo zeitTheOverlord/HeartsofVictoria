@@ -5702,6 +5702,7 @@ STATES = {
 		add_homeland = ainu
 
 		add_claim = c:JAP
+		add_claim = c:RUS
 	}	
 	s:STATE_HOKKAIDO = {
 		create_state = {
@@ -7097,18 +7098,14 @@ STATES = {
 		add_homeland = north_german
 		add_homeland = sorb
 	}
-	s:STATE_BRUNSWICK = {	
-		create_state = {
-			country = c:HAN
-			owned_provinces = { xA001E0 x2180E0 }
-		}		
+	s:STATE_BRUNSWICK = {			
 		create_state = {
 			country = c:BRA
 			owned_provinces = { xA61E6E x43D537 }
 		}		
 		create_state = {
 			country = c:PRU
-			owned_provinces = { x4C16EA }
+			owned_provinces = { x4C16EA xA001E0 x2180E0 }
 		}
 		
 		add_homeland = north_german

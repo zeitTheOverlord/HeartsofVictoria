@@ -3422,7 +3422,7 @@
 		}
 	}
 	s:STATE_BRUNSWICK={
-		region_state:HAN={
+		region_state:PRU={
 			create_building={
 				building="building_livestock_ranch"
 				level=1
@@ -3449,8 +3449,6 @@
 				reserves=1
 				activate_production_methods={ "pm_wound_dressing" "pm_cannon_artillery" "pm_cavalry_scouts" "pm_no_specialists" "pm_line_infantry" }
 			}
-		}
-		region_state:PRU={
 		}
 	}
 	s:STATE_BAVARIA={
