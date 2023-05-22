@@ -9,8 +9,8 @@
 
 		level_scaled = {
 			# profit
-			building_employment_laborers_add = 5500
-			building_employment_farmers_add = 2300
+			building_employment_laborers_add = 8500
+			building_employment_farmers_add = 1300
 			building_employment_clergymen_add = 200
 		}
 	}
@@ -34,9 +34,9 @@ automatic_irrigation_building_coffee_plantation = {
 
 		level_scaled = {
 			# profit
-			building_employment_laborers_add = 4500
-			building_employment_farmers_add = 2800
-			building_employment_machinists_add = 500
+			building_employment_laborers_add = 7000
+			building_employment_farmers_add = 1800
+			building_employment_machinists_add = 1000
 			building_employment_clergymen_add = 200
 		}
 	}
@@ -54,11 +54,72 @@ pm_steam_rail_transport = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods					
-			building_input_transportation_add = 8
+			building_input_transportation_add = 16
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = -2000	
+			building_employment_laborers_add = -4000	
+		}
+	}
+}
+
+pm_privately_owned_plantation = {
+	texture = "gfx/interface/icons/production_method_icons/privately_owned.dds"
+
+	disallowing_laws = {
+		law_collectivized_agriculture
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_aristocrats_add = 100
+		}
+		unscaled = {
+			building_aristocrats_shares_add = 5 
+			building_clergymen_shares_add = 2
+			building_farmers_shares_add = 1
+		}
+	}
+}
+
+pm_publicly_traded_plantation = {
+	texture = "gfx/interface/icons/production_method_icons/publicly_traded.dds"
+
+	disallowing_laws = {
+		law_collectivized_agriculture
+	}
+
+	unlocking_technologies = {
+		mutual_funds
+	}
+
+	building_modifiers = {
+		level_scaled = {
+			building_employment_aristocrats_add = 100
+			building_employment_capitalists_add = 50
+		}
+		unscaled = {
+			building_aristocrats_shares_add = 5 
+			building_capitalists_shares_add = 5 
+			building_clergymen_shares_add = 2
+			building_farmers_shares_add = 1
+		}
+	}
+}
+
+pm_government_run_plantation = {
+	texture = "gfx/interface/icons/production_method_icons/government_run.dds"
+	
+	unlocking_laws = {
+		law_collectivized_agriculture
+	}
+	
+	building_modifiers = {
+		level_scaled = {
+			building_employment_bureaucrats_add = 150
+		}
+		unscaled = {
+			building_bureaucrats_shares_add = 5
 		}
 	}
 }
@@ -67,7 +128,7 @@ pm_worker_cooperative_plantation = {
 	texture = "gfx/interface/icons/production_method_icons/worker_cooperative.dds"
 
 	unlocking_laws = {
-		law_cooperative_ownership
+		law_collectivized_agriculture
 	}
 
 	building_modifiers = {
@@ -91,8 +152,8 @@ default_building_cotton_plantation = {
 
 		level_scaled = {
 			# profit
-			building_employment_laborers_add = 5500
-			building_employment_farmers_add = 2300
+			building_employment_laborers_add = 8500
+			building_employment_farmers_add = 1300
 			building_employment_clergymen_add = 200
 		}
 	}
@@ -116,9 +177,9 @@ automatic_irrigation_building_cotton_plantation = {
 
 		level_scaled = {
 			# profit
-			building_employment_laborers_add = 4500
-			building_employment_farmers_add = 2800
-			building_employment_machinists_add = 500
+			building_employment_laborers_add = 7000
+			building_employment_farmers_add = 1800
+			building_employment_machinists_add = 1000
 			building_employment_clergymen_add = 200
 		}
 	}
@@ -135,8 +196,8 @@ default_building_dye_plantation = {
 
 		level_scaled = {
 			# profit
-			building_employment_laborers_add = 5500
-			building_employment_farmers_add = 2300
+			building_employment_laborers_add = 8500
+			building_employment_farmers_add = 1300
 			building_employment_clergymen_add = 200
 		}
 	}
@@ -160,9 +221,9 @@ automatic_irrigation_building_dye_plantation = {
 
 		level_scaled = {
 			# profit
-			building_employment_laborers_add = 4500
-			building_employment_farmers_add = 2800
-			building_employment_machinists_add = 500
+			building_employment_laborers_add = 7000
+			building_employment_farmers_add = 1800
+			building_employment_machinists_add = 1000
 			building_employment_clergymen_add = 200
 		}
 	}
@@ -179,8 +240,8 @@ default_building_opium_plantation = {
 
 		level_scaled = {
 			# profit
-			building_employment_laborers_add = 5500
-			building_employment_farmers_add = 2300
+			building_employment_laborers_add = 8500
+			building_employment_farmers_add = 1300
 			building_employment_clergymen_add = 200
 		}
 	}
@@ -204,9 +265,9 @@ automatic_irrigation_building_opium_plantation = {
 
 		level_scaled = {
 			# profit
-			building_employment_laborers_add = 4500
-			building_employment_farmers_add = 2800
-			building_employment_machinists_add = 500
+			building_employment_laborers_add = 7000
+			building_employment_farmers_add = 1800
+			building_employment_machinists_add = 1000
 			building_employment_clergymen_add = 200
 		}
 	}
@@ -223,8 +284,8 @@ default_building_tea_plantation = {
 
 		level_scaled = {
 			# profit
-			building_employment_laborers_add = 5500
-			building_employment_farmers_add = 2300
+			building_employment_laborers_add = 8500
+			building_employment_farmers_add = 1300
 			building_employment_clergymen_add = 200
 		}
 	}
@@ -248,9 +309,9 @@ automatic_irrigation_building_tea_plantation = {
 
 		level_scaled = {
 			# profit
-			building_employment_laborers_add = 4500
-			building_employment_farmers_add = 2800
-			building_employment_machinists_add = 500
+			building_employment_laborers_add = 7000
+			building_employment_farmers_add = 1800
+			building_employment_machinists_add = 1000
 			building_employment_clergymen_add = 200
 		}
 	}
@@ -267,8 +328,8 @@ default_building_tobacco_plantation = {
 
 		level_scaled = {
 			# profit
-			building_employment_laborers_add = 5500
-			building_employment_farmers_add = 2300
+			building_employment_laborers_add = 8500
+			building_employment_farmers_add = 1300
 			building_employment_clergymen_add = 200
 		}
 	}
@@ -292,9 +353,9 @@ automatic_irrigation_building_tobacco_plantation = {
 
 		level_scaled = {
 			# profit
-			building_employment_laborers_add = 4500
-			building_employment_farmers_add = 2800
-			building_employment_machinists_add = 500
+			building_employment_laborers_add = 7000
+			building_employment_farmers_add = 1800
+			building_employment_machinists_add = 1000
 			building_employment_clergymen_add = 200
 		}
 	}
@@ -311,8 +372,8 @@ default_building_sugar_plantation = {
 
 		level_scaled = {
 			# profit
-			building_employment_laborers_add = 5500
-			building_employment_farmers_add = 2300
+			building_employment_laborers_add = 8500
+			building_employment_farmers_add = 1300
 			building_employment_clergymen_add = 200
 		}
 	}
@@ -336,9 +397,9 @@ automatic_irrigation_building_sugar_plantation = {
 
 		level_scaled = {
 			# profit
-			building_employment_laborers_add = 4500
-			building_employment_farmers_add = 2800
-			building_employment_machinists_add = 500
+			building_employment_laborers_add = 7000
+			building_employment_farmers_add = 1800
+			building_employment_machinists_add = 1000
 			building_employment_clergymen_add = 200
 		}
 	}
@@ -353,8 +414,8 @@ default_building_banana_plantation = {
 		}
 
 		level_scaled = {
-			building_employment_laborers_add = 5500
-			building_employment_farmers_add = 2300
+			building_employment_laborers_add = 8500
+			building_employment_farmers_add = 1300
 			building_employment_clergymen_add = 200
 		}
 	}
@@ -378,9 +439,9 @@ automatic_irrigation_building_banana_plantation = {
 
 		level_scaled = {
 			# profit
-			building_employment_laborers_add = 4500
-			building_employment_farmers_add = 2800
-			building_employment_machinists_add = 500
+			building_employment_laborers_add = 7000
+			building_employment_farmers_add = 1800
+			building_employment_machinists_add = 1000
 			building_employment_clergymen_add = 200
 		}
 	}
@@ -397,8 +458,8 @@ default_building_silk_plantation = {
 
 		level_scaled = {
 			# profit
-			building_employment_laborers_add = 5500
-			building_employment_farmers_add = 2300
+			building_employment_laborers_add = 8500
+			building_employment_farmers_add = 1300
 			building_employment_clergymen_add = 200
 		}
 	}
@@ -422,9 +483,9 @@ automatic_irrigation_building_silk_plantation = {
 
 		level_scaled = {
 			# profit
-			building_employment_laborers_add = 4500
-			building_employment_farmers_add = 2800
-			building_employment_machinists_add = 500
+			building_employment_laborers_add = 7000
+			building_employment_farmers_add = 1800
+			building_employment_machinists_add = 1000
 			building_employment_clergymen_add = 200
 		}
 	}

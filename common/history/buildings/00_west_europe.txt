@@ -1435,7 +1435,7 @@
 				building="building_wheat_farm"
 				level=10
 				reserves=1
-				activate_production_methods={ "pm_privately_owned" "pm_vineyards" "pm_tools_disabled" "pm_simple_farming" }
+				activate_production_methods={ "pm_privately_owned" "pm_no_secondary" "pm_tools_disabled" "pm_simple_farming" }
 			}
 			create_building={
 				building="building_barracks"
@@ -1493,7 +1493,7 @@
 				building="building_wheat_farm"
 				level=6
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_vineyards" "pm_tools_disabled" "pm_privately_owned" }
+				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled" "pm_privately_owned" }
 			}
 			create_building={
 				building="building_livestock_ranch"
@@ -1539,7 +1539,7 @@
 				building="building_wheat_farm"
 				level=9
 				reserves=1
-				activate_production_methods={ "pm_privately_owned" "pm_vineyards" "pm_tools_disabled" "pm_simple_farming" }
+				activate_production_methods={ "pm_privately_owned" "pm_no_secondary" "pm_tools_disabled" "pm_simple_farming" }
 			}
 			create_building={
 				building="building_livestock_ranch"
@@ -1609,7 +1609,7 @@
 				building="building_wheat_farm"
 				level=15
 				reserves=1
-				activate_production_methods={ "pm_privately_owned" "pm_vineyards" "pm_tools_disabled" "pm_simple_farming" }
+				activate_production_methods={ "pm_privately_owned" "pm_no_secondary" "pm_tools_disabled" "pm_simple_farming" }
 			}
 			create_building={
 				building="building_barracks"
@@ -1701,7 +1701,7 @@
 				building="building_wheat_farm"
 				level=7
 				reserves=1
-				activate_production_methods={ "pm_privately_owned" "pm_vineyards" "pm_tools_disabled" "pm_simple_farming" }
+				activate_production_methods={ "pm_privately_owned" "pm_no_secondary" "pm_tools_disabled" "pm_simple_farming" }
 			}
 			create_building={
 				building="building_livestock_ranch"
@@ -1741,7 +1741,7 @@
 				building="building_wheat_farm"
 				level=7
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_vineyards" "pm_tools_disabled" "pm_privately_owned" }
+				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled" "pm_privately_owned" }
 			}
 			create_building={
 				building="building_barracks"
@@ -1813,7 +1813,7 @@
 				building="building_wheat_farm"
 				level=8
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_vineyards" "pm_tools_disabled" "pm_privately_owned" }
+				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled" "pm_privately_owned" }
 			}
 			create_building={
 				building="building_livestock_ranch"
@@ -1859,7 +1859,7 @@
 				building="building_wheat_farm"
 				level=7
 				reserves=1
-				activate_production_methods={ "pm_simple_farming" "pm_vineyards" "pm_tools_disabled" "pm_privately_owned" }
+				activate_production_methods={ "pm_simple_farming" "pm_no_secondary" "pm_tools_disabled" "pm_privately_owned" }
 			}
 			create_building={
 				building="building_barracks"
@@ -1997,7 +1997,7 @@
 				building="building_wheat_farm"
 				level=10
 				reserves=1
-				activate_production_methods={ "pm_privately_owned" "pm_vineyards" "pm_tools_disabled" "pm_simple_farming" }
+				activate_production_methods={ "pm_privately_owned" "pm_no_secondary" "pm_tools_disabled" "pm_simple_farming" }
 			}
 		}
 	}

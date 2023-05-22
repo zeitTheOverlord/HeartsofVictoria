@@ -5702,7 +5702,6 @@ STATES = {
 		add_homeland = ainu
 
 		add_claim = c:JAP
-		add_claim = c:RUS
 	}	
 	s:STATE_HOKKAIDO = {
 		create_state = {

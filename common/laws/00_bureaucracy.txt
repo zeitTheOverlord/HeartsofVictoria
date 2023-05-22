@@ -49,8 +49,8 @@ law_appointed_bureaucrats = {
 	progressiveness = 0
 	
 	modifier = {
+		state_bureaucracy_population_base_cost_factor_mult = -0.25
 		interest_group_ig_intelligentsia_pol_str_mult = 0.25
-		state_tax_capacity_mult = 0.25
 	}
 	
 	possible_political_movements = {
@@ -98,7 +98,7 @@ law_elected_bureaucrats = {
 	}
 	
 	modifier = {
-		state_tax_capacity_mult = 0.25
+		state_bureaucracy_population_base_cost_factor_mult = -0.25
 		interest_group_ig_petty_bourgeoisie_pol_str_mult = 0.25
 	}
 	
