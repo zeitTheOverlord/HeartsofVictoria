@@ -24,9 +24,9 @@ law_ethnostate = {
 	
 	modifier = {
 		country_authority_add = 400
-		state_accepted_birth_rate_mult = 0.1 #added
 		state_radicals_from_sol_change_accepted_culture_mult = -0.2
-		state_loyalists_from_sol_change_accepted_culture_mult = 0.2			
+		state_loyalists_from_sol_change_accepted_culture_mult = 0.2	
+		state_accepted_birth_rate_mult = 0.1		
 	}
 	
 	possible_political_movements = {
@@ -59,9 +59,9 @@ law_national_supremacy = {
 	
 	modifier = {
 		country_authority_add = 200
-		state_accepted_birth_rate_mult = 0.05 #added
-		state_radicals_from_sol_change_accepted_culture_mult = -0.1
-		state_loyalists_from_sol_change_accepted_culture_mult = 0.1			
+		state_radicals_from_sol_change_accepted_culture_mult = -0.15
+		state_loyalists_from_sol_change_accepted_culture_mult = 0.15	
+		state_accepted_birth_rate_mult = 0.05		
 	}
 	
 	possible_political_movements = {
@@ -84,9 +84,7 @@ law_racial_segregation = {
 	on_enact = {
 		recalculate_pop_ig_support = yes
 	}
-	#disallowing_laws = {
-		law_autocracy
-	}
+
 	cultural_acceptance_rule = {
 		shares_heritage_trait_with_any_primary_culture = scope:country
 	}
@@ -136,9 +134,7 @@ law_cultural_exclusion = {
 		law_slavery_banned
 		law_debt_slavery
 	}
-	disallowing_laws = {
-		law_autocracy
-	}
+	
 	on_enact = {
 		recalculate_pop_ig_support = yes
 	}
@@ -191,13 +187,13 @@ law_multicultural = {
 	unlocking_laws = {
 		law_slavery_banned
 	}
-	
-	unlocking_technologies = {
-		mass_propaganda
-	}
 	disallowing_laws = {
 		law_autocracy
 	}
+	unlocking_technologies = {
+		human_rights
+	}
+	
 	on_enact = {
 		recalculate_pop_ig_support = yes
 	}

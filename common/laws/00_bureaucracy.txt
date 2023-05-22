@@ -6,9 +6,8 @@
 	progressiveness = -50
 	
 	modifier = {
+		state_bureaucracy_population_base_cost_factor_mult = -0.25
 		interest_group_ig_landowners_pol_str_mult = 0.25
-		state_bureaucracy_population_base_cost_factor_mult = -0.2
-
 	}
 
 	disallowing_laws = {
@@ -37,7 +36,7 @@
 	ai_will_do = {
 		exists = ruler
 		ruler = {
-			has_ideology = ideology_traditionalist
+			has_ideology = ideology:ideology_traditionalist
 		}
 	}
 }
@@ -51,12 +50,13 @@ law_appointed_bureaucrats = {
 	
 	modifier = {
 		interest_group_ig_intelligentsia_pol_str_mult = 0.25
-		state_bureaucracy_population_base_cost_factor_mult = -0.2
+		state_tax_capacity_mult = 0.25
 	}
 	
 	possible_political_movements = {
 		law_elected_bureaucrats
 	}
+
 	pop_support = {
 		value = 0
 		# Academics like technocracy
@@ -81,7 +81,6 @@ law_appointed_bureaucrats = {
 			value = 0.25
 		}
 	}
-
 }
 
 law_elected_bureaucrats = {
@@ -94,17 +93,19 @@ law_elected_bureaucrats = {
 	disallowing_laws = {
 		law_autocracy 
 		law_oligarchy
+		law_technocracy
 		law_elder_council
 	}
 	
 	modifier = {
+		state_tax_capacity_mult = 0.25
 		interest_group_ig_petty_bourgeoisie_pol_str_mult = 0.25
-		state_bureaucracy_population_base_cost_factor_mult = -0.2
 	}
 	
 	possible_political_movements = {
 		law_appointed_bureaucrats
 	}
+
 	pop_support = {
 		value = 0
 		# Bureuacrats like non-hereditary

@@ -5,6 +5,7 @@
 	progressiveness = -50
 	
 	modifier = {
+		unit_morale_loss_mult = 0.1
 		state_conscription_rate_add = 0.01
 		interest_group_ig_landowners_pol_str_mult = 0.25
 		country_military_goods_cost_mult = -0.25
@@ -21,7 +22,7 @@
 		law_mass_conscription
 		law_national_militia
 	}
-	
+
 	pop_support = {
 		value = 0
 		# Aristocrats like feudalism
@@ -51,6 +52,7 @@ law_professional_army = {
 	unlocking_technologies = { military_drill }
 	
 	modifier = {
+		#unit_morale_loss_mult = -0.1
 		state_conscription_rate_add = 0.01
 		interest_group_ig_armed_forces_pol_str_mult = 0.25
 		state_building_barracks_max_level_add = 100
@@ -75,7 +77,7 @@ law_professional_army = {
 		}
 		# soldiers are broadly in favor of this also
 		add = {
-			desc = "POP_OFFICERS"			
+			desc = "POP_SOLDIERS"		
 			if = {
 				limit = { 
 					is_pop_type = soldiers
@@ -95,6 +97,7 @@ law_national_militia = {
 	unlocking_technologies = { mandatory_service }
 	
 	modifier = {
+		#unit_morale_loss_mult = -0.05
 		state_conscription_rate_add = 0.05
 		interest_group_ig_petty_bourgeoisie_pol_str_mult = 0.25
 		state_building_barracks_max_level_add = 10
@@ -123,7 +126,7 @@ law_national_militia = {
 	ai_will_do = {
 		exists = ruler
 		ruler = {
-			has_ideology = ideology_pacifist
+			has_ideology = ideology:ideology_pacifist
 		}
 	}
 }
@@ -137,6 +140,7 @@ law_mass_conscription = {
 	unlocking_technologies = { enlistment_offices }
 	
 	modifier = {
+		#unit_morale_loss_mult = 0.05
 		state_conscription_rate_add = 0.025
 		building_training_rate_mult = 1
 		state_building_barracks_max_level_add = 100
