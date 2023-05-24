@@ -87,7 +87,7 @@
 				building="building_logging_camp"
 				level=10
 				reserves=1
-				activate_production_methods={ "pm_simple_forestry" "pm_hardwood" "pm_no_equipment" "pm_road_carts" "pm_privately_owned_building_logging_camp" }
+				activate_production_methods={ "pm_simple_forestry" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts" "pm_privately_owned_building_logging_camp" }
 			}
 			create_building={
 				building="building_barracks"
@@ -209,7 +209,7 @@
 				building="building_logging_camp"
 				level=15
 				reserves=1
-				activate_production_methods={ "pm_simple_forestry" "pm_hardwood" "pm_no_equipment" "pm_road_carts" "pm_privately_owned_building_logging_camp" }
+				activate_production_methods={ "pm_simple_forestry" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts" "pm_privately_owned_building_logging_camp" }
 			}
 			create_building={
 				building="building_barracks"
@@ -259,7 +259,7 @@
 				building="building_logging_camp"
 				level=12
 				reserves=1
-				activate_production_methods={ "pm_simple_forestry" "pm_hardwood" "pm_no_equipment" "pm_road_carts" "pm_privately_owned_building_logging_camp" }
+				activate_production_methods={ "pm_simple_forestry" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts" "pm_privately_owned_building_logging_camp" }
 			}
 			create_building={
 				building="building_rye_farm"
@@ -331,7 +331,7 @@
 				building="building_logging_camp"
 				level=15
 				reserves=1
-				activate_production_methods={ "pm_simple_forestry" "pm_hardwood" "pm_no_equipment" "pm_road_carts" "pm_privately_owned_building_logging_camp" }
+				activate_production_methods={ "pm_simple_forestry" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts" "pm_privately_owned_building_logging_camp" }
 			}
 			create_building={
 				building="building_barracks"
@@ -403,7 +403,7 @@
 				building="building_logging_camp"
 				level=10
 				reserves=1
-				activate_production_methods={ "pm_simple_forestry" "pm_hardwood" "pm_no_equipment" "pm_road_carts" "pm_privately_owned_building_logging_camp" }
+				activate_production_methods={ "pm_simple_forestry" "pm_no_hardwood" "pm_no_equipment" "pm_road_carts" "pm_privately_owned_building_logging_camp" }
 			}
 			create_building={
 				building="building_barracks"

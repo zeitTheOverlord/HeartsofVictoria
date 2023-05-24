@@ -30,7 +30,7 @@ pm_atmospheric_engine_pump_building_coal_mine = {
 			building_input_tools_add = 8
 			
 			# output goods
-			building_output_coal_add = 40
+			building_output_coal_add = 36
 		}
 
 		level_scaled = {
@@ -54,7 +54,7 @@ pm_condensing_engine_pump_building_coal_mine = {
 			building_input_tools_add = 12
 			
 			# output goods
-			building_output_coal_add = 60
+			building_output_coal_add = 54
 		}
 
 		level_scaled = {

@@ -1,0 +1,9 @@
+building_input_fine_art_add = {
+	good = yes
+	percent = no
+}
+
+building_input_services_add = {
+	good = yes
+	percent = no
+}
