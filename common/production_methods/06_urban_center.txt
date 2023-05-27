@@ -207,7 +207,7 @@ pm_free_urban_clergy = {
 	
 	building_modifiers = {
 		level_scaled = {
-			building_employment_clerks_add = 500
+			building_employment_clerks_add = 50
 			building_employment_clergymen_add = 150
 		}	
 
@@ -377,7 +377,7 @@ pm_hydroelectric_plant = {
 	building_modifiers = { 
 		workforce_scaled = {
 			building_input_engines_add = 15
-			building_output_electricity_add = 80
+			building_output_electricity_add = 100
 		}
 
 		level_scaled = {
@@ -400,7 +400,7 @@ pm_coal-fired_plant = {
 		workforce_scaled = {
 			building_input_engines_add = 20
 			building_input_coal_add = 15
-			building_output_electricity_add = 120
+			building_output_electricity_add = 140
 		}
 
 		level_scaled = {
@@ -423,7 +423,7 @@ pm_oil-fired_plant = {
 		workforce_scaled = {
 			building_input_engines_add = 25
 			building_input_oil_add = 30
-			building_output_electricity_add = 160
+			building_output_electricity_add = 180
 		}
 
 		level_scaled = {
