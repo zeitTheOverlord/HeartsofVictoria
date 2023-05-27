@@ -82,7 +82,6 @@ pm_cannery = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			#building_input_grain_add = -20		# x20 = -400
 			building_input_fish_add = 10 #30		# x20 =  200
 			building_input_meat_add = 10   		 #x30 =300	#added
 			building_input_iron_add = 5		# x40 =  400
@@ -108,7 +107,6 @@ pm_vacuum_canning = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			#building_input_grain_add = -30 #-30		# x20 = -800
 			building_input_fish_add = 10 #60		# x20 = 1200
 			building_input_meat_add = 10   		 #x30 =600	#added
 			building_input_iron_add = 5		# x40 =  400
@@ -189,6 +187,10 @@ pm_manual_dough_processing = {
 pm_automated_bakery = {
 	texture = "gfx/interface/icons/production_method_icons/automated_bakery.dds"
 	
+	disallowing_laws = {
+		law_industry_banned
+	}
+
 	unlocking_technologies = {
 		dough_rollers
 	}
@@ -322,7 +324,7 @@ pm_handsewn_clothes = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_fabric_add = 30		# x20 =  800
+			building_input_fabric_add = 20		# x20 =  800
 			
 			# output goods
 			building_output_clothes_add = 40	# x30 = 1350
@@ -343,7 +345,7 @@ pm_dye_workshops = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_fabric_add = 40		# x20 =  800
+			building_input_fabric_add = 30		# x20 =  800
 			building_input_dye_add = 5			# x40 =  200
 			
 			# output goods
@@ -368,7 +370,7 @@ pm_sewing_machines = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_fabric_add = 40		# x20 = 1200
+			building_input_fabric_add = 30		# x20 = 1200
 			building_input_dye_add = 10			# x40 =  400
 			building_input_tools_add = 5		# x40 =  200
 			
@@ -395,10 +397,10 @@ pm_electric_sewing_machines = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_fabric_add = 40
-			building_input_dye_add = 15
+			building_input_fabric_add = 30
+			building_input_dye_add = 10
 			building_input_tools_add = 5
-			building_input_electricity_add = 5
+			building_input_electricity_add = 15
 			
 			# output goods
 			building_output_clothes_add = 100
@@ -424,6 +426,7 @@ pm_craftsman_sewing = {
 		workforce_scaled = {
 			# input goods
 			building_input_silk_add = 5				# x40 =  400			# x20 =  200
+
 			
 			# output goods
 			building_output_clothes_add = -20			# x30 = -600
@@ -449,6 +452,7 @@ pm_elastics = {
 			# input goods
 			building_input_rubber_add = 5
 			building_input_silk_add = 5
+		
 			
 			# output goods
 			building_output_clothes_add = -40
@@ -473,6 +477,10 @@ pm_mechanized_looms = {
 		mechanized_workshops
 	}
 	
+	disallowing_laws = {
+		law_industry_banned
+	}
+
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
@@ -493,6 +501,10 @@ pm_automatic_power_looms = {
 		electrical_capacitors
 	}
 	
+	disallowing_laws = {
+		law_industry_banned
+	}
+
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
@@ -627,8 +639,8 @@ pm_handcrafted_furniture = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_wood_add = 10		# x20 =  600
-			building_input_fabric_add = 10		# x20 =  200
+			building_input_wood_add = 15		# x20 =  600
+			building_input_fabric_add = 5		# x20 =  200
 			
 			# output goods
 			building_output_furniture_add = 40	# x30 = 1350
@@ -651,8 +663,8 @@ pm_lathe = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_wood_add = 10
-			building_input_fabric_add = 10
+			building_input_wood_add = 15
+			building_input_fabric_add = 5
 			building_input_tools_add = 10
 			
 			# output goods
@@ -680,8 +692,8 @@ pm_mechanized_workshops = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_wood_add = 15
-			building_input_fabric_add = 15
+			building_input_wood_add = 20
+			building_input_fabric_add = 10
 			building_input_tools_add = 15
 			
 			# output goods
@@ -709,8 +721,6 @@ pm_luxury_furniture = {
 			building_input_hardwood_add = 5
 			building_input_tools_add = 5
 			building_input_wood_add = -5
-
-	
 			# output goods
 			building_output_furniture_add = -20
 			building_output_luxury_furniture_add = 20
@@ -760,6 +770,10 @@ pm_watertube_boiler_building_furniture_manufacturies = {
 		watertube_boiler
 	}
 	
+	disallowing_laws = {
+		law_industry_banned
+	}
+
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
@@ -782,6 +796,10 @@ pm_rotary_valve_engine_building_furniture_manufacturies = {
 		rotary_valve_engine
 	}
 	
+	disallowing_laws = {
+		law_industry_banned
+	}
+
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
@@ -804,11 +822,16 @@ pm_assembly_lines_building_furniture_manufacturies = {
 		conveyors
 	}
 	
+	disallowing_laws = {
+		law_industry_banned
+	}
+
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
+			building_input_tools_add = 4
 			building_input_oil_add = 3
-			building_input_electricity_add = 8
+			building_input_electricity_add = 4
 		}
 
 		level_scaled = {
@@ -1080,6 +1103,10 @@ pm_automatic_bottle_blowers = {
 		automatic_bottle_blowers
 	}
 	
+	disallowing_laws = {
+		law_industry_banned
+	}
+
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
@@ -1279,8 +1306,11 @@ pm_watertube_boiler_building_tooling_workshops = {
 	
 	unlocking_technologies = {
 		watertube_boiler
+	}	
+	disallowing_laws = {
+		law_industry_banned
 	}
-	
+
 	building_modifiers = {
 		workforce_scaled = {
 			building_input_coal_add = 1
@@ -1301,7 +1331,10 @@ pm_rotary_valve_engine_building_tooling_workshops = {
 	unlocking_technologies = {
 		rotary_valve_engine
 	}
-	
+	disallowing_laws = {
+		law_industry_banned
+	}
+
 	building_modifiers = {
 		workforce_scaled = {
 			building_input_coal_add = 2
@@ -1321,12 +1354,16 @@ pm_assembly_lines_building_tooling_workshops = {
 	
 	unlocking_technologies = {
 		conveyors
+	}	
+	disallowing_laws = {
+		law_industry_banned
 	}
-	
+
 	building_modifiers = {
 		workforce_scaled = {
+			building_output_tools_add = -4
 			building_input_oil_add = 3
-			building_input_electricity_add = 8
+			building_input_electricity_add = 4
 		}
 
 		level_scaled = {
@@ -1525,6 +1562,10 @@ pm_watertube_boiler_building_paper_mills = {
 		watertube_boiler
 	}
 	
+	disallowing_laws = {
+		law_industry_banned
+	}
+
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
@@ -1547,6 +1588,10 @@ pm_rotary_valve_engine_building_paper_mills = {
 		rotary_valve_engine
 	}
 	
+	disallowing_laws = {
+		law_industry_banned
+	}
+
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
@@ -1944,6 +1989,7 @@ pm_rayon = {
 			# input goods
 			building_output_dye_add = -80
 
+
 			# output goods
 			building_output_silk_add = 80
 		}
@@ -2230,6 +2276,7 @@ pm_watertube_boiler_building_motor_industry = {
 			building_input_tools_add = 2
 		}
 
+
 		level_scaled = {
 			building_employment_laborers_add = -500
 		}
@@ -2252,6 +2299,7 @@ pm_rotary_valve_engine_building_motor_industry = {
 			building_input_tools_add = 4
 		}
 
+
 		level_scaled = {
 			building_employment_laborers_add = -1000
 		}
@@ -2269,9 +2317,11 @@ pm_assembly_lines_building_motor_industry = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
+			building_input_tools_add = 2
 			building_input_oil_add = 3
 			building_input_electricity_add = 2
 		}
+
 
 		level_scaled = {
 			building_employment_laborers_add = -1500
@@ -2310,7 +2360,8 @@ pm_complex_shipbuilding = {
 	building_modifiers = {
 		workforce_scaled = {
 			# input goods
-			building_input_hardwood_add = 20
+			building_input_wood_add = 10
+			building_input_hardwood_add = 15
 			building_input_fabric_add = 10
 			building_input_engines_add = 15
 			
@@ -2446,6 +2497,7 @@ pm_military_shipbuilding_steam_2 = {
 		pm_arc_welding_shipbuilding
 	}
 	
+
 	building_modifiers = {
 		workforce_scaled = {
 			# output goods
@@ -2655,8 +2707,6 @@ pm_radios = {
 	building_modifiers = {
 		workforce_scaled = {
 			building_input_electricity_add = 25
-
-
 			building_output_telephones_add = -80
 			building_output_radios_add = 80
 		}
@@ -2785,6 +2835,7 @@ pm_cannons = {
 			# input goods
 			building_output_small_arms_add = -15
 			building_input_iron_add = 15
+
 			# output goods
 			building_output_artillery_add = 30
 		}
@@ -2850,8 +2901,7 @@ pm_rotary_valve_engine_building_arms_industry = {
 	
 	unlocking_technologies = {
 		rotary_valve_engine
-	}
-	
+	}	
 	building_modifiers = {
 		workforce_scaled = {
 			building_input_coal_add = 1.5
@@ -2875,10 +2925,10 @@ pm_assembly_lines_building_arms_industry = {
 	
 	building_modifiers = {
 		workforce_scaled = {
+			building_input_tools_add = 4
 			building_input_oil_add = 3
-			building_input_electricity_add = 8
+			building_input_electricity_add = 4
 		}
-
 		level_scaled = {
 			building_employment_laborers_add = -3000
 		}
@@ -3063,7 +3113,6 @@ pm_rotary_valve_engine_building_munition_plants = {
 			building_input_coal_add = 1.5
 			building_input_tools_add = 3
 		}
-
 		level_scaled = {
 			building_employment_laborers_add = -1500
 		}
@@ -3081,10 +3130,10 @@ pm_assembly_lines_building_munition_plants = {
 	
 	building_modifiers = {
 		workforce_scaled = {
+			building_input_tools_add = 4
 			building_input_oil_add = 3
-			building_input_electricity_add = 8
+			building_input_electricity_add = 4
 		}
-
 		level_scaled = {
 			building_employment_laborers_add = -3000
 		}
@@ -3181,7 +3230,6 @@ pm_publicly_traded_building_motor_industries = {
 		law_command_economy
 		law_cooperative_ownership
 	}
-
 	unlocking_technologies = {
 		mutual_funds
 	}
