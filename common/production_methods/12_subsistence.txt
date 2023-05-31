@@ -73,12 +73,12 @@ pm_serfdom = {
 		law_serfdom
 	}				
 	building_modifiers = {
-		workforce_scaled = { # 20
-			building_output_grain_add = 1 # 20
+		workforce_scaled = { # 60
+			building_output_grain_add = 3 # 60
 		}
 
 		unscaled = {
-			building_subsistence_output_add = 3
+			building_subsistence_output_add = 3.5
 		}		
 	}
 }		
@@ -141,12 +141,12 @@ pm_serfdom_building_subsistence_orchards = {
 		law_serfdom
 	}				
 	building_modifiers = {
-		workforce_scaled = { # 20
-			building_output_fruit_add = 0.66 # 20
+		workforce_scaled = { # 60
+			building_output_fruit_add = 2 # 60
 		}
 
 		unscaled = {
-			building_subsistence_output_add = 3
+			building_subsistence_output_add = 3.5
 		}			
 	}
 }		
@@ -209,12 +209,12 @@ pm_serfdom_building_subsistence_pastures = {
 		law_serfdom
 	}
 	building_modifiers = {
-		workforce_scaled = { # 20
-			building_output_meat_add = 0.66 # 20
+		workforce_scaled = { # 60
+			building_output_meat_add = 2 # 60
 		}
 
 		unscaled = {
-			building_subsistence_output_add = 3
+			building_subsistence_output_add = 3.5
 		}			
 	}
 }
@@ -277,12 +277,12 @@ pm_serfdom_building_subsistence_fishing_villages = {
 		law_serfdom
 	}				
 	building_modifiers = {
-		workforce_scaled = { # 20
-			building_output_fish_add = 1 # 20
+		workforce_scaled = { # 60
+			building_output_fish_add = 3 # 60
 		}
 
 		unscaled = {
-			building_subsistence_output_add = 3
+			building_subsistence_output_add = 3.5
 		}			
 	}
 }		
@@ -343,12 +343,12 @@ pm_serfdom_building_subsistence_rice_paddies = {
 		law_serfdom
 	}
 	building_modifiers = {
-		workforce_scaled = { # 20
-			building_output_grain_add = 1 # 20
+		workforce_scaled = { # 60
+			building_output_grain_add = 3 # 60
 		}
 
 		unscaled = {
-			building_subsistence_output_add = 3
+			building_subsistence_output_add = 3.5
 		}			
 	}
 }
